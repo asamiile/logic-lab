@@ -1,7 +1,5 @@
 # Gaussian Random Walker
 
-## Exercise 0.5: Gaussian Random Walker
-
 ```bash
 uv run python simulation/gaussian_random_walker/gaussian_random_walker.py
 ```

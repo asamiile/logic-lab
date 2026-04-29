@@ -1,7 +1,5 @@
 # Quadratic Random Walker
 
-## Exercise 0.6: Quadratic Random Walker
-
 ```bash
 uv run python simulation/quadratic_random_walker/quadratic_random_walker.py
 ```
