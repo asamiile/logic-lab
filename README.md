@@ -20,6 +20,7 @@ uv run python simulation/random_walk/random_walk.py
 - [Random Distribution](simulation/random_distribution/README.md)
 - [Random Walk Right](simulation/random_walk_right/README.md)
 - [Gaussian Distribution](simulation/gaussian_distribution/README.md)
+- [Accept-Reject Distribution](simulation/accept_reject_distribution/README.md)
 
 
 ## Reference

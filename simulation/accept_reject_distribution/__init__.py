@@ -1,0 +1,1 @@
+"""Accept-reject distribution examples."""
