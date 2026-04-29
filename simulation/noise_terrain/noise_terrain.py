@@ -57,7 +57,7 @@ def draw() -> None:
     land.calculate()
     py5.background(255)
     py5.push()
-    py5.translate(0, 20, -200)
+    py5.translate(py5.width / 2, py5.height / 2 + 20, -200)
     py5.rotate_x(py5.PI / 3)
     py5.rotate_z(theta)
     land.render()
