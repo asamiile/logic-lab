@@ -8,12 +8,23 @@ Install dependencies:
 uv sync
 ```
 
-Run a sketch:
+## Projects
 
-```bash
-uv run python src/simulation/random_walk/random_walk.py
-```
+- **simulation/circuit_evolution/** - Circuit design optimization using NEAT
+- **simulation/maze_systems/** - Maze navigation and design optimization
+- **simulation/random_walk/** - Random walk visualization
 
+
+## Dependencies
+
+| ライブラリ | 説明 |
+|-----------|------|
+| neat-python | NeuroEvolution of Augmenting Topologies (進化計算) |
+| networkx | グラフおよびネットワーク分析 |
+| matplotlib | データ可視化 |
+| numpy | 数値計算 |
+| jupyterlab | インタラクティブノートブック |
+| py5 | Processing の Python 実装 |
 
 
 ## Reference
