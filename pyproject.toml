@@ -8,4 +8,7 @@ dependencies = [
     "jupyterlab>=4.5.6",
     "numpy>=2.4.4",
     "py5>=0.10.9a1",
+    "neat-python==0.92",
+    "networkx>=3.0",
+    "matplotlib>=3.8.0",
 ]
