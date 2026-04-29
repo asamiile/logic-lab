@@ -18,6 +18,7 @@ uv run python simulation/random_walk/random_walk.py
 
 - [Random Walk](simulation/random_walk/README.md)
 - [Random Distribution](simulation/random_distribution/README.md)
+- [Random Walk Right](simulation/random_walk_right/README.md)
 
 
 ## Reference
