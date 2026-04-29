@@ -11,9 +11,13 @@ uv sync
 Run a sketch:
 
 ```bash
-uv run python src/simulation/random_walk/random_walk.py
+uv run python simulation/random_walk/random_walk.py
 ```
 
+## Simulations
+
+- [Random Walk](simulation/random_walk/README.md)
+- [Random Distribution](simulation/random_distribution/README.md)
 
 
 ## Reference
