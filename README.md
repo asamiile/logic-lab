@@ -21,6 +21,8 @@ uv run python simulation/random_walk/random_walk.py
 - [Random Walk Right](simulation/random_walk_right/README.md)
 - [Gaussian Distribution](simulation/gaussian_distribution/README.md)
 - [Accept-Reject Distribution](simulation/accept_reject_distribution/README.md)
+- [rotate_baton](simulation/rotate_baton/README.md)
+- [Example 3.1 Angular Motion Using Rotate](simulation/example_3_1_angular_motion_using_rotate/README.md)
 
 
 ## Reference
