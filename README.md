@@ -23,6 +23,7 @@ uv run python simulation/random_walk/random_walk.py
 - [Accept-Reject Distribution](simulation/accept_reject_distribution/README.md)
 - [rotate_baton](simulation/rotate_baton/README.md)
 - [Angular Motion Using Rotate](simulation/angular_motion_using_rotate/README.md)
+- [Forces With Arbitrary Angular Motion](simulation/forces_with_arbitrary_angular_motion/README.md)
 
 
 ## Reference
