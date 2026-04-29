@@ -1,7 +1,5 @@
 # Gaussian Distribution
 
-## Example 0.4: A Gaussian Distribution
-
 ```bash
 uv run python simulation/gaussian_distribution/gaussian_distribution.py
 ```

@@ -1,6 +1,5 @@
 # Perlin Noise Walker
 
-## Example 0.4: Perlin Noise Walker
 
 ```bash
 uv run python simulation/perlin_noise_walker/perlin_noise_walker.py

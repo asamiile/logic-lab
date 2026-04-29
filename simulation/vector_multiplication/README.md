@@ -1,7 +1,5 @@
 # Vector Multiplication
 
-## Example 1.4: Vector Multiplication
-
 ```bash
 uv run python simulation/vector_multiplication/vector_multiplication.py
 ```
