@@ -2,6 +2,7 @@
 
 Evolutionary optimization for maze navigation control and maze design.
 
+
 ## Run Commands
 
 ### Control - Basic NEAT

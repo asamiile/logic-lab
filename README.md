@@ -16,7 +16,6 @@ uv sync
 - **simulation/maze_systems/** - Maze navigation and design optimization
 - **simulation/random_walk/** - Random walk visualization
 
-
 ## Dependencies
 
 | Library | Description |

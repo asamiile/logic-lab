@@ -4,7 +4,6 @@ Circuit design using NEAT (NeuroEvolution of Augmenting Topologies).
 
 ## Run Commands
 
-
 ### Run Circuit NEAT
 
 ```bash
