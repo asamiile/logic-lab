@@ -9,4 +9,7 @@ dependencies = [
     "numpy>=2.4.4",
     "py5>=0.10.9a1",
     "pymunk>=7.2.0",
+    "neat-python==0.92",
+    "networkx>=3.0",
+    "matplotlib>=3.8.0",
 ]
