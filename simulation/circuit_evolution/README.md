@@ -2,32 +2,30 @@
 
 Circuit design using NEAT (NeuroEvolution of Augmenting Topologies).
 
-## 実行コマンド
+## Run Commands
 
-
-### Circuit NEAT の実行
+### Run Circuit NEAT
 
 ```bash
 source .venv/Scripts/activate
 python simulation/circuit_evolution/experiments/design/run_circuit_neat.py -p 50
 ```
 
-### 結果の描画
+### Draw Results
 ```bash
-# すべてのゲノムを描画
+# Draw all genomes
 python simulation/circuit_evolution/experiments/design/draw_circuit_neat.py test_draw
 
-# 特定のゲノムIDを描画（例: genome ID 6620）
+# Draw a specific genome ID (for example: genome ID 6620)
 python simulation/circuit_evolution/experiments/design/draw_circuit_neat.py test_draw -s <GENOME_ID>
 ```
 
-ゲノムIDは以下フォルダーで確認できます：
+Genome IDs are available in this folder:
 ```
 simulation/circuit_evolution/experiments/design/out/circuit_neat/<experiment_name>/genome/
 ```
 
-## ファイル構成
+## File Structure
 
 - `environment/` - Circuit evaluation environment
 - `experiments/design/` - NEAT-based circuit design experiments
-
