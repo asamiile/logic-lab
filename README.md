@@ -19,14 +19,14 @@ uv sync
 
 ## Dependencies
 
-| ライブラリ | 説明 |
+| Library | Description |
 |-----------|------|
-| neat-python | NeuroEvolution of Augmenting Topologies (進化計算) |
-| networkx | グラフおよびネットワーク分析 |
-| matplotlib | データ可視化 |
-| numpy | 数値計算 |
-| jupyterlab | インタラクティブノートブック |
-| py5 | Processing の Python 実装 |
+| neat-python | NeuroEvolution of Augmenting Topologies (evolutionary computation) |
+| networkx | Graph and network analysis |
+| matplotlib | Data visualization |
+| numpy | Numerical computing |
+| jupyterlab | Interactive notebooks |
+| py5 | Python implementation of Processing |
 
 
 ## Reference
