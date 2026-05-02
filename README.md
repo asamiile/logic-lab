@@ -1,6 +1,6 @@
 # Logic Lab
 
-Python translations of "The Nature of Code" examples using py5. Each simulation is organized by domain, demonstrating core computational creativity concepts: physics, steering behaviors, genetic algorithms, neural networks, and fractals.
+Python translations of creative coding examples using py5. Each simulation is organized by domain, demonstrating core computational creativity concepts: physics, steering behaviors, genetic algorithms, neural networks, fractals, and mathematical art.
 
 ## Setup
 
@@ -15,6 +15,7 @@ uv sync
 - **simulation/circuit_evolution/** - Circuit design optimization using NEAT
 - **simulation/maze_systems/** - Maze navigation and design optimization
 - **simulation/random_walk/** - Random walk visualization
+- **mathematical_art/** - Mathematical generative art translations, including Generative Art With Math examples
 
 ## Dependencies
 
@@ -30,9 +31,9 @@ uv sync
 
 ## Reference
 
-- [The Nature of Code](https://natureofcode.com/) - Daniel Shiffman
-- [py5 Documentation](https://py5coding.org/) - Python port of Processing
-- [Processing](https://processing.org/) - Original creative coding environment
+- [The Nature of Code](https://natureofcode.com/) 
+- [Pythonではじめるオープンエンドな進化的アルゴリズム](https://www.oreilly.co.jp/books/9784814400003/)
+- [数学から創るジェネラティブアート](https://gihyo.jp/book/2019/978-4-297-10463-4/support)
 
 ## License
 

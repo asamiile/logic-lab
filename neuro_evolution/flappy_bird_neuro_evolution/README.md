@@ -1,7 +1,7 @@
 # Flappy Bird with Neuro-Evolution
 
 ```bash
-uv run python simulation/flappy_bird_neuro_evolution/flappy_bird_neuro_evolution.py
+uv run python neuro_evolution/flappy_bird_neuro_evolution/flappy_bird_neuro_evolution.py
 ```
 
 - Population of 200 birds, each controlled by its own neural network
@@ -12,7 +12,7 @@ uv run python simulation/flappy_bird_neuro_evolution/flappy_bird_neuro_evolution
 - Successful birds produce offspring (with crossover and mutation)
 - Over generations, birds evolve to better play the game
 - Watch as the population gradually improves and learns to navigate pipes
-- Press `s` to save a screenshot to `simulation/flappy_bird_neuro_evolution/screenshots/`
+- Press `s` to save a screenshot to `neuro_evolution/flappy_bird_neuro_evolution/screenshots/`
 
 ## Neural Network Architecture
 

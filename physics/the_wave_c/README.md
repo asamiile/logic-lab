@@ -1,8 +1,8 @@
 # The Wave C
 
 ```bash
-uv run python simulation/the_wave_c/the_wave_c.py
+uv run python physics/the_wave_c/the_wave_c.py
 ```
 
 - A static sine wave is drawn with a larger angular step between circles.
-- Press `s` to save a screenshot to `simulation/the_wave_c/screenshots/`.
+- Press `s` to save a screenshot to `physics/the_wave_c/screenshots/`.

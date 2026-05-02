@@ -1,7 +1,7 @@
 # Gesture Classifier - Neural Network
 
 ```bash
-uv run python simulation/gesture_classifier/gesture_classifier.py
+uv run python steering_behaviors/gesture_classifier/gesture_classifier.py
 ```
 
 - Neural network trained to classify directional gestures (up, down, left, right)
@@ -10,7 +10,7 @@ uv run python simulation/gesture_classifier/gesture_classifier.py
 - Trained for 200 epochs using backpropagation
 - Draw gestures on the canvas by dragging the mouse
 - The network classifies your gesture and displays the result
-- Press `s` to save a screenshot to `simulation/gesture_classifier/screenshots/`
+- Press `s` to save a screenshot to `steering_behaviors/gesture_classifier/screenshots/`
 
 ## How it works
 

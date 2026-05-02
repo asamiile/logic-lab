@@ -1,7 +1,7 @@
 # Neuro-Evolution Steering Seek
 
 ```bash
-uv run python simulation/neuro_evolution_steering_seek/neuro_evolution_steering_seek.py
+uv run python steering_behaviors/neuro_evolution_steering_seek/neuro_evolution_steering_seek.py
 ```
 
 - Population of 50 creatures learning to seek a moving target using neuro-evolution
@@ -9,7 +9,7 @@ uv run python simulation/neuro_evolution_steering_seek/neuro_evolution_steering_
 - Each creature controlled by its own neural network
 - Creatures improve over generations at seeking the moving target
 - Adjustable simulation speed (1x-20x) with arrow keys or mouse click
-- Press `s` to save a screenshot to `simulation/neuro_evolution_steering_seek/screenshots/`
+- Press `s` to save a screenshot to `steering_behaviors/neuro_evolution_steering_seek/screenshots/`
 
 ## Neural Network Architecture
 

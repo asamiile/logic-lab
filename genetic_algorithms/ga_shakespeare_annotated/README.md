@@ -1,7 +1,7 @@
 # Genetic Algorithm - Evolving Shakespeare (Annotated)
 
 ```bash
-uv run python simulation/ga_shakespeare_annotated/ga_shakespeare_annotated.py
+uv run python genetic_algorithms/ga_shakespeare_annotated/ga_shakespeare_annotated.py
 ```
 
 - Genetic algorithm that evolves a population of random strings toward the target phrase "To be or not to be."
@@ -11,7 +11,7 @@ uv run python simulation/ga_shakespeare_annotated/ga_shakespeare_annotated.py
 - Offspring are created through crossover and mutation
 - Displays the best phrase found so far and statistics about the population
 - Evolution stops when the target phrase is reached
-- Press `s` to save a screenshot to `simulation/ga_shakespeare_annotated/screenshots/`
+- Press `s` to save a screenshot to `genetic_algorithms/ga_shakespeare_annotated/screenshots/`
 
 ## How it works
 

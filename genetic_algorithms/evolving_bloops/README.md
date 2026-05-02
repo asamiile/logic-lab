@@ -1,7 +1,7 @@
 # Evolving Bloops - Ecosystem Simulation
 
 ```bash
-uv run python simulation/evolving_bloops/evolving_bloops.py
+uv run python genetic_algorithms/evolving_bloops/evolving_bloops.py
 ```
 
 - Genetic algorithm simulation of an evolving ecosystem
@@ -12,7 +12,7 @@ uv run python simulation/evolving_bloops/evolving_bloops.py
 - Bigger bloops have easier time finding food but move slower
 - Food randomly appears on the canvas
 - Click and drag to spawn new bloops at the mouse position
-- Press `s` to save a screenshot to `simulation/evolving_bloops/screenshots/`
+- Press `s` to save a screenshot to `genetic_algorithms/evolving_bloops/screenshots/`
 
 ## How it works
 

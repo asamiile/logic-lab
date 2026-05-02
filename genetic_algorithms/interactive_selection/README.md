@@ -1,7 +1,7 @@
 # Interactive Selection - Evolving Flowers
 
 ```bash
-uv run python simulation/interactive_selection/interactive_selection.py
+uv run python genetic_algorithms/interactive_selection/interactive_selection.py
 ```
 
 - Interactive genetic algorithm where you control evolution by selecting flowers
@@ -10,7 +10,7 @@ uv run python simulation/interactive_selection/interactive_selection.py
 - Hover the mouse over flowers to increase their fitness (each flower displays its fitness value below)
 - Click the "evolve new generation" button to create the next generation based on fitness selection
 - Higher-fitness parents are more likely to produce offspring
-- Press `s` to save a screenshot to `simulation/interactive_selection/screenshots/`
+- Press `s` to save a screenshot to `genetic_algorithms/interactive_selection/screenshots/`
 
 ## How to use
 

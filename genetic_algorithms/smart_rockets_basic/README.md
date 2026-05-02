@@ -1,7 +1,7 @@
 # Smart Rockets Basic
 
 ```bash
-uv run python simulation/smart_rockets_basic/smart_rockets_basic.py
+uv run python genetic_algorithms/smart_rockets_basic/smart_rockets_basic.py
 ```
 
 - Genetic algorithm that evolves rockets to reach a target using steering forces.
@@ -9,4 +9,4 @@ uv run python simulation/smart_rockets_basic/smart_rockets_basic.py
 - Population of 50 rockets evolves through fitness-based selection and reproduction.
 - Rockets improve over generations to reach the target more efficiently.
 - Click the mouse to move the target; rockets will adapt to the new goal.
-- Press `s` to save a screenshot to `simulation/smart_rockets_basic/screenshots/`.
+- Press `s` to save a screenshot to `genetic_algorithms/smart_rockets_basic/screenshots/`.

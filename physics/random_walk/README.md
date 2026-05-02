@@ -1,7 +1,7 @@
 # Random Walk
 
 ```bash
-uv run python simulation/random_walk/random_walk.py
+uv run python physics/random_walk/random_walk.py
 ```
 
-Press `s` to save a screenshot to `simulation/random_walk/screenshots/`.
+Press `s` to save a screenshot to `physics/random_walk/screenshots/`.

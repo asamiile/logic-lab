@@ -1,7 +1,7 @@
 # Creature Sensors
 
 ```bash
-uv run python simulation/creature_sensors/creature_sensors.py
+uv run python steering_behaviors/creature_sensors/creature_sensors.py
 ```
 
 - Interactive demonstration of creature sensory input
@@ -10,7 +10,7 @@ uv run python simulation/creature_sensors/creature_sensors.py
 - Creature has 15 directional sensors arranged in a circle
 - Sensors detect proximity to food and light up
 - Move the creature close to the food to see sensors activate
-- Press `s` to save a screenshot to `simulation/creature_sensors/screenshots/`
+- Press `s` to save a screenshot to `steering_behaviors/creature_sensors/screenshots/`
 
 ## How It Works
 

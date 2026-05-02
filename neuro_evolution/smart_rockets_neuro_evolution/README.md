@@ -1,7 +1,7 @@
 # Smart Rockets with Neuro-Evolution
 
 ```bash
-uv run python simulation/smart_rockets_neuro_evolution/smart_rockets_neuro_evolution.py
+uv run python neuro_evolution/smart_rockets_neuro_evolution/smart_rockets_neuro_evolution.py
 ```
 
 - Population of 150 rockets navigating around obstacles to reach a target
@@ -9,7 +9,7 @@ uv run python simulation/smart_rockets_neuro_evolution/smart_rockets_neuro_evolu
 - Rockets learn through neuro-evolution (genetic algorithms + neural networks)
 - Target starts at the top center; click to move it anywhere
 - Watch rockets improve over generations as they learn the optimal path
-- Press `s` to save a screenshot to `simulation/smart_rockets_neuro_evolution/screenshots/`
+- Press `s` to save a screenshot to `neuro_evolution/smart_rockets_neuro_evolution/screenshots/`
 
 ## Neural Network Architecture
 

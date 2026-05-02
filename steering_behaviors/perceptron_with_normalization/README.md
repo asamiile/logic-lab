@@ -1,7 +1,7 @@
 # Perceptron with Normalization
 
 ```bash
-uv run python simulation/perceptron_with_normalization/perceptron_with_normalization.py
+uv run python steering_behaviors/perceptron_with_normalization/perceptron_with_normalization.py
 ```
 
 - Simple perceptron neural network learning to classify points above or below a line
@@ -13,7 +13,7 @@ uv run python simulation/perceptron_with_normalization/perceptron_with_normaliza
   - **White** (255): Perceptron predicts below the line (-1)
 - The black line shows the actual decision boundary the perceptron should learn
 - Over time, the perceptron learns to better classify the points
-- Press `s` to save a screenshot to `simulation/perceptron_with_normalization/screenshots/`
+- Press `s` to save a screenshot to `steering_behaviors/perceptron_with_normalization/screenshots/`
 
 ## How it works
 

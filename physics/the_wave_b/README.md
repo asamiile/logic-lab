@@ -1,8 +1,8 @@
 # The Wave B
 
 ```bash
-uv run python simulation/the_wave_b/the_wave_b.py
+uv run python physics/the_wave_b/the_wave_b.py
 ```
 
 - A sine wave is drawn once in `draw()` and then the sketch stops looping.
-- Press `s` to save a screenshot to `simulation/the_wave_b/screenshots/`.
+- Press `s` to save a screenshot to `physics/the_wave_b/screenshots/`.
