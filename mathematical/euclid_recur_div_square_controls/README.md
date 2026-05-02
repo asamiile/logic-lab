@@ -3,7 +3,7 @@
 Interactive recursive division. The original ControlP5 sliders are translated to keyboard controls.
 
 ```bash
-uv run python mathematical_art/euclid_recur_div_square_controls/euclid_recur_div_square_controls.py
+uv run python mathematical/euclid_recur_div_square_controls/euclid_recur_div_square_controls.py
 ```
 
 Controls:
