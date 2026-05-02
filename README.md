@@ -1,6 +1,6 @@
 # Logic Lab
 
-Python translations of creative coding examples using py5. Each simulation is organized by domain, demonstrating core computational creativity concepts: physics, steering behaviors, genetic algorithms, neural networks, fractals, and mathematical art.
+Python translations of creative coding examples using py5. Each simulation is organized by domain, demonstrating core computational creativity concepts: physics, steering behaviors, genetic algorithms, neural networks, fractals, cellular automata, tiling patterns, and mathematical systems.
 
 ## Setup
 
@@ -15,7 +15,9 @@ uv sync
 - **simulation/circuit_evolution/** - Circuit design optimization using NEAT
 - **simulation/maze_systems/** - Maze navigation and design optimization
 - **simulation/random_walk/** - Random walk visualization
-- **mathematical_art/** - Mathematical generative art translations, including Generative Art With Math examples
+- **mathematical/** - Mathematical systems and generative geometry translations
+- **cellular_automata/** - Cellular automata and Pascal triangle visualizations
+- **tiling_patterns/** - Textile, tiling, symmetry, and pattern generation systems
 
 ## Dependencies
 
