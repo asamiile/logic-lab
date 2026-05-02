@@ -58,7 +58,7 @@ def mouse_clicked() -> None:
     for i in range(8):
         value = int(py5.random(2))
         rule.append(value)
-        rule_int += value * int(py5.pow(2, 7 - i))
+        rule_int += value * int(pow(2, 7 - i))
     print(rule_int)
     py5.background(0, 0, 1)
 
@@ -69,4 +69,3 @@ def key_pressed() -> None:
 
 
 py5.run_sketch()
-
