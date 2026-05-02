@@ -2,7 +2,7 @@
 
 
 ```bash
-uv run python simulation/perlin_noise_walker/perlin_noise_walker.py
+uv run python physics/perlin_noise_walker/perlin_noise_walker.py
 ```
 
-Press `s` to save a screenshot to `simulation/perlin_noise_walker/screenshots/`.
+Press `s` to save a screenshot to `physics/perlin_noise_walker/screenshots/`.

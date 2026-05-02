@@ -1,7 +1,7 @@
 # Smart Rockets
 
 ```bash
-uv run python simulation/smart_rockets/smart_rockets.py
+uv run python genetic_algorithms/smart_rockets/smart_rockets.py
 ```
 
 - Genetic algorithm that evolves rockets to navigate around an obstacle to reach a target.
@@ -9,4 +9,4 @@ uv run python simulation/smart_rockets/smart_rockets.py
 - Evolution occurs when any rocket reaches the target.
 - Rockets are penalized for hitting obstacles and rewarded for reaching the target.
 - Click the mouse to move the target; rockets adapt to the new goal.
-- Press `s` to save a screenshot to `simulation/smart_rockets/screenshots/`.
+- Press `s` to save a screenshot to `genetic_algorithms/smart_rockets/screenshots/`.

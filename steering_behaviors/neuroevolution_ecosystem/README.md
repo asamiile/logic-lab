@@ -1,7 +1,7 @@
 # Neuro-Evolution Ecosystem
 
 ```bash
-uv run python simulation/neuroevolution_ecosystem/neuroevolution_ecosystem.py
+uv run python steering_behaviors/neuroevolution_ecosystem/neuroevolution_ecosystem.py
 ```
 
 - Complete ecosystem simulation with creatures evolving to survive and reproduce
@@ -10,7 +10,7 @@ uv run python simulation/neuroevolution_ecosystem/neuroevolution_ecosystem.py
 - Population evolves as successful creatures reproduce with mutations
 - Watch emergent behaviors as creatures adapt to their environment
 - Adjustable simulation speed (1x-20x) with UP/DOWN arrow keys
-- Press `s` to save a screenshot to `simulation/neuroevolution_ecosystem/screenshots/`
+- Press `s` to save a screenshot to `steering_behaviors/neuroevolution_ecosystem/screenshots/`
 
 ## Creature Architecture
 

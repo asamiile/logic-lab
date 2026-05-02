@@ -1,7 +1,7 @@
 # Flappy Bird
 
 ```bash
-uv run python simulation/flappy_bird/flappy_bird.py
+uv run python neuro_evolution/flappy_bird/flappy_bird.py
 ```
 
 - Classic Flappy Bird game mechanics implemented in py5
@@ -10,7 +10,7 @@ uv run python simulation/flappy_bird/flappy_bird.py
 - Pipes scroll from right to left at constant velocity
 - New pipes are generated every 100 frames
 - Collision detection when the bird hits a pipe or the floor
-- Press `s` to save a screenshot to `simulation/flappy_bird/screenshots/`
+- Press `s` to save a screenshot to `neuro_evolution/flappy_bird/screenshots/`
 
 ## How it works
 

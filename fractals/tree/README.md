@@ -1,9 +1,9 @@
 # Tree
 
 ```bash
-uv run python simulation/tree/tree.py
+uv run python fractals/tree/tree.py
 ```
 
 - Recursive binary tree fractal.
 - Branch angle is mapped from mouse x-position (`0` to `HALF_PI`).
-- Press `s` to save a screenshot to `simulation/tree/screenshots/`.
+- Press `s` to save a screenshot to `fractals/tree/screenshots/`.

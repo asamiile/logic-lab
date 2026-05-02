@@ -1,7 +1,7 @@
 # Noise Terrain
 
 ```bash
-uv run python simulation/noise_terrain/noise_terrain.py
+uv run python physics/noise_terrain/noise_terrain.py
 ```
 
-Press `s` to save a screenshot to `simulation/noise_terrain/screenshots/`.
+Press `s` to save a screenshot to `physics/noise_terrain/screenshots/`.

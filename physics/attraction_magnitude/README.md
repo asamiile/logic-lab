@@ -1,7 +1,7 @@
 # Attraction Magnitude
 
 ```bash
-uv run python simulation/attraction_magnitude/attraction_magnitude.py
+uv run python physics/attraction_magnitude/attraction_magnitude.py
 ```
 
-Press `s` to save a screenshot to `simulation/attraction_magnitude/screenshots/`.
+Press `s` to save a screenshot to `physics/attraction_magnitude/screenshots/`.
