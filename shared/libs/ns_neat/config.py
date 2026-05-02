@@ -1,4 +1,5 @@
 import os
+import warnings
 from configparser import ConfigParser
 
 import neat_cppn
