@@ -44,3 +44,7 @@ def hex_lattice(num: int, scalar: float, height: float) -> list[list[Point]]:
         ]
         for i in range(num + 1)
     ]
+
+
+def square_lattice(num: int, scalar: float) -> list[list[Point]]:
+    return [[(j * scalar, i * scalar) for j in range(num + 1)] for i in range(num + 1)]
