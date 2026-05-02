@@ -111,7 +111,8 @@ class Population(Population):
                 list(distances_current.values()),
                 k=self.config.neighbors)
 
-            genome.fitness = novelty
+            # Ensure fitness is a Python float for neat-python type checking
+            genome.fitness = float(novelty)
 
         self.update_novelty_archive(new_archive)
 

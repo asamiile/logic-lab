@@ -1,7 +1,5 @@
 from neat.graphs import feed_forward_layers
 from neat.nn import FeedForwardNetwork
-from neat.activations import sigmoid_activation
-from neat.aggregations import sum_aggregation
 
 class FeedForwardNetwork(FeedForwardNetwork):
 
