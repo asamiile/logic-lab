@@ -2,99 +2,80 @@
 
 ## Commit Policy
 
-**Do NOT commit changes to git.**
+Do not commit changes to git. The user handles all commits manually.
 
-The user will handle all git commits manually. After implementing features or fixes:
-- Write/edit code files as needed
-- Create new directories and files
-- Run syntax checks and basic tests
-- But DO NOT run `git add` or `git commit`
-
-Instead, leave the working directory in a state ready for the user to commit. The user will review changes and commit when appropriate.
+Agents may edit files, create directories, and run checks, but must not run `git add`, `git commit`, or other git write operations.
 
 ## Implementation Preferences
 
-- Implement features directly without asking for confirmation on straightforward tasks
-- For multi-step or architectural decisions, use EnterPlanMode to get user alignment first
-- Run syntax verification on Python files to catch errors early
-- Test code when possible before completing the task
-- Use concise communication - state what was done and what's next
+- Implement straightforward tasks directly.
+- Keep changes scoped to the requested domain or tool.
+- Run syntax checks for changed Python files.
+- Run focused tests or smoke checks when practical.
+- Leave the working tree ready for user review.
 
-## Project Context
+## Project Structure
 
-This project translates JavaScript examples from "The Nature of Code" (noc-book-2) into Python using py5:
+Logic Lab contains Python and py5 translations and experiments for creative coding algorithms.
 
-- Each simulation gets its own directory organized by **domain/topic**
-- Standard structure: `{name}.py` (main file), `README.md` (instructions), `/screenshots/` (for outputs)
-- Target: Full translation of Chapter 2, 5, 6, 8, and 9 examples
+Use domain-based organization:
 
-### Current Organization Status
+- `physics/` for motion, forces, particles, waves, oscillation, and physical systems.
+- `steering_behaviors/` for autonomous agents, path following, flow fields, sensors, and swarms.
+- `genetic_algorithms/` for DNA, mutation, selection, and evolutionary search.
+- `neuro_evolution/` for neural networks evolved by genetic algorithms.
+- `fractals/` for recursion, L-systems, trees, Koch curves, and spatial subdivision.
+- `cellular_automata/` for CA grids, lattice rules, Pascal patterns, and emergence.
+- `mathematical/` for mathematical geometry and numerical generative systems.
+- `tiling_patterns/` for symmetry, tiling, textile, and deformation systems.
+- `research/` for experimental or hybrid systems that do not fit cleanly elsewhere.
+- `shared/` for reusable libraries used by multiple sketches.
 
-✅ **Implemented Domains:**
-- `physics/` - 12 simulations (randomness, distributions, forces, rotation)
-- `steering_behaviors/` - 5 simulations (perceptron, gesture, creature sensors, steering, ecosystem)
-- `genetic_algorithms/` - 6 simulations (GA Shakespeare, smart rockets, interactive selection, evolving bloops)
-- `neuro_evolution/` - 3 simulations (flappy bird, smart rockets NE)
-- `fractals/` - 10 simulations (Koch curve, trees, recursive patterns, quadtree)
-- `simulation/` - 118 experimental simulations (varied experiments, infrastructure tests, prototypes)
+Each simulation should usually follow:
 
-📋 **Ready for Use:**
-- `algorithms/` - For reusable algorithm implementations (GA base, NN base, utilities)
-- `neural_networks/` - For fixed neural network implementations
-- `research/` - For experimental hybrid approaches and parameter studies
+```text
+domain/simulation_name/
+├── simulation_name.py
+├── README.md
+└── screenshots/
+```
 
-🔮 **Future:**
-- `neat_python/` - Will contain NEAT algorithm implementations when added
+## MCP And Manifest
 
-## Directory Classification Policy
+Logic Lab exposes selected algorithm knowledge through a local read-only MCP server in `mcp/logic_lab_server.py`.
 
-**Classification Principle:** Domain-Based Organization
-- ✅ **Intuitive**: Group by "what does the program do" rather than how it's implemented
-- ✅ **Scalable**: Easy to add neat-python, reinforcement learning, and other algorithms
-- ✅ **Collaborative**: Anyone can immediately understand where things belong
-- ✅ **Modular**: Related simulations naturally cluster together
+The search index lives at `.agents/art_manifest.json`. When adding a new algorithm or simulation, agents should:
 
-### Domain Categories
+1. Add or update the simulation code and `README.md`.
+2. Run:
 
-| Domain | Purpose | Examples | Status |
-|--------|---------|----------|--------|
-| `physics/` | Basic physics, forces, motion, randomness | Random walk, forces, rotation | ✅ Created |
-| `steering_behaviors/` | Navigation, sensors, movement decisions | Gesture classifier, creature sensors, steering seek | ✅ Created |
-| `genetic_algorithms/` | Evolution via genetic algorithms | GA Shakespeare, smart rockets, interactive selection | ✅ Created |
-| `neural_networks/` | Neural networks (inference/fixed) | Perceptron, gesture classifier | 📋 Ready |
-| `neuro_evolution/` | NN + GA combined | Flappy bird AI, smart rockets NE, ecosystem | ✅ Created |
-| `fractals/` | Recursive patterns, fractal geometry | Koch snowflake, recursive trees | ✅ Created |
-| `neat_python/` | NEAT algorithm (future) | NEAT XOR, NEAT games, NEAT ecosystem | 🔮 Future |
-| `algorithms/` | Reusable algorithm utilities | GA base, NN base, helper functions | 📋 Ready |
-| `research/` | Custom experiments & hybrid approaches | Parameter studies, novel combinations | 📋 Ready |
-| `simulation/` | Experiments & custom implementations (non-NOC) | Varied experiments not from translations | ✅ Active |
-
-### When Adding New Simulations
-
-1. **Determine the primary domain** - What is the simulation fundamentally about?
-   - Is it primarily about physics? → `physics/`
-   - Is it about learning to move/navigate? → `steering_behaviors/`
-   - Is it about evolving DNA/genes? → `genetic_algorithms/`
-   - Does it combine NN + GA? → `neuro_evolution/`
-
-2. **Create directory** - Use clear, descriptive names with underscores:
-   - `domain_name/simulation_name/` (e.g., `physics/random_walk/`)
-
-3. **Follow standard structure**:
-   ```
-   simulation_name/
-   ├── simulation_name.py          # Main executable
-   ├── README.md                   # Instructions & overview
-   └── screenshots/                # Output directory
+   ```bash
+   uv run python .agents/update_art_manifest.py --write
    ```
 
-4. **Update domain README** - Add entry to `domain/README.md` with run instructions
+3. Review the new manifest entry.
+4. Refine these fields when the generated draft is too generic:
+   - `title`
+   - `category`
+   - `concepts`
+   - `visual_use`
+   - `good_for`
+   - `complexity`
+   - `dependencies`
 
-### Code Reuse
+Manifest entries should help another agent choose algorithms for artwork creation without reading full source files first.
 
-Extract reusable components to `algorithms/`:
-- Generic genetic algorithm base class → `algorithms/genetic_algorithm.py`
-- Neural network utilities → `algorithms/neural_network.py`
-- Common patterns → `algorithms/common.py`
+`.agents/art_manifest_baseline.json` records existing files that were intentionally left out of the initial curated manifest. Do not remove paths from the baseline unless you also add a polished entry to `.agents/art_manifest.json`.
 
-This keeps simulations clean and prevents duplication.
+Recommended entry content:
+
+- `path`: repo-relative path to the primary `.py` file.
+- `title`: short human-readable name.
+- `category`: top-level domain folder.
+- `concepts`: searchable algorithm ideas such as `flow field`, `boids`, `recursion`, `gravity`.
+- `visual_use`: one sentence describing when to use the algorithm visually.
+- `good_for`: short tags for artistic intent or composition.
+- `complexity`: `low`, `medium`, or `high`.
+- `dependencies`: direct runtime libraries such as `py5`, `numpy`, `pymunk`, `networkx`, `matplotlib`, or `neat`.
+
+The MCP server is read-only. Do not add MCP tools that write files, execute shell commands, or run git operations.

@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "description": "Read-only manifest of selected Logic Lab algorithms for AI agents and MCP search.",
+  "entries": [
+    {
+      "path": "physics/n_bodies/n_bodies.py",
+      "title": "N-body orbital simulation",
+      "category": "physics",
+      "concepts": ["gravity", "attraction", "orbital motion", "particle system"],
+      "visual_use": "Use for clustered particles, orbital traces, invisible force fields, or cosmic motion.",
+      "good_for": ["cosmos", "tension", "invisible forces", "slow animation"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "physics/n_body_orbital_simulation/n_body_orbital_simulation.py",
+      "title": "N-body orbital simulation with trails",
+      "category": "physics",
+      "concepts": ["gravity", "orbit", "trails", "multi-body system"],
+      "visual_use": "Use for luminous orbital paths, clustered attraction, or cosmic choreography.",
+      "good_for": ["cosmos", "trails", "flow", "systems"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "physics/attraction_with_many_movers/attraction_with_many_movers.py",
+      "title": "Attraction with many movers",
+      "category": "physics",
+      "concepts": ["attraction", "force field", "many agents", "gravity"],
+      "visual_use": "Use for swarms pulled by a central force, invisible fields, or dense motion studies.",
+      "good_for": ["swarms", "gravity", "invisible forces", "interaction"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "physics/particle_system_with_repeller/particle_system_with_repeller.py",
+      "title": "Particle system with repeller",
+      "category": "physics",
+      "concepts": ["particle system", "repulsion", "force field", "emitter"],
+      "visual_use": "Use for smoke-like particles avoiding a charged object or negative space in a flow.",
+      "good_for": ["smoke", "repulsion", "negative space", "field motion"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "physics/particle_textures_array/particle_textures_array.py",
+      "title": "Textured particle array",
+      "category": "physics",
+      "concepts": ["particle system", "texture", "alpha blending", "emitter"],
+      "visual_use": "Use for textured smoke, soft particles, atmospheric trails, or layered effects.",
+      "good_for": ["smoke", "mist", "texture", "atmosphere"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "physics/paint_splatter/paint_splatter.py",
+      "title": "Paint splatter particles",
+      "category": "physics",
+      "concepts": ["particles", "randomness", "splatter", "color"],
+      "visual_use": "Use for paint bursts, organic scatter, expressive marks, or impact effects.",
+      "good_for": ["paint", "impact", "scatter", "organic marks"],
+      "complexity": "low",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "physics/perlin_noise_walker_lines/perlin_noise_walker_lines.py",
+      "title": "Perlin noise walker lines",
+      "category": "physics",
+      "concepts": ["perlin noise", "random walk", "line drawing", "organic motion"],
+      "visual_use": "Use for natural wandering lines, terrain-like paths, or hand-drawn motion.",
+      "good_for": ["organic lines", "wandering", "texture", "terrain"],
+      "complexity": "low",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "physics/noise_terrain/noise_terrain.py",
+      "title": "Noise terrain",
+      "category": "physics",
+      "concepts": ["perlin noise", "terrain", "grid", "height field"],
+      "visual_use": "Use for landscape surfaces, topographic motion, or animated procedural fields.",
+      "good_for": ["terrain", "topography", "landscape", "procedural texture"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "physics/double_pendulum/double_pendulum.py",
+      "title": "Double pendulum",
+      "category": "physics",
+      "concepts": ["pendulum", "chaos", "oscillation", "trails"],
+      "visual_use": "Use for chaotic traces, swinging mechanisms, or elegant motion paths.",
+      "good_for": ["chaos", "trails", "mechanical motion", "oscillation"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "physics/additive_wave/additive_wave.py",
+      "title": "Additive wave",
+      "category": "physics",
+      "concepts": ["wave", "sine", "oscillation", "additive synthesis"],
+      "visual_use": "Use for layered waveforms, water-like motion, or rhythmic signal patterns.",
+      "good_for": ["waves", "rhythm", "signals", "water"],
+      "complexity": "low",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "steering_behaviors/flocking/flocking.py",
+      "title": "Flocking",
+      "category": "steering_behaviors",
+      "concepts": ["boids", "alignment", "cohesion", "separation", "swarm"],
+      "visual_use": "Use for bird-like swarms, schools, crowd flow, or emergent group motion.",
+      "good_for": ["swarm", "emergence", "crowds", "organic motion"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "steering_behaviors/flocking_with_binning/flocking_with_binning.py",
+      "title": "Flocking with spatial binning",
+      "category": "steering_behaviors",
+      "concepts": ["boids", "spatial partitioning", "optimization", "swarm"],
+      "visual_use": "Use for larger flocking systems where many agents need local neighborhood search.",
+      "good_for": ["large swarms", "emergence", "performance", "crowds"],
+      "complexity": "high",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "steering_behaviors/flow_field/flow_field.py",
+      "title": "Flow field steering",
+      "category": "steering_behaviors",
+      "concepts": ["flow field", "vectors", "steering", "agents"],
+      "visual_use": "Use for particles or vehicles following invisible currents, wind, or field drawings.",
+      "good_for": ["wind", "currents", "vector fields", "generative flow"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "steering_behaviors/path_following/path_following.py",
+      "title": "Path following",
+      "category": "steering_behaviors",
+      "concepts": ["path following", "prediction", "steering", "vehicle"],
+      "visual_use": "Use for agents tracing routes, flowing through corridors, or following hand-drawn paths.",
+      "good_for": ["routes", "trails", "navigation", "agents"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "steering_behaviors/wander_behavior/wander_behavior.py",
+      "title": "Wander behavior",
+      "category": "steering_behaviors",
+      "concepts": ["wander", "steering", "randomness", "vehicle"],
+      "visual_use": "Use for autonomous drifting, lifelike uncertainty, or gentle exploratory motion.",
+      "good_for": ["autonomy", "drift", "creatures", "organic motion"],
+      "complexity": "low",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "steering_behaviors/creature_sensors/creature_sensors.py",
+      "title": "Creature sensors",
+      "category": "steering_behaviors",
+      "concepts": ["sensors", "agent behavior", "perception", "steering"],
+      "visual_use": "Use for creatures reacting to local stimuli, perception cones, or simple artificial life.",
+      "good_for": ["creatures", "sensors", "artificial life", "interaction"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "genetic_algorithms/ga_shakespeare/ga_shakespeare.py",
+      "title": "Genetic algorithm Shakespeare",
+      "category": "genetic_algorithms",
+      "concepts": ["genetic algorithm", "selection", "mutation", "text evolution"],
+      "visual_use": "Use as a compact reference for evolving a target string or explaining GA mechanics.",
+      "good_for": ["evolution", "text", "optimization", "teaching"],
+      "complexity": "low",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "genetic_algorithms/smart_rockets/smart_rockets.py",
+      "title": "Smart rockets",
+      "category": "genetic_algorithms",
+      "concepts": ["genetic algorithm", "dna", "fitness", "navigation"],
+      "visual_use": "Use for evolved motion trails, goal seeking, obstacle navigation, or generational progress.",
+      "good_for": ["evolution", "navigation", "trails", "optimization"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "genetic_algorithms/evolving_bloops/evolving_bloops.py",
+      "title": "Evolving bloops",
+      "category": "genetic_algorithms",
+      "concepts": ["genetic algorithm", "ecosystem", "creatures", "selection"],
+      "visual_use": "Use for artificial life scenes with heredity, survival pressure, and visible variation.",
+      "good_for": ["ecosystem", "creatures", "evolution", "variation"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "genetic_algorithms/interactive_selection/interactive_selection.py",
+      "title": "Interactive selection",
+      "category": "genetic_algorithms",
+      "concepts": ["interactive evolution", "selection", "phenotype", "user choice"],
+      "visual_use": "Use for human-guided evolution of forms, flowers, icons, or generative variants.",
+      "good_for": ["interactive art", "evolution", "variation", "selection"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "neuro_evolution/flappy_bird_neuro_evolution/flappy_bird_neuro_evolution.py",
+      "title": "Flappy bird neuro-evolution",
+      "category": "neuro_evolution",
+      "concepts": ["neural network", "genetic algorithm", "game agent", "fitness"],
+      "visual_use": "Use for agents learning timing, obstacle avoidance, or game-like training loops.",
+      "good_for": ["learning agents", "games", "obstacles", "training"],
+      "complexity": "high",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "neuro_evolution/smart_rockets_neuro_evolution/smart_rockets_neuro_evolution.py",
+      "title": "Smart rockets neuro-evolution",
+      "category": "neuro_evolution",
+      "concepts": ["neural network", "evolution", "navigation", "fitness"],
+      "visual_use": "Use for evolved neural motion, goal seeking, and obstacle-aware agent trajectories.",
+      "good_for": ["learning agents", "navigation", "evolution", "trails"],
+      "complexity": "high",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "fractals/koch_snowflake/koch_snowflake.py",
+      "title": "Koch snowflake",
+      "category": "fractals",
+      "concepts": ["fractal", "koch curve", "recursion", "snowflake"],
+      "visual_use": "Use for crystalline outlines, recursive borders, branching edges, or geometric growth.",
+      "good_for": ["fractals", "crystals", "borders", "recursion"],
+      "complexity": "low",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "fractals/tree/tree.py",
+      "title": "Recursive tree",
+      "category": "fractals",
+      "concepts": ["recursion", "branching", "tree", "fractal"],
+      "visual_use": "Use for botanical structures, branching diagrams, recursive silhouettes, or growth studies.",
+      "good_for": ["trees", "branching", "growth", "nature"],
+      "complexity": "low",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "fractals/stochastic_tree/stochastic_tree.py",
+      "title": "Stochastic tree",
+      "category": "fractals",
+      "concepts": ["recursion", "randomness", "branching", "tree"],
+      "visual_use": "Use for less regular branching, natural plants, roots, or organic silhouettes.",
+      "good_for": ["trees", "organic growth", "randomness", "nature"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "fractals/l_system/l_system.py",
+      "title": "L-system drawing",
+      "category": "fractals",
+      "concepts": ["l-system", "grammar", "turtle graphics", "recursion"],
+      "visual_use": "Use for rule-based plants, symbolic growth systems, or generative line structures.",
+      "good_for": ["plants", "rules", "grammar", "growth"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "fractals/quadtree_part_1/quadtree_part_1.py",
+      "title": "Quadtree spatial partition",
+      "category": "fractals",
+      "concepts": ["quadtree", "spatial partitioning", "subdivision", "optimization"],
+      "visual_use": "Use for recursive spatial subdivision, adaptive grids, or efficient point lookup visuals.",
+      "good_for": ["subdivision", "spatial data", "adaptive grids", "optimization"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "cellular_automata/elementary_ca/elementary_ca.py",
+      "title": "Elementary cellular automaton",
+      "category": "cellular_automata",
+      "concepts": ["cellular automata", "rules", "binary state", "emergence"],
+      "visual_use": "Use for rule-based stripes, woven time diagrams, or emergent binary patterns.",
+      "good_for": ["patterns", "rules", "emergence", "textiles"],
+      "complexity": "low",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "fractals/game_of_life/game_of_life.py",
+      "title": "Game of Life",
+      "category": "cellular_automata",
+      "concepts": ["cellular automata", "emergence", "grid", "life rules"],
+      "visual_use": "Use for pulsing grids, emergent colonies, digital organisms, or evolving textures.",
+      "good_for": ["emergence", "grid", "digital life", "texture"],
+      "complexity": "low",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "cellular_automata/hex_lattice_ca/hex_lattice_ca.py",
+      "title": "Hex lattice cellular automaton",
+      "category": "cellular_automata",
+      "concepts": ["cellular automata", "hex grid", "lattice", "rules"],
+      "visual_use": "Use for honeycomb automata, tiling-like growth, or non-square emergent textures.",
+      "good_for": ["hex grids", "lattice", "patterns", "emergence"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "mathematical/fermat_spiral/fermat_spiral.py",
+      "title": "Fermat spiral",
+      "category": "mathematical",
+      "concepts": ["spiral", "polar coordinates", "phyllotaxis", "geometry"],
+      "visual_use": "Use for sunflower-like point layouts, radial packing, or spiral compositions.",
+      "good_for": ["spirals", "phyllotaxis", "radial layout", "botanical forms"],
+      "complexity": "low",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "mathematical/fibonacci_spiral/fibonacci_spiral.py",
+      "title": "Fibonacci spiral",
+      "category": "mathematical",
+      "concepts": ["fibonacci", "golden ratio", "spiral", "geometry"],
+      "visual_use": "Use for golden-ratio compositions, shell-like curves, or growth diagrams.",
+      "good_for": ["spirals", "golden ratio", "shells", "growth"],
+      "complexity": "low",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "mathematical/modular_table_visual/modular_table_visual.py",
+      "title": "Modular multiplication table",
+      "category": "mathematical",
+      "concepts": ["modular arithmetic", "circle chords", "number theory", "patterns"],
+      "visual_use": "Use for circular chord patterns, mathematical string art, or animated number systems.",
+      "good_for": ["string art", "circles", "math patterns", "symmetry"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "mathematical/cubic_bezier/cubic_bezier.py",
+      "title": "Cubic Bezier curve",
+      "category": "mathematical",
+      "concepts": ["bezier", "curve", "control points", "interpolation"],
+      "visual_use": "Use for smooth custom paths, typographic curves, or controllable motion splines.",
+      "good_for": ["curves", "paths", "motion", "shape design"],
+      "complexity": "low",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "tiling_patterns/penrose_tiling/penrose_tiling.py",
+      "title": "Penrose tiling",
+      "category": "tiling_patterns",
+      "concepts": ["aperiodic tiling", "subdivision", "geometry", "penrose"],
+      "visual_use": "Use for non-repeating geometric fields, crystalline patterns, or recursive tilings.",
+      "good_for": ["tiling", "aperiodic patterns", "crystals", "geometry"],
+      "complexity": "high",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "tiling_patterns/ih02_tv08/ih02_tv08.py",
+      "title": "IH02 TV08 tiling",
+      "category": "tiling_patterns",
+      "concepts": ["tiling", "deformation", "symmetry", "pattern"],
+      "visual_use": "Use for geometric textile patterns, deformed tiles, or symmetric surface designs.",
+      "good_for": ["textiles", "tiling", "symmetry", "surface pattern"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "tiling_patterns/recur_pentagon/recur_pentagon.py",
+      "title": "Recursive pentagon tiling",
+      "category": "tiling_patterns",
+      "concepts": ["recursion", "pentagon", "tiling", "subdivision"],
+      "visual_use": "Use for nested polygon compositions, ornamental geometry, or recursive tile studies.",
+      "good_for": ["ornament", "polygons", "recursion", "tiling"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "research/force_directed_graph/force_directed_graph.py",
+      "title": "Force-directed graph",
+      "category": "research",
+      "concepts": ["graph layout", "spring forces", "network", "simulation"],
+      "visual_use": "Use for dynamic networks, relational maps, springy diagrams, or clustered systems.",
+      "good_for": ["networks", "graphs", "relationships", "spring motion"],
+      "complexity": "medium",
+      "dependencies": ["py5"]
+    },
+    {
+      "path": "research/cloth_simulation/cloth_simulation.py",
+      "title": "Cloth simulation",
+      "category": "research",
+      "concepts": ["cloth", "constraints", "soft body", "physics"],
+      "visual_use": "Use for fabric grids, hanging meshes, responsive surfaces, or soft physics studies.",
+      "good_for": ["fabric", "mesh", "soft body", "constraints"],
+      "complexity": "high",
+      "dependencies": ["py5"]
+    }
+  ]
+}

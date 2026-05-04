@@ -10,27 +10,107 @@ Install dependencies:
 uv sync
 ```
 
-## Projects
+## MCP Server
 
-- **shader** - GLSL shader
-- **simulation/circuit_evolution/** - Circuit design optimization using NEAT
-- **simulation/maze_systems/** - Maze navigation and design optimization
-- **simulation/random_walk/** - Random walk visualization
-- **mathematical/** - Mathematical systems and generative geometry translations
-- **cellular_automata/** - Cellular automata and Pascal triangle visualizations
-- **tiling_patterns/** - Textile, tiling, symmetry, and pattern generation systems
+Logic Lab includes a local read-only MCP server for AI agents. Clone this
+repository locally, run `uv sync`, register the server with the local path, then
+use it from any other workspace as an algorithm reference.
 
-## Dependencies
+With the MCP server, agents can search the Logic Lab manifest, find algorithms
+by visual intent or category, read short summaries, and fetch bounded source
+snippets for selected examples.
 
-| Library | Description |
-|-----------|------|
-| neat-python | NeuroEvolution of Augmenting Topologies (evolutionary computation) |
-| networkx | Graph and network analysis |
-| matplotlib | Data visualization |
-| numpy | Numerical computing |
-| jupyterlab | Interactive notebooks |
-| py5 | Python implementation of Processing |
+Register with Codex:
 
+```bash
+codex mcp add logic-lab -- uv run --project /path/to/logic-lab python mcp/logic_lab_server.py
+```
+
+Register with Claude Code:
+
+```bash
+claude mcp add logic-lab -- uv run --project /path/to/logic-lab python mcp/logic_lab_server.py
+```
+
+Register with GitHub Copilot in VS Code (`.vscode/mcp.json` or user MCP settings):
+
+```json
+{
+  "servers": {
+    "logic-lab": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "--project",
+        "/path/to/logic-lab",
+        "python",
+        "mcp/logic_lab_server.py"
+      ]
+    }
+  }
+}
+```
+
+Register with Cursor (`.cursor/mcp.json` or `~/.cursor/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "logic-lab": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "--project",
+        "/path/to/logic-lab",
+        "python",
+        "mcp/logic_lab_server.py"
+      ]
+    }
+  }
+}
+```
+
+Register with Antigravity:
+
+Add this server entry to your Antigravity MCP settings file:
+
+```json
+{
+  "servers": {
+    "logic-lab": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "--project",
+        "/path/to/logic-lab",
+        "python",
+        "mcp/logic_lab_server.py"
+      ]
+    }
+  }
+}
+```
+
+See [mcp/README.md](mcp/README.md) for tools, security notes, and usage details.
+
+## Repository Map
+
+- **physics/** - motion, forces, waves, oscillation, particles, and physical systems
+- **steering_behaviors/** - autonomous agents, seek/arrive, path following, flow fields, and flocking
+- **genetic_algorithms/** - selection, mutation, fitness, DNA, and evolutionary search
+- **neuro_evolution/** - neural networks evolved by genetic algorithms
+- **fractals/** - recursion, trees, Koch curves, L-systems, and spatial subdivision
+- **cellular_automata/** - rule-based grids, lattice systems, and emergent patterns
+- **mathematical/** - spirals, Bezier curves, modular arithmetic, Fibonacci systems, and generative geometry
+- **tiling_patterns/** - symmetry, tiling, textile patterns, deformations, and ornaments
+- **research/** - experimental or hybrid systems that do not fit a single domain
+- **simulation/** - older experiments and custom prototypes kept for reference
+- **shared/** - reusable support libraries
+- **shader/** - GLSL shader experiments
+- **mcp/** - read-only MCP server for AI agent access to algorithm references
 
 ## Reference
 
@@ -41,7 +121,7 @@ uv sync
 
 ## License
 
-Educational implementations for learning computational creativity.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Author
 
@@ -49,4 +129,4 @@ Educational implementations for learning computational creativity.
 
 If you find this helpful, consider supporting the work:
 
-<a href="https://www.buymeacoffee.com/asamiinae" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/asamiile)
