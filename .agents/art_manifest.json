@@ -267,6 +267,122 @@
       ]
     },
     {
+      "path": "mathematical/apollonian_gasket/apollonian_gasket.py",
+      "title": "Apollonian gasket tangent circles",
+      "category": "mathematical",
+      "concepts": [
+        "Apollonian gasket",
+        "Descartes circle theorem",
+        "tangent circles",
+        "circle packing",
+        "curvature"
+      ],
+      "visual_use": "Use for recursive tangent-circle packings, fractal circular textures, or curvature-driven compositions.",
+      "good_for": [
+        "circle fractal",
+        "packing",
+        "tangent geometry",
+        "ornamental texture"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/barycentric_coordinates/barycentric_coordinates.py",
+      "title": "Barycentric triangle interpolation",
+      "category": "mathematical",
+      "concepts": [
+        "barycentric coordinates",
+        "triangle interpolation",
+        "vertex weights",
+        "affine coordinates",
+        "attribute interpolation"
+      ],
+      "visual_use": "Use for triangle color interpolation, mesh attribute blending, point-in-triangle tests, or spatial weighting.",
+      "good_for": [
+        "mesh interpolation",
+        "color blending",
+        "triangles",
+        "spatial weights"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/chaikin_curve_smoothing/chaikin_curve_smoothing.py",
+      "title": "Chaikin curve smoothing",
+      "category": "mathematical",
+      "concepts": [
+        "Chaikin",
+        "corner cutting",
+        "polyline smoothing",
+        "subdivision curve",
+        "control polygon"
+      ],
+      "visual_use": "Use for softening polygonal paths, organic outlines, hand-drawn smoothing, or subdivision-style linework.",
+      "good_for": [
+        "smooth outlines",
+        "curves",
+        "organic shape",
+        "path smoothing"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/circle_packing/circle_packing.py",
+      "title": "Circle packing growth",
+      "category": "mathematical",
+      "concepts": [
+        "circle packing",
+        "non-overlapping circles",
+        "growth algorithm",
+        "boundary mask",
+        "spatial packing"
+      ],
+      "visual_use": "Use for organic bubble fills, pebble textures, masked stippling, or non-overlapping circular layouts.",
+      "good_for": [
+        "bubbles",
+        "stippling",
+        "organic texture",
+        "masked fill"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/clifford_attractor/clifford_attractor.py",
+      "title": "Clifford chaotic attractor",
+      "category": "mathematical",
+      "concepts": [
+        "Clifford attractor",
+        "chaotic map",
+        "iterated function",
+        "density rendering",
+        "strange attractor"
+      ],
+      "visual_use": "Use for dense chaotic point clouds, filament textures, nebula-like forms, or organic mathematical fields.",
+      "good_for": [
+        "chaos",
+        "abstract texture",
+        "particle density",
+        "organic forms"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/color_harmony/color_harmony.py",
       "title": "HSV color harmony palette",
       "category": "mathematical",
@@ -294,6 +410,53 @@
       ]
     },
     {
+      "path": "mathematical/complex_domain_coloring/complex_domain_coloring.py",
+      "title": "Complex domain coloring",
+      "category": "mathematical",
+      "concepts": [
+        "complex analysis",
+        "domain coloring",
+        "phase",
+        "magnitude",
+        "zeros and poles"
+      ],
+      "visual_use": "Use for visualizing complex functions, phase fields, singularities, zeros, poles, or analytic symmetries.",
+      "good_for": [
+        "complex functions",
+        "phase color",
+        "mathematical texture",
+        "singularity visualization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/convex_hull/convex_hull.py",
+      "title": "Convex hull point boundary",
+      "category": "mathematical",
+      "concepts": [
+        "convex hull",
+        "monotonic chain",
+        "point cloud",
+        "cross product",
+        "spatial boundary"
+      ],
+      "visual_use": "Use for extracting outer silhouettes from point clouds, collision bounds, or enclosing generative shapes.",
+      "good_for": [
+        "point clouds",
+        "silhouettes",
+        "boundaries",
+        "spatial summary"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/cubic_bezier/cubic_bezier.py",
       "title": "Cubic Bezier curve",
       "category": "mathematical",
@@ -311,6 +474,52 @@
         "shape design"
       ],
       "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/de_casteljau_subdivision/de_casteljau_subdivision.py",
+      "title": "De Casteljau Bezier subdivision",
+      "category": "mathematical",
+      "concepts": [
+        "De Casteljau",
+        "Bezier",
+        "linear interpolation",
+        "curve subdivision",
+        "control points"
+      ],
+      "visual_use": "Use for visualizing Bezier construction, curve subdivision, interpolation levels, or controllable spline design.",
+      "good_for": [
+        "curves",
+        "splines",
+        "interpolation",
+        "control geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/delaunay_triangulation/delaunay_triangulation.py",
+      "title": "Delaunay triangulation mesh",
+      "category": "mathematical",
+      "concepts": [
+        "Delaunay triangulation",
+        "Bowyer-Watson",
+        "triangle mesh",
+        "circumcircle",
+        "Voronoi dual"
+      ],
+      "visual_use": "Use for low-poly meshes, proximity networks, terrain triangulation, or Voronoi-adjacent geometry.",
+      "good_for": [
+        "low poly",
+        "mesh generation",
+        "point networks",
+        "spatial structure"
+      ],
+      "complexity": "medium",
       "dependencies": [
         "py5"
       ]
@@ -415,6 +624,240 @@
       ]
     },
     {
+      "path": "mathematical/ford_circles/ford_circles.py",
+      "title": "Ford circles rational fractions",
+      "category": "mathematical",
+      "concepts": [
+        "Ford circles",
+        "Farey sequence",
+        "rational numbers",
+        "continued fractions",
+        "tangent circles"
+      ],
+      "visual_use": "Use for visualizing rational approximations, fraction hierarchies, tangent circle structures, or number-line ornament.",
+      "good_for": [
+        "number theory",
+        "fraction patterns",
+        "circle tangency",
+        "ornamental linework"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/fourier_epicycles/fourier_epicycles.py",
+      "title": "Fourier epicycles path reconstruction",
+      "category": "mathematical",
+      "concepts": [
+        "Fourier transform",
+        "DFT",
+        "epicycles",
+        "frequency decomposition",
+        "path reconstruction"
+      ],
+      "visual_use": "Use for reconstructing drawn paths with rotating circles, harmonic motion, or frequency-based line animation.",
+      "good_for": [
+        "line drawing",
+        "harmonic motion",
+        "animated curves",
+        "signal visualization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/harmonograph/harmonograph.py",
+      "title": "Harmonograph",
+      "category": "mathematical",
+      "concepts": [
+        "harmonograph",
+        "damped oscillator",
+        "harmonic motion",
+        "parametric curve",
+        "sine waves"
+      ],
+      "visual_use": "Use for damped harmonic linework, pendulum-like drawings, looping curves, or ornamental decay patterns.",
+      "good_for": [
+        "harmonics",
+        "line art",
+        "decay curves",
+        "ornament"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/hilbert_curve/hilbert_curve.py",
+      "title": "Hilbert space-filling curve",
+      "category": "mathematical",
+      "concepts": [
+        "Hilbert curve",
+        "space-filling curve",
+        "spatial locality",
+        "bit rotation",
+        "grid traversal"
+      ],
+      "visual_use": "Use for locality-preserving paths, recursive grid traversal, image scan orders, or continuous line compositions.",
+      "good_for": [
+        "space filling",
+        "line art",
+        "spatial indexing",
+        "recursive geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/lissajous_curves/lissajous_curves.py",
+      "title": "Lissajous harmonic curves",
+      "category": "mathematical",
+      "concepts": [
+        "Lissajous curve",
+        "parametric curve",
+        "harmonic motion",
+        "frequency ratio",
+        "phase offset"
+      ],
+      "visual_use": "Use for oscilloscope-like curves, harmonic linework, looping motion paths, or ornamental parametric forms.",
+      "good_for": [
+        "curves",
+        "harmonics",
+        "motion paths",
+        "line art"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/lloyd_relaxation/lloyd_relaxation.py",
+      "title": "Lloyd relaxation point distribution",
+      "category": "mathematical",
+      "concepts": [
+        "Lloyd relaxation",
+        "Voronoi centroid",
+        "centroidal Voronoi",
+        "point distribution",
+        "blue noise"
+      ],
+      "visual_use": "Use for evening out scatter points, centroidal Voronoi layouts, or blue-noise-like distributions.",
+      "good_for": [
+        "scatter layout",
+        "Voronoi",
+        "point relaxation",
+        "even distribution"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/logistic_bifurcation/logistic_bifurcation.py",
+      "title": "Logistic map bifurcation diagram",
+      "category": "mathematical",
+      "concepts": [
+        "logistic map",
+        "bifurcation diagram",
+        "chaos",
+        "period doubling",
+        "nonlinear dynamics"
+      ],
+      "visual_use": "Use for visualizing chaotic transitions, recurrence behavior, period windows, or dense nonlinear structure.",
+      "good_for": [
+        "chaos",
+        "dynamical systems",
+        "density plot",
+        "recurrence"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/mandelbrot_julia/mandelbrot_julia.py",
+      "title": "Mandelbrot and Julia escape-time fractals",
+      "category": "mathematical",
+      "concepts": [
+        "Mandelbrot set",
+        "Julia set",
+        "escape time",
+        "complex dynamics",
+        "quadratic map"
+      ],
+      "visual_use": "Use for complex-plane fractals, escape-time textures, Julia variations, or recursive boundary structures.",
+      "good_for": [
+        "fractals",
+        "complex plane",
+        "escape fields",
+        "mathematical texture"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/marching_squares/marching_squares.py",
+      "title": "Marching squares contour extraction",
+      "category": "mathematical",
+      "concepts": [
+        "marching squares",
+        "contour lines",
+        "isoline",
+        "scalar field",
+        "interpolation"
+      ],
+      "visual_use": "Use for extracting contour lines from noise, heightmaps, metaballs, or other scalar fields.",
+      "good_for": [
+        "contours",
+        "topography",
+        "field visualization",
+        "organic boundaries"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/maurer_rose/maurer_rose.py",
+      "title": "Maurer rose modular chords",
+      "category": "mathematical",
+      "concepts": [
+        "Maurer rose",
+        "rose curve",
+        "polar coordinates",
+        "modular stepping",
+        "chord pattern"
+      ],
+      "visual_use": "Use for rosette linework, modular chord structures, polar flower curves, or ornamental lace patterns.",
+      "good_for": [
+        "rosettes",
+        "line art",
+        "polar geometry",
+        "ornament"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/metaball/metaball.py",
       "title": "Metaball field",
       "category": "mathematical",
@@ -444,6 +887,29 @@
       ]
     },
     {
+      "path": "mathematical/mobius_transform_grid/mobius_transform_grid.py",
+      "title": "Mobius transform grid",
+      "category": "mathematical",
+      "concepts": [
+        "Mobius transformation",
+        "complex mapping",
+        "conformal map",
+        "complex plane",
+        "grid warp"
+      ],
+      "visual_use": "Use for complex-plane grid warps, conformal distortion, analytic mapping studies, or ornamental line fields.",
+      "good_for": [
+        "complex geometry",
+        "grid distortion",
+        "line art",
+        "conformal maps"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/modular_table_visual/modular_table_visual.py",
       "title": "Modular multiplication table",
       "category": "mathematical",
@@ -462,6 +928,30 @@
       ],
       "complexity": "medium",
       "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/newton_fractal/newton_fractal.py",
+      "title": "Newton fractal root basins",
+      "category": "mathematical",
+      "concepts": [
+        "Newton fractal",
+        "Newton-Raphson",
+        "complex dynamics",
+        "root basin",
+        "convergence"
+      ],
+      "visual_use": "Use for visualizing polynomial root basins, numerical convergence, complex dynamics, or fractal textures.",
+      "good_for": [
+        "fractals",
+        "complex plane",
+        "convergence fields",
+        "mathematical texture"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
         "py5"
       ]
     },
@@ -490,6 +980,123 @@
         "py5",
         "touchdesigner",
         "ue5"
+      ]
+    },
+    {
+      "path": "mathematical/quasicrystal_interference/quasicrystal_interference.py",
+      "title": "Quasicrystal wave interference",
+      "category": "mathematical",
+      "concepts": [
+        "quasicrystal",
+        "plane waves",
+        "interference",
+        "rotational symmetry",
+        "quasi-periodic pattern"
+      ],
+      "visual_use": "Use for quasi-periodic textures, moire-like fields, rotational symmetry studies, or ornamental wave patterns.",
+      "good_for": [
+        "textures",
+        "symmetry",
+        "interference",
+        "ornament"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/signed_distance_field/signed_distance_field.py",
+      "title": "Signed distance field shape composition",
+      "category": "mathematical",
+      "concepts": [
+        "signed distance field",
+        "SDF",
+        "boolean operations",
+        "smooth union",
+        "contour lines"
+      ],
+      "visual_use": "Use for procedural shape composition, smooth boolean blends, contour maps, or shader-like geometry.",
+      "good_for": [
+        "shape design",
+        "implicit geometry",
+        "smooth blending",
+        "contours"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/spirograph_curves/spirograph_curves.py",
+      "title": "Spirograph trochoid curves",
+      "category": "mathematical",
+      "concepts": [
+        "spirograph",
+        "hypotrochoid",
+        "epitrochoid",
+        "parametric curve",
+        "rolling circle"
+      ],
+      "visual_use": "Use for rosettes, guilloche linework, orbital loops, or rolling-circle ornamental patterns.",
+      "good_for": [
+        "rosettes",
+        "ornament",
+        "line art",
+        "harmonic curves"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/superformula/superformula.py",
+      "title": "Superformula parametric shapes",
+      "category": "mathematical",
+      "concepts": [
+        "superformula",
+        "polar coordinates",
+        "parametric shape",
+        "radial symmetry",
+        "organic geometry"
+      ],
+      "visual_use": "Use for generating flower-like forms, stars, shells, crystals, or organic radial outlines.",
+      "good_for": [
+        "radial forms",
+        "flowers",
+        "organic shapes",
+        "parametric design"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/ulam_spiral/ulam_spiral.py",
+      "title": "Ulam spiral prime pattern",
+      "category": "mathematical",
+      "concepts": [
+        "Ulam spiral",
+        "prime numbers",
+        "number theory",
+        "Sieve of Eratosthenes",
+        "modular arithmetic"
+      ],
+      "visual_use": "Use for visualizing prime distributions, diagonal number patterns, or residue-class color structures.",
+      "good_for": [
+        "prime patterns",
+        "number theory",
+        "grid composition",
+        "modular coloring"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
       ]
     },
     {
