@@ -36,9 +36,8 @@ Register with GitHub Copilot in VS Code (`.vscode/mcp.json` or user MCP settings
 
 ```json
 {
-  "servers": {
+  "mcpServers": {
     "logic-lab": {
-      "type": "stdio",
       "command": "uv",
       "args": [
         "run",
@@ -46,7 +45,8 @@ Register with GitHub Copilot in VS Code (`.vscode/mcp.json` or user MCP settings
         "/path/to/logic-lab",
         "python",
         "mcp/logic_lab_server.py"
-      ]
+      ],
+      "env": {}
     }
   }
 }
@@ -78,9 +78,8 @@ Add this server entry to your Antigravity MCP settings file:
 
 ```json
 {
-  "servers": {
+  "mcpServers": {
     "logic-lab": {
-      "type": "stdio",
       "command": "uv",
       "args": [
         "run",
@@ -88,7 +87,8 @@ Add this server entry to your Antigravity MCP settings file:
         "/path/to/logic-lab",
         "python",
         "mcp/logic_lab_server.py"
-      ]
+      ],
+      "env": {}
     }
   }
 }

@@ -22,68 +22,16 @@ you after registration. Manual execution is mainly for smoke testing:
 uv run python mcp/logic_lab_server.py
 ```
 
-## Register With Codex
+## Register
+
+Use the registration examples in the root [README.md](../README.md). It includes
+Codex, Claude Code, GitHub Copilot in VS Code, Cursor, and Antigravity examples.
+
+The server command is always the same:
 
 ```bash
-codex mcp add logic-lab -- uv run --project /path/to/logic-lab python mcp/logic_lab_server.py
+uv run --project /path/to/logic-lab python mcp/logic_lab_server.py
 ```
-
-## Register With Claude Code
-
-```bash
-claude mcp add logic-lab -- uv run --project /path/to/logic-lab python mcp/logic_lab_server.py
-```
-
-## Register With GitHub Copilot In VS Code
-
-For local Copilot Chat / agent mode in VS Code, add this to `.vscode/mcp.json`
-in the workspace where you want to use Logic Lab, or to your user MCP settings:
-
-```json
-{
-  "servers": {
-    "logic-lab": {
-      "type": "stdio",
-      "command": "uv",
-      "args": [
-        "run",
-        "--project",
-        "/path/to/logic-lab",
-        "python",
-        "mcp/logic_lab_server.py"
-      ]
-    }
-  }
-}
-```
-
-This is the recommended Copilot setup for the current local stdio server.
-
-## Register With Cursor
-
-For Cursor, create `.cursor/mcp.json` in a project where you want Logic Lab
-available, or create `~/.cursor/mcp.json` to make it available globally:
-
-```json
-{
-  "mcpServers": {
-    "logic-lab": {
-      "type": "stdio",
-      "command": "uv",
-      "args": [
-        "run",
-        "--project",
-        "/path/to/logic-lab",
-        "python",
-        "mcp/logic_lab_server.py"
-      ]
-    }
-  }
-}
-```
-
-Cursor manages stdio MCP processes locally. After adding the config, open Cursor
-settings or chat tools and make sure the `logic-lab` tools are enabled.
 
 ## GitHub Copilot Cloud Agent
 
@@ -113,28 +61,6 @@ Example shape:
         "search_algorithms",
         "get_algorithm",
         "get_algorithm_summary"
-      ]
-    }
-  }
-}
-```
-
-## Register With Antigravity
-
-Add this server entry to your Antigravity MCP settings file:
-
-```json
-{
-  "servers": {
-    "logic-lab": {
-      "type": "stdio",
-      "command": "uv",
-      "args": [
-        "run",
-        "--project",
-        "/path/to/logic-lab",
-        "python",
-        "mcp/logic_lab_server.py"
       ]
     }
   }
