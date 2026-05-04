@@ -23,30 +23,30 @@ snippets for selected examples.
 Register with Codex:
 
 ```bash
-codex mcp add logic-lab -- uv run --project /path/to/logic-lab python mcp/logic_lab_server.py
+codex mcp add logic-lab -- uv run --project /path/to/logic-lab python /path/to/logic-lab/mcp/logic_lab_server.py
 ```
 
 Register with Claude Code:
 
 ```bash
-claude mcp add logic-lab -- uv run --project /path/to/logic-lab python mcp/logic_lab_server.py
+claude mcp add logic-lab -- uv run --project /path/to/logic-lab python /path/to/logic-lab/mcp/logic_lab_server.py
 ```
 
 Register with GitHub Copilot in VS Code (`.vscode/mcp.json` or user MCP settings):
 
 ```json
 {
-  "mcpServers": {
+  "servers": {
     "logic-lab": {
+      "type": "stdio",
       "command": "uv",
       "args": [
         "run",
         "--project",
         "/path/to/logic-lab",
         "python",
-        "mcp/logic_lab_server.py"
-      ],
-      "env": {}
+        "/path/to/logic-lab/mcp/logic_lab_server.py"
+      ]
     }
   }
 }
@@ -65,7 +65,7 @@ Register with Cursor (`.cursor/mcp.json` or `~/.cursor/mcp.json`):
         "--project",
         "/path/to/logic-lab",
         "python",
-        "mcp/logic_lab_server.py"
+        "/path/to/logic-lab/mcp/logic_lab_server.py"
       ]
     }
   }
@@ -86,7 +86,7 @@ Add this server entry to your Antigravity MCP settings file:
         "--project",
         "/path/to/logic-lab",
         "python",
-        "mcp/logic_lab_server.py"
+        "/path/to/logic-lab/mcp/logic_lab_server.py"
       ],
       "env": {}
     }

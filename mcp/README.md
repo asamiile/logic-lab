@@ -13,13 +13,26 @@ the local repository path using `uv run --project /path/to/logic-lab ...`.
 - `get_algorithm(path, max_chars=12000)` returns source text for a safe repository path.
 - `get_algorithm_summary(path)` returns a short summary from the manifest entry and nearby `README.md`.
 
+## Resources
+
+`list_mcp_resources` exposes these read-only resources:
+
+- `resource://logic-lab/manifest` - full curated manifest JSON.
+- `resource://logic-lab/manifest-summary` - small category and usage summary.
+- `resource://logic-lab/readme` - top-level project README.
+- `resource://logic-lab/mcp-readme` - this MCP server README.
+
+Algorithm source files are intentionally not exposed as static resources. Use
+`search_algorithms`, `get_algorithm_summary`, and `get_algorithm` so path checks
+and `max_chars` limits are applied.
+
 ## Run
 
 You usually do not run the server manually. MCP clients start this command for
 you after registration. Manual execution is mainly for smoke testing:
 
 ```bash
-uv run python mcp/logic_lab_server.py
+uv run python /path/to/logic-lab/mcp/logic_lab_server.py
 ```
 
 ## Register
@@ -30,7 +43,7 @@ Codex, Claude Code, GitHub Copilot in VS Code, Cursor, and Antigravity examples.
 The server command is always the same:
 
 ```bash
-uv run --project /path/to/logic-lab python mcp/logic_lab_server.py
+uv run --project /path/to/logic-lab python /path/to/logic-lab/mcp/logic_lab_server.py
 ```
 
 ## GitHub Copilot Cloud Agent
@@ -54,7 +67,7 @@ Example shape:
         "--project",
         "/path/to/logic-lab",
         "python",
-        "mcp/logic_lab_server.py"
+        "/path/to/logic-lab/mcp/logic_lab_server.py"
       ],
       "tools": [
         "get_manifest",

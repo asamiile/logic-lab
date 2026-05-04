@@ -13,6 +13,8 @@ ABSOLUTE_MAX_CHARS = 20_000
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = REPO_ROOT / ".agents" / "art_manifest.json"
+README_PATH = REPO_ROOT / "README.md"
+MCP_README_PATH = REPO_ROOT / "mcp" / "README.md"
 
 mcp = FastMCP(SERVER_NAME)
 
@@ -109,6 +111,80 @@ def _entry_for_path(path: str) -> dict[str, Any] | None:
         if entry.get("path") == rel_path:
             return entry
     return None
+
+
+def _manifest_summary() -> dict[str, Any]:
+    entries = _entries()
+    categories: dict[str, int] = {}
+    for entry in entries:
+        category = str(entry.get("category", "uncategorized"))
+        categories[category] = categories.get(category, 0) + 1
+
+    return {
+        "name": SERVER_NAME,
+        "description": "Read-only Logic Lab algorithm references for AI agents.",
+        "entry_count": len(entries),
+        "categories": dict(sorted(categories.items())),
+        "recommended_flow": [
+            "Use search_algorithms for discovery.",
+            "Use get_algorithm_summary for short context.",
+            "Use get_algorithm only for selected source paths.",
+        ],
+        "resources": [
+            "resource://logic-lab/manifest",
+            "resource://logic-lab/manifest-summary",
+            "resource://logic-lab/readme",
+            "resource://logic-lab/mcp-readme",
+        ],
+    }
+
+
+@mcp.resource(
+    "resource://logic-lab/manifest",
+    name="logic_lab_manifest",
+    title="Logic Lab Art Manifest",
+    description="Curated manifest of Logic Lab algorithms for search and artwork planning.",
+    mime_type="application/json",
+)
+def manifest_resource() -> dict[str, Any]:
+    """Return the curated Logic Lab algorithm manifest."""
+    return _load_manifest()
+
+
+@mcp.resource(
+    "resource://logic-lab/manifest-summary",
+    name="logic_lab_manifest_summary",
+    title="Logic Lab Manifest Summary",
+    description="Small summary of manifest size, categories, and recommended MCP usage.",
+    mime_type="application/json",
+)
+def manifest_summary_resource() -> dict[str, Any]:
+    """Return a small summary of the Logic Lab manifest."""
+    return _manifest_summary()
+
+
+@mcp.resource(
+    "resource://logic-lab/readme",
+    name="logic_lab_readme",
+    title="Logic Lab README",
+    description="Top-level README for Logic Lab.",
+    mime_type="text/markdown",
+)
+def readme_resource() -> str:
+    """Return the top-level Logic Lab README."""
+    return README_PATH.read_text(encoding="utf-8", errors="replace")
+
+
+@mcp.resource(
+    "resource://logic-lab/mcp-readme",
+    name="logic_lab_mcp_readme",
+    title="Logic Lab MCP README",
+    description="MCP server usage, tools, security notes, and manifest update workflow.",
+    mime_type="text/markdown",
+)
+def mcp_readme_resource() -> str:
+    """Return the Logic Lab MCP README."""
+    return MCP_README_PATH.read_text(encoding="utf-8", errors="replace")
 
 
 @mcp.tool()
