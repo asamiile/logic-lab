@@ -16,4 +16,5 @@ dependencies = [
     "gymnasium[mujoco,box2d]>=1.0.0",
     "mujoco>=3.1.0",
     "moviepy>=2.2.1",
+    "sounddevice>=0.5.5",
 ]
