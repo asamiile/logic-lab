@@ -11,10 +11,10 @@ SERVER_NAME = "logic-lab"
 DEFAULT_MAX_CHARS = 12_000
 ABSOLUTE_MAX_CHARS = 20_000
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parents[3]
 MANIFEST_PATH = REPO_ROOT / ".agents" / "art_manifest.json"
 README_PATH = REPO_ROOT / "README.md"
-MCP_README_PATH = REPO_ROOT / "mcp" / "README.md"
+MCP_README_PATH = Path(__file__).parent / "README.md"
 
 mcp = FastMCP(SERVER_NAME)
 
@@ -273,5 +273,10 @@ def get_algorithm_summary(path: str) -> dict[str, Any]:
     return summary
 
 
-if __name__ == "__main__":
+def main() -> None:
+    """Entry point for the MCP server."""
     mcp.run()
+
+
+if __name__ == "__main__":
+    main()
