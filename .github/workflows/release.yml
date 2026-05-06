@@ -16,4 +16,4 @@ jobs:
       - uses: googleapis/release-please-action@v4
         with:
           release-type: python
-          package-name: logic-lab
+          token: ${{ secrets.GITHUB_TOKEN }}
