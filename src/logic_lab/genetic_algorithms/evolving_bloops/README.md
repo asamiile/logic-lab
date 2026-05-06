@@ -19,7 +19,7 @@ uv run python src/logic_lab/genetic_algorithms/evolving_bloops/evolving_bloops.p
 1. **Bloops (creatures)** are the circle elements on screen
    - Opacity represents health
    - Size represents genetic trait that controls speed
-   
+
 2. **Food** appears as small gray squares
    - Bloops eat food to gain health
    - When bloops die, food is left behind at their location

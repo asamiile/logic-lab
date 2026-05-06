@@ -7,4 +7,3 @@ uv run python src/logic_lab/tiling_patterns/textile_generator/textile_generator.
 ```
 
 Press `s` to save a screenshot.
-

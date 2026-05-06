@@ -150,7 +150,6 @@ def visualize_controller(genome, task, episodes=3, max_steps=1000, render_mode="
 
 
 def main():
-
     args = get_args()
 
     # Load experiment

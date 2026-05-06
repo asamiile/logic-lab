@@ -48,7 +48,6 @@ class BaseReporter:
 
 
 class SaveResultReporter(BaseReporter):
-
     def __init__(self, save_path, bd_names):
         self.save_path = save_path
         self.history_pop_file = os.path.join(self.save_path, "history_pop.csv")
@@ -101,7 +100,6 @@ class SaveResultReporter(BaseReporter):
 
 
 class MapElitesReporter(BaseReporter):
-
     def __init__(self):
         self.generation = None
         self.generation_start_time = None
@@ -116,7 +114,6 @@ class MapElitesReporter(BaseReporter):
     # pass
 
     def end_generation(self, config, population):
-
         print(f"Population size {len(population)}")
 
         fitnesses = [c.fitness for c in population.values()]

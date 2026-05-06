@@ -25,7 +25,6 @@ from maze_genome_decoder import MazeGenomeDecoder
 
 
 class ScoreReporter(ns_neat.BaseReporter):
-
     def __init__(self):
         self.generation = 0
         self.best = float("-inf")
@@ -102,7 +101,6 @@ def main():
     agent_genomes = {}
     a_i = 0
     while len(maze_genomes) < args.maze_num:
-
         maze_genome = make_random_maze(
             mcc_config, len(maze_genomes), args.wall_gene_num, args.path_gene_num
         )
@@ -125,7 +123,6 @@ def main():
         not_found_count = 0
         print(f"search for {perMaze} solver agents")
         while len(agent_genomes_tmp) < perMaze:
-
             pop = ns_neat.Population(ns_config)
             pop.add_reporter(ScoreReporter())
             agent_genome = pop.run(evaluate_function=parallel.evaluate, n=400)

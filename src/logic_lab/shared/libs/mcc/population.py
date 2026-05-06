@@ -6,7 +6,6 @@ from .reproduction import Reproduction
 
 class Population:
     def __init__(self, config, genome1_pop_file, genome2_pop_file):
-
         self.reporters = ReporterSet()
         self.config = config
         self.generation = 0

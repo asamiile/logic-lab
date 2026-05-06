@@ -19,5 +19,5 @@ void main(){
     } else { //right
         fragColor = vec4(fractSin21(pos.xy / u_resolution.xy));
     }
-    fragColor.a = 1.0; 
+    fragColor.a = 1.0;
 }

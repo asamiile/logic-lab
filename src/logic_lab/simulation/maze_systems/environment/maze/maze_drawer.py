@@ -9,7 +9,6 @@ from ns_neat import BaseReporter as BaseReporterNS
 
 class MazeReporterNEAT(BaseReporterNEAT):
     def __init__(self, env, timesteps, save_path, decode_function, generations, no_plot=False):
-
         self.env = env
         self.timesteps = timesteps
         self.save_path = save_path
@@ -117,7 +116,6 @@ class MazeReporterNEAT(BaseReporterNEAT):
 
 class MazeReporterNS(BaseReporterNS):
     def __init__(self, env, timesteps, save_path, decode_function, generations, no_plot=False):
-
         self.env = env
         self.timesteps = timesteps
         self.save_path = save_path

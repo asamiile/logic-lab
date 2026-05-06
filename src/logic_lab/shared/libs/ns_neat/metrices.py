@@ -2,7 +2,6 @@ import numpy as np
 
 
 def manhattan(data1, data2):
-
     if len(data1) != len(data2) or len(data1) < 1:
         return 0.0
 
@@ -11,7 +10,6 @@ def manhattan(data1, data2):
 
 
 def euclidean(data1, data2):
-
     if len(data1) != len(data2) or len(data1) < 1:
         return 0.0
 

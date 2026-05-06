@@ -108,7 +108,7 @@ float cnoise31(vec3 p){
 }
 void main(){
     vec2 pos = gl_FragCoord.xy/ min(u_resolution.x, u_resolution.y);
-    channel = ivec2(vec2(3, 2) * gl_FragCoord.xy/ u_resolution.xy); 
+    channel = ivec2(vec2(3, 2) * gl_FragCoord.xy/ u_resolution.xy);
     pos *= 10.0;
     pos += u_time;
     wt = channel.x == 0 ? vec4(0.2):

@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/modular_table_visual/modular_table_visu
 ```
 
 Press `s` to save a screenshot.
-

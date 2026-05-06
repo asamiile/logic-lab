@@ -7,4 +7,3 @@ uv run python src/logic_lab/tiling_patterns/symmetric_shape/symmetric_shape.py
 ```
 
 Press `s` to save a screenshot.
-

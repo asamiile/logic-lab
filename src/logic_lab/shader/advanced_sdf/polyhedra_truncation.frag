@@ -35,7 +35,7 @@ float boxSDF(vec3 p, vec3 c, vec3 d, float s){
     return length(max(p - d, vec3(0.0))) + min(max(max(p.x - d.x, p.y - d.y), p.z - d.z), 0.0) - s;
 }
 float sceneSDF(vec3 p){
-    vec3 v = vec3(0.5); 
+    vec3 v = vec3(0.5);
     float s = mix(1.0 / 3.0, 1.0, 0.5 * sin(u_time) + 0.5);
     // s = 1.0;    //cube
     // s = (sqrt(2.0) + 1.0) / 3.0;    //truncated cube
@@ -57,17 +57,17 @@ vec3 gradSDF(vec3 p){
 
 void main(){
     vec2 p = (gl_FragCoord.xy * 2.0 - u_resolution) / min(u_resolution.x, u_resolution.y);
-    
+
     vec3 t = vec3(u_time * 0.3);
     vec3 cPos = euler(vec3(0.0, 0.0, 2.0), t);
     vec3 cDir = euler(vec3(0.0, 0.0, - 1.0), t);
     vec3 cUp = euler(vec3(0.0, 1.0, 0.0), t);
     vec3 cSide = cross(cDir, cUp);
-    
+
     float targetDepth = 1.0;
-    
+
     vec3 lDir = euler(vec3(0.0, 0.0, 1.0), t);
-    
+
     vec3 ray = cSide * p.x + cUp * p.y + cDir * targetDepth;
     vec3 rPos = ray + cPos;
     ray = normalize(ray);

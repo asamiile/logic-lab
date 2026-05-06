@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/continued_fraction_recur_div_square/con
 ```
 
 Press `s` to save a screenshot.
-

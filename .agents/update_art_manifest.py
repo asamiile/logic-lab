@@ -14,7 +14,6 @@ import json
 from pathlib import Path
 from typing import Any
 
-
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / ".agents" / "art_manifest.json"
 BASELINE_PATH = ROOT / ".agents" / "art_manifest_baseline.json"
@@ -222,14 +221,18 @@ def update_manifest(write: bool) -> int:
 
     entries.extend(additions)
     entries.sort(key=lambda entry: (entry.get("category", ""), entry.get("path", "")))
-    MANIFEST_PATH.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    MANIFEST_PATH.write_text(
+        json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
     print(f"Updated {MANIFEST_PATH.relative_to(ROOT)}")
     return 0
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--write", action="store_true", help="append missing draft entries to the manifest")
+    parser.add_argument(
+        "--write", action="store_true", help="append missing draft entries to the manifest"
+    )
     args = parser.parse_args()
     return update_manifest(write=args.write)
 

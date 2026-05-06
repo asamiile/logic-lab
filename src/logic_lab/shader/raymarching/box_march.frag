@@ -45,7 +45,7 @@ vec3 gradSDF(vec3 p){
 
 void main(){
     vec2 p = (gl_FragCoord.xy * 2.0 - u_resolution) / min(u_resolution.x, u_resolution.y);
-    
+
     vec3 t = vec3(u_time * 0.5);
     vec3 cPos = euler(vec3(0.0, 0.0, 2.0), t);
     vec3 cDir = euler(vec3(0.0, 0.0, - 1.0), t);
@@ -54,7 +54,7 @@ void main(){
     vec3 cSide = cross(cDir, cUp);
 
     float targetDepth = 1.0;
-    
+
     vec3 ray = cSide * p.x + cUp * p.y + cDir * targetDepth;
     vec3 rPos = ray + cPos;
     ray = normalize(ray);

@@ -11,4 +11,3 @@ Controls:
 - `a` / `z`: increase / decrease `num`
 - `s` / `x`: increase / decrease `thr`
 - `p`: save screenshot
-

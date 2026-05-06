@@ -154,7 +154,7 @@ def draw_triangles() -> None:
         py5.stroke_weight(1.4)
 
     for i, triangle in enumerate(triangles):
-        a, b, c = [points[index] for index in triangle]
+        a, b, c = (points[index] for index in triangle)
         if show_fill:
             hue = (188 + i * 5) % 360
             area = triangle_area(a, b, c)

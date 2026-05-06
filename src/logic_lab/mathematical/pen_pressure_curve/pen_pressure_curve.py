@@ -14,7 +14,9 @@ BLEED_NOISE_SCALE = 0.018
 BLEED_NOISE_OFFSET = 5000.0
 
 
-def draw_bleed_halo(x1: float, y1: float, x2: float, y2: float, pressure: float, noise_t: float = 0.0) -> None:
+def draw_bleed_halo(
+    x1: float, y1: float, x2: float, y2: float, pressure: float, noise_t: float = 0.0
+) -> None:
     """Draw a translucent Gaussian bleed halo along a line segment."""
     stroke_weight = 2 + pressure * 8
     base_radius = stroke_weight * BLEED_RADIUS_SCALE

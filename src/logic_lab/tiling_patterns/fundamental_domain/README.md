@@ -12,4 +12,3 @@ Controls:
 - `d`: D6 sample
 - `h`: HelloWorld sample
 - `s`: save screenshot
-

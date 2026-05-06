@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/fibonacci_spiral/fibonacci_spiral.py
 ```
 
 Press `s` to save a screenshot.
-

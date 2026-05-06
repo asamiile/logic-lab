@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/fibonacci_recur_div/fibonacci_recur_div
 ```
 
 Press `s` to save a screenshot.
-

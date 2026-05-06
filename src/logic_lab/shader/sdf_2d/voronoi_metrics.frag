@@ -115,7 +115,7 @@ vec3 voronoi3(vec3 p){
 }
 void main(){
     vec2 pos = gl_FragCoord.xy/ min(u_resolution.x, u_resolution.y);
-    channel = ivec2(vec2(3, 2) * gl_FragCoord.xy/ u_resolution.xy); 
+    channel = ivec2(vec2(3, 2) * gl_FragCoord.xy/ u_resolution.xy);
     pos *= 10.0;
     pos += u_time;
     fragColor = channel.y == 0 ? vec4(hash22(voronoi2(pos)), 1, 1) : vec4(hash33(voronoi3(vec3(pos, 0.5 * u_time))), 1);

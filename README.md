@@ -148,7 +148,7 @@ uv run ruff check --fix src/ tests/
 
 ## Reference
 
-- [The Nature of Code](https://natureofcode.com/) 
+- [The Nature of Code](https://natureofcode.com/)
 - [Pythonではじめるオープンエンドな進化的アルゴリズム](https://www.oreilly.co.jp/books/9784814400003/)
 - [数学から創るジェネラティブアート](https://gihyo.jp/book/2019/978-4-297-10463-4/support)
 - [リアルタイムグラフィックスの数学](https://gihyo.jp/book/2022/978-4-297-13034-3)

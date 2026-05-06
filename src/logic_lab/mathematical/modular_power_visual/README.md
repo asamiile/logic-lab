@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/modular_power_visual/modular_power_visu
 ```
 
 Press `s` to save a screenshot.
-

@@ -95,7 +95,7 @@ void main(){
         fragColor = vec4(gnoise21(pos));  //right
     } else {
         fragColor = vec4(gnoise31(vec3(pos, u_time)));
-        
+
     }
     fragColor.a = 1.0;
 }

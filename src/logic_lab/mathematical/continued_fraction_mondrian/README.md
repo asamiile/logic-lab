@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/continued_fraction_mondrian/continued_f
 ```
 
 Press `s` to save a screenshot.
-

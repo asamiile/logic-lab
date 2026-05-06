@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/continued_fraction_div_rect_zoom/contin
 ```
 
 Press `s` to save a screenshot.
-

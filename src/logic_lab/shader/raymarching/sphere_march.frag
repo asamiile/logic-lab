@@ -20,20 +20,20 @@ vec3 gradSDF(vec3 p){
 }
 void main(){
     vec2 p = (gl_FragCoord.xy * 2.0 - u_resolution) / min(u_resolution.x, u_resolution.y);
-    
+
     vec3 cPos = vec3(0.0, 0.0, 2.0);
     vec3 cDir = vec3(0.0, 0.0, - 1.0);
     vec3 cUp = vec3(0.0, 1.0, 0.0);
     vec3 cSide = cross(cDir, cUp);
-    
+
     float targetDepth = 1.0;
-    
+
     vec3 lPos = vec3(2.0);
-    
+
     vec3 ray = cSide * p.x + cUp * p.y + cDir * targetDepth;
     vec3 rPos = ray + cPos;
     ray = normalize(ray);
-    
+
     fragColor.rgb = vec3(0.0);
     for(int i = 0; i < 50; i ++ ){
         if (sceneSDF(rPos) > 0.001){

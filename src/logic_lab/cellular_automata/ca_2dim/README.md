@@ -7,4 +7,3 @@ uv run python src/logic_lab/cellular_automata/ca_2dim/ca_2dim.py
 ```
 
 Press `s` to save a screenshot.
-

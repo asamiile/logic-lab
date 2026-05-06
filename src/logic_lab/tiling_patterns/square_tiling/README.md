@@ -7,4 +7,3 @@ uv run python src/logic_lab/tiling_patterns/square_tiling/square_tiling.py
 ```
 
 Press `s` to save a screenshot.
-

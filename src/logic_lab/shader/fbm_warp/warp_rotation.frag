@@ -103,7 +103,7 @@ float fbm21(vec2 p, float g){
     return 0.5 * val + 0.5;
 }
 float base21(vec2 p){
-    return channel == 0 ? fbm21(p, 0.5) : 
+    return channel == 0 ? fbm21(p, 0.5) :
         pnoise21(p);
 }
 float warp21(vec2 p, float g){

@@ -12,4 +12,3 @@ Controls:
 - `r`: rotate
 - `e`: reset
 - `s`: save screenshot
-

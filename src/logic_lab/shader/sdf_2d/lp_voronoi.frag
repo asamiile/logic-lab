@@ -80,7 +80,7 @@ vec2 voronoi2(vec2 p){
 }
 
 void main(){
-    vec2 pos = gl_FragCoord.xy/ min(u_resolution.x, u_resolution.y); 
+    vec2 pos = gl_FragCoord.xy/ min(u_resolution.x, u_resolution.y);
     pos *= 10.0;
     pos += u_time;
     fragColor = vec4(hash22(voronoi2(pos)), 1, 1);

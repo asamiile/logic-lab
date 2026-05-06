@@ -78,14 +78,14 @@ vec4 fdist24(vec2 p){
 }
 void main(){
     vec2 pos = gl_FragCoord.xy/ min(u_resolution.x, u_resolution.y);
-    channel = ivec2(vec2(4, 2) * gl_FragCoord.xy/ u_resolution.xy); 
+    channel = ivec2(vec2(4, 2) * gl_FragCoord.xy/ u_resolution.xy);
     pos *= 3.0;
     pos += u_time;
     float thr = 0.7;
     bvec4 dist4b = bvec4(step(thr, fdist24(pos)));
-    fragColor = dist4b.x ? vec4(1,1,1,1): 
-        dist4b.y ? vec4(1,0,0,1): 
-        dist4b.z ? vec4(0,1,0,1): 
+    fragColor = dist4b.x ? vec4(1,1,1,1):
+        dist4b.y ? vec4(1,0,0,1):
+        dist4b.z ? vec4(0,1,0,1):
         dist4b.w ? vec4(0,0,1,1):
         vec4(0,0,0,1);
 }

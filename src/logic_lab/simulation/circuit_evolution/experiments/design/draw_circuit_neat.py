@@ -21,7 +21,6 @@ from neat.graphs import feed_forward_layers
 
 
 def draw_network(genome_key, genome_file, config, figure_file, print_detail=False):
-
     genome_orig = pickle.load(open(genome_file, "rb"))
 
     genome = genome_orig.get_pruned_copy(config)
@@ -174,7 +173,6 @@ def draw_network(genome_key, genome_file, config, figure_file, print_detail=Fals
 
 
 def main():
-
     args = get_figure_args()
 
     expt_path = os.path.join(CURR_DIR, "out", "circuit_neat", args.name)
@@ -195,7 +193,6 @@ def main():
             "fitness": "history_fitness.csv",
         }
         for metric, file in files.items():
-
             history_file = os.path.join(expt_path, file)
             with open(history_file) as f:
                 reader = csv.reader(f)
@@ -204,7 +201,6 @@ def main():
                 genome_ids[metric] = ids
 
     if not args.no_multi and args.specified is None:
-
         pool = mp.Pool(args.num_cores)
         jobs = []
 
@@ -212,7 +208,6 @@ def main():
             save_path = os.path.join(figure_path, metric)
             os.makedirs(save_path, exist_ok=True)
             for key in ids:
-
                 figure_file = os.path.join(save_path, f"{key}.jpg")
                 genome_file = os.path.join(expt_path, "genome", f"{key}.pickle")
 
@@ -226,12 +221,10 @@ def main():
             job.get(timeout=None)
 
     else:
-
         for metric, ids in genome_ids.items():
             save_path = os.path.join(figure_path, metric)
             os.makedirs(save_path, exist_ok=True)
             for key in ids:
-
                 figure_file = os.path.join(save_path, f"{key}.jpg")
                 genome_file = os.path.join(expt_path, "genome", f"{key}.pickle")
 

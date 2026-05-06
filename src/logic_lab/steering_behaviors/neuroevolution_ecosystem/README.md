@@ -22,7 +22,7 @@ uv run python src/logic_lab/steering_behaviors/neuroevolution_ecosystem/neuroevo
 ### Neural Network
 - **15 inputs**: One per sensor (0 or 1)
 - **1 hidden layer**: 8 neurons with sigmoid activation
-- **2 outputs**: 
+- **2 outputs**:
   - Angle of movement force (0-2π)
   - Magnitude of force (0-1)
 

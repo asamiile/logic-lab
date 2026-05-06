@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/fibonacci_convergent/fibonacci_converge
 ```
 
 Press `s` to save a screenshot.
-

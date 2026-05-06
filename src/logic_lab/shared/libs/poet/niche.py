@@ -163,7 +163,6 @@ class Niche:
     def end_evaluate(
         self, env_config, opt_config, imigrant_cores=None, invasion=False, reset_optimizer=True
     ):
-
         rewards = {}
         if imigrant_cores is None:
             assert self.key in self.processes

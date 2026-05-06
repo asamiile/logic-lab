@@ -7,4 +7,3 @@ uv run python src/logic_lab/cellular_automata/elementary_ca/elementary_ca.py
 ```
 
 Press `s` to save a screenshot.
-

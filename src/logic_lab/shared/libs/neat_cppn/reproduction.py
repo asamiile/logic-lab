@@ -7,7 +7,6 @@ from neat.math_util import mean
 
 # modified to incoporate constraint function
 class DefaultReproduction(DefaultReproduction):
-
     def create_new(self, genome_type, genome_config, num_genomes, constraint_function=None):
         new_genomes = {}
         for i in range(num_genomes):

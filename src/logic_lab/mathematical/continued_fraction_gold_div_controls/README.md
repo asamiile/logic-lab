@@ -13,4 +13,3 @@ Controls:
 - `m`: toggle Mondrian color mode
 - `r`: randomize colors
 - `p`: save screenshot
-

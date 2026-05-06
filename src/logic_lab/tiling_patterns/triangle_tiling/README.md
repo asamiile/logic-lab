@@ -7,4 +7,3 @@ uv run python src/logic_lab/tiling_patterns/triangle_tiling/triangle_tiling.py
 ```
 
 Press `s` to save a screenshot.
-

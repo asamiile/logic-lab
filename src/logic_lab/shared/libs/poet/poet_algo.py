@@ -59,7 +59,6 @@ class POET:
         reset_optimizer=True,
         reset_pool=False,
     ):
-
         self.env_config = environment_config
         self.opt_config = optimizer_config
 
@@ -176,7 +175,6 @@ class POET:
         print()
 
     def transfer(self, reciever_niches, child=False):
-
         imigrant_niche_cores = {
             niche_key: niche.get_optimizer_core() for niche_key, niche in self.niches.items()
         }
@@ -290,7 +288,6 @@ class POET:
 
         child_niche_candidates = {}
         for _ in range(reproduction_num):
-
             parent_niche = random.choice(parent_niches)
             child_key = self.get_new_niche_key()
             child_niche = parent_niche.reproduce(
@@ -311,7 +308,6 @@ class POET:
         print("  child     parent    reward     mc     novelty")
         print("            ======   ========   ====   ========")
         for child_key, child_niche in child_niche_candidates.items():
-
             print(
                 f" {child_key: =6} :   {child_niche.parent: =6}   {child_niche.reward: =+8.2f}",
                 end="   ",
@@ -345,7 +341,6 @@ class POET:
         print("            ===========   ======   ========   ========")
         admitted = 0
         for niche_key, child_niche, _ in child_niches:
-
             self.transfer({niche_key: child_niche}, child=True)
 
             if self.pass_mc(child_niche):
@@ -388,7 +383,6 @@ class POET:
             self.pool.join()
 
     def optimize(self, iterations=2000):
-
         while self.iteration < iterations:
             self.start_iteration()
 

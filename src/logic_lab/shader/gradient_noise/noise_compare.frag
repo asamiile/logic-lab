@@ -79,7 +79,7 @@ float vnoise31(vec3 p){
             for (int i = 0; i < 2; i++){
                 v[i+2*j+4*k] = hash31(n + vec3(i, j, k));
             }
-            
+
         }
     }
     vec3 f = fract(p);

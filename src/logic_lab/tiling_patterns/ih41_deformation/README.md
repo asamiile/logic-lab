@@ -7,4 +7,3 @@ uv run python src/logic_lab/tiling_patterns/ih41_deformation/ih41_deformation.py
 ```
 
 Press `s` to save a screenshot.
-

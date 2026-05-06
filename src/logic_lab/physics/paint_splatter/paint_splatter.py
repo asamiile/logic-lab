@@ -27,13 +27,18 @@ def spawn_bleed_drop(x: float, y: float, hue: float, sat: float, bright: float) 
     global active_drops
     if len(active_drops) >= BLEED_MAX_DROPS:
         active_drops.pop(0)
-    active_drops.append({
-        "x": x, "y": y,
-        "hue": hue, "sat": sat, "bright": bright,
-        "age": 0,
-        "radius": BLEED_INITIAL_RADIUS,
-        "noise_seed": py5.random(10000),
-    })
+    active_drops.append(
+        {
+            "x": x,
+            "y": y,
+            "hue": hue,
+            "sat": sat,
+            "bright": bright,
+            "age": 0,
+            "radius": BLEED_INITIAL_RADIUS,
+            "noise_seed": py5.random(10000),
+        }
+    )
 
 
 def draw_bleed_rings() -> None:

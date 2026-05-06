@@ -11,4 +11,3 @@ Controls:
 - Click: generate a D4-symmetric pattern
 - Any key except `s`: generate a D2-symmetric pattern
 - `s`: save screenshot
-

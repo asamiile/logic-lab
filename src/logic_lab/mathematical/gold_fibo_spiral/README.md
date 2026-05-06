@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/gold_fibo_spiral/gold_fibo_spiral.py
 ```
 
 Press `s` to save a screenshot.
-

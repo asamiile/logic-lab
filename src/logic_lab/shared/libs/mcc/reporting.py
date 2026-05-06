@@ -39,7 +39,6 @@ class BaseReporter:
 
 
 class SaveResultReporter(BaseReporter):
-
     def __init__(self, save_path, genome1_name, genome2_name, init_pop1, init_pop2):
         self.generation = 0
 
@@ -102,7 +101,6 @@ class SaveResultReporter(BaseReporter):
 
 
 class MCCReporter(BaseReporter):
-
     def __init__(self, genome1_name, genome2_name, print_genome1=False, print_genome2=False):
         max_str_size = max(len(genome1_name), len(genome2_name))
         self.genome1_name = genome1_name.ljust(max_str_size)

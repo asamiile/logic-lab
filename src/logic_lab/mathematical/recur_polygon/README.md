@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/recur_polygon/recur_polygon.py
 ```
 
 Press `s` to save a screenshot.
-

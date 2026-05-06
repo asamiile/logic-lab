@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/log_spiral/log_spiral.py
 ```
 
 Press `s` to save a screenshot.
-

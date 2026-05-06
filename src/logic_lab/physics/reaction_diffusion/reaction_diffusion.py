@@ -82,7 +82,14 @@ def build_paper_texture(width: int, height: int) -> np.ndarray:
     return texture
 
 
-def step(U: np.ndarray, V: np.ndarray, F: float, k: float, paper: np.ndarray | None = None, wetness: float = 0.6) -> tuple:
+def step(
+    U: np.ndarray,
+    V: np.ndarray,
+    F: float,
+    k: float,
+    paper: np.ndarray | None = None,
+    wetness: float = 0.6,
+) -> tuple:
     """Single time step of Gray-Scott model."""
     # Compute Laplacians
     lap_U = laplacian(U)
@@ -147,7 +154,7 @@ def draw() -> None:
         V_soft = gaussian_filter(V_display, sigma=1.2)
 
         # Wet-edge brightening: peak at V ~ 0.4
-        edge_factor = np.exp(-((V_soft - 0.4) ** 2) / (2 * 0.12 ** 2))
+        edge_factor = np.exp(-((V_soft - 0.4) ** 2) / (2 * 0.12**2))
 
         # Indigo ink color
         ink_r, ink_g, ink_b = 40.0, 30.0, 110.0
@@ -155,9 +162,21 @@ def draw() -> None:
         alpha = np.clip(V_soft * 1.5, 0, 1)
         bright_boost = edge_factor * 0.3
 
-        r_out = (paper_bg_r * (1 - alpha) + (ink_r + bright_boost * 180) * alpha).clip(0, 255).astype(np.uint8)
-        g_out = (paper_bg_g * (1 - alpha) + (ink_g + bright_boost * 200) * alpha).clip(0, 255).astype(np.uint8)
-        b_out = (paper_bg_b * (1 - alpha) + (ink_b + bright_boost * 220) * alpha).clip(0, 255).astype(np.uint8)
+        r_out = (
+            (paper_bg_r * (1 - alpha) + (ink_r + bright_boost * 180) * alpha)
+            .clip(0, 255)
+            .astype(np.uint8)
+        )
+        g_out = (
+            (paper_bg_g * (1 - alpha) + (ink_g + bright_boost * 200) * alpha)
+            .clip(0, 255)
+            .astype(np.uint8)
+        )
+        b_out = (
+            (paper_bg_b * (1 - alpha) + (ink_b + bright_boost * 220) * alpha)
+            .clip(0, 255)
+            .astype(np.uint8)
+        )
 
         pixels = np.stack([r_out, g_out, b_out], axis=-1)
     else:

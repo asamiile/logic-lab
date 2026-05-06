@@ -7,4 +7,3 @@ uv run python src/logic_lab/cellular_automata/pascal/pascal.py
 ```
 
 Press `s` to save a screenshot.
-

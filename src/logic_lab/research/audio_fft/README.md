@@ -28,7 +28,7 @@ The visualization combines three components:
    - **Circular**: Polar plot where radius = magnitude, angle = frequency, color = hue cycling
    - **Spectrogram**: Waterfall display showing magnitude history over time
 
-3. **Beat Detection**: 
+3. **Beat Detection**:
    - Extract low-frequency energy (bottom 1/8 of spectrum)
    - Maintain 20-sample history of energy
    - Trigger when current energy exceeds average × 1.3 threshold

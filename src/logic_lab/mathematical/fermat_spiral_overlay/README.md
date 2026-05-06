@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/fermat_spiral_overlay/fermat_spiral_ove
 ```
 
 Press `s` to save a screenshot.
-

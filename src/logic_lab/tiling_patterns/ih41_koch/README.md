@@ -7,4 +7,3 @@ uv run python src/logic_lab/tiling_patterns/ih41_koch/ih41_koch.py
 ```
 
 Press `s` to save a screenshot.
-

@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/fibonacci_rect/fibonacci_rect.py
 ```
 
 Press `s` to save a screenshot.
-

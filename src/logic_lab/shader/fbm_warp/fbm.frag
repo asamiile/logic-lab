@@ -91,7 +91,7 @@ float pnoise21(vec2 p){
 //end pnoise
 
 float base21(vec2 p){
-    return channel == 0 ? vnoise21(p) - 0.5 : 
+    return channel == 0 ? vnoise21(p) - 0.5 :
         pnoise21(p) - 0.5;
 }
 

@@ -58,7 +58,6 @@ class Agent:
         return np.linalg.norm(self.location - exit_point)
 
     def update_rangefinder_sensors(self, walls):
-
         range_finder_angles = (self.range_finder_angles + self.heading) / 180 * np.pi
 
         A = np.expand_dims(walls[:, 0, :], axis=0)
@@ -142,7 +141,6 @@ class MazeEnvironment:
         return self.agent.get_obs()
 
     def test_wall_collision(self, location):
-
         A = self.walls[:, 0, :]
         B = self.walls[:, 1, :]
         C = np.expand_dims(location, axis=0)

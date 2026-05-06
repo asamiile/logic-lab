@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/cubic_bezier/cubic_bezier.py
 ```
 
 Press `s` to save a screenshot.
-

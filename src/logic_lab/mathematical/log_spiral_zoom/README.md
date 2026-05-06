@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/log_spiral_zoom/log_spiral_zoom.py
 ```
 
 Press `s` to save a screenshot.
-

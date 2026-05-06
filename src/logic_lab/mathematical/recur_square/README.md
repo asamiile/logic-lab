@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/recur_square/recur_square.py
 ```
 
 Press `s` to save a screenshot.
-

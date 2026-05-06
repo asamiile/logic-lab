@@ -7,4 +7,3 @@ uv run python src/logic_lab/cellular_automata/hex_lattice_ca/hex_lattice_ca.py
 ```
 
 Press `s` to save a screenshot.
-

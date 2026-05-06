@@ -7,4 +7,3 @@ uv run python src/logic_lab/mathematical/higher_bezier/higher_bezier.py
 ```
 
 Press `s` to save a screenshot.
-

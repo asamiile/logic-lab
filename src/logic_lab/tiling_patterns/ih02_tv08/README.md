@@ -7,4 +7,3 @@ uv run python src/logic_lab/tiling_patterns/ih02_tv08/ih02_tv08.py
 ```
 
 Controls: `a`/`z` adjust `hor`, `d`/`x` adjust `ver`, `r` randomizes colors, `s` saves a screenshot.
-
