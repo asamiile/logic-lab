@@ -1,7 +1,7 @@
 # Tree
 
 ```bash
-uv run python fractals/tree/tree.py
+uv run python src/logic_lab/fractals/tree/tree.py
 ```
 
 - Recursive binary tree fractal.

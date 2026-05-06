@@ -5,7 +5,7 @@ Elastic deformable mesh using Hooke's law springs and Verlet integration.
 ## Run
 
 ```bash
-uv run python physics/spring_mesh/spring_mesh.py
+uv run python src/logic_lab/physics/spring_mesh/spring_mesh.py
 ```
 
 ## Controls

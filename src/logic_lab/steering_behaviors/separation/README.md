@@ -1,7 +1,7 @@
 # Separation
 
 ```bash
-uv run python steering_behaviors/separation/separation.py
+uv run python src/logic_lab/steering_behaviors/separation/separation.py
 ```
 
 - Vehicles steer away from nearby vehicles.

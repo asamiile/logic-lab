@@ -5,7 +5,7 @@ Draws damped harmonic curves from paired sine oscillators.
 ## Run
 
 ```bash
-uv run python mathematical/harmonograph/harmonograph.py
+uv run python src/logic_lab/mathematical/harmonograph/harmonograph.py
 ```
 
 ## Controls

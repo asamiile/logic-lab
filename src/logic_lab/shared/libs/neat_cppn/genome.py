@@ -5,7 +5,6 @@ from neat.graphs import required_for_output
 
 
 class DefaultGenome(DefaultGenome):
-
     def get_pruned_copy(self, genome_config):
         used_node_genes, used_connection_genes = get_pruned_genes(
             self.nodes,

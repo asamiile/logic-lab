@@ -5,7 +5,7 @@ Implicit surface visualization using blended distance fields.
 ## Run
 
 ```bash
-uv run python mathematical/metaball/metaball.py
+uv run python src/logic_lab/mathematical/metaball/metaball.py
 ```
 
 ## Controls

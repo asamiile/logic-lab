@@ -3,7 +3,7 @@
 ## Example 2.1: Forces
 
 ```bash
-uv run python physics/forces/forces.py
+uv run python src/logic_lab/physics/forces/forces.py
 ```
 
 - Click mouse to apply wind force.

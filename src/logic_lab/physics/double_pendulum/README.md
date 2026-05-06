@@ -1,7 +1,7 @@
 # Double Pendulum
 
 ```bash
-uv run python physics/double_pendulum/double_pendulum.py
+uv run python src/logic_lab/physics/double_pendulum/double_pendulum.py
 ```
 
 - A double pendulum evolves with coupled angular acceleration equations.

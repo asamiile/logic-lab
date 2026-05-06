@@ -5,7 +5,7 @@ Visualizes escape-time fractals for the quadratic complex map.
 ## Run
 
 ```bash
-uv run python mathematical/mandelbrot_julia/mandelbrot_julia.py
+uv run python src/logic_lab/mathematical/mandelbrot_julia/mandelbrot_julia.py
 ```
 
 ## Controls

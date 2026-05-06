@@ -8,7 +8,6 @@ class CompleteExtinctionException(Exception):
 
 
 class Population(Population):
-
     def __init__(self, config, initial_state=None, constraint_function=None):
         super().__init__(
             config, initial_state=initial_state, constraint_function=constraint_function
@@ -23,7 +22,6 @@ class Population(Population):
         ), f"metric {config.metric} is not impelemented in distances.py"
 
     def run(self, evaluate_function, constraint_function=None, n=None):
-
         if self.config.no_fitness_termination and (n is None):
             raise RuntimeError("Cannot have no generational limit with no fitness termination")
 
@@ -100,7 +98,6 @@ class Population(Population):
     def evaluate_novelty_fitness(self):
         new_archive = {}
         for key, genome in self.population.items():
-
             score = getattr(genome, "score", None)
             if score is None:
                 raise RuntimeError(f"score not assigned to genome {genome.key}")

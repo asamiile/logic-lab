@@ -5,7 +5,7 @@ Visualizes Newton-Raphson convergence basins for complex polynomials.
 ## Run
 
 ```bash
-uv run python mathematical/newton_fractal/newton_fractal.py
+uv run python src/logic_lab/mathematical/newton_fractal/newton_fractal.py
 ```
 
 ## Controls

@@ -1,7 +1,7 @@
 # rotate_baton
 
 ```bash
-uv run python physics/rotate_baton/rotate_baton.py
+uv run python src/logic_lab/physics/rotate_baton/rotate_baton.py
 ```
 
 - A baton rotates around the center of the canvas.

@@ -5,7 +5,7 @@ Finds the smallest convex polygon that contains a set of points.
 ## Run
 
 ```bash
-uv run python mathematical/convex_hull/convex_hull.py
+uv run python src/logic_lab/mathematical/convex_hull/convex_hull.py
 ```
 
 ## Controls

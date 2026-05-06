@@ -1,7 +1,7 @@
 # Gesture Classifier - Neural Network
 
 ```bash
-uv run python steering_behaviors/gesture_classifier/gesture_classifier.py
+uv run python src/logic_lab/steering_behaviors/gesture_classifier/gesture_classifier.py
 ```
 
 - Neural network trained to classify directional gestures (up, down, left, right)

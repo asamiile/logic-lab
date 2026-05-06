@@ -1,7 +1,7 @@
 # Path Following Simple
 
 ```bash
-uv run python steering_behaviors/path_following_simple/path_following_simple.py
+uv run python src/logic_lab/steering_behaviors/path_following_simple/path_following_simple.py
 ```
 
 - Two vehicles follow a straight path using predicted future position and normal projection.

@@ -1,7 +1,7 @@
 # Branch Thickness
 
 ```bash
-uv run python fractals/branch_thickness/branch_thickness.py
+uv run python src/logic_lab/fractals/branch_thickness/branch_thickness.py
 ```
 
 - Recursive tree visualization with branch thickness based on length.

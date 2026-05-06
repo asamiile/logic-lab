@@ -1,7 +1,7 @@
 # Emitters 2
 
 ```bash
-uv run python physics/emitters_2/emitters_2.py
+uv run python src/logic_lab/physics/emitters_2/emitters_2.py
 ```
 
 - Four emitters create particles from different starting positions.

@@ -1,7 +1,7 @@
 # Particle System Inheritance Polymorphism
 
 ```bash
-uv run python physics/particle_system_inheritance_polymorphism/particle_system_inheritance_polymorphism.py
+uv run python src/logic_lab/physics/particle_system_inheritance_polymorphism/particle_system_inheritance_polymorphism.py
 ```
 
 - An emitter randomly creates normal particles and `Confetti` particles.

@@ -1,7 +1,7 @@
 # Recursion
 
 ```bash
-uv run python fractals/recursion/recursion.py
+uv run python src/logic_lab/fractals/recursion/recursion.py
 ```
 
 - Draws concentric circles with a recursive function.

@@ -4,7 +4,6 @@ from maze_environment_numpy import MazeEnvironment
 
 
 class MazeGenomeDecoder:
-
     def __init__(self, config, maze_kwargs={}, agent_kwargs={}):
         self.region_max_size = (config.region_max_width, config.region_max_height)
         self.region_min_size = (config.region_min_width, config.region_min_height)
@@ -212,7 +211,6 @@ class MazeGenomeDecoder:
     def map_walls_of_regions(
         self, wall_genes, regions, maze_size, path_map, h_wall_map, v_wall_map
     ):
-
         subregion_queue = list(regions.values())
         # region_idx = {region_id: 0 for region_id in regions.keys()}
         region_idx = 0

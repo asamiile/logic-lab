@@ -6,7 +6,6 @@ from neat.reporting import BaseReporter
 
 
 class SaveResultReporter(BaseReporter):
-
     def __init__(self, save_path):
         self.generation = None
 

@@ -5,7 +5,7 @@ Animated particles flowing through a Perlin noise vector field with interactive 
 ## Run
 
 ```bash
-uv run python physics/particle_flow/particle_flow.py
+uv run python src/logic_lab/physics/particle_flow/particle_flow.py
 ```
 
 ## Controls

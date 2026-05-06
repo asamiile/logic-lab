@@ -1,7 +1,7 @@
 # Flappy Bird
 
 ```bash
-uv run python neuro_evolution/flappy_bird/flappy_bird.py
+uv run python src/logic_lab/neuro_evolution/flappy_bird/flappy_bird.py
 ```
 
 - Classic Flappy Bird game mechanics implemented in py5

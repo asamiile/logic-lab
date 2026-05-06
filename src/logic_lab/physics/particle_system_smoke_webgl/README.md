@@ -1,7 +1,7 @@
 # Particle System Smoke WebGL
 
 ```bash
-uv run python physics/particle_system_smoke_webgl/particle_system_smoke_webgl.py
+uv run python src/logic_lab/physics/particle_system_smoke_webgl/particle_system_smoke_webgl.py
 ```
 
 - Smoke particles are rendered in a `P3D` sketch with additive blending.

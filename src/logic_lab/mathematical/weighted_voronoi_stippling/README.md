@@ -1,7 +1,7 @@
 # Weighted Voronoi Stippling
 
 ```bash
-uv run python mathematical/weighted_voronoi_stippling/weighted_voronoi_stippling.py
+uv run python src/logic_lab/mathematical/weighted_voronoi_stippling/weighted_voronoi_stippling.py
 ```
 
 ## Overview

@@ -1,7 +1,7 @@
 # Flocking
 
 ```bash
-uv run python steering_behaviors/flocking/flocking.py
+uv run python src/logic_lab/steering_behaviors/flocking/flocking.py
 ```
 
 - Boids flock using separation, alignment, and cohesion.

@@ -1,7 +1,7 @@
 # Fluid Resistance
 
 ```bash
-uv run python physics/fluid_resistance/fluid_resistance.py
+uv run python src/logic_lab/physics/fluid_resistance/fluid_resistance.py
 ```
 
 - Click mouse to reset with new movers.

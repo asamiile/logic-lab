@@ -5,7 +5,7 @@ Generate spatially uniform point distributions using Bridson's fast Poisson disk
 ## Run
 
 ```bash
-uv run python mathematical/poisson_disk/poisson_disk.py
+uv run python src/logic_lab/mathematical/poisson_disk/poisson_disk.py
 ```
 
 ## Controls

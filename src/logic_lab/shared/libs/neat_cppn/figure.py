@@ -72,7 +72,6 @@ def make_species(expt_path):
 
     base_y = {order[0]: 0}
     for i in range(len(order)):
-
         key = order[i]
         ancestor = species_data[key]["ancestor"]
         created = species_data[key]["created"]

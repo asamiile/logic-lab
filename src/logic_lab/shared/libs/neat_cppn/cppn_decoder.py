@@ -17,7 +17,6 @@ class BaseCPPNDecoder:
 
 class BaseHyperDecoder:
     def __init__(self, substrate, activation="sin"):
-
         connections = None
         downstream_nodes = None
         self.activation = activation

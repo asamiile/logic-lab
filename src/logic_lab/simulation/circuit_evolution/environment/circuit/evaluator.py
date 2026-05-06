@@ -41,7 +41,6 @@ def load_circuit(ROOT_DIR, data_name):
 
 class CircuitEvaluator:
     def __init__(self, input_data, output_data, error_type="mse"):
-
         assert error_type in ["mse", "mae"], "choise error_type from [mse, mae]."
 
         self.input_data = input_data
@@ -49,7 +48,6 @@ class CircuitEvaluator:
         self.error_type = error_type
 
     def evaluate_circuit(self, key, circuit, generation):
-
         output_pred = []
         for inp in self.input_data:
             pred = circuit.activate(inp)
@@ -65,7 +63,6 @@ class CircuitEvaluator:
         return results
 
     def print_result(self, circuit):
-
         output_pred = []
         for inp, out in zip(self.input_data, self.output_data):
             pred = circuit.activate(inp)

@@ -3,7 +3,6 @@ from neat_cppn import BaseHyperDecoder
 
 class MazeHyperDecoder(BaseHyperDecoder):
     def __init__(self, substrate, use_hidden=False):
-
         connections = [("input", "output")]
         downstream_nodes = ["output"]
 

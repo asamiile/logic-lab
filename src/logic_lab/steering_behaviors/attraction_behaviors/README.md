@@ -1,7 +1,7 @@
 # Attraction Behaviors
 
 ```bash
-uv run python steering_behaviors/attraction_behaviors/attraction_behaviors.py
+uv run python src/logic_lab/steering_behaviors/attraction_behaviors/attraction_behaviors.py
 ```
 
 - 50 particles with local repulsion and a central attractor behavior.

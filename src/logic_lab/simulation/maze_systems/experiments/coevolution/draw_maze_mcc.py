@@ -35,7 +35,6 @@ def make_figure(
     figure_file,
     colorbar=False,
 ):
-
     with open(agent_file, "rb") as f:
         agent_genome = pickle.load(f)
 
@@ -91,7 +90,6 @@ def make_figure(
 
 
 def main():
-
     args = get_figure_args()
 
     expt_path = os.path.join(CURR_DIR, "out", "maze_mcc", "main", args.name)
@@ -150,12 +148,10 @@ def main():
             return
 
     if not args.no_multi:
-
         pool = mp.Pool(args.num_cores)
         jobs = []
 
         for maze_key, agent_key in pairs:
-
             figure_file = os.path.join(figure_path, f"{maze_key}.jpg")
             maze_genome_file = os.path.join(expt_path, "maze", f"{maze_key}.pickle")
             agent_genome_file = os.path.join(expt_path, "agent", f"{agent_key}.pickle")
@@ -182,9 +178,7 @@ def main():
             job.get(timeout=None)
 
     else:
-
         for maze_key, agent_key in pairs:
-
             figure_file = os.path.join(figure_path, f"{maze_key}.jpg")
             maze_file = os.path.join(expt_path, "maze", f"{maze_key}.pickle")
             agent_file = os.path.join(expt_path, "agent", f"{agent_key}.pickle")

@@ -1,7 +1,7 @@
 # Pen Pressure Curve Simulation
 
 ```bash
-uv run python mathematical/pen_pressure_curve/pen_pressure_curve.py
+uv run python src/logic_lab/mathematical/pen_pressure_curve/pen_pressure_curve.py
 ```
 
 ## Overview
@@ -24,8 +24,9 @@ Interactive demo of pen pressure smoothing using Bezier interpolation and Kalman
 ## Controls
 
 - **Mouse drag**: Draw (pressure varies with Y position)
+- **B**: Toggle ink bleed halo (watercolor effect) ✨
 - **R**: Reset
-- **S**: Output smoothed data to console
+- **S**: Save screenshot
 
 ## Visual Output
 

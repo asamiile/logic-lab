@@ -103,7 +103,7 @@ float pnoise31(vec3 p){
             for (int i = 0; i < 2; i++){
                 v[i+2*j+4*k] = gtable3(n + vec3(i, j, k), f - vec3(i, j, k)) * 0.70710678;
             }
-            
+
         }
     }
     f = f * f * f * (10.0 - 15.0 * f + 6.0 * f * f);
@@ -131,16 +131,16 @@ vec3 gradSDF(vec3 p){
 
 void main(){
     vec2 p = (gl_FragCoord.xy * 2.0 - u_resolution) / min(u_resolution.x, u_resolution.y);
-    
+
     float t = u_time * 0.3;
     vec3 cPos = rotY(vec3(0.0, 0.0, 2.0), t);
     vec3 cDir = rotY(vec3(0.0, 0.0, - 1.0), t);
     vec3 cUp = rotY(vec3(0.0, 1.0, 0.0), t);
     vec3 cSide = cross(cDir, cUp);
     float targetDepth = 1.0;
-    
+
     vec3 lDir = rotY(vec3(1.0), t);
-    
+
     vec3 ray = cSide * p.x + cUp * p.y + cDir * targetDepth;
     vec3 rPos = ray + cPos;
     ray = normalize(ray);

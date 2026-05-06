@@ -137,6 +137,6 @@ void main(){
         fragColor = vec4(diff);
     } else {
         fragColor = vec4(0.0);
-    }  
+    }
     fragColor.a = 1.0;
 }

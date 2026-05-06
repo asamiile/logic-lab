@@ -5,7 +5,7 @@ Real-time frequency analysis and beat detection from microphone input for music-
 ## Run
 
 ```bash
-uv run python research/audio_fft/audio_fft.py
+uv run python src/logic_lab/research/audio_fft/audio_fft.py
 ```
 
 **Note**: Requires microphone access. Grant permission when prompted by your system.
@@ -28,7 +28,7 @@ The visualization combines three components:
    - **Circular**: Polar plot where radius = magnitude, angle = frequency, color = hue cycling
    - **Spectrogram**: Waterfall display showing magnitude history over time
 
-3. **Beat Detection**: 
+3. **Beat Detection**:
    - Extract low-frequency energy (bottom 1/8 of spectrum)
    - Maintain 20-sample history of energy
    - Trigger when current energy exceeds average × 1.3 threshold

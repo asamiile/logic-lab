@@ -1,7 +1,7 @@
 # Path Following
 
 ```bash
-uv run python steering_behaviors/path_following/path_following.py
+uv run python src/logic_lab/steering_behaviors/path_following/path_following.py
 ```
 
 - Two vehicles follow a randomly generated multi-segment path.

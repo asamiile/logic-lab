@@ -104,7 +104,7 @@ float fbm21(vec2 p, float g){
 }
 float base21(vec2 p){
     return mod(u_time, 20.0) < 10.0 ?
-    fbm21(p, 0.5) : 
+    fbm21(p, 0.5) :
     pnoise21(p);
 }
 float warp21(vec2 p, float g){
@@ -117,10 +117,10 @@ float warp21(vec2 p, float g){
 float converter(float v){
     float time = abs(mod(0.1 * u_time, 2.0) - 1.0);
     float n = floor(8.0 * time);
-    return channel == ivec2(1, 0) ? step(time, v) : 
+    return channel == ivec2(1, 0) ? step(time, v) :
         channel == ivec2(2, 0) ? (floor(n * v) + step(0.5, fract (n * v))) / n :
-        channel == ivec2(0, 1) ? smoothstep(0.5 * (1.0 - time), 0.5 * (1.0 + time), v): 
-        channel == ivec2(1, 1) ? pow(v, 2.0 * time) : 
+        channel == ivec2(0, 1) ? smoothstep(0.5 * (1.0 - time), 0.5 * (1.0 + time), v):
+        channel == ivec2(1, 1) ? pow(v, 2.0 * time) :
         channel == ivec2(2, 1) ? 0.5 * sin(4.0 *  PI * v +  u_time) + 0.5 :
         v;
 }

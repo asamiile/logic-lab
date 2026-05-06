@@ -3,7 +3,7 @@
 Interactive golden-ratio rectangle subdivision. The original ControlP5 sliders are translated to keyboard controls.
 
 ```bash
-uv run python mathematical/continued_fraction_gold_div_controls/continued_fraction_gold_div_controls.py
+uv run python src/logic_lab/mathematical/continued_fraction_gold_div_controls/continued_fraction_gold_div_controls.py
 ```
 
 Controls:
@@ -13,4 +13,3 @@ Controls:
 - `m`: toggle Mondrian color mode
 - `r`: randomize colors
 - `p`: save screenshot
-

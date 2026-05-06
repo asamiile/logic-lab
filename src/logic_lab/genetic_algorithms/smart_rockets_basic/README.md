@@ -1,7 +1,7 @@
 # Smart Rockets Basic
 
 ```bash
-uv run python genetic_algorithms/smart_rockets_basic/smart_rockets_basic.py
+uv run python src/logic_lab/genetic_algorithms/smart_rockets_basic/smart_rockets_basic.py
 ```
 
 - Genetic algorithm that evolves rockets to reach a target using steering forces.

@@ -1,7 +1,7 @@
 # Genetic Algorithm - Evolving Shakespeare (Annotated)
 
 ```bash
-uv run python genetic_algorithms/ga_shakespeare_annotated/ga_shakespeare_annotated.py
+uv run python src/logic_lab/genetic_algorithms/ga_shakespeare_annotated/ga_shakespeare_annotated.py
 ```
 
 - Genetic algorithm that evolves a population of random strings toward the target phrase "To be or not to be."

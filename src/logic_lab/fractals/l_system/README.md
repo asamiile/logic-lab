@@ -1,7 +1,7 @@
 # L-System
 
 ```bash
-uv run python fractals/l_system/l_system.py
+uv run python src/logic_lab/fractals/l_system/l_system.py
 ```
 
 - L-system expansion with rule: `F -> FF+[+F-F-F]-[-F+F+F]`.

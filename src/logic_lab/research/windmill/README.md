@@ -1,7 +1,7 @@
 # Windmill
 
 ```bash
-uv run python research/windmill/windmill.py
+uv run python src/logic_lab/research/windmill/windmill.py
 ```
 
 - Particles fall from the top and strike a pivoting windmill blade, causing it to spin.

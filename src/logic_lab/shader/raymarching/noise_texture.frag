@@ -158,6 +158,6 @@ void main(){
         fragColor.rgb = vec3(diff * text(hit.zx));
     } else {
         fragColor.rgb = vec3(0.0);
-    }  
+    }
     fragColor.a = 1.0;
 }

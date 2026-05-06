@@ -1,7 +1,7 @@
 # Game Of Life OOP
 
 ```bash
-uv run python fractals/game_of_life_oop/game_of_life_oop.py
+uv run python src/logic_lab/fractals/game_of_life_oop/game_of_life_oop.py
 ```
 
 - Object-oriented Conway's Game of Life with `Cell` objects.

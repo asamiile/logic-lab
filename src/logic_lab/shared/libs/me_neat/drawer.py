@@ -46,7 +46,6 @@ class BDDrawer(BaseReporter):
         self.generation = generation
 
     def end_generation(self, config, population):
-
         bd_map = np.full(self.axis1.shape, -np.inf)
         vmin = 0
         vmax = 0

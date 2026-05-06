@@ -33,7 +33,6 @@ class PPO:
         lr_decay=True,
         max_iter=None,
     ):
-
         self.rollout_buffer = RolloutBuffer(
             n_steps,
             env.observation_space,
@@ -122,7 +121,6 @@ class PPO:
         n_steps = 0
         self.rollout_buffer.reset()
         while n_steps < n_rollout_steps:
-
             with torch.no_grad():
                 actions, values, log_probs = self.policy(self._last_obs)
             actions = actions.cpu().numpy()

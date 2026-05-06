@@ -1,7 +1,7 @@
 # Polar to Cartesian
 
 ```bash
-uv run python physics/polar_to_cartesian/polar_to_cartesian.py
+uv run python src/logic_lab/physics/polar_to_cartesian/polar_to_cartesian.py
 ```
 
 - A polar coordinate is converted to Cartesian coordinates for circular motion.

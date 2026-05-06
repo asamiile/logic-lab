@@ -1,7 +1,7 @@
 # Attraction
 
 ```bash
-uv run python physics/attraction/attraction.py
+uv run python src/logic_lab/physics/attraction/attraction.py
 ```
 
 - Drag the attractor (center circle) with the mouse.

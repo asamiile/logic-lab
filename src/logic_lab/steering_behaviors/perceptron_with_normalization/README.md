@@ -1,7 +1,7 @@
 # Perceptron with Normalization
 
 ```bash
-uv run python steering_behaviors/perceptron_with_normalization/perceptron_with_normalization.py
+uv run python src/logic_lab/steering_behaviors/perceptron_with_normalization/perceptron_with_normalization.py
 ```
 
 - Simple perceptron neural network learning to classify points above or below a line

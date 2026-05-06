@@ -23,7 +23,6 @@ class EvogymTerrainDecoder(neat_cppn.BaseCPPNDecoder):
         }
 
     def decode(self, genome, config, terrain_param):
-
         for output_key in config.output_keys[0:]:
             genome.nodes[output_key].activation = "sin"
 
@@ -242,7 +241,6 @@ class TerrainParams:
         max_down_step=0,
         max_up_step=0,
     ):
-
         self.key = key
         self.rigid_bias = rigid_bias
         self.soft_bias = soft_bias
@@ -349,7 +347,6 @@ class EnvironmentEvogym:
         plt.close()
 
     def get_env_info(self, config):
-
         env_kwargs = dict(**config.robot, terrain=self.terrain)
 
         make_env_kwargs = {
@@ -370,7 +367,6 @@ class EnvironmentEvogym:
 
 class EnvrionmentEvogymConfig:
     def __init__(self, robot, neat_config, env_id="Parkour-v0", max_width=80, first_platform=10):
-
         self.env_id = env_id
         self.robot = robot
         self.neat_config = neat_config

@@ -1,7 +1,7 @@
 # Game Of Life
 
 ```bash
-uv run python fractals/game_of_life/game_of_life.py
+uv run python src/logic_lab/fractals/game_of_life/game_of_life.py
 ```
 
 - Conway's Game of Life on an 8x8 cell grid.

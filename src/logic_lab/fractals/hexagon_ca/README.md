@@ -1,7 +1,7 @@
 # Hexagon CA
 
 ```bash
-uv run python fractals/hexagon_ca/hexagon_ca.py
+uv run python src/logic_lab/fractals/hexagon_ca/hexagon_ca.py
 ```
 
 - Draws a randomized hexagonal cell grid (black/white states).

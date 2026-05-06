@@ -1,7 +1,7 @@
 # L-System String Only
 
 ```bash
-uv run python fractals/l_system_string_only/l_system_string_only.py
+uv run python src/logic_lab/fractals/l_system_string_only/l_system_string_only.py
 ```
 
 - String-only L-system generations rendered as text.

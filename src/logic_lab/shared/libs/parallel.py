@@ -53,7 +53,6 @@ class EvaluatorParallel:
             self.pool.join()
 
     def evaluate(self, genomes, config, generation):
-
         size = len(genomes)
 
         if self.parallel:
@@ -125,7 +124,6 @@ class MCCEvaluatorParallel:
         config,
         generation,
     ):
-
         offsprings1_phenome = {
             key1: self.decode_function1(genome1, config.genome1_config)
             for key1, genome1 in offsprings1_genome.items()
@@ -235,7 +233,6 @@ class MCCEvaluatorParallel:
                 achieve2.value < config.genome2_criterion
                 and (config.genome1_limit == 0 or achieve1.value < config.genome1_limit)
             ):
-
                 achieve1.value += 1
                 achieve2.value += 1
 

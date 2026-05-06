@@ -1,7 +1,7 @@
 # Creature Sensors
 
 ```bash
-uv run python steering_behaviors/creature_sensors/creature_sensors.py
+uv run python src/logic_lab/steering_behaviors/creature_sensors/creature_sensors.py
 ```
 
 - Interactive demonstration of creature sensory input

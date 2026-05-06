@@ -1,7 +1,7 @@
 # Recursion 2
 
 ```bash
-uv run python fractals/recursion_2/recursion_2.py
+uv run python src/logic_lab/fractals/recursion_2/recursion_2.py
 ```
 
 - Recursive circle fractal where each circle spawns left and right children.

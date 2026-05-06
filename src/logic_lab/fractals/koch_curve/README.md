@@ -1,7 +1,7 @@
 # Koch Curve
 
 ```bash
-uv run python fractals/koch_curve/koch_curve.py
+uv run python src/logic_lab/fractals/koch_curve/koch_curve.py
 ```
 
 - Generates a Koch curve by replacing each segment with four new segments.

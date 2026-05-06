@@ -5,7 +5,7 @@ Generate organic cellular textures using Worley noise distance fields.
 ## Run
 
 ```bash
-uv run python mathematical/worley_noise/worley_noise.py
+uv run python src/logic_lab/mathematical/worley_noise/worley_noise.py
 ```
 
 ## Controls

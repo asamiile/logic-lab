@@ -5,7 +5,7 @@ Places integers on a square spiral and highlights prime numbers.
 ## Run
 
 ```bash
-uv run python mathematical/ulam_spiral/ulam_spiral.py
+uv run python src/logic_lab/mathematical/ulam_spiral/ulam_spiral.py
 ```
 
 ## Controls

@@ -5,7 +5,7 @@ Builds a triangle mesh from scattered points using the Bowyer-Watson algorithm.
 ## Run
 
 ```bash
-uv run python mathematical/delaunay_triangulation/delaunay_triangulation.py
+uv run python src/logic_lab/mathematical/delaunay_triangulation/delaunay_triangulation.py
 ```
 
 ## Controls

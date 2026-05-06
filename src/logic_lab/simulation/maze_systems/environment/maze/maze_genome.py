@@ -73,7 +73,6 @@ class MazeGenomeConfig:
     """Sets up and holds configuration information for the MazeGenome class."""
 
     def __init__(self, params):
-
         self._params = [
             ConfigParameter("init_maze_width", int),
             ConfigParameter("init_maze_height", int),
@@ -158,7 +157,6 @@ class MazeGenomeConfig:
 
 
 class MazeGenome:
-
     @classmethod
     def parse_config(cls, param_dict):
         param_dict["wall_gene_type"] = WallGene
@@ -206,7 +204,6 @@ class MazeGenome:
 
     def mutate(self, config):
         if config.single_structural_mutation:
-
             options = [option["func_name"] for option in config.mutate_options.values()]
             weights = [option["prob"] for option in config.mutate_options.values()]
 
@@ -363,7 +360,6 @@ class MazeGenome:
 
     @staticmethod
     def check_path_validity(pathways, maze_size):
-
         point_history = []
         end_p = (maze_size[0] - 1, maze_size[1] - 1)
         end_horizontal = None

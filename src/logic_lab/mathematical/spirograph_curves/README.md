@@ -5,7 +5,7 @@ Draws hypotrochoid and epitrochoid curves from rolling-circle equations.
 ## Run
 
 ```bash
-uv run python mathematical/spirograph_curves/spirograph_curves.py
+uv run python src/logic_lab/mathematical/spirograph_curves/spirograph_curves.py
 ```
 
 ## Controls

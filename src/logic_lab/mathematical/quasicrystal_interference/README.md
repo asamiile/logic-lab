@@ -5,7 +5,7 @@ Generates quasi-periodic patterns by summing plane waves.
 ## Run
 
 ```bash
-uv run python mathematical/quasicrystal_interference/quasicrystal_interference.py
+uv run python src/logic_lab/mathematical/quasicrystal_interference/quasicrystal_interference.py
 ```
 
 ## Controls

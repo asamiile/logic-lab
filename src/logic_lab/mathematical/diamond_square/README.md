@@ -5,7 +5,7 @@ Generate procedural landscapes using the diamond-square midpoint displacement al
 ## Run
 
 ```bash
-uv run python mathematical/diamond_square/diamond_square.py
+uv run python src/logic_lab/mathematical/diamond_square/diamond_square.py
 ```
 
 ## Controls

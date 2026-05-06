@@ -1,7 +1,7 @@
 # Fractal Lines
 
 ```bash
-uv run python fractals/fractal_lines/fractal_lines.py
+uv run python src/logic_lab/fractals/fractal_lines/fractal_lines.py
 ```
 
 - Recursive fractal line drawing that subdivides lines into perpendicular branches.

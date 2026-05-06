@@ -1,7 +1,7 @@
 # Arrive
 
 ```bash
-uv run python steering_behaviors/arrive/arrive.py
+uv run python src/logic_lab/steering_behaviors/arrive/arrive.py
 ```
 
 - A vehicle follows the mouse position and slows down as it arrives.

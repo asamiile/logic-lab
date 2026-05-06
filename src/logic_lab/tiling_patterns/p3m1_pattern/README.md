@@ -5,7 +5,7 @@ Generates a hexagonal lattice pattern with threefold rotation and reflection sym
 This py5 version uses the recursive triangle motif included in the original Processing source.
 
 ```bash
-uv run python tiling_patterns/p3m1_pattern/p3m1_pattern.py
+uv run python src/logic_lab/tiling_patterns/p3m1_pattern/p3m1_pattern.py
 ```
 
 Click to regenerate the recursive motif. Press `s` to save a screenshot.

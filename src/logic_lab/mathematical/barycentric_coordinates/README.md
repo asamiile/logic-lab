@@ -5,7 +5,7 @@ Visualizes interpolation weights inside a triangle.
 ## Run
 
 ```bash
-uv run python mathematical/barycentric_coordinates/barycentric_coordinates.py
+uv run python src/logic_lab/mathematical/barycentric_coordinates/barycentric_coordinates.py
 ```
 
 ## Controls

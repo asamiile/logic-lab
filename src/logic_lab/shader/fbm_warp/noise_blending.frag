@@ -104,7 +104,7 @@ float fbm21(vec2 p, float g){
 }
 float base21(vec2 p){
     return mod(u_time, 20.0) < 10.0 ?
-    fbm21(p, 0.5) : 
+    fbm21(p, 0.5) :
     pnoise21(p);
 }
 float warp21(vec2 p, float g){

@@ -5,7 +5,7 @@ Draws modular chord patterns over polar rose curves.
 ## Run
 
 ```bash
-uv run python mathematical/maurer_rose/maurer_rose.py
+uv run python src/logic_lab/mathematical/maurer_rose/maurer_rose.py
 ```
 
 ## Controls

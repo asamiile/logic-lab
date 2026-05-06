@@ -1,7 +1,7 @@
 # Simple Harmonic Motion
 
 ```bash
-uv run python physics/simple_harmonic_motion/simple_harmonic_motion.py
+uv run python src/logic_lab/physics/simple_harmonic_motion/simple_harmonic_motion.py
 ```
 
 - A circle oscillates horizontally using the simple harmonic motion formula.

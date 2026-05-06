@@ -5,7 +5,7 @@ Reconstructs closed curves from rotating circles using the discrete Fourier tran
 ## Run
 
 ```bash
-uv run python mathematical/fourier_epicycles/fourier_epicycles.py
+uv run python src/logic_lab/mathematical/fourier_epicycles/fourier_epicycles.py
 ```
 
 ## Controls

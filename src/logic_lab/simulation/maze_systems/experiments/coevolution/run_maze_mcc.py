@@ -22,7 +22,6 @@ from maze_genome_decoder import MazeGenomeDecoder
 
 
 class MazeReporter(mcc.BaseReporter):
-
     def end_generation(self, config, agent_genomes, maze_genomes):
         maze_areas = [maze_genome.get_maze_area() for maze_genome in maze_genomes.values()]
         maze_junctures = [maze_genome.get_juncture_num() for maze_genome in maze_genomes.values()]

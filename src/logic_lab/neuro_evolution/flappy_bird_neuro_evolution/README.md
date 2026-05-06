@@ -1,7 +1,7 @@
 # Flappy Bird with Neuro-Evolution
 
 ```bash
-uv run python neuro_evolution/flappy_bird_neuro_evolution/flappy_bird_neuro_evolution.py
+uv run python src/logic_lab/neuro_evolution/flappy_bird_neuro_evolution/flappy_bird_neuro_evolution.py
 ```
 
 - Population of 200 birds, each controlled by its own neural network

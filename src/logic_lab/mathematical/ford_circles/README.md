@@ -5,7 +5,7 @@ Draws tangent circles for reduced fractions on the number line.
 ## Run
 
 ```bash
-uv run python mathematical/ford_circles/ford_circles.py
+uv run python src/logic_lab/mathematical/ford_circles/ford_circles.py
 ```
 
 ## Controls

@@ -5,7 +5,7 @@ Moves random points toward the centroids of their Voronoi-like regions.
 ## Run
 
 ```bash
-uv run python mathematical/lloyd_relaxation/lloyd_relaxation.py
+uv run python src/logic_lab/mathematical/lloyd_relaxation/lloyd_relaxation.py
 ```
 
 ## Controls

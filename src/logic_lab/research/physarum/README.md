@@ -1,7 +1,7 @@
 # Physarum Transport Networks (Slime Mold)
 
 ```bash
-uv run python research/physarum/physarum.py
+uv run python src/logic_lab/research/physarum/physarum.py
 ```
 
 ## Overview

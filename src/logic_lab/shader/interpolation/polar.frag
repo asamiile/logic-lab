@@ -33,6 +33,6 @@ vec3 tex(vec2 st){
 void main(){
     vec2 pos = gl_FragCoord.xy / u_resolution.xy;
     pos = 2.0 * pos.xy - vec2(1.0);
-    pos = xy2pol(pos);    
+    pos = xy2pol(pos);
     fragColor = vec4(tex(pos), 1.0);
 }

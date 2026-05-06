@@ -116,7 +116,7 @@ void main(){
         fragColor = vec4(rotNoise21(pos, u_time));  //right
     } else {
         fragColor = vec4(rotNoise31(vec3(pos, u_time), u_time));
-        
+
     }
     fragColor.a = 1.0;
 }

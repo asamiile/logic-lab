@@ -1,7 +1,7 @@
 # Cloth Simulation
 
 ```bash
-uv run python research/cloth_simulation/cloth_simulation.py
+uv run python src/logic_lab/research/cloth_simulation/cloth_simulation.py
 ```
 
 - A cloth is modeled as a grid of Verlet particles connected by springs.

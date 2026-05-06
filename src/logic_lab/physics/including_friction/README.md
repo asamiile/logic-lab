@@ -1,7 +1,7 @@
 # Including Friction
 
 ```bash
-uv run python physics/including_friction/including_friction.py
+uv run python src/logic_lab/physics/including_friction/including_friction.py
 ```
 
 - Click mouse to apply wind force.

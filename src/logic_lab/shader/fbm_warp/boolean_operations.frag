@@ -105,7 +105,7 @@ float fbm21(vec2 p, float g){
 }
 float base21(vec2 p){
     return mod(u_time, 20.0) < 10.0 ?
-    fbm21(p, 0.5) : 
+    fbm21(p, 0.5) :
     pnoise21(p);
 }
 float warp21(vec2 p, float g){
@@ -125,15 +125,15 @@ void main(){
     vec4 x;
     if (channel == 0){
         bvec2 b = bvec2(step(f, vec2(0)));
-        x = vec4(b[0] && b[1], 
+        x = vec4(b[0] && b[1],
         b[0] && !b[1],
         !b[0] && b[1],
         !(b[0] || b[1])
         );
     } else {
         x = vec4(max(f[0], f[1]),
-        max(f[0], -f[1]), 
-        max(-f[0], f[1]), 
+        max(f[0], -f[1]),
+        max(-f[0], f[1]),
         -min(f[0], f[1]));
         x = step(x, vec4(0.0)
         );

@@ -1,7 +1,7 @@
 # Mouse Constraint
 
 ```bash
-uv run python research/mouse_constraint/mouse_constraint.py
+uv run python src/logic_lab/research/mouse_constraint/mouse_constraint.py
 ```
 
 - Click and drag boxes to move them around the enclosed arena.

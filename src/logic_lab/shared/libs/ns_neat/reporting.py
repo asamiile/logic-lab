@@ -7,7 +7,6 @@ from neat_cppn import BaseReporter, StdOutReporter
 
 
 class SaveResultReporter(BaseReporter):
-
     def __init__(self, save_path):
         self.generation = None
 
@@ -112,7 +111,6 @@ class SaveResultReporter(BaseReporter):
 
 
 class NoveltySearchReporter(StdOutReporter):
-
     def post_evaluate(self, config, population, species, best_genome):
         fitnesses = [c.fitness for c in population.values()]
         fit_mean = np.mean(fitnesses)

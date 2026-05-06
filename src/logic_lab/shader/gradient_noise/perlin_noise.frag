@@ -80,7 +80,7 @@ float gnoise31(vec3 p){
             for (int i = 0; i < 2; i++){
                 g[i+2*j+4*k] = normalize(hash33(n + vec3(i, j, k)) - vec3(0.5));
             }
-            
+
         }
     }
     vec3 f = fract(p);
@@ -90,7 +90,7 @@ float gnoise31(vec3 p){
             for (int i = 0; i < 2; i++){
                 v[i+2*j+4*k] = dot(g[i+2*j+4*k], f - vec3(i, j, k));
             }
-            
+
         }
     }
     f = f * f * f * (10.0 - 15.0 * f + 6.0 * f * f);
@@ -138,7 +138,7 @@ float pnoise31(vec3 p){
             for (int i = 0; i < 2; i++){
                 v[i+2*j+4*k] = gtable3(n + vec3(i, j, k), f - vec3(i, j, k)) * 0.70710678;
             }
-            
+
         }
     }
     f = f * f * f * (10.0 - 15.0 * f + 6.0 * f * f);
@@ -154,10 +154,10 @@ void main(){
     vec2 pos = gl_FragCoord.xy/min(u_resolution.x, u_resolution.y);
     pos = 10.0 * pos + u_time;
     channel = ivec2(2.0 * gl_FragCoord.xy / u_resolution.xy);
-    float v = channel[0] == 0 ? 
+    float v = channel[0] == 0 ?
         channel[1] == 0 ? gnoise21(pos) :
         gnoise31(vec3(pos, u_time)) :
-        channel[1] == 0 ? pnoise21(pos) : 
+        channel[1] == 0 ? pnoise21(pos) :
         pnoise31(vec3(pos, u_time));
     fragColor.rgb = vec3(v);
     fragColor.a = 1.0;

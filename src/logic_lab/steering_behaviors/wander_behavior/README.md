@@ -1,7 +1,7 @@
 # Wander Behavior
 
 ```bash
-uv run python steering_behaviors/wander_behavior/wander_behavior.py
+uv run python src/logic_lab/steering_behaviors/wander_behavior/wander_behavior.py
 ```
 
 - A vehicle wanders autonomously by steering toward a point on a projected circle ahead of it.

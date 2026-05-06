@@ -1,7 +1,7 @@
 # Seek
 
 ```bash
-uv run python steering_behaviors/seek/seek.py
+uv run python src/logic_lab/steering_behaviors/seek/seek.py
 ```
 
 - A vehicle seeks the mouse position using a steering force.

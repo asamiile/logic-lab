@@ -1,7 +1,7 @@
 # Diffusion-Limited Aggregation (DLA)
 
 ```bash
-uv run python fractals/dla/dla.py
+uv run python src/logic_lab/fractals/dla/dla.py
 ```
 
 ## Overview

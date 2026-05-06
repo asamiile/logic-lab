@@ -1,7 +1,7 @@
 # Koch Snowflake
 
 ```bash
-uv run python fractals/koch_snowflake/koch_snowflake.py
+uv run python src/logic_lab/fractals/koch_snowflake/koch_snowflake.py
 ```
 
 - Renders a Koch snowflake fractal pattern.

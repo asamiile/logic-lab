@@ -5,7 +5,7 @@ Generates a recursive packing of mutually tangent circles.
 ## Run
 
 ```bash
-uv run python mathematical/apollonian_gasket/apollonian_gasket.py
+uv run python src/logic_lab/mathematical/apollonian_gasket/apollonian_gasket.py
 ```
 
 ## Controls

@@ -1,7 +1,7 @@
 # Interactive Selection - Evolving Flowers
 
 ```bash
-uv run python genetic_algorithms/interactive_selection/interactive_selection.py
+uv run python src/logic_lab/genetic_algorithms/interactive_selection/interactive_selection.py
 ```
 
 - Interactive genetic algorithm where you control evolution by selecting flowers

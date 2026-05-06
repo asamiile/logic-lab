@@ -1,7 +1,7 @@
 # Boxes and Boundaries
 
 ```bash
-uv run python research/boxes_and_boundaries/boxes_and_boundaries.py
+uv run python src/logic_lab/research/boxes_and_boundaries/boxes_and_boundaries.py
 ```
 
 - Boxes spawn randomly at the top center and fall under gravity onto two angled static platforms.

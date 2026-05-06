@@ -1,7 +1,7 @@
 # N-Body Orbital Simulation
 
 ```bash
-uv run python physics/n_body_orbital_simulation/n_body_orbital_simulation.py
+uv run python src/logic_lab/physics/n_body_orbital_simulation/n_body_orbital_simulation.py
 ```
 
 - 100 movers orbit a central sun, attracting each other mutually.

@@ -3,7 +3,7 @@
 Shows rotation and reflection actions on a shape and labeled polygon vertices.
 
 ```bash
-uv run python tiling_patterns/dihedral_group/dihedral_group.py
+uv run python src/logic_lab/tiling_patterns/dihedral_group/dihedral_group.py
 ```
 
 Controls:
@@ -12,4 +12,3 @@ Controls:
 - `r`: rotate
 - `e`: reset
 - `s`: save screenshot
-

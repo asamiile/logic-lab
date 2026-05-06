@@ -5,7 +5,7 @@ Generate harmonious color palettes using HSB color space, with animated hue cycl
 ## Run
 
 ```bash
-uv run python mathematical/color_harmony/color_harmony.py
+uv run python src/logic_lab/mathematical/color_harmony/color_harmony.py
 ```
 
 ## Controls

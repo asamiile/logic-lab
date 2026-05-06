@@ -1,7 +1,7 @@
 # Angular Motion Using Rotate
 
 ```bash
-uv run python physics/angular_motion_using_rotate/angular_motion_using_rotate.py
+uv run python src/logic_lab/physics/angular_motion_using_rotate/angular_motion_using_rotate.py
 ```
 
 - A baton rotates with angular velocity and angular acceleration.

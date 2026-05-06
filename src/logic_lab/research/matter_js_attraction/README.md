@@ -1,7 +1,7 @@
 # Matter.js Attraction
 
 ```bash
-uv run python research/matter_js_attraction/matter_js_attraction.py
+uv run python src/logic_lab/research/matter_js_attraction/matter_js_attraction.py
 ```
 
 - 100 movers orbit around a central attractor body using gravitational force.

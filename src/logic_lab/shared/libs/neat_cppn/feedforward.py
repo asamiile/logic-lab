@@ -3,7 +3,6 @@ from neat.nn import FeedForwardNetwork
 
 
 class FeedForwardNetwork(FeedForwardNetwork):
-
     # modified argument "config" to indice "genome_config"
     @staticmethod
     def create(genome, config):
