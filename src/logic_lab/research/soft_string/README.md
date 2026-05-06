@@ -1,7 +1,7 @@
 # Soft String
 
 ```bash
-uv run python research/soft_string/soft_string.py
+uv run python src/logic_lab/research/soft_string/soft_string.py
 ```
 
 - A soft string built from chained Verlet particles and springs.

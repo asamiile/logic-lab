@@ -5,7 +5,7 @@ Visualize invisible vector flow fields using streamline tracing with animated Pe
 ## Run
 
 ```bash
-uv run python steering_behaviors/flowlines/flowlines.py
+uv run python src/logic_lab/steering_behaviors/flowlines/flowlines.py
 ```
 
 ## Controls

@@ -1,7 +1,7 @@
 # Angle Between Vectors
 
 ```bash
-uv run python physics/angle_between/angle_between.py
+uv run python src/logic_lab/physics/angle_between/angle_between.py
 ```
 
 - Move the mouse to rotate the blue vector; the angle between it and the x-axis is displayed.

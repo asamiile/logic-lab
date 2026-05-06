@@ -1,7 +1,7 @@
 # Compound Bodies
 
 ```bash
-uv run python research/compound_bodies/compound_bodies.py
+uv run python src/logic_lab/research/compound_bodies/compound_bodies.py
 ```
 
 - Lollipop-shaped compound bodies (stick + candy circle) spawn and fall onto two static platforms.

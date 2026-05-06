@@ -1,7 +1,7 @@
 # 2D Noise Parameterized
 
 ```bash
-uv run python physics/noise_2d_parameterized/noise_2d_parameterized.py
+uv run python src/logic_lab/physics/noise_2d_parameterized/noise_2d_parameterized.py
 ```
 
 - Press `r` to randomize the noise seed.

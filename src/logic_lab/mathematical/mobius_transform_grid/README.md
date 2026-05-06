@@ -5,7 +5,7 @@ Warps complex-plane grid lines with Mobius transformations.
 ## Run
 
 ```bash
-uv run python mathematical/mobius_transform_grid/mobius_transform_grid.py
+uv run python src/logic_lab/mathematical/mobius_transform_grid/mobius_transform_grid.py
 ```
 
 ## Controls

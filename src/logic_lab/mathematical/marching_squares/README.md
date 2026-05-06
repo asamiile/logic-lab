@@ -5,7 +5,7 @@ Extract contour lines from a sampled scalar field.
 ## Run
 
 ```bash
-uv run python mathematical/marching_squares/marching_squares.py
+uv run python src/logic_lab/mathematical/marching_squares/marching_squares.py
 ```
 
 ## Controls

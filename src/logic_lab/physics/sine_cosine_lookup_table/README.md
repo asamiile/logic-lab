@@ -1,7 +1,7 @@
 # Sine/Cosine Lookup Table
 
 ```bash
-uv run python physics/sine_cosine_lookup_table/sine_cosine_lookup_table.py
+uv run python src/logic_lab/physics/sine_cosine_lookup_table/sine_cosine_lookup_table.py
 ```
 
 - A circle drawn with points whose radius pulses using a precomputed sin/cos lookup table (0.5° precision).

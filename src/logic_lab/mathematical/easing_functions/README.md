@@ -5,7 +5,7 @@ Smooth interpolation functions for animation and motion design, with interactive
 ## Run
 
 ```bash
-uv run python mathematical/easing_functions/easing_functions.py
+uv run python src/logic_lab/mathematical/easing_functions/easing_functions.py
 ```
 
 ## Controls

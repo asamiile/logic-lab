@@ -5,7 +5,7 @@ Real-time frequency analysis and beat detection from microphone input for music-
 ## Run
 
 ```bash
-uv run python research/audio_fft/audio_fft.py
+uv run python src/logic_lab/research/audio_fft/audio_fft.py
 ```
 
 **Note**: Requires microphone access. Grant permission when prompted by your system.

@@ -5,7 +5,7 @@ Draws organic radial shapes from Johan Gielis' superformula.
 ## Run
 
 ```bash
-uv run python mathematical/superformula/superformula.py
+uv run python src/logic_lab/mathematical/superformula/superformula.py
 ```
 
 ## Controls

@@ -1,7 +1,7 @@
 # Stochastic Tree
 
 ```bash
-uv run python fractals/stochastic_tree/stochastic_tree.py
+uv run python src/logic_lab/fractals/stochastic_tree/stochastic_tree.py
 ```
 
 - Recursive tree with random branch count and random branch angles.

@@ -1,7 +1,7 @@
 # Cantor Set
 
 ```bash
-uv run python fractals/cantor_set/cantor_set.py
+uv run python src/logic_lab/fractals/cantor_set/cantor_set.py
 ```
 
 - Renders the Cantor set recursively with line segments.

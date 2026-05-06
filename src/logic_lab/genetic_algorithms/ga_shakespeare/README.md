@@ -1,7 +1,7 @@
 # GA Shakespeare
 
 ```bash
-uv run python genetic_algorithms/ga_shakespeare/ga_shakespeare.py
+uv run python src/logic_lab/genetic_algorithms/ga_shakespeare/ga_shakespeare.py
 ```
 
 - Genetic algorithm that evolves random text toward the target phrase "to be or not to be".

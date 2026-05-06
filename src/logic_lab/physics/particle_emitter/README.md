@@ -1,7 +1,7 @@
 # Particle Emitter
 
 ```bash
-uv run python physics/particle_emitter/particle_emitter.py
+uv run python src/logic_lab/physics/particle_emitter/particle_emitter.py
 ```
 
 - An emitter creates one particle per frame and removes particles after their lifespan ends.

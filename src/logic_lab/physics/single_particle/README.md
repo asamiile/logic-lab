@@ -1,7 +1,7 @@
 # Single Particle
 
 ```bash
-uv run python physics/single_particle/single_particle.py
+uv run python src/logic_lab/physics/single_particle/single_particle.py
 ```
 
 - A single particle falls under gravity, fades out, and respawns when its lifespan ends.

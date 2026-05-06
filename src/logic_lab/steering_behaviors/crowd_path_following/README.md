@@ -1,7 +1,7 @@
 # Crowd Path Following
 
 ```bash
-uv run python steering_behaviors/crowd_path_following/crowd_path_following.py
+uv run python src/logic_lab/steering_behaviors/crowd_path_following/crowd_path_following.py
 ```
 
 - 120 vehicles follow a closed path while separating from each other.

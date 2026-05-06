@@ -5,7 +5,7 @@ Draws parametric curves from two perpendicular sine waves.
 ## Run
 
 ```bash
-uv run python mathematical/lissajous_curves/lissajous_curves.py
+uv run python src/logic_lab/mathematical/lissajous_curves/lissajous_curves.py
 ```
 
 ## Controls

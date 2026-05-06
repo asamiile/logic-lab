@@ -1,7 +1,7 @@
 # Stay Within Walls
 
 ```bash
-uv run python steering_behaviors/stay_within_walls/stay_within_walls.py
+uv run python src/logic_lab/steering_behaviors/stay_within_walls/stay_within_walls.py
 ```
 
 - A vehicle steers back inside the inset boundary when it gets too close to the edges.

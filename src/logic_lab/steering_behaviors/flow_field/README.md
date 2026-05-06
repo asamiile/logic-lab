@@ -1,7 +1,7 @@
 # Flow Field
 
 ```bash
-uv run python steering_behaviors/flow_field/flow_field.py
+uv run python src/logic_lab/steering_behaviors/flow_field/flow_field.py
 ```
 
 - Vehicles follow a Perlin-noise flow field.

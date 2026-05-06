@@ -1,7 +1,7 @@
 # Pursuit Behavior
 
 ```bash
-uv run python steering_behaviors/pursuit_behavior/pursuit_behavior.py
+uv run python src/logic_lab/steering_behaviors/pursuit_behavior/pursuit_behavior.py
 ```
 
 - A vehicle (triangle) pursues a moving target (circle) by predicting its future position.

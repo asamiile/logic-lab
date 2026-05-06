@@ -1,7 +1,7 @@
 # Smart Rockets with Neuro-Evolution
 
 ```bash
-uv run python neuro_evolution/smart_rockets_neuro_evolution/smart_rockets_neuro_evolution.py
+uv run python src/logic_lab/neuro_evolution/smart_rockets_neuro_evolution/smart_rockets_neuro_evolution.py
 ```
 
 - Population of 150 rockets navigating around obstacles to reach a target

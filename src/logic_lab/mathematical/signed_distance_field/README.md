@@ -5,7 +5,7 @@ Visualizes shape composition with signed distance functions.
 ## Run
 
 ```bash
-uv run python mathematical/signed_distance_field/signed_distance_field.py
+uv run python src/logic_lab/mathematical/signed_distance_field/signed_distance_field.py
 ```
 
 ## Controls

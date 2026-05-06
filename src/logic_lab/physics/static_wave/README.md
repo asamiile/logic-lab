@@ -1,7 +1,7 @@
 # Static Wave
 
 ```bash
-uv run python physics/static_wave/static_wave.py
+uv run python src/logic_lab/physics/static_wave/static_wave.py
 ```
 
 - A row of circles is positioned with sine values to form a static wave.

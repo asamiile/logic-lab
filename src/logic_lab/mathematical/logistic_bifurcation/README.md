@@ -5,7 +5,7 @@ Draws the bifurcation diagram of the logistic map.
 ## Run
 
 ```bash
-uv run python mathematical/logistic_bifurcation/logistic_bifurcation.py
+uv run python src/logic_lab/mathematical/logistic_bifurcation/logistic_bifurcation.py
 ```
 
 ## Controls

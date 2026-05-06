@@ -5,16 +5,27 @@ Emergent organic patterns using the Gray-Scott chemical reaction simulation.
 ## Run
 
 ```bash
-uv run python physics/reaction_diffusion/reaction_diffusion.py
+uv run python src/logic_lab/physics/reaction_diffusion/reaction_diffusion.py
 ```
 
 ## Controls
 
 | Key | Effect |
 |---|---|
-| `1-5` | Switch preset (coral, mitosis, fingerprint, worms, spirals) |
+| `1-7` | Switch preset |
+| `w` | Toggle watercolor render mode |
 | `r` | Reset with new random seed |
 | `s` | Save screenshot |
+
+### Presets
+
+- **1. Coral** (F=0.0095, k=0.057): branching coral structures
+- **2. Mitosis** (F=0.046, k=0.063): cell-like division patterns
+- **3. Fingerprint** (F=0.039, k=0.058): ridge-like patterns
+- **4. Worms** (F=0.078, k=0.061): writhing worm-like shapes
+- **5. Spirals** (F=0.0545, k=0.062): rotating spiral vortices
+- **6. Watercolor Bleed** (F=0.014, k=0.054): soft ink-like spreading ✨ *watercolor mode recommended*
+- **7. Watercolor Tendrils** (F=0.037, k=0.060): fine filaments like dry brush ✨ *watercolor mode recommended*
 
 ## Algorithm
 
@@ -31,12 +42,13 @@ Where:
 - **k**: Kill rate (parameter to vary)
 - **∇²**: Laplacian operator (computed with wrap-around boundaries)
 
-Different (F, k) values produce distinct patterns:
-- **Coral** (F=0.0095, k=0.057): branching coral structures
-- **Mitosis** (F=0.046, k=0.063): cell-like division patterns
-- **Fingerprint** (F=0.039, k=0.058): ridge-like patterns
-- **Worms** (F=0.078, k=0.061): writhing worm-like shapes
-- **Spirals** (F=0.0545, k=0.062): rotating spiral vortices
+### Watercolor Mode
+
+The watercolor render mode combines the Gray-Scott simulation with paper texture and soft edge rendering to create ink-like visual effects:
+- **Paper texture**: Perlin noise simulates paper grain, affecting ink diffusion (capillary effect)
+- **Soft edges**: Gaussian filtering creates ink bleeding at boundaries
+- **Wet-edge brightening**: Edges appear lighter due to ink concentration gradients
+- **Indigo ink color**: Custom color mapping for watercolor appearance
 
 ## Other Environments
 

@@ -1,7 +1,7 @@
 # Soft Body Character Enhanced
 
 ```bash
-uv run python research/soft_body_character_enhanced/soft_body_character_enhanced.py
+uv run python src/logic_lab/research/soft_body_character_enhanced/soft_body_character_enhanced.py
 ```
 
 - A soft-body character built from particles and dense spring connections.

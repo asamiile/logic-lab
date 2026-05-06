@@ -1,7 +1,7 @@
 # Branch Objects Animation
 
 ```bash
-uv run python fractals/branch_objects_animation/branch_objects_animation.py
+uv run python src/logic_lab/fractals/branch_objects_animation/branch_objects_animation.py
 ```
 
 - Animated recursive tree growth using array-based branching.

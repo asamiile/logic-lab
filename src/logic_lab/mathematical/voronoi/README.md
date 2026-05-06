@@ -5,7 +5,7 @@ Generate space-partitioning diagrams where each pixel is colored by its nearest 
 ## Run
 
 ```bash
-uv run python mathematical/voronoi/voronoi.py
+uv run python src/logic_lab/mathematical/voronoi/voronoi.py
 ```
 
 ## Controls

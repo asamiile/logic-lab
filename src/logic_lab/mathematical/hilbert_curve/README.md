@@ -5,7 +5,7 @@ Draws a space-filling curve from Hilbert indices.
 ## Run
 
 ```bash
-uv run python mathematical/hilbert_curve/hilbert_curve.py
+uv run python src/logic_lab/mathematical/hilbert_curve/hilbert_curve.py
 ```
 
 ## Controls

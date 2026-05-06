@@ -1,7 +1,7 @@
 # Truchet Tiling
 
 ```bash
-uv run python tiling_patterns/truchet_tiling/truchet_tiling.py
+uv run python src/logic_lab/tiling_patterns/truchet_tiling/truchet_tiling.py
 ```
 
 ## Overview

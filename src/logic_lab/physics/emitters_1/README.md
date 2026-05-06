@@ -1,7 +1,7 @@
 # Emitters 1
 
 ```bash
-uv run python physics/emitters_1/emitters_1.py
+uv run python src/logic_lab/physics/emitters_1/emitters_1.py
 ```
 
 - Multiple emitters each create one particle per frame.

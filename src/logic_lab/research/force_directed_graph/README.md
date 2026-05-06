@@ -1,7 +1,7 @@
 # Force Directed Graph
 
 ```bash
-uv run python research/force_directed_graph/force_directed_graph.py
+uv run python src/logic_lab/research/force_directed_graph/force_directed_graph.py
 ```
 
 - Fully connected random particle cluster with spring constraints.

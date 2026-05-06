@@ -1,7 +1,7 @@
 # Evolving Bloops - Ecosystem Simulation
 
 ```bash
-uv run python genetic_algorithms/evolving_bloops/evolving_bloops.py
+uv run python src/logic_lab/genetic_algorithms/evolving_bloops/evolving_bloops.py
 ```
 
 - Genetic algorithm simulation of an evolving ecosystem

@@ -5,7 +5,7 @@ Visualizes complex functions by mapping phase and magnitude to color.
 ## Run
 
 ```bash
-uv run python mathematical/complex_domain_coloring/complex_domain_coloring.py
+uv run python src/logic_lab/mathematical/complex_domain_coloring/complex_domain_coloring.py
 ```
 
 ## Controls

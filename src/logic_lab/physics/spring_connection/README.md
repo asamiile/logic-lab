@@ -1,7 +1,7 @@
 # Spring Connection
 
 ```bash
-uv run python physics/spring_connection/spring_connection.py
+uv run python src/logic_lab/physics/spring_connection/spring_connection.py
 ```
 
 - A bob is connected to an anchor by a spring force and constrained length.

@@ -1,7 +1,7 @@
 # Boxes Exercise
 
 ```bash
-uv run python research/boxes_exercise/boxes_exercise.py
+uv run python src/logic_lab/research/boxes_exercise/boxes_exercise.py
 ```
 
 - Click and drag to spawn boxes that fall under gravity and stack on the ground.

@@ -1,7 +1,7 @@
 # Simple Harmonic Motion II
 
 ```bash
-uv run python physics/simple_harmonic_motion_ii/simple_harmonic_motion_ii.py
+uv run python src/logic_lab/physics/simple_harmonic_motion_ii/simple_harmonic_motion_ii.py
 ```
 
 - A circle oscillates horizontally as an angle advances at a constant angular velocity.

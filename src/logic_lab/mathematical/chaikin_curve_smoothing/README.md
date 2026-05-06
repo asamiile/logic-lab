@@ -5,7 +5,7 @@ Smooths a polyline with Chaikin's corner-cutting algorithm.
 ## Run
 
 ```bash
-uv run python mathematical/chaikin_curve_smoothing/chaikin_curve_smoothing.py
+uv run python src/logic_lab/mathematical/chaikin_curve_smoothing/chaikin_curve_smoothing.py
 ```
 
 ## Controls

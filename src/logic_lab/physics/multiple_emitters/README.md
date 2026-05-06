@@ -1,7 +1,7 @@
 # Multiple Emitters
 
 ```bash
-uv run python physics/multiple_emitters/multiple_emitters.py
+uv run python src/logic_lab/physics/multiple_emitters/multiple_emitters.py
 ```
 
 - Click to add particle emitters at the mouse position.

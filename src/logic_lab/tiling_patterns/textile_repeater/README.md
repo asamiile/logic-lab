@@ -3,7 +3,7 @@
 Generates repeated textile patterns from matrix products.
 
 ```bash
-uv run python tiling_patterns/textile_repeater/textile_repeater.py
+uv run python src/logic_lab/tiling_patterns/textile_repeater/textile_repeater.py
 ```
 
 Controls:

@@ -1,7 +1,7 @@
 # Particle System With Repeller
 
 ```bash
-uv run python physics/particle_system_with_repeller/particle_system_with_repeller.py
+uv run python src/logic_lab/physics/particle_system_with_repeller/particle_system_with_repeller.py
 ```
 
 - A particle emitter applies gravity and a repelling force from a fixed repeller.

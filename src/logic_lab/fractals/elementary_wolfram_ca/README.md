@@ -1,7 +1,7 @@
 # Elementary Wolfram CA
 
 ```bash
-uv run python fractals/elementary_wolfram_ca/elementary_wolfram_ca.py
+uv run python src/logic_lab/fractals/elementary_wolfram_ca/elementary_wolfram_ca.py
 ```
 
 - Elementary cellular automaton (Rule 90).

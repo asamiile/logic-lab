@@ -1,7 +1,7 @@
 # The Wave
 
 ```bash
-uv run python physics/the_wave/the_wave.py
+uv run python src/logic_lab/physics/the_wave/the_wave.py
 ```
 
 - A sine wave animates by advancing the starting angle each frame.

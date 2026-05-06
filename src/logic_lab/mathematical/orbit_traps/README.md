@@ -1,7 +1,7 @@
 # Orbit Traps (Fractal Coloring)
 
 ```bash
-uv run python mathematical/orbit_traps/orbit_traps.py
+uv run python src/logic_lab/mathematical/orbit_traps/orbit_traps.py
 ```
 
 ## Overview

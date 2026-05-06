@@ -5,7 +5,7 @@ Renders dense point clouds from a chaotic two-dimensional map.
 ## Run
 
 ```bash
-uv run python mathematical/clifford_attractor/clifford_attractor.py
+uv run python src/logic_lab/mathematical/clifford_attractor/clifford_attractor.py
 ```
 
 ## Controls

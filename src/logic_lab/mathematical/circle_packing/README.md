@@ -5,7 +5,7 @@ Grows non-overlapping circles inside selectable boundary masks.
 ## Run
 
 ```bash
-uv run python mathematical/circle_packing/circle_packing.py
+uv run python src/logic_lab/mathematical/circle_packing/circle_packing.py
 ```
 
 ## Controls

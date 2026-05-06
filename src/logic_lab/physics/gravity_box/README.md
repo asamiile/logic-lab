@@ -1,7 +1,7 @@
 # Gravity Box
 
 ```bash
-uv run python physics/gravity_box/gravity_box.py
+uv run python src/logic_lab/physics/gravity_box/gravity_box.py
 ```
 
 - A rigid box falls under gravity, bounces off the ground, and spins.

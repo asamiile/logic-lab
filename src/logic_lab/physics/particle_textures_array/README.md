@@ -1,7 +1,7 @@
 # Particle Textures Array
 
 ```bash
-uv run python physics/particle_textures_array/particle_textures_array.py
+uv run python src/logic_lab/physics/particle_textures_array/particle_textures_array.py
 ```
 
 - Emits particles from the mouse position.

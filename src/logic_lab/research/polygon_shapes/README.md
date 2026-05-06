@@ -1,7 +1,7 @@
 # Polygon Shapes
 
 ```bash
-uv run python research/polygon_shapes/polygon_shapes.py
+uv run python src/logic_lab/research/polygon_shapes/polygon_shapes.py
 ```
 
 - Custom convex polygons spawn at the top and fall onto two static platforms.

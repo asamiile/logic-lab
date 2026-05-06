@@ -5,7 +5,7 @@ Visualizes Bezier curve evaluation through repeated linear interpolation.
 ## Run
 
 ```bash
-uv run python mathematical/de_casteljau_subdivision/de_casteljau_subdivision.py
+uv run python src/logic_lab/mathematical/de_casteljau_subdivision/de_casteljau_subdivision.py
 ```
 
 ## Controls

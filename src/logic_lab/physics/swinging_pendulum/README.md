@@ -1,7 +1,7 @@
 # Swinging Pendulum
 
 ```bash
-uv run python physics/swinging_pendulum/swinging_pendulum.py
+uv run python src/logic_lab/physics/swinging_pendulum/swinging_pendulum.py
 ```
 
 - A pendulum swings with angular acceleration from gravity and damping.

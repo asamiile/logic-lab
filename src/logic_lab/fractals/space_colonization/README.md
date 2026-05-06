@@ -1,7 +1,7 @@
 # Space Colonization Algorithm
 
 ```bash
-uv run python fractals/space_colonization/space_colonization.py
+uv run python src/logic_lab/fractals/space_colonization/space_colonization.py
 ```
 
 ## Overview

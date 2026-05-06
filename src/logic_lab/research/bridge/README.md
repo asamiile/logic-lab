@@ -1,7 +1,7 @@
 # Bridge
 
 ```bash
-uv run python research/bridge/bridge.py
+uv run python src/logic_lab/research/bridge/bridge.py
 ```
 
 - A chain of linked particles forms a bridge with fixed endpoints.

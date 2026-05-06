@@ -1,7 +1,7 @@
 # Spiral
 
 ```bash
-uv run python physics/spiral/spiral.py
+uv run python src/logic_lab/physics/spiral/spiral.py
 ```
 
 - A polar coordinate spirals outward as both angle and radius increase over time.

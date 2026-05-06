@@ -1,7 +1,7 @@
 # Asteroids Particle System
 
 ```bash
-uv run python physics/asteroids_particle_system/asteroids_particle_system.py
+uv run python src/logic_lab/physics/asteroids_particle_system/asteroids_particle_system.py
 ```
 
 - A spaceship turns with the arrow keys, thrusts with the up arrow, and emits thruster particles.

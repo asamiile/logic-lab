@@ -1,7 +1,7 @@
 # Flocking With Binning
 
 ```bash
-uv run python steering_behaviors/flocking_with_binning/flocking_with_binning.py
+uv run python src/logic_lab/steering_behaviors/flocking_with_binning/flocking_with_binning.py
 ```
 
 - Boids flock using separation, alignment, and cohesion.

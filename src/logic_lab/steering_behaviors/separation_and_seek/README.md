@@ -1,7 +1,7 @@
 # Separation and Seek
 
 ```bash
-uv run python steering_behaviors/separation_and_seek/separation_and_seek.py
+uv run python src/logic_lab/steering_behaviors/separation_and_seek/separation_and_seek.py
 ```
 
 - Vehicles seek the mouse position while separating from nearby vehicles.

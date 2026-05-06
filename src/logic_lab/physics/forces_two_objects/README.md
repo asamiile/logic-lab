@@ -3,7 +3,7 @@
 ## Example 2.2: Forces Acting on Two Objects
 
 ```bash
-uv run python physics/forces_two_objects/forces_two_objects.py
+uv run python src/logic_lab/physics/forces_two_objects/forces_two_objects.py
 ```
 
 - Click mouse to apply wind force.

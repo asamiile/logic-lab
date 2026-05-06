@@ -1,7 +1,7 @@
 # Neuro-Evolution Ecosystem
 
 ```bash
-uv run python steering_behaviors/neuroevolution_ecosystem/neuroevolution_ecosystem.py
+uv run python src/logic_lab/steering_behaviors/neuroevolution_ecosystem/neuroevolution_ecosystem.py
 ```
 
 - Complete ecosystem simulation with creatures evolving to survive and reproduce

@@ -1,7 +1,7 @@
 # Neuro-Evolution Steering Seek
 
 ```bash
-uv run python steering_behaviors/neuro_evolution_steering_seek/neuro_evolution_steering_seek.py
+uv run python src/logic_lab/steering_behaviors/neuro_evolution_steering_seek/neuro_evolution_steering_seek.py
 ```
 
 - Population of 50 creatures learning to seek a moving target using neuro-evolution

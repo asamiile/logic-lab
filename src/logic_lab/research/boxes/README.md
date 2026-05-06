@@ -1,7 +1,7 @@
 # Boxes
 
 ```bash
-uv run python research/boxes/boxes.py
+uv run python src/logic_lab/research/boxes/boxes.py
 ```
 
 - Hold mouse button to spawn boxes.
