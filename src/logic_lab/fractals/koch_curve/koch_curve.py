@@ -2,7 +2,6 @@ from pathlib import Path
 
 import py5
 
-
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 segments: list["KochLine"] = []
 
@@ -17,7 +16,9 @@ class KochLine:
         py5.stroke_weight(2)
         py5.line(self.start.x, self.start.y, self.end.x, self.end.y)
 
-    def koch_points(self) -> tuple[py5.Py5Vector, py5.Py5Vector, py5.Py5Vector, py5.Py5Vector, py5.Py5Vector]:
+    def koch_points(
+        self,
+    ) -> tuple[py5.Py5Vector, py5.Py5Vector, py5.Py5Vector, py5.Py5Vector, py5.Py5Vector]:
         a = self.start.copy
         e = self.end.copy
         v = self.end - self.start

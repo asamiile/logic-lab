@@ -3,7 +3,6 @@ from pathlib import Path
 
 import py5
 
-
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 RESOLUTION = 40
 
@@ -16,7 +15,7 @@ rows: int
 def limit_vector(v: py5.Py5Vector, max_val: float) -> py5.Py5Vector:
     mag_sq = v.x * v.x + v.y * v.y
     if mag_sq > max_val * max_val:
-        scale = max_val / mag_sq ** 0.5
+        scale = max_val / mag_sq**0.5
         return py5.Py5Vector(v.x * scale, v.y * scale)
     return v
 
@@ -37,7 +36,7 @@ class Boid:
     def run(self) -> None:
         col = floor(self.position.x / RESOLUTION)
         row = floor(self.position.y / RESOLUTION)
-        neighbors: list["Boid"] = []
+        neighbors: list[Boid] = []
         for i in range(-1, 2):
             for j in range(-1, 2):
                 nc = col + i

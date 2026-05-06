@@ -1,7 +1,7 @@
 import os
-import numpy as np
 
 import matplotlib.pyplot as plt
+import numpy as np
 
 from .reporting import BaseReporter
 
@@ -11,7 +11,7 @@ class BDDrawer(BaseReporter):
         self.save_path = save_path
         self.no_plot = no_plot
 
-        self.figure_path = os.path.join(self.save_path, 'bd_map')
+        self.figure_path = os.path.join(self.save_path, "bd_map")
         os.makedirs(self.figure_path, exist_ok=True)
 
         self.fig = None
@@ -26,12 +26,12 @@ class BDDrawer(BaseReporter):
 
     def __del__(self):
         plt.clf()
-        plt.close('all')
+        plt.close("all")
 
     def _init_figure(self):
-        self.fig, self.ax = plt.subplots(figsize=(5*1.2, 5))
+        self.fig, self.ax = plt.subplots(figsize=(5 * 1.2, 5))
 
-        self.ax.set_title('behavioral descriptor 2d map')
+        self.ax.set_title("behavioral descriptor 2d map")
 
     def _set_bd_to_figure(self, bd1, bd2):
         self.bd1_name = bd1.name
@@ -56,14 +56,14 @@ class BDDrawer(BaseReporter):
             bd_map[bd1, bd2] = genome.fitness
             vmin = min(vmin, genome.fitness)
             vmax = max(vmax, genome.fitness)
-        vmax += (vmax-vmin)*0.05
+        vmax += (vmax - vmin) * 0.05
 
-        cmap = plt.get_cmap('gist_earth')
+        cmap = plt.get_cmap("gist_earth")
         pcm = self.ax.pcolormesh(self.axis1, self.axis2, bd_map, cmap=cmap, vmin=vmin, vmax=vmax)
         cb = self.fig.colorbar(pcm, ax=self.ax)
 
-        filename = os.path.join(self.figure_path, f'{self.generation}.jpg')
-        self.fig.savefig(filename, bbox_inches='tight')
+        filename = os.path.join(self.figure_path, f"{self.generation}.jpg")
+        self.fig.savefig(filename, bbox_inches="tight")
 
         if not self.no_plot:
             plt.pause(0.1)
@@ -73,4 +73,4 @@ class BDDrawer(BaseReporter):
 
     def found_solution(self, config, generation, best):
         plt.clf()
-        plt.close('all')
+        plt.close("all")

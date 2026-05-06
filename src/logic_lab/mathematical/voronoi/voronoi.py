@@ -1,7 +1,8 @@
-from pathlib import Path
-import py5
-import numpy as np
 import math
+from pathlib import Path
+
+import numpy as np
+import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -155,7 +156,9 @@ def draw() -> None:
 
     # Draw info
     py5.fill(0)
-    py5.text(f"Seeds: {len(seeds)} | Click: add seed | p: Poisson seeds | c: clear | s: save", 10, 20)
+    py5.text(
+        f"Seeds: {len(seeds)} | Click: add seed | p: Poisson seeds | c: clear | s: save", 10, 20
+    )
     if use_poisson:
         py5.text("(Poisson mode)", 10, 40)
 

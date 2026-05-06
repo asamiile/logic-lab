@@ -1,14 +1,19 @@
 from __future__ import annotations
 
-from pathlib import Path
 import math
+from pathlib import Path
 
 import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 PRESETS = [
-    ("pendulum bloom", (2.01, 3.00, 1.98, 3.01), (0.010, 0.012, 0.011, 0.013), (0.0, 1.4, 0.8, 2.1)),
+    (
+        "pendulum bloom",
+        (2.01, 3.00, 1.98, 3.01),
+        (0.010, 0.012, 0.011, 0.013),
+        (0.0, 1.4, 0.8, 2.1),
+    ),
     ("lace decay", (3.00, 2.00, 3.05, 2.02), (0.006, 0.009, 0.007, 0.010), (0.2, 1.7, 1.1, 2.8)),
     ("orbital knot", (2.92, 4.03, 3.01, 1.99), (0.008, 0.011, 0.009, 0.012), (1.0, 0.4, 2.2, 1.5)),
     ("woven fan", (4.01, 3.00, 2.00, 5.02), (0.012, 0.010, 0.008, 0.013), (0.3, 2.0, 1.3, 2.7)),
@@ -52,14 +57,12 @@ def harmonograph_points() -> list[tuple[float, float]]:
 
     for i in range(sample_count):
         t = i * 0.012
-        x = (
-            math.sin(frequencies[0] * t + phases[0]) * math.exp(-damping[0] * t)
-            + math.sin(frequencies[1] * t + phases[1]) * math.exp(-damping[1] * t)
-        )
-        y = (
-            math.sin(frequencies[2] * t + phases[2]) * math.exp(-damping[2] * t)
-            + math.sin(frequencies[3] * t + phases[3]) * math.exp(-damping[3] * t)
-        )
+        x = math.sin(frequencies[0] * t + phases[0]) * math.exp(-damping[0] * t) + math.sin(
+            frequencies[1] * t + phases[1]
+        ) * math.exp(-damping[1] * t)
+        y = math.sin(frequencies[2] * t + phases[2]) * math.exp(-damping[2] * t) + math.sin(
+            frequencies[3] * t + phases[3]
+        ) * math.exp(-damping[3] * t)
         points.append((x * scale, y * scale))
 
     return points

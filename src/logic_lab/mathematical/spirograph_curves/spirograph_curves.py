@@ -1,8 +1,8 @@
 from __future__ import annotations
 
+import math
 from math import gcd
 from pathlib import Path
-import math
 
 import py5
 
@@ -52,7 +52,9 @@ def draw() -> None:
     draw_info(name, mode, fixed_radius, rolling_radius, pen_distance, len(points))
 
 
-def trochoid_points(mode: str, fixed_radius: float, rolling_radius: float, pen_distance: float) -> list[tuple[float, float]]:
+def trochoid_points(
+    mode: str, fixed_radius: float, rolling_radius: float, pen_distance: float
+) -> list[tuple[float, float]]:
     cycle = rolling_radius / gcd(int(fixed_radius), int(rolling_radius))
     max_t = py5.TWO_PI * cycle
     steps = max(420, int(cycle * 260))
@@ -144,7 +146,14 @@ def draw_sample_points(points: list[tuple[float, float]]) -> None:
         py5.circle(x, y, 3.5)
 
 
-def draw_info(name: str, mode: str, fixed_radius: float, rolling_radius: float, pen_distance: float, point_count: int) -> None:
+def draw_info(
+    name: str,
+    mode: str,
+    fixed_radius: float,
+    rolling_radius: float,
+    pen_distance: float,
+    point_count: int,
+) -> None:
     py5.no_stroke()
     py5.fill(218, 24, 12, 90)
     py5.rect(14, 14, 640, 54, 4)

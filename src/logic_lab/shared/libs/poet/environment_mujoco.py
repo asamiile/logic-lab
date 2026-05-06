@@ -4,14 +4,14 @@ MuJoCo terrain environment for POET co-evolution.
 Terrain is represented as a heightfield that is procedurally generated
 using CPPN and embedded into the MuJoCo XML model.
 """
-import os
-import json
+
 import copy
+import json
+import os
 import pickle
-import numpy as np
-import gymnasium
 
 import neat_cppn
+import numpy as np
 
 
 class TerrainParameters:
@@ -31,8 +31,8 @@ class MuJocoTerrainDecoder(neat_cppn.BaseCPPNDecoder):
         self.terrain_length = terrain_length
         self.terrain_width = terrain_width
 
-        self.input_keys = ['x', 'y']
-        self.output_keys = ['height']
+        self.input_keys = ["x", "y"]
+        self.output_keys = ["height"]
 
     def decode(self, genome, config, terrain_param):
         """
@@ -74,18 +74,20 @@ class MuJocoTerrainDecoder(neat_cppn.BaseCPPNDecoder):
         """Apply smoothing to terrain."""
         smoothed = heightfield.copy()
         for _ in range(2):
-            smoothed = (smoothed +
-                        np.roll(smoothed, 1, axis=0) +
-                        np.roll(smoothed, -1, axis=0) +
-                        np.roll(smoothed, 1, axis=1) +
-                        np.roll(smoothed, -1, axis=1)) / 5.0
+            smoothed = (
+                smoothed
+                + np.roll(smoothed, 1, axis=0)
+                + np.roll(smoothed, -1, axis=0)
+                + np.roll(smoothed, 1, axis=1)
+                + np.roll(smoothed, -1, axis=1)
+            ) / 5.0
         return smoothed
 
 
 class MuJocoEnvironment:
     """Procedurally generated MuJoCo environment."""
 
-    def __init__(self, env_id='Walker2d-v5', seed=0):
+    def __init__(self, env_id="Walker2d-v5", seed=0):
         self.env_id = env_id
         self.seed = seed
         self.terrain_param = TerrainParameters()
@@ -96,9 +98,9 @@ class MuJocoEnvironment:
     def get_env_info(self, config_dict):
         """Get environment information for optimizer initialization."""
         return {
-            'env_id': self.env_id,
-            'terrain_seed': self.seed,
-            'terrain_difficulty': self.get_difficulty(),
+            "env_id": self.env_id,
+            "terrain_seed": self.seed,
+            "terrain_difficulty": self.get_difficulty(),
         }
 
     def get_difficulty(self):
@@ -136,22 +138,25 @@ class MuJocoEnvironment:
     def save(self, path):
         """Save environment configuration."""
         # Save terrain parameters
-        param_file = os.path.join(path, 'terrain_params.json')
-        with open(param_file, 'w') as f:
-            json.dump({
-                'seed': self.seed,
-                'amplitude': self.terrain_param.amplitude,
-                'wavelength': self.terrain_param.wavelength,
-                'roughness': self.terrain_param.roughness,
-            }, f)
+        param_file = os.path.join(path, "terrain_params.json")
+        with open(param_file, "w") as f:
+            json.dump(
+                {
+                    "seed": self.seed,
+                    "amplitude": self.terrain_param.amplitude,
+                    "wavelength": self.terrain_param.wavelength,
+                    "roughness": self.terrain_param.roughness,
+                },
+                f,
+            )
 
         # Save genome if present
         if self.genome is not None:
-            genome_file = os.path.join(path, 'terrain_genome.pkl')
-            with open(genome_file, 'wb') as f:
+            genome_file = os.path.join(path, "terrain_genome.pkl")
+            with open(genome_file, "wb") as f:
                 pickle.dump(self.genome, f)
 
         # Save heightfield if generated
         if self.heightfield is not None:
-            hfield_file = os.path.join(path, 'heightfield.npy')
+            hfield_file = os.path.join(path, "heightfield.npy")
             np.save(hfield_file, self.heightfield)

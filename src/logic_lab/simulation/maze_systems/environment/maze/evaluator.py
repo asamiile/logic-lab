@@ -1,5 +1,3 @@
-
-
 class MazeControllerEvaluator:
     def __init__(self, maze, timesteps):
         self.maze = maze
@@ -23,10 +21,7 @@ class MazeControllerEvaluator:
             score = (self.maze.initial_distance - distance) / self.maze.initial_distance
 
         last_loc = self.maze.get_agent_location()
-        results = {
-            'fitness': score,
-            'data': last_loc
-        }
+        results = {"fitness": score, "data": last_loc}
         return results
 
 
@@ -53,8 +48,5 @@ class MazeControllerEvaluatorNS:
             score = (self.maze.initial_distance - distance) / self.maze.initial_distance
 
         last_loc = self.maze.get_agent_location()
-        results = {
-            'score': score,
-            'data': last_loc
-        }
+        results = {"score": score, "data": last_loc}
         return results

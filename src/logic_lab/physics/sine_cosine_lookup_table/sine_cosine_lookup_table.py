@@ -1,8 +1,7 @@
-from math import sin, cos, radians
+from math import cos, radians, sin
 from pathlib import Path
 
 import py5
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 

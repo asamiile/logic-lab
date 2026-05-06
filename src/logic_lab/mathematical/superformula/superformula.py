@@ -1,5 +1,5 @@
-from pathlib import Path
 import math
+from pathlib import Path
 
 import py5
 
@@ -64,7 +64,9 @@ def draw_superformula_layers(t: float) -> None:
                 py5.circle(x, y, 4)
 
 
-def animated_params(base: dict[str, float | str], progress: float, phase: float) -> dict[str, float]:
+def animated_params(
+    base: dict[str, float | str], progress: float, phase: float
+) -> dict[str, float]:
     wobble = 0.0
     if animate_shape:
         wobble = math.sin(phase) * 0.12

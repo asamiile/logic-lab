@@ -1,5 +1,4 @@
 import gymnasium
-import numpy as np
 
 
 def make_gymnasium_env(env_id: str, seed: int = 0) -> gymnasium.Env:

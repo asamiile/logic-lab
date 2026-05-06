@@ -1,7 +1,5 @@
 """Tests for mathematical/metaball module."""
 
-import math
-import pytest
 import sys
 from pathlib import Path
 
@@ -30,7 +28,7 @@ class TestMetaball:
         """Test influence calculation at ball center (should be inf)."""
         ball = Metaball(100, 100, radius=50)
         influence = ball.influence(100, 100)
-        assert influence == float('inf')
+        assert influence == float("inf")
 
     def test_influence_at_distance(self):
         """Test influence calculation at known distance."""

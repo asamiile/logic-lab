@@ -1,14 +1,12 @@
-
-import numpy as np
-import torch
-from torch import nn
-
 from functools import partial
 
-from stable_baselines3.common.utils import obs_as_tensor
-from stable_baselines3.common.preprocessing import preprocess_obs
+import numpy as np
 from stable_baselines3.common.distributions import make_proba_distribution
-from stable_baselines3.common.torch_layers import MlpExtractor, FlattenExtractor
+from stable_baselines3.common.preprocessing import preprocess_obs
+from stable_baselines3.common.torch_layers import FlattenExtractor, MlpExtractor
+from stable_baselines3.common.utils import obs_as_tensor
+from torch import nn
+
 
 def init_weights(module, gain=1):
     if isinstance(module, (nn.Linear, nn.Conv2d)):
@@ -16,8 +14,9 @@ def init_weights(module, gain=1):
         if module.bias is not None:
             module.bias.data.fill_(0.0)
 
+
 class Policy(nn.Module):
-    def __init__(self, observation_spcae, action_space, init_log_std=0.0, device='cpu'):
+    def __init__(self, observation_spcae, action_space, init_log_std=0.0, device="cpu"):
         super().__init__()
 
         self.observation_space = observation_spcae

@@ -1,9 +1,8 @@
-from pathlib import Path
 import math
 import random as rand_module
+from pathlib import Path
 
 import py5
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -14,7 +13,7 @@ target: py5.Py5Vector
 MUTATION_RATE = 0.01
 LIFE_SPAN = 250
 life_counter = 0
-record_cycles = float('inf')
+record_cycles = float("inf")
 
 
 class DNA:
@@ -85,9 +84,7 @@ class Rocket:
         self.trail = [py5.Py5Vector(self.position.x, self.position.y)]
 
     def calc_fitness(self, target: py5.Py5Vector) -> None:
-        distance = (
-            (self.position.x - target.x) ** 2 + (self.position.y - target.y) ** 2
-        ) ** 0.5
+        distance = ((self.position.x - target.x) ** 2 + (self.position.y - target.y) ** 2) ** 0.5
         self.fitness = (py5.width - distance) if distance < py5.width else 0
 
         if self.reached_target:
@@ -98,7 +95,7 @@ class Rocket:
 
     def run(self, target: py5.Py5Vector, obstacle: Obstacle) -> None:
         # Execute one step of the DNA
-        if not hasattr(self, 'step_counter'):
+        if not hasattr(self, "step_counter"):
             self.step_counter = 0
 
         if self.step_counter < len(self.dna.genes):
@@ -109,15 +106,13 @@ class Rocket:
             self.boundaries()
 
             # Track cycles to target
-            if self.reached_target and not hasattr(self, 'cycles_to_target'):
+            if self.reached_target and not hasattr(self, "cycles_to_target"):
                 self.cycles_to_target = self.step_counter
 
             self.step_counter += 1
 
     def check_target(self, target: py5.Py5Vector) -> None:
-        distance = (
-            (self.position.x - target.x) ** 2 + (self.position.y - target.y) ** 2
-        ) ** 0.5
+        distance = ((self.position.x - target.x) ** 2 + (self.position.y - target.y) ** 2) ** 0.5
         if distance < 12:
             self.reached_target = True
 
@@ -255,7 +250,7 @@ def draw() -> None:
     else:
         # Check if any rocket reached target
         for rocket in population.rockets:
-            if hasattr(rocket, 'cycles_to_target'):
+            if hasattr(rocket, "cycles_to_target"):
                 record_cycles = min(record_cycles, rocket.cycles_to_target)
 
         # Next generation
@@ -273,7 +268,7 @@ def draw() -> None:
     py5.fill(0)
     py5.text_size(12)
     cycles_left = LIFE_SPAN - life_counter
-    record_display = int(record_cycles) if record_cycles != float('inf') else "N/A"
+    record_display = int(record_cycles) if record_cycles != float("inf") else "N/A"
     info_text = f"Generation #: {population.generation}\nCycles left: {cycles_left}\nRecord cycles: {record_display}"
     py5.text(info_text, 10, 20)
 

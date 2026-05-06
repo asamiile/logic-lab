@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from math import ceil, cos, pi, sin
 
-
 Point = tuple[float, float]
 
 

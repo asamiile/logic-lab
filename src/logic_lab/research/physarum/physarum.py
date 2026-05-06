@@ -1,8 +1,8 @@
+from dataclasses import dataclass
 from pathlib import Path
 
-import py5
 import numpy as np
-from dataclasses import dataclass
+import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -94,9 +94,7 @@ class PhysarumNetwork:
             ix = int(np.clip(agent.x, 0, self.width - 1))
             iy = int(np.clip(agent.y, 0, self.height - 1))
 
-            self.pheromone[iy, ix] = min(
-                255, self.pheromone[iy, ix] + self.deposit_rate
-            )
+            self.pheromone[iy, ix] = min(255, self.pheromone[iy, ix] + self.deposit_rate)
 
     def draw(self):
         py5.background(10)

@@ -1,7 +1,7 @@
-from pathlib import Path
-import py5
-import numpy as np
 import math
+from pathlib import Path
+
+import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -76,7 +76,9 @@ def setup() -> None:
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
 
     # Create particles
-    particles = [Particle(py5.random(py5.width), py5.random(py5.height)) for _ in range(particle_count)]
+    particles = [
+        Particle(py5.random(py5.width), py5.random(py5.height)) for _ in range(particle_count)
+    ]
 
 
 def draw() -> None:
@@ -101,7 +103,7 @@ def draw() -> None:
             alpha = int(255 * (1 - particle.lifetime / particle.max_lifetime))
             py5.fill(100, 150, 255, alpha)
         elif vis_mode == 1:  # Velocity colors
-            vel_mag = math.sqrt(particle.vx ** 2 + particle.vy ** 2)
+            vel_mag = math.sqrt(particle.vx**2 + particle.vy**2)
             hue = int((math.atan2(particle.vy, particle.vx) / (2 * math.pi) + 1) * 0.5 * 255) % 256
             sat = int(min(255, vel_mag * 50))
             py5.color_mode(py5.HSB)

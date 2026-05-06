@@ -1,7 +1,7 @@
 from pathlib import Path
 
-import py5
 import numpy as np
+import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -49,9 +49,7 @@ class OrbitTrapFractal:
     def get_color(self, px, py):
         """Calculate color based on orbit trap distance"""
         cx, cy = self.pixel_to_complex(px, py)
-        circle, cross, line, iterations = self.mandelbrot_orbit(
-            cx, cy, self.max_iterations
-        )
+        circle, cross, line, iterations = self.mandelbrot_orbit(cx, cy, self.max_iterations)
 
         if self.trap_type == "circle":
             distance = circle
@@ -75,7 +73,9 @@ class OrbitTrapFractal:
         for y in range(0, self.height, step):
             for x in range(0, self.width, step):
                 circle, cross, line, iterations = self.mandelbrot_orbit(
-                    self.pixel_to_complex(x, y)[0], self.pixel_to_complex(x, y)[1], self.max_iterations
+                    self.pixel_to_complex(x, y)[0],
+                    self.pixel_to_complex(x, y)[1],
+                    self.max_iterations,
                 )
 
                 if self.trap_type == "circle":

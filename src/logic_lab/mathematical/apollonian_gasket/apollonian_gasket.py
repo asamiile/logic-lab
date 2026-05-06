@@ -1,8 +1,8 @@
 from __future__ import annotations
 
+import math
 from dataclasses import dataclass
 from pathlib import Path
-import math
 
 import py5
 
@@ -84,7 +84,9 @@ def generate_gasket() -> None:
             queue.append(tuple(next_quad))
 
 
-def reflect_circle(quad: tuple[int, int, int, int], replace_index: int, all_circles: list[Circle]) -> Circle | None:
+def reflect_circle(
+    quad: tuple[int, int, int, int], replace_index: int, all_circles: list[Circle]
+) -> Circle | None:
     old = all_circles[quad[replace_index]]
     others = [all_circles[quad[i]] for i in range(4) if i != replace_index]
 

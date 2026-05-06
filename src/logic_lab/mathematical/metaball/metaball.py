@@ -1,7 +1,8 @@
-from pathlib import Path
-import py5
-import numpy as np
 import math
+from pathlib import Path
+
+import numpy as np
+import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -24,7 +25,7 @@ class Metaball:
         dist_sq = dx * dx + dy * dy
 
         if dist_sq == 0:
-            return float('inf')
+            return float("inf")
 
         # f(r) = r² / d²
         return (self.radius * self.radius) / dist_sq
@@ -155,8 +156,9 @@ def key_pressed() -> None:
         py5.save_frame(str(SCREENSHOT_DIR / "metaball_####.png"))
     elif py5.key == "+":
         # Add new ball
-        metaballs.append(Metaball(py5.random(100, py5.width - 100),
-                                 py5.random(100, py5.height - 100)))
+        metaballs.append(
+            Metaball(py5.random(100, py5.width - 100), py5.random(100, py5.height - 100))
+        )
     elif py5.key == "-":
         # Remove last ball
         if metaballs:

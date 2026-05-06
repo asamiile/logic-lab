@@ -1,8 +1,8 @@
 import csv
-import time
 import os
 import pickle
-import csv
+import time
+
 
 class ReporterSet:
     def __init__(self):
@@ -46,20 +46,20 @@ class SaveResultReporter(BaseReporter):
         self.save_path = save_path
         self.genome1_name = genome1_name
         self.genome2_name = genome2_name
-        self.history1_file = os.path.join(save_path, f'history_{genome1_name}.csv')
-        self.history2_file = os.path.join(save_path, f'history_{genome2_name}.csv')
-        self.history_header = ['generation', 'id', 'parent', 'success_keys']
+        self.history1_file = os.path.join(save_path, f"history_{genome1_name}.csv")
+        self.history2_file = os.path.join(save_path, f"history_{genome2_name}.csv")
+        self.history_header = ["generation", "id", "parent", "success_keys"]
 
         self.genome1_path = os.path.join(save_path, genome1_name)
         self.genome2_path = os.path.join(save_path, genome2_name)
         os.makedirs(self.genome1_path, exist_ok=True)
         os.makedirs(self.genome2_path, exist_ok=True)
 
-        with open(self.history1_file, 'w', newline='') as f:
+        with open(self.history1_file, "w", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=self.history_header)
             writer.writeheader()
 
-        with open(self.history2_file, 'w', newline='') as f:
+        with open(self.history2_file, "w", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=self.history_header)
             writer.writeheader()
 
@@ -68,7 +68,6 @@ class SaveResultReporter(BaseReporter):
 
         self.write_history(self.history2_file, self.history_header, init_pop2, self.generation)
         self.save_genomes(self.genome2_path, init_pop2)
-
 
     def start_generation(self, generation):
         self.generation = generation
@@ -82,23 +81,23 @@ class SaveResultReporter(BaseReporter):
 
     @staticmethod
     def write_history(file, headers, genomes, generation):
-        with open(file, 'a', newline='') as f:
+        with open(file, "a", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=headers)
 
-            for key,genome in genomes.items():
+            for key, genome in genomes.items():
                 items = {
-                    'generation': generation,
-                    'id': genome.key,
-                    'parent': genome.parent,
-                    'success_keys': genome.success_keys
+                    "generation": generation,
+                    "id": genome.key,
+                    "parent": genome.parent,
+                    "success_keys": genome.success_keys,
                 }
                 writer.writerow(items)
 
     @staticmethod
     def save_genomes(path, genomes):
-        for key,genome in genomes.items():
-            file_name = os.path.join(path, f'{genome.key}.pickle')
-            with open(file_name, 'wb') as f:
+        for key, genome in genomes.items():
+            file_name = os.path.join(path, f"{genome.key}.pickle")
+            with open(file_name, "wb") as f:
                 pickle.dump(genome, f)
 
 
@@ -116,35 +115,43 @@ class MCCReporter(BaseReporter):
 
     def start_generation(self, generation):
         self.generation = generation
-        print(f'\n ****** Running generation {generation} ****** \n')
+        print(f"\n ****** Running generation {generation} ****** \n")
         self.generation_start_time = time.time()
 
     def post_evaluate(self, config, survivors1, survivors2):
-        if self.print_genome1 and len(survivors1)>0:
-            print(f'----- survived {self.genome1_name} -----')
+        if self.print_genome1 and len(survivors1) > 0:
+            print(f"----- survived {self.genome1_name} -----")
             for s in survivors1.values():
-                print(str(s)+'\n')
+                print(str(s) + "\n")
 
-        if self.print_genome2 and len(survivors2)>0:
-            print(f'----- survived {self.genome2_name} -----')
+        if self.print_genome2 and len(survivors2) > 0:
+            print(f"----- survived {self.genome2_name} -----")
             for s in survivors2.values():
-                print(str(s)+'\n')
+                print(str(s) + "\n")
 
-        print(f'{self.genome1_name} survived: {len(survivors1): =3}')
-        print(f'{self.genome2_name} survived: {len(survivors2): =3}')
+        print(f"{self.genome1_name} survived: {len(survivors1): =3}")
+        print(f"{self.genome2_name} survived: {len(survivors2): =3}")
 
     def end_generation(self, config, population1, population2):
-        print(f'{self.genome1_name}  population size: {len(population1): =3}', end='')
-        if config.genome1_limit>0:
-            limited_genomes1 = [genome1 for genome1 in population1.values() if len(genome1.success_keys)>=config.genome1_limit]
-            print(f'  limited: {len(limited_genomes1): =3}')
+        print(f"{self.genome1_name}  population size: {len(population1): =3}", end="")
+        if config.genome1_limit > 0:
+            limited_genomes1 = [
+                genome1
+                for genome1 in population1.values()
+                if len(genome1.success_keys) >= config.genome1_limit
+            ]
+            print(f"  limited: {len(limited_genomes1): =3}")
         else:
             print()
 
-        print(f'{self.genome2_name}  population size: {len(population2): =3}', end='')
-        if config.genome2_limit>0:
-            limited_genomes2 = [genome2 for genome2 in population2.values() if len(genome2.success_keys)>=config.genome2_limit]
-            print(f'  limited: {len(limited_genomes2): =3}')
+        print(f"{self.genome2_name}  population size: {len(population2): =3}", end="")
+        if config.genome2_limit > 0:
+            limited_genomes2 = [
+                genome2
+                for genome2 in population2.values()
+                if len(genome2.success_keys) >= config.genome2_limit
+            ]
+            print(f"  limited: {len(limited_genomes2): =3}")
         else:
             print()
 
@@ -153,6 +160,6 @@ class MCCReporter(BaseReporter):
         self.generation_times = self.generation_times[-10:]
         average = sum(self.generation_times) / len(self.generation_times)
         if len(self.generation_times) > 1:
-            print("Generation time: {0:.3f} sec ({1:.3f} average)".format(elapsed, average))
+            print(f"Generation time: {elapsed:.3f} sec ({average:.3f} average)")
         else:
-            print("Generation time: {0:.3f} sec".format(elapsed))
+            print(f"Generation time: {elapsed:.3f} sec")

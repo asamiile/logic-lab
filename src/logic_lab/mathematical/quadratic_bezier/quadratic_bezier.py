@@ -2,7 +2,6 @@ from pathlib import Path
 
 import py5
 
-
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 ctr: list[tuple[float, float]] = []
@@ -40,7 +39,10 @@ def draw() -> None:
 
 def get_mid_points(points: list[tuple[float, float]], t: float) -> list[tuple[float, float]]:
     return [
-        (points[i][0] + (points[i + 1][0] - points[i][0]) * t, points[i][1] + (points[i + 1][1] - points[i][1]) * t)
+        (
+            points[i][0] + (points[i + 1][0] - points[i][0]) * t,
+            points[i][1] + (points[i + 1][1] - points[i][1]) * t,
+        )
         for i in range(len(points) - 1)
     ]
 
@@ -62,4 +64,3 @@ def key_pressed() -> None:
 
 
 py5.run_sketch()
-

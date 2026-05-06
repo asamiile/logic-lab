@@ -1,8 +1,8 @@
+from dataclasses import dataclass
 from pathlib import Path
 
-import py5
 import numpy as np
-from dataclasses import dataclass
+import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -63,13 +63,8 @@ class SubstrateCracks:
         new_x = crack.x + np.cos(new_angle) * 3
         new_y = crack.y + np.sin(new_angle) * 3
 
-        if (
-            0 < new_x < self.width
-            and 0 < new_y < self.height
-        ):
-            new_crack = Crack(
-                new_x, new_y, np.cos(new_angle), np.sin(new_angle)
-            )
+        if 0 < new_x < self.width and 0 < new_y < self.height:
+            new_crack = Crack(new_x, new_y, np.cos(new_angle), np.sin(new_angle))
             self.cracks.append(new_crack)
 
     def draw(self):

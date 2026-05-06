@@ -3,7 +3,6 @@ from random import choice
 
 import py5
 
-
 BASE_DIR = Path(__file__).parent
 SCREENSHOT_DIR = BASE_DIR / "screenshots"
 

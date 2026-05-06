@@ -1,9 +1,8 @@
-from pathlib import Path
-import random as rand_module
 import math
+import random as rand_module
+from pathlib import Path
 
 import py5
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -26,7 +25,9 @@ end = None
 
 
 class NeuralNetwork:
-    def __init__(self, input_size: int, hidden_size: int, output_size: int, learning_rate: float = 0.1) -> None:
+    def __init__(
+        self, input_size: int, hidden_size: int, output_size: int, learning_rate: float = 0.1
+    ) -> None:
         self.input_size = input_size
         self.hidden_size = hidden_size
         self.output_size = output_size
@@ -34,9 +35,13 @@ class NeuralNetwork:
         self.labels = ["up", "down", "left", "right"]
 
         # Initialize weights randomly
-        self.w1 = [[rand_module.gauss(0, 0.5) for _ in range(input_size)] for _ in range(hidden_size)]
+        self.w1 = [
+            [rand_module.gauss(0, 0.5) for _ in range(input_size)] for _ in range(hidden_size)
+        ]
         self.b1 = [rand_module.gauss(0, 0.5) for _ in range(hidden_size)]
-        self.w2 = [[rand_module.gauss(0, 0.5) for _ in range(hidden_size)] for _ in range(output_size)]
+        self.w2 = [
+            [rand_module.gauss(0, 0.5) for _ in range(hidden_size)] for _ in range(output_size)
+        ]
         self.b2 = [rand_module.gauss(0, 0.5) for _ in range(output_size)]
 
     def sigmoid(self, x: float) -> float:
@@ -69,7 +74,10 @@ class NeuralNetwork:
         output_errors = [targets[i] - self.output[i] for i in range(self.output_size)]
 
         # Output layer gradients
-        output_deltas = [output_errors[i] * self.sigmoid_derivative(self.output[i]) for i in range(self.output_size)]
+        output_deltas = [
+            output_errors[i] * self.sigmoid_derivative(self.output[i])
+            for i in range(self.output_size)
+        ]
 
         # Hidden layer error
         hidden_errors = [0] * self.hidden_size
@@ -78,7 +86,10 @@ class NeuralNetwork:
                 hidden_errors[i] += output_deltas[j] * self.w2[j][i]
 
         # Hidden layer gradients
-        hidden_deltas = [hidden_errors[i] * self.sigmoid_derivative(self.hidden[i]) for i in range(self.hidden_size)]
+        hidden_deltas = [
+            hidden_errors[i] * self.sigmoid_derivative(self.hidden[i])
+            for i in range(self.hidden_size)
+        ]
 
         # Update output layer weights and biases
         for i in range(self.output_size):

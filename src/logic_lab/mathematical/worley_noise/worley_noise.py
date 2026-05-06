@@ -1,8 +1,9 @@
-from pathlib import Path
-import py5
-import numpy as np
-import random
 import math
+import random
+from pathlib import Path
+
+import numpy as np
+import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -45,8 +46,8 @@ def setup() -> None:
 def compute_worley_field() -> np.ndarray:
     """Compute Worley noise using grid acceleration."""
     w, h = py5.pixel_width, py5.pixel_height
-    f1_field = np.full((h, w), float('inf'), dtype=np.float32)
-    f2_field = np.full((h, w), float('inf'), dtype=np.float32)
+    f1_field = np.full((h, w), float("inf"), dtype=np.float32)
+    f2_field = np.full((h, w), float("inf"), dtype=np.float32)
 
     # Build spatial grid
     grid_dict = {}
@@ -63,8 +64,8 @@ def compute_worley_field() -> np.ndarray:
             gx, gy = grid_key
 
             # Check 3x3 grid neighborhood
-            min_dist1 = float('inf')
-            min_dist2 = float('inf')
+            min_dist1 = float("inf")
+            min_dist2 = float("inf")
 
             for dgx in [-1, 0, 1]:
                 for dgy in [-1, 0, 1]:
@@ -82,7 +83,7 @@ def compute_worley_field() -> np.ndarray:
                                 min_dist2 = dist
 
             f1_field[y, x] = min_dist1
-            f2_field[y, x] = min_dist2 if min_dist2 != float('inf') else min_dist1
+            f2_field[y, x] = min_dist2 if min_dist2 != float("inf") else min_dist1
 
     return f1_field, f2_field
 

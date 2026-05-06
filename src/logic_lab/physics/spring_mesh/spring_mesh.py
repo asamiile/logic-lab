@@ -1,6 +1,7 @@
-from pathlib import Path
-import py5
 import math
+from pathlib import Path
+
+import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -195,7 +196,9 @@ def draw() -> None:
 
     # Draw info
     py5.fill(0)
-    py5.text(f"w: wireframe {'ON' if wireframe_mode else 'OFF'} | Click: drag mesh | s: save", 10, 20)
+    py5.text(
+        f"w: wireframe {'ON' if wireframe_mode else 'OFF'} | Click: drag mesh | s: save", 10, 20
+    )
 
 
 def mouse_pressed() -> None:

@@ -1,8 +1,7 @@
-from pathlib import Path
 import math
+from pathlib import Path
 
 import py5
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -11,7 +10,9 @@ leaves: list["Leaf"] = []
 
 
 class Branch:
-    def __init__(self, start_pos: py5.Py5Vector, velocity: py5.Py5Vector, timer_start: float) -> None:
+    def __init__(
+        self, start_pos: py5.Py5Vector, velocity: py5.Py5Vector, timer_start: float
+    ) -> None:
         self.start = py5.Py5Vector(start_pos.x, start_pos.y)
         self.end = py5.Py5Vector(start_pos.x, start_pos.y)
         self.vel = py5.Py5Vector(velocity.x, velocity.y)

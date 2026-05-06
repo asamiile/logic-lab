@@ -1,10 +1,9 @@
-from pathlib import Path
-import random as rand_module
-import math
 import copy
+import math
+import random as rand_module
+from pathlib import Path
 
 import py5
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -19,9 +18,13 @@ class NeuralNetwork:
         self.hidden_size = hidden_size
         self.output_size = output_size
 
-        self.w1 = [[rand_module.gauss(0, 0.5) for _ in range(input_size)] for _ in range(hidden_size)]
+        self.w1 = [
+            [rand_module.gauss(0, 0.5) for _ in range(input_size)] for _ in range(hidden_size)
+        ]
         self.b1 = [rand_module.gauss(0, 0.5) for _ in range(hidden_size)]
-        self.w2 = [[rand_module.gauss(0, 0.5) for _ in range(hidden_size)] for _ in range(output_size)]
+        self.w2 = [
+            [rand_module.gauss(0, 0.5) for _ in range(hidden_size)] for _ in range(output_size)
+        ]
         self.b2 = [rand_module.gauss(0, 0.5) for _ in range(output_size)]
 
     def sigmoid(self, x: float) -> float:
@@ -80,8 +83,7 @@ class Sensor:
         end_x = position.x + self.v.x
         end_y = position.y + self.v.y
 
-        d = math.sqrt((end_x - food_item.position.x) ** 2 +
-                      (end_y - food_item.position.y) ** 2)
+        d = math.sqrt((end_x - food_item.position.x) ** 2 + (end_y - food_item.position.y) ** 2)
 
         if d < food_item.r:
             self.value = 1
@@ -134,8 +136,10 @@ class Creature:
 
     def eat(self) -> None:
         for food_item in food:
-            d = math.sqrt((self.position.x - food_item.position.x) ** 2 +
-                         (self.position.y - food_item.position.y) ** 2)
+            d = math.sqrt(
+                (self.position.x - food_item.position.x) ** 2
+                + (self.position.y - food_item.position.y) ** 2
+            )
             if d < self.r + food_item.r:
                 self.health += 0.5
                 food_item.r -= 0.05
@@ -149,7 +153,7 @@ class Creature:
         self.velocity.y += self.acceleration.y
 
         # Limit speed
-        speed = math.sqrt(self.velocity.x ** 2 + self.velocity.y ** 2)
+        speed = math.sqrt(self.velocity.x**2 + self.velocity.y**2)
         if speed > self.maxspeed:
             self.velocity.x = (self.velocity.x / speed) * self.maxspeed
             self.velocity.y = (self.velocity.y / speed) * self.maxspeed
@@ -207,8 +211,9 @@ class Creature:
 
 class Food:
     def __init__(self) -> None:
-        self.position = py5.Py5Vector(rand_module.random() * py5.width,
-                                      rand_module.random() * py5.height)
+        self.position = py5.Py5Vector(
+            rand_module.random() * py5.width, rand_module.random() * py5.height
+        )
         self.r = 50
 
     def show(self) -> None:
@@ -222,9 +227,10 @@ def setup() -> None:
 
     py5.size(640, 240)
 
-    creatures = [Creature(rand_module.random() * py5.width,
-                          rand_module.random() * py5.height)
-                 for _ in range(20)]
+    creatures = [
+        Creature(rand_module.random() * py5.width, rand_module.random() * py5.height)
+        for _ in range(20)
+    ]
 
     food = [Food() for _ in range(8)]
 

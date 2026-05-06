@@ -1,10 +1,10 @@
 """Tests for mathematical/worley_noise module."""
 
 import math
-import pytest
-import numpy as np
 import sys
 from pathlib import Path
+
+import numpy as np
 
 # Add src to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
@@ -26,8 +26,7 @@ class TestWorleyNoiseUtilities:
         pixel = (10, 10)
 
         distances = [
-            math.sqrt((pixel[0] - fp[0]) ** 2 + (pixel[1] - fp[1]) ** 2)
-            for fp in feature_points
+            math.sqrt((pixel[0] - fp[0]) ** 2 + (pixel[1] - fp[1]) ** 2) for fp in feature_points
         ]
         min_dist = min(distances)
 
@@ -38,19 +37,18 @@ class TestWorleyNoiseUtilities:
     def test_f1_f2_ordering(self):
         """Test that F1 < F2 (nearest < second-nearest)."""
         feature_points = [(0, 0), (50, 0), (100, 0)]
-        pixel = (25, 0)
+        pixel = (20, 0)
 
         distances = [
-            math.sqrt((pixel[0] - fp[0]) ** 2 + (pixel[1] - fp[1]) ** 2)
-            for fp in feature_points
+            math.sqrt((pixel[0] - fp[0]) ** 2 + (pixel[1] - fp[1]) ** 2) for fp in feature_points
         ]
         distances_sorted = sorted(distances)
         f1 = distances_sorted[0]
         f2 = distances_sorted[1]
 
         assert f1 < f2
-        assert f1 == 25.0
-        assert f2 == 25.0
+        assert f1 == 20.0
+        assert f2 == 30.0
 
     def test_distance_symmetry(self):
         """Test that distance is symmetric: d(A,B) == d(B,A)."""
@@ -67,10 +65,7 @@ class TestWorleyNoiseUtilities:
         cell_size = 50
         points = [(25, 25), (75, 75), (125, 25)]
 
-        grid_keys = [
-            (int(p[0] // cell_size), int(p[1] // cell_size))
-            for p in points
-        ]
+        grid_keys = [(int(p[0] // cell_size), int(p[1] // cell_size)) for p in points]
 
         assert grid_keys[0] == (0, 0)
         assert grid_keys[1] == (1, 1)

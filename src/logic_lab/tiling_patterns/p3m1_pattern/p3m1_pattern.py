@@ -1,12 +1,11 @@
-from pathlib import Path
-from math import pi, sqrt
 import sys
+from math import pi, sqrt
+from pathlib import Path
 
 import py5
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 from tiling_patterns.pattern_helpers import add, from_angle, hex_lattice, sub
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 NUM = 2

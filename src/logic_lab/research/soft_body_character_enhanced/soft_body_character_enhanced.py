@@ -2,7 +2,6 @@ from pathlib import Path
 
 import py5
 
-
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 SOLVER_ITERATIONS = 20
 SPRING_STRENGTH = 0.001
@@ -155,8 +154,12 @@ def draw() -> None:
         py5.stroke(112, 50, 126, 100)
 
     py5.stroke_weight(4)
-    py5.line(particles[1].position.x, particles[1].position.y, eyes[2].position.x, eyes[2].position.y)
-    py5.line(particles[3].position.x, particles[3].position.y, eyes[3].position.x, eyes[3].position.y)
+    py5.line(
+        particles[1].position.x, particles[1].position.y, eyes[2].position.x, eyes[2].position.y
+    )
+    py5.line(
+        particles[3].position.x, particles[3].position.y, eyes[3].position.x, eyes[3].position.y
+    )
     py5.stroke_weight(16)
     py5.point(eyes[2].position.x, eyes[2].position.y)
     py5.point(eyes[3].position.x, eyes[3].position.y)

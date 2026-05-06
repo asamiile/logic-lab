@@ -2,7 +2,6 @@ from pathlib import Path
 
 import py5
 
-
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 
@@ -59,14 +58,19 @@ class Balloon:
         balloon_bottom = self.position.y + self.diameter / 2
         ts = self.triangle_size
         py5.triangle(
-            self.position.x, balloon_bottom,
-            self.position.x + ts, balloon_bottom + ts,
-            self.position.x - ts, balloon_bottom + ts,
+            self.position.x,
+            balloon_bottom,
+            self.position.x + ts,
+            balloon_bottom + ts,
+            self.position.x - ts,
+            balloon_bottom + ts,
         )
 
         py5.line(
-            self.position.x, balloon_bottom + ts,
-            self.position.x, balloon_bottom + ts * 20,
+            self.position.x,
+            balloon_bottom + ts,
+            self.position.x,
+            balloon_bottom + ts * 20,
         )
 
 

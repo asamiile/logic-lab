@@ -1,8 +1,8 @@
+from dataclasses import dataclass
 from pathlib import Path
 
-import py5
 import numpy as np
-from dataclasses import dataclass
+import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -34,8 +34,8 @@ class PressureCurveSimulation:
 
         self.smoothed_points = []
         q = 0.01  # Process noise
-        r = 1.0   # Measurement noise
-        p = 1.0   # Estimate error
+        r = 1.0  # Measurement noise
+        p = 1.0  # Estimate error
         x = self.points[0].pressure
 
         for point in self.points:
@@ -59,20 +59,10 @@ class PressureCurveSimulation:
             p2 = self.smoothed_points[i + 2]
 
             for t in np.linspace(0, 1, 5):
-                x = (
-                    (1 - t) ** 2 * p0.x
-                    + 2 * (1 - t) * t * p1.x
-                    + t ** 2 * p2.x
-                )
-                y = (
-                    (1 - t) ** 2 * p0.y
-                    + 2 * (1 - t) * t * p1.y
-                    + t ** 2 * p2.y
-                )
+                x = (1 - t) ** 2 * p0.x + 2 * (1 - t) * t * p1.x + t**2 * p2.x
+                y = (1 - t) ** 2 * p0.y + 2 * (1 - t) * t * p1.y + t**2 * p2.y
                 pressure = (
-                    (1 - t) ** 2 * p0.pressure
-                    + 2 * (1 - t) * t * p1.pressure
-                    + t ** 2 * p2.pressure
+                    (1 - t) ** 2 * p0.pressure + 2 * (1 - t) * t * p1.pressure + t**2 * p2.pressure
                 )
                 interpolated.append(PressurePoint(x, y, pressure))
 

@@ -2,7 +2,6 @@ from pathlib import Path
 
 import py5
 
-
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 NUM = 250
@@ -44,7 +43,9 @@ def transition(a: int, b: int, c: int) -> int:
 def update_state() -> None:
     global state, gen
     padded = [0, 0, *state, 0, 0]
-    next_state = [transition(padded[i - 1], padded[i], padded[i + 1]) for i in range(1, len(padded) - 1)]
+    next_state = [
+        transition(padded[i - 1], padded[i], padded[i + 1]) for i in range(1, len(padded) - 1)
+    ]
     state = next_state
     gen += 1
 
@@ -64,4 +65,3 @@ def key_pressed() -> None:
 
 
 py5.run_sketch()
-

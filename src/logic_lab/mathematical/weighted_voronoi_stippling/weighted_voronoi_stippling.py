@@ -1,8 +1,8 @@
 from pathlib import Path
 
-import py5
 import numpy as np
-from scipy.spatial import Voronoi, cKDTree
+import py5
+from scipy.spatial import Voronoi
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 

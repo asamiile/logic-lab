@@ -1,5 +1,4 @@
 """Implements the core evolution algorithm."""
-from __future__ import print_function
 
 from neat.math_util import mean
 from neat.reporting import ReporterSet
@@ -7,6 +6,7 @@ from neat.reporting import ReporterSet
 
 class CompleteExtinctionException(Exception):
     pass
+
 
 class Population:
     """
@@ -22,25 +22,26 @@ class Population:
         self.reporters = ReporterSet()
         self.config = config
         stagnation = config.stagnation_type(config.stagnation_config, self.reporters)
-        self.reproduction = config.reproduction_type(config.reproduction_config,
-                                                     self.reporters,
-                                                     stagnation)
-        if config.fitness_criterion == 'max':
+        self.reproduction = config.reproduction_type(
+            config.reproduction_config, self.reporters, stagnation
+        )
+        if config.fitness_criterion == "max":
             self.fitness_criterion = max
-        elif config.fitness_criterion == 'min':
+        elif config.fitness_criterion == "min":
             self.fitness_criterion = min
-        elif config.fitness_criterion == 'mean':
+        elif config.fitness_criterion == "mean":
             self.fitness_criterion = mean
         elif not config.no_fitness_termination:
-            raise RuntimeError(
-                "Unexpected fitness_criterion: {0!r}".format(config.fitness_criterion))
+            raise RuntimeError(f"Unexpected fitness_criterion: {config.fitness_criterion!r}")
 
         if initial_state is None:
             # Create a population from scratch, then partition into species.
-            self.population = self.reproduction.create_new(config.genome_type,
-                                                           config.genome_config,
-                                                           config.pop_size,
-                                                           constraint_function=constraint_function)
+            self.population = self.reproduction.create_new(
+                config.genome_type,
+                config.genome_config,
+                config.pop_size,
+                constraint_function=constraint_function,
+            )
             self.species = config.species_set_type(config.species_set_config, self.reporters)
             self.generation = 0
             self.species.speciate(config, self.population, self.generation)
@@ -91,7 +92,7 @@ class Population:
             best = None
             for g in self.population.values():
                 if g.fitness is None:
-                    raise RuntimeError("Fitness not assigned to genome {}".format(g.key))
+                    raise RuntimeError(f"Fitness not assigned to genome {g.key}")
 
                 if best is None or g.fitness > best.fitness:
                     best = g
@@ -110,8 +111,12 @@ class Population:
 
             # Create the next generation from the current generation.
             self.population = self.reproduction.reproduce(
-                self.config, self.species, self.config.pop_size, self.generation,
-                constraint_function=constraint_function)
+                self.config,
+                self.species,
+                self.config.pop_size,
+                self.generation,
+                constraint_function=constraint_function,
+            )
 
             # Check for complete extinction.
             if not self.species.species:
@@ -121,8 +126,11 @@ class Population:
                 # otherwise raise an exception.
                 if self.config.reset_on_extinction:
                     self.population = self.reproduction.create_new(
-                        self.config.genome_type, self.config.genome_config, self.config.pop_size,
-                        constraint_function=constraint_function)
+                        self.config.genome_type,
+                        self.config.genome_config,
+                        self.config.pop_size,
+                        constraint_function=constraint_function,
+                    )
                 else:
                     raise CompleteExtinctionException()
 

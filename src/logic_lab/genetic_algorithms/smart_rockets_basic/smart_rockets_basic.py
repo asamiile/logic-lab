@@ -1,9 +1,8 @@
-from pathlib import Path
 import math
 import random as rand_module
+from pathlib import Path
 
 import py5
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -57,9 +56,7 @@ class Rocket:
         self.gene_counter = 0
 
     def calculate_fitness(self) -> None:
-        distance = (
-            (self.position.x - target.x) ** 2 + (self.position.y - target.y) ** 2
-        ) ** 0.5
+        distance = ((self.position.x - target.x) ** 2 + (self.position.y - target.y) ** 2) ** 0.5
         self.fitness = 1.0 / (distance * distance) if distance > 0 else 0
 
     def run(self) -> None:

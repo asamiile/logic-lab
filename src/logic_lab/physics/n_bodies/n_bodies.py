@@ -2,7 +2,6 @@ from pathlib import Path
 
 import py5
 
-
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 G = 1.0
@@ -43,8 +42,7 @@ def setup() -> None:
     global bodies
     py5.size(640, 240)
     bodies = [
-        Body(py5.random(py5.width), py5.random(py5.height), py5.random(0.1, 2))
-        for _ in range(10)
+        Body(py5.random(py5.width), py5.random(py5.height), py5.random(0.1, 2)) for _ in range(10)
     ]
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
 

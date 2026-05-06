@@ -1,5 +1,5 @@
-import numpy as np
 import gymnasium
+import numpy as np
 
 
 def _make_gymnasium_env(env_id: str, seed: int = 0) -> gymnasium.Env:
@@ -57,7 +57,7 @@ class LocomotionControllerEvaluator:
 
         env.close()
 
-        return {'fitness': float(np.mean(episode_scores))}
+        return {"fitness": float(np.mean(episode_scores))}
 
 
 class LocomotionControllerEvaluatorNS:
@@ -122,10 +122,7 @@ class LocomotionControllerEvaluatorNS:
         # Ensure score is Python float for neat-python type checking
         mean_score = float(np.mean(episode_scores))
 
-        return {
-            'score': mean_score,
-            'data': bd
-        }
+        return {"score": mean_score, "data": bd}
 
     def _calc_covariance_bd(self, obs_array, act_array):
         """
@@ -241,15 +238,9 @@ class LocomotionStructureEvaluator:
             for bd_name, bd_obj in self.bd_dictionary.items():
                 bd_value = behavior_dict.get(bd_name, 0.0)
                 bd_indices[bd_name] = bd_obj.get_index(bd_value)
-            return {
-                'fitness': float(np.mean(episode_scores)),
-                'bd': bd_indices
-            }
+            return {"fitness": float(np.mean(episode_scores)), "bd": bd_indices}
         else:
-            return {
-                'fitness': float(np.mean(episode_scores)),
-                'behavior': behavior_dict
-            }
+            return {"fitness": float(np.mean(episode_scores)), "behavior": behavior_dict}
 
     def _calc_behavior_characteristics(self, obs_array):
         """
@@ -263,7 +254,7 @@ class LocomotionStructureEvaluator:
         Returns:
             dict with behavior characteristics
         """
-        if 'BipedalWalker' in self.env_id:
+        if "BipedalWalker" in self.env_id:
             return self._calc_behavior_characteristics_bipedal(obs_array)
         else:
             return self._calc_behavior_characteristics_walker2d(obs_array)
@@ -282,11 +273,11 @@ class LocomotionStructureEvaluator:
         """
         if len(obs_array) < 2:
             return {
-                'forward_speed': 0.0,
-                'lateral_stability': 0.5,
-                'body_tilt': 0.0,
-                'joint_activity': 0.0,
-                'step_frequency': 0.0
+                "forward_speed": 0.0,
+                "lateral_stability": 0.5,
+                "body_tilt": 0.0,
+                "joint_activity": 0.0,
+                "step_frequency": 0.0,
             }
 
         forward_speed = float(np.mean(obs_array[:, 2]))
@@ -305,11 +296,11 @@ class LocomotionStructureEvaluator:
             joint_signal = obs_array[::5, 6]
             if len(joint_signal) > 10:
                 mean_signal = joint_signal - np.mean(joint_signal)
-                autocorr = np.correlate(mean_signal, mean_signal, mode='full')
-                autocorr = autocorr[len(autocorr)//2:]
+                autocorr = np.correlate(mean_signal, mean_signal, mode="full")
+                autocorr = autocorr[len(autocorr) // 2 :]
                 peaks = []
-                for i in range(1, len(autocorr)-1):
-                    if autocorr[i] > 0 and autocorr[i+1] <= 0:
+                for i in range(1, len(autocorr) - 1):
+                    if autocorr[i] > 0 and autocorr[i + 1] <= 0:
                         peaks.append(i)
                 step_frequency = 30.0 / peaks[0] * 5 if len(peaks) > 0 and peaks[0] > 0 else 1.0
             else:
@@ -319,16 +310,16 @@ class LocomotionStructureEvaluator:
 
         forward_speed = float(np.clip(forward_speed, -2.0, 3.0))
         lateral_stability = float(np.clip(lateral_stability, 0.0, 1.0))
-        body_tilt = float(np.clip(body_tilt, -np.pi/2, np.pi/2))
+        body_tilt = float(np.clip(body_tilt, -np.pi / 2, np.pi / 2))
         joint_activity = float(np.clip(joint_activity, 0.0, 1.0))
         step_frequency = float(np.clip(step_frequency, 0.0, 5.0))
 
         return {
-            'forward_speed': forward_speed,
-            'lateral_stability': lateral_stability,
-            'body_tilt': body_tilt,
-            'joint_activity': joint_activity,
-            'step_frequency': step_frequency
+            "forward_speed": forward_speed,
+            "lateral_stability": lateral_stability,
+            "body_tilt": body_tilt,
+            "joint_activity": joint_activity,
+            "step_frequency": step_frequency,
         }
 
     def _calc_behavior_characteristics_bipedal(self, obs_array):
@@ -350,11 +341,11 @@ class LocomotionStructureEvaluator:
         """
         if len(obs_array) < 2:
             return {
-                'forward_speed': 0.0,
-                'lateral_stability': 0.5,
-                'body_tilt': 0.0,
-                'joint_activity': 0.0,
-                'step_frequency': 0.0
+                "forward_speed": 0.0,
+                "lateral_stability": 0.5,
+                "body_tilt": 0.0,
+                "joint_activity": 0.0,
+                "step_frequency": 0.0,
             }
 
         forward_speed = float(np.mean(obs_array[:, 2]))
@@ -370,11 +361,11 @@ class LocomotionStructureEvaluator:
             joint_signal = obs_array[::5, 4]
             if len(joint_signal) > 10:
                 mean_signal = joint_signal - np.mean(joint_signal)
-                autocorr = np.correlate(mean_signal, mean_signal, mode='full')
-                autocorr = autocorr[len(autocorr)//2:]
+                autocorr = np.correlate(mean_signal, mean_signal, mode="full")
+                autocorr = autocorr[len(autocorr) // 2 :]
                 peaks = []
-                for i in range(1, len(autocorr)-1):
-                    if autocorr[i] > 0 and autocorr[i+1] <= 0:
+                for i in range(1, len(autocorr) - 1):
+                    if autocorr[i] > 0 and autocorr[i + 1] <= 0:
                         peaks.append(i)
                 step_frequency = 30.0 / peaks[0] * 5 if len(peaks) > 0 and peaks[0] > 0 else 1.0
             else:
@@ -383,14 +374,14 @@ class LocomotionStructureEvaluator:
             step_frequency = 1.0
 
         forward_speed = float(np.clip(forward_speed, -2.0, 3.0))
-        body_tilt = float(np.clip(body_tilt, -np.pi/2, np.pi/2))
+        body_tilt = float(np.clip(body_tilt, -np.pi / 2, np.pi / 2))
         joint_activity = float(np.clip(joint_activity, 0.0, 1.0))
         step_frequency = float(np.clip(step_frequency, 0.0, 5.0))
 
         return {
-            'forward_speed': forward_speed,
-            'lateral_stability': lateral_stability,
-            'body_tilt': body_tilt,
-            'joint_activity': joint_activity,
-            'step_frequency': step_frequency
+            "forward_speed": forward_speed,
+            "lateral_stability": lateral_stability,
+            "body_tilt": body_tilt,
+            "joint_activity": joint_activity,
+            "step_frequency": step_frequency,
         }

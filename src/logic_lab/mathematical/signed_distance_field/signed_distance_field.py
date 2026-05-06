@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from pathlib import Path
 import math
+from pathlib import Path
 
 import numpy as np
 import py5
@@ -80,7 +80,9 @@ def box_sdf(x: float, y: float, half_width: float, half_height: float) -> float:
     return outside + inside
 
 
-def rounded_box_sdf(x: float, y: float, half_width: float, half_height: float, radius: float) -> float:
+def rounded_box_sdf(
+    x: float, y: float, half_width: float, half_height: float, radius: float
+) -> float:
     return box_sdf(x, y, half_width - radius, half_height - radius) - radius
 
 
@@ -157,7 +159,9 @@ def draw_level_segments(distances: np.ndarray, level: float) -> None:
                 py5.line(crossings[2][0], crossings[2][1], crossings[3][0], crossings[3][1])
 
 
-def cell_crossings(corners: list[tuple[float, float, float]], level: float) -> list[tuple[float, float]]:
+def cell_crossings(
+    corners: list[tuple[float, float, float]], level: float
+) -> list[tuple[float, float]]:
     crossings = []
     for i in range(4):
         x1, y1, v1 = corners[i]

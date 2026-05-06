@@ -1,7 +1,8 @@
-from pathlib import Path
-import py5
-import random
 import math
+import random
+from pathlib import Path
+
+import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -119,8 +120,14 @@ def draw() -> None:
 
     # Draw info
     py5.fill(0)
-    py5.text(f"Points: {len(points)} | Min dist: {min_distance} | Max samples: {max_samples}", 10, 20)
-    py5.text("Arrow keys: adjust min distance | +/-: adjust max samples | r: regenerate | s: save", 10, 40)
+    py5.text(
+        f"Points: {len(points)} | Min dist: {min_distance} | Max samples: {max_samples}", 10, 20
+    )
+    py5.text(
+        "Arrow keys: adjust min distance | +/-: adjust max samples | r: regenerate | s: save",
+        10,
+        40,
+    )
 
 
 def key_pressed() -> None:

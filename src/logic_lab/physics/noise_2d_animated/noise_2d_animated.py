@@ -3,7 +3,6 @@ from pathlib import Path
 import numpy as np
 import py5
 
-
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 OCTAVES = 4

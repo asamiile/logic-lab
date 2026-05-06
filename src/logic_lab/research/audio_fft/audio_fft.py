@@ -1,9 +1,10 @@
-from pathlib import Path
-import py5
-import numpy as np
-import sounddevice as sd
-import threading
 import queue
+import threading
+from pathlib import Path
+
+import numpy as np
+import py5
+import sounddevice as sd
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 

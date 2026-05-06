@@ -1,10 +1,9 @@
-from pathlib import Path
-import random as rand_module
-import math
 import copy
+import math
+import random as rand_module
+from pathlib import Path
 
 import py5
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -23,9 +22,13 @@ class NeuralNetwork:
         self.hidden_size = hidden_size
         self.output_size = output_size
 
-        self.w1 = [[rand_module.gauss(0, 0.5) for _ in range(input_size)] for _ in range(hidden_size)]
+        self.w1 = [
+            [rand_module.gauss(0, 0.5) for _ in range(input_size)] for _ in range(hidden_size)
+        ]
         self.b1 = [rand_module.gauss(0, 0.5) for _ in range(hidden_size)]
-        self.w2 = [[rand_module.gauss(0, 0.5) for _ in range(hidden_size)] for _ in range(output_size)]
+        self.w2 = [
+            [rand_module.gauss(0, 0.5) for _ in range(hidden_size)] for _ in range(output_size)
+        ]
         self.b2 = [rand_module.gauss(0, 0.5) for _ in range(output_size)]
 
     def sigmoid(self, x: float) -> float:
@@ -102,7 +105,7 @@ class Rocket:
         self.brain = brain.copy() if brain else NeuralNetwork(2, 8, 2)
 
         self.finish_counter = 0
-        self.record_distance = float('inf')
+        self.record_distance = float("inf")
         self.fitness = 0
         self.hit_obstacle = False
         self.hit_target = False
@@ -123,8 +126,9 @@ class Rocket:
         self.show()
 
     def check_target(self) -> None:
-        distance = math.sqrt((self.position.x - target.position.x) ** 2 +
-                            (self.position.y - target.position.y) ** 2)
+        distance = math.sqrt(
+            (self.position.x - target.position.x) ** 2 + (self.position.y - target.position.y) ** 2
+        )
         if distance < self.record_distance:
             self.record_distance = distance
 
@@ -140,7 +144,7 @@ class Rocket:
 
     def calculate_fitness(self) -> None:
         self.fitness = 1.0 / (self.finish_counter * self.record_distance)
-        self.fitness = self.fitness ** 4
+        self.fitness = self.fitness**4
 
         if self.hit_obstacle:
             self.fitness *= 0.1
@@ -154,7 +158,7 @@ class Rocket:
 
     def update(self) -> None:
         # Limit velocity
-        speed = math.sqrt(self.velocity.x ** 2 + self.velocity.y ** 2)
+        speed = math.sqrt(self.velocity.x**2 + self.velocity.y**2)
         if speed > self.maxspeed:
             self.velocity.x = (self.velocity.x / speed) * self.maxspeed
             self.velocity.y = (self.velocity.y / speed) * self.maxspeed
@@ -207,10 +211,12 @@ class Obstacle:
         py5.rect(self.position.x, self.position.y, self.w, self.h)
 
     def contains(self, spot: py5.Py5Vector) -> bool:
-        return (spot.x > self.position.x and
-                spot.x < self.position.x + self.w and
-                spot.y > self.position.y and
-                spot.y < self.position.y + self.h)
+        return (
+            spot.x > self.position.x
+            and spot.x < self.position.x + self.w
+            and spot.y > self.position.y
+            and spot.y < self.position.y + self.h
+        )
 
 
 class Population:

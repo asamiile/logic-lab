@@ -2,7 +2,6 @@ from pathlib import Path
 
 import py5
 
-
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 
@@ -19,7 +18,7 @@ class Mover:
 
     def attract(self, other: "Mover") -> None:
         force = self.pos - other.pos
-        dist_sq = py5.constrain(force.mag ** 2, 100, 1000)
+        dist_sq = py5.constrain(force.mag**2, 100, 1000)
         strength = (self.mass * other.mass) / dist_sq
         other.apply_force(force.norm * strength)
 

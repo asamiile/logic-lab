@@ -1,17 +1,20 @@
-
 import numpy as np
 import torch
-from torch.nn import functional as F
+
 # from .rollout import Rollout
 from stable_baselines3.common.buffers import RolloutBuffer
+from torch.nn import functional as F
+
 
 def update_linear_schedule(optimizer, epoch, total_num_epochs, initial_lr):
     lr = initial_lr - (initial_lr * (epoch / float(total_num_epochs)))
     for param_group in optimizer.param_groups:
-        param_group['lr'] = lr
+        param_group["lr"] = lr
+
 
 class PPO:
-    def __init__(self,
+    def __init__(
+        self,
         policy,
         env,
         learning_rate=3e-4,
@@ -26,9 +29,10 @@ class PPO:
         ent_coef=0.0,
         vf_coef=0.5,
         max_grad_norm=0.5,
-        device='cpu',
+        device="cpu",
         lr_decay=True,
-        max_iter=None):
+        max_iter=None,
+    ):
 
         self.rollout_buffer = RolloutBuffer(
             n_steps,
@@ -68,7 +72,7 @@ class PPO:
     def update_lr(self):
         lr = self.initial_lr * (1 - (self.iter / self.max_iter))
         for param_group in self.optimizer.param_groups:
-            param_group['lr'] = lr
+            param_group["lr"] = lr
 
     def train(self):
         if self.lr_decay:
@@ -78,7 +82,9 @@ class PPO:
             for rollout_data in self.rollout_buffer.get(self.batch_size):
                 actions = rollout_data.actions
 
-                values, log_prob, entropy = self.policy.evaluate_actions(rollout_data.observations, actions)
+                values, log_prob, entropy = self.policy.evaluate_actions(
+                    rollout_data.observations, actions
+                )
                 values = values.flatten()
                 advantages = rollout_data.advantages
                 if self.normalize_advantage and len(advantages) > 1:
@@ -87,7 +93,9 @@ class PPO:
                 ratio = torch.exp(log_prob - rollout_data.old_log_prob)
 
                 policy_loss_1 = advantages * ratio
-                policy_loss_2 = advantages * torch.clamp(ratio, 1 - self.clip_range, 1 + self.clip_range)
+                policy_loss_2 = advantages * torch.clamp(
+                    ratio, 1 - self.clip_range, 1 + self.clip_range
+                )
                 policy_loss = -torch.min(policy_loss_1, policy_loss_2).mean()
 
                 if self.clip_range_vf is None:
@@ -128,14 +136,16 @@ class PPO:
                     done
                     and infos[idx].get("terminal_observation") is not None
                     and infos[idx].get("TimeLimit.truncated", False)
-                    ):
+                ):
                     terminal_obs = np.array(infos[idx]["terminal_observation"])
                     terminal_obs = terminal_obs.reshape((-1,) + self.observation_space.shape)
                     with torch.no_grad():
                         terminal_value = self.policy.predict_values(terminal_obs)[0]
                     rewards[idx] += self.gamma * terminal_value
 
-            self.rollout_buffer.add(self._last_obs, actions, rewards, self._last_episode_starts, values, log_probs)
+            self.rollout_buffer.add(
+                self._last_obs, actions, rewards, self._last_episode_starts, values, log_probs
+            )
             self._last_obs = new_obs
             self._last_episode_starts = dones
 

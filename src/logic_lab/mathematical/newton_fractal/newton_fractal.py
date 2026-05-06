@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-from pathlib import Path
 import cmath
 import math
+from pathlib import Path
 
 import numpy as np
 import py5
@@ -114,7 +114,9 @@ def newton_solve(z: complex, roots: list[complex]) -> tuple[int, int, float]:
     return root_index, max_iterations, distances[root_index]
 
 
-def color_for_result(root_index: int, iterations: int, residual: float, root_count: int) -> tuple[float, float, float]:
+def color_for_result(
+    root_index: int, iterations: int, residual: float, root_count: int
+) -> tuple[float, float, float]:
     hue = (root_index * 360 / root_count + iterations * 2.4) % 360
     convergence = 1 - iterations / max(1, max_iterations)
     edge = min(1.0, math.log1p(residual * 1000) * 0.28)

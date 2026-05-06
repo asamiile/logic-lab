@@ -3,7 +3,6 @@ from pathlib import Path
 
 import py5
 
-
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 NUM = 10
@@ -65,4 +64,3 @@ def key_pressed() -> None:
 
 
 py5.run_sketch()
-

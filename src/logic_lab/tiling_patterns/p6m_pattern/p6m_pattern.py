@@ -1,12 +1,11 @@
-from pathlib import Path
-from math import pi
 import sys
+from math import pi
+from pathlib import Path
 
 import py5
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 from tiling_patterns.pattern_helpers import from_angle, hex_lattice, mul
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 NUM = 5

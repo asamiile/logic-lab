@@ -1,10 +1,9 @@
-from pathlib import Path
-import random as rand_module
-import math
 import copy
+import math
+import random as rand_module
+from pathlib import Path
 
 import py5
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -22,9 +21,13 @@ class NeuralNetwork:
         self.hidden_size = hidden_size
         self.output_size = output_size
 
-        self.w1 = [[rand_module.gauss(0, 0.5) for _ in range(input_size)] for _ in range(hidden_size)]
+        self.w1 = [
+            [rand_module.gauss(0, 0.5) for _ in range(input_size)] for _ in range(hidden_size)
+        ]
         self.b1 = [rand_module.gauss(0, 0.5) for _ in range(hidden_size)]
-        self.w2 = [[rand_module.gauss(0, 0.5) for _ in range(hidden_size)] for _ in range(output_size)]
+        self.w2 = [
+            [rand_module.gauss(0, 0.5) for _ in range(hidden_size)] for _ in range(output_size)
+        ]
         self.b2 = [rand_module.gauss(0, 0.5) for _ in range(output_size)]
 
     def sigmoid(self, x: float) -> float:
@@ -105,8 +108,7 @@ class Creature:
 
     def seek(self, target: "Glow") -> None:
         # Direction to target
-        v = py5.Py5Vector(target.position.x - self.position.x,
-                          target.position.y - self.position.y)
+        v = py5.Py5Vector(target.position.x - self.position.x, target.position.y - self.position.y)
         distance = math.sqrt(v.x * v.x + v.y * v.y) / py5.width
 
         # Normalize direction
@@ -149,8 +151,9 @@ class Creature:
         self.acceleration.y = 0
 
         # Check distance to target
-        d = math.sqrt((self.position.x - target.position.x) ** 2 +
-                      (self.position.y - target.position.y) ** 2)
+        d = math.sqrt(
+            (self.position.x - target.position.x) ** 2 + (self.position.y - target.position.y) ** 2
+        )
         if d < self.r + target.r:
             self.fitness += 1
 
@@ -219,9 +222,9 @@ def reproduction() -> None:
         parent_b = weighted_selection()
         child = parent_a.crossover(parent_b)
         child.mutate(0.1)
-        next_creatures.append(Creature(rand_module.random() * py5.width,
-                                       rand_module.random() * py5.height,
-                                       child))
+        next_creatures.append(
+            Creature(rand_module.random() * py5.width, rand_module.random() * py5.height, child)
+        )
     creatures = next_creatures
     generations += 1
 
@@ -231,9 +234,10 @@ def setup() -> None:
 
     py5.size(640, 240)
 
-    creatures = [Creature(rand_module.random() * py5.width,
-                          rand_module.random() * py5.height)
-                 for _ in range(50)]
+    creatures = [
+        Creature(rand_module.random() * py5.width, rand_module.random() * py5.height)
+        for _ in range(50)
+    ]
     glow = Glow()
 
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)

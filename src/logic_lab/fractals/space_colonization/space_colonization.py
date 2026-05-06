@@ -1,8 +1,8 @@
+from dataclasses import dataclass
 from pathlib import Path
 
-import py5
 import numpy as np
-from dataclasses import dataclass
+import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -73,9 +73,7 @@ class SpaceColonization:
                 dx = (dx / length) * 4
                 dy = (dy / length) * 4
 
-                new_node = Node(
-                    closest_node.x + dx, closest_node.y + dy, parent=closest_node
-                )
+                new_node = Node(closest_node.x + dx, closest_node.y + dy, parent=closest_node)
                 closest_node.children.append(new_node)
                 self.nodes.append(new_node)
 

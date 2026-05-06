@@ -1,8 +1,7 @@
-from pathlib import Path
 import random as rand_module
+from pathlib import Path
 
 import py5
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -50,10 +49,10 @@ class Flower:
 
     def contains(self, mx: float, my: float) -> bool:
         return (
-            mx > self.x - self.w / 2 and
-            mx < self.x + self.w / 2 and
-            my > self.y - self.h / 2 and
-            my < self.y + self.h / 2
+            mx > self.x - self.w / 2
+            and mx < self.x + self.w / 2
+            and my > self.y - self.h / 2
+            and my < self.y + self.h / 2
         )
 
     def show(self) -> None:
@@ -144,10 +143,7 @@ class Flower:
 
 class Population:
     def __init__(self, num: int) -> None:
-        self.flowers = [
-            Flower(40 + i * 80, 120, DNA())
-            for i in range(num)
-        ]
+        self.flowers = [Flower(40 + i * 80, 120, DNA()) for i in range(num)]
         self.mutation_rate = 0.05
         self.generations = 0
 
@@ -213,12 +209,7 @@ def draw() -> None:
     py5.fill(100)
     py5.stroke(0)
     py5.stroke_weight(1)
-    py5.rect(
-        button_rect["x"],
-        button_rect["y"],
-        button_rect["w"],
-        button_rect["h"]
-    )
+    py5.rect(button_rect["x"], button_rect["y"], button_rect["w"], button_rect["h"])
 
     py5.fill(255)
     py5.text_size(12)
@@ -226,7 +217,7 @@ def draw() -> None:
     py5.text(
         "evolve new generation",
         button_rect["x"] + button_rect["w"] / 2,
-        button_rect["y"] + button_rect["h"] / 2
+        button_rect["y"] + button_rect["h"] / 2,
     )
 
     # Display generation
@@ -238,8 +229,10 @@ def draw() -> None:
 
 def mouse_pressed() -> None:
     # Check if button was clicked
-    if (button_rect["x"] < py5.mouse_x < button_rect["x"] + button_rect["w"] and
-        button_rect["y"] < py5.mouse_y < button_rect["y"] + button_rect["h"]):
+    if (
+        button_rect["x"] < py5.mouse_x < button_rect["x"] + button_rect["w"]
+        and button_rect["y"] < py5.mouse_y < button_rect["y"] + button_rect["h"]
+    ):
         population.selection()
         population.reproduction()
 

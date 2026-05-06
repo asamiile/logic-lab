@@ -1,8 +1,7 @@
-from pathlib import Path
 import math
+from pathlib import Path
 
 import py5
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -21,8 +20,7 @@ class Sensor:
         end_y = position.y + self.v.y
 
         # Distance from sensor endpoint to food center
-        d = math.sqrt((end_x - food.position.x) ** 2 +
-                      (end_y - food.position.y) ** 2)
+        d = math.sqrt((end_x - food.position.x) ** 2 + (end_y - food.position.y) ** 2)
 
         # If within food radius, activate the sensor
         if d < food.r:

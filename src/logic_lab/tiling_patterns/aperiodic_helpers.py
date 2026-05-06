@@ -4,9 +4,7 @@ from dataclasses import dataclass
 from math import pi, sqrt
 
 import py5
-
 from tiling_patterns.pattern_helpers import Point, add, from_angle, mul, rotate, sub
-
 
 PHI = (1 + sqrt(5)) / 2
 

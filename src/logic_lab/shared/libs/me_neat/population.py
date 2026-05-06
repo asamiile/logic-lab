@@ -1,23 +1,22 @@
-
 import numpy as np
 
-from .reproduction import Reproduction
 from .reporting import ReporterSet
+from .reproduction import Reproduction
+
 
 class Population:
     def __init__(self, config):
         self.config = config
         self.reporters = ReporterSet()
 
-        if config.fitness_criterion == 'max':
+        if config.fitness_criterion == "max":
             self.fitness_criterion = max
-        elif config.fitness_criterion == 'min':
+        elif config.fitness_criterion == "min":
             self.fitness_criterion = min
-        elif config.fitness_criterion == 'mean':
+        elif config.fitness_criterion == "mean":
             self.fitness_criterion = np.mean
         elif not config.no_fitness_termination:
-            raise RuntimeError(
-                "Unexpected fitness_criterion: {0!r}".format(config.fitness_criterion))
+            raise RuntimeError(f"Unexpected fitness_criterion: {config.fitness_criterion!r}")
 
         self.reproduction = Reproduction(config.genome_config, config.genome_type)
 
@@ -36,13 +35,17 @@ class Population:
             n = self.config.generation - self.generation
 
         k = 0
-        while k<n:
+        while k < n:
             k += 1
 
             self.reporters.start_generation(self.generation)
 
             offsprings = self.reproduction.reproduce(
-                self.population, self.config.offspring_size, self.generation, constraint_function=constraint_function)
+                self.population,
+                self.config.offspring_size,
+                self.generation,
+                constraint_function=constraint_function,
+            )
 
             # Evaluate all offsprings using the user-provided function.
             fitness_function(offsprings, self.config, self.generation)
@@ -51,7 +54,7 @@ class Population:
             best = None
             for g in offsprings.values():
                 if g.fitness is None:
-                    raise RuntimeError("Fitness not assigned to genome {}".format(g.key))
+                    raise RuntimeError(f"Fitness not assigned to genome {g.key}")
 
                 if best is None or g.fitness > best.fitness:
                     best = g
@@ -78,9 +81,9 @@ class Population:
 
     def update_pop(self, offsprings):
         for offspring in offsprings.values():
-            bd = getattr(offspring,'bd',None)
+            bd = getattr(offspring, "bd", None)
             if bd is None:
-                raise RuntimeError("bd not assigned to genome {}".format(offspring.key))
+                raise RuntimeError(f"bd not assigned to genome {offspring.key}")
 
             bd_key = tuple(list(bd.values()))
             old = self.population.get(bd_key, None)

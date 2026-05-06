@@ -2,7 +2,6 @@ from pathlib import Path
 
 import py5
 
-
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 qtree: "QuadTree"
@@ -22,14 +21,18 @@ class Rectangle:
         self.h = h  # half-height
 
     def contains(self, point: Point) -> bool:
-        return (self.x - self.w <= point.x < self.x + self.w and
-                self.y - self.h <= point.y < self.y + self.h)
+        return (
+            self.x - self.w <= point.x < self.x + self.w
+            and self.y - self.h <= point.y < self.y + self.h
+        )
 
     def intersects(self, other: "Rectangle") -> bool:
-        return not (other.x - other.w > self.x + self.w or
-                    other.x + other.w < self.x - self.w or
-                    other.y - other.h > self.y + self.h or
-                    other.y + other.h < self.y - self.h)
+        return not (
+            other.x - other.w > self.x + self.w
+            or other.x + other.w < self.x - self.w
+            or other.y - other.h > self.y + self.h
+            or other.y + other.h < self.y - self.h
+        )
 
 
 class QuadTree:
@@ -38,10 +41,10 @@ class QuadTree:
         self.capacity = capacity
         self.points: list[Point] = []
         self.divided = False
-        self.northeast: "QuadTree | None" = None
-        self.northwest: "QuadTree | None" = None
-        self.southeast: "QuadTree | None" = None
-        self.southwest: "QuadTree | None" = None
+        self.northeast: QuadTree | None = None
+        self.northwest: QuadTree | None = None
+        self.southeast: QuadTree | None = None
+        self.southwest: QuadTree | None = None
 
     def subdivide(self) -> None:
         x, y = self.boundary.x, self.boundary.y
@@ -60,10 +63,12 @@ class QuadTree:
             return True
         if not self.divided:
             self.subdivide()
-        return (self.northeast.insert(point) or  # type: ignore[union-attr]
-                self.northwest.insert(point) or  # type: ignore[union-attr]
-                self.southeast.insert(point) or  # type: ignore[union-attr]
-                self.southwest.insert(point))    # type: ignore[union-attr]
+        return (
+            self.northeast.insert(point)  # type: ignore[union-attr]
+            or self.northwest.insert(point)  # type: ignore[union-attr]
+            or self.southeast.insert(point)  # type: ignore[union-attr]
+            or self.southwest.insert(point)
+        )  # type: ignore[union-attr]
 
     def query(self, query_range: Rectangle, found: list[Point] | None = None) -> list[Point]:
         if found is None:
@@ -74,10 +79,10 @@ class QuadTree:
             if query_range.contains(p):
                 found.append(p)
         if self.divided:
-            self.northwest.query(query_range, found)   # type: ignore[union-attr]
-            self.northeast.query(query_range, found)   # type: ignore[union-attr]
-            self.southwest.query(query_range, found)   # type: ignore[union-attr]
-            self.southeast.query(query_range, found)   # type: ignore[union-attr]
+            self.northwest.query(query_range, found)  # type: ignore[union-attr]
+            self.northeast.query(query_range, found)  # type: ignore[union-attr]
+            self.southwest.query(query_range, found)  # type: ignore[union-attr]
+            self.southeast.query(query_range, found)  # type: ignore[union-attr]
         return found
 
     def show(self) -> None:

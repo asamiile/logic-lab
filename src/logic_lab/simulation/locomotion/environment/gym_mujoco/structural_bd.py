@@ -4,13 +4,17 @@ Behavioral Descriptors for locomotion controllers.
 Since the robot body is fixed, behavioral descriptors are based on
 controller behavior patterns (how it moves, not what shape it is).
 """
-import sys
+
 import os
+import sys
+
 import numpy as np
 
 # Import from me_neat library
-_parent_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))))
-_lib_dir = os.path.join(_parent_dir, 'shared', 'libs')
+_parent_dir = os.path.dirname(
+    os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+)
+_lib_dir = os.path.join(_parent_dir, "shared", "libs")
 if _lib_dir not in sys.path:
     sys.path.insert(0, _lib_dir)
 
@@ -28,7 +32,7 @@ class ForwardSpeed(LinerBehavioralDescriptor):
         Returns:
             grid index for this behavior
         """
-        forward_speed = behavior_data.get('forward_speed', 0.0)
+        forward_speed = behavior_data.get("forward_speed", 0.0)
         # Clamp to value range
         forward_speed = np.clip(forward_speed, self.value_range[0], self.value_range[1])
         index = self.get_index(forward_speed)
@@ -46,7 +50,7 @@ class LateralStability(LinerBehavioralDescriptor):
         Returns:
             grid index for this behavior
         """
-        stability = behavior_data.get('lateral_stability', 0.5)
+        stability = behavior_data.get("lateral_stability", 0.5)
         stability = np.clip(stability, self.value_range[0], self.value_range[1])
         index = self.get_index(stability)
         return index
@@ -63,7 +67,7 @@ class BodyTilt(LinerBehavioralDescriptor):
         Returns:
             grid index for this behavior
         """
-        body_tilt = behavior_data.get('body_tilt', 0.0)
+        body_tilt = behavior_data.get("body_tilt", 0.0)
         body_tilt = np.clip(body_tilt, self.value_range[0], self.value_range[1])
         index = self.get_index(body_tilt)
         return index
@@ -80,7 +84,7 @@ class JointActivity(LinerBehavioralDescriptor):
         Returns:
             grid index for this behavior
         """
-        activity = behavior_data.get('joint_activity', 0.5)
+        activity = behavior_data.get("joint_activity", 0.5)
         activity = np.clip(activity, self.value_range[0], self.value_range[1])
         index = self.get_index(activity)
         return index
@@ -97,7 +101,7 @@ class StepFrequency(LinerBehavioralDescriptor):
         Returns:
             grid index for this behavior
         """
-        frequency = behavior_data.get('step_frequency', 1.0)
+        frequency = behavior_data.get("step_frequency", 1.0)
         frequency = np.clip(frequency, self.value_range[0], self.value_range[1])
         index = self.get_index(frequency)
         return index

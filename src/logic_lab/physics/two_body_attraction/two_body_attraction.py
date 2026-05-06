@@ -1,8 +1,7 @@
-from pathlib import Path
 import math
+from pathlib import Path
 
 import py5
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 

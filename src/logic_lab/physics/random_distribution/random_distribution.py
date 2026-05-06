@@ -2,7 +2,6 @@ from pathlib import Path
 
 import py5
 
-
 TOTAL = 20
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 

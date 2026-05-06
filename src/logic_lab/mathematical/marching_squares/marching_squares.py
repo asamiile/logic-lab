@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from pathlib import Path
 import math
+from pathlib import Path
 
 import numpy as np
 import py5
@@ -153,7 +153,9 @@ def selected_thresholds() -> list[float]:
     return [round(v, 2) for v in np.arange(0.2, 0.82, THRESHOLD_STEP)]
 
 
-def contour_segments(values: np.ndarray, threshold: float) -> list[tuple[tuple[float, float], tuple[float, float]]]:
+def contour_segments(
+    values: np.ndarray, threshold: float
+) -> list[tuple[tuple[float, float], tuple[float, float]]]:
     rows, cols = values.shape
     segments = []
     for row in range(rows - 1):
@@ -180,7 +182,9 @@ def contour_segments(values: np.ndarray, threshold: float) -> list[tuple[tuple[f
     return segments
 
 
-def cell_crossings(corners: list[tuple[float, float, float]], threshold: float) -> list[tuple[float, float]]:
+def cell_crossings(
+    corners: list[tuple[float, float, float]], threshold: float
+) -> list[tuple[float, float]]:
     crossings = []
     for i in range(4):
         x1, y1, v1 = corners[i]

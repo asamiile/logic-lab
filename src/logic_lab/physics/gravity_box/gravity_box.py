@@ -1,8 +1,7 @@
 from pathlib import Path
 
-import pymunk
 import py5
-
+import pymunk
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -39,7 +38,7 @@ def setup() -> None:
     size = (50, 50)
     body = pymunk.Body(mass, pymunk.moment_for_box(mass, size))
     body.position = (100, py5.height - 100)
-    body.velocity = (5 * 60, 0)   # Matter.js: 5 px/frame * 60 fps = 300 px/s
+    body.velocity = (5 * 60, 0)  # Matter.js: 5 px/frame * 60 fps = 300 px/s
     body.angular_velocity = 0.1 * 60  # Matter.js: 0.1 rad/frame * 60 fps = 6 rad/s
 
     box_shape = pymunk.Poly.create_box(body, size)

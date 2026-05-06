@@ -1,11 +1,10 @@
-from pathlib import Path
 import sys
+from pathlib import Path
 
 import py5
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 from tiling_patterns.aperiodic_helpers import Pent
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 pents: list[Pent] = []

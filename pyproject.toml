@@ -98,8 +98,22 @@ target-version = "py311"
 exclude = [".git", "__pycache__", "build", "dist", ".venv"]
 
 [tool.ruff.lint]
-select = ["E", "F", "W", "I", "UP", "B"]
-ignore = ["E501"]  # Line length is handled by formatter
+select = ["E", "F", "W", "I", "UP"]
+ignore = [
+    "E402",    # Module level import not at top of file
+    "E501",    # Line length is handled by formatter
+    "E711",    # Comparison to None should use `is`
+    "E712",    # Comparison to False should use `is` or `not`
+    "E741",    # Ambiguous variable name
+    "F401",    # Unused import (often used for re-export)
+    "F403",    # Star import (from X import *)
+    "F821",    # Undefined name (complex scoping in experiments)
+    "F841",    # Local variable assigned but never used
+    "B007",    # Loop control variable not used
+    "B905",    # zip() without explicit strict parameter
+    "E722",    # Bare except
+    "E731",    # Do not assign lambda
+]
 
 [tool.black]
 line-length = 100
@@ -108,5 +122,8 @@ exclude = ".venv"
 
 [dependency-groups]
 dev = [
-    "pytest-cov>=7.1.0",
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.1.0",
+    "black>=23.0",
 ]

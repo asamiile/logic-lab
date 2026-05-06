@@ -1,9 +1,10 @@
 import csv
-import time
 import os
-import csv
 import pickle
+import time
+
 import numpy as np
+
 
 class ReporterSet:
     def __init__(self):
@@ -50,20 +51,20 @@ class SaveResultReporter(BaseReporter):
 
     def __init__(self, save_path, bd_names):
         self.save_path = save_path
-        self.history_pop_file = os.path.join(self.save_path, 'history_pop.csv')
-        self.history_pop_header = ['generation', 'id'] + bd_names + ['fitness', 'parent']
-        self.history_fitness_file = os.path.join(self.save_path, 'history_fitness.csv')
-        self.history_fitness_header = ['generation', 'id'] + bd_names + ['fitness', 'parent']
+        self.history_pop_file = os.path.join(self.save_path, "history_pop.csv")
+        self.history_pop_header = ["generation", "id"] + bd_names + ["fitness", "parent"]
+        self.history_fitness_file = os.path.join(self.save_path, "history_fitness.csv")
+        self.history_fitness_header = ["generation", "id"] + bd_names + ["fitness", "parent"]
         self.generation = None
 
-        self.genome_path = os.path.join(self.save_path, 'genome')
+        self.genome_path = os.path.join(self.save_path, "genome")
         os.makedirs(self.genome_path, exist_ok=True)
 
-        with open(self.history_pop_file, 'w') as f:
+        with open(self.history_pop_file, "w") as f:
             writer = csv.DictWriter(f, fieldnames=self.history_pop_header)
             writer.writeheader()
 
-        with open(self.history_fitness_file, 'w') as f:
+        with open(self.history_fitness_file, "w") as f:
             writer = csv.DictWriter(f, fieldnames=self.history_fitness_header)
             writer.writeheader()
 
@@ -71,31 +72,31 @@ class SaveResultReporter(BaseReporter):
         self.generation = generation
 
     def post_evaluate(self, config, offsprings, best_genome):
-        with open(self.history_pop_file, 'a', newline='') as f:
+        with open(self.history_pop_file, "a", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=self.history_pop_header)
-            for key,genome in offsprings.items():
+            for key, genome in offsprings.items():
                 items = {
-                    'generation': self.generation,
-                    'id': key,
-                    'fitness': genome.fitness,
-                    'parent': genome.parent
+                    "generation": self.generation,
+                    "id": key,
+                    "fitness": genome.fitness,
+                    "parent": genome.parent,
                 }
                 items.update(**genome.bd)
 
                 writer.writerow(items)
 
         items = {
-            'generation': self.generation,
-            'id': best_genome.key,
-            'fitness': best_genome.fitness,
-            'parent': best_genome.parent
+            "generation": self.generation,
+            "id": best_genome.key,
+            "fitness": best_genome.fitness,
+            "parent": best_genome.parent,
         }
         items.update(**best_genome.bd)
-        with open(self.history_fitness_file, 'a', newline='') as f:
+        with open(self.history_fitness_file, "a", newline="") as f:
             writer = csv.DictWriter(f, fieldnames=self.history_fitness_header)
             writer.writerow(items)
-        best_file = os.path.join(self.genome_path, f'{best_genome.key}.pickle')
-        with open(best_file, 'wb') as f:
+        best_file = os.path.join(self.genome_path, f"{best_genome.key}.pickle")
+        with open(best_file, "wb") as f:
             pickle.dump(best_genome, f)
 
 
@@ -108,30 +109,30 @@ class MapElitesReporter(BaseReporter):
 
     def start_generation(self, generation):
         self.generation = generation
-        print('\n ****** Running generation {} ****** \n'.format(generation))
+        print(f"\n ****** Running generation {generation} ****** \n")
         self.generation_start_time = time.time()
 
     # def post_evaluate(self, config, offsprings, best_genome):
-        # pass
+    # pass
 
     def end_generation(self, config, population):
 
-        print('Population size {}'.format(len(population)))
+        print(f"Population size {len(population)}")
 
         fitnesses = [c.fitness for c in population.values()]
         fit_mean = np.mean(fitnesses)
         fit_std = np.std(fitnesses)
-        print("Population's average fitness: {0:3.5f} stdev: {1:3.5f}".format(fit_mean, fit_std))
+        print(f"Population's average fitness: {fit_mean:3.5f} stdev: {fit_std:3.5f}")
 
         best = max(population.values(), key=lambda z: z.fitness)
-        best_bd_str = '(' + ', '.join(map(str, list(best.bd.values()))) + ')'
-        print('Best fitness: {0:3.5f} - id {1} - bd {2}'.format(best.fitness, best.key, best_bd_str))
+        best_bd_str = "(" + ", ".join(map(str, list(best.bd.values()))) + ")"
+        print(f"Best fitness: {best.fitness:3.5f} - id {best.key} - bd {best_bd_str}")
 
         elapsed = time.time() - self.generation_start_time
         self.generation_times.append(elapsed)
         self.generation_times = self.generation_times[-10:]
         average = sum(self.generation_times) / len(self.generation_times)
         if len(self.generation_times) > 1:
-            print('Generation time: {0:.3f} sec ({1:.3f} average)'.format(elapsed, average))
+            print(f"Generation time: {elapsed:.3f} sec ({average:.3f} average)")
         else:
-            print('Generation time: {0:.3f} sec'.format(elapsed))
+            print(f"Generation time: {elapsed:.3f} sec")

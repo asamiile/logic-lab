@@ -1,8 +1,7 @@
 from pathlib import Path
 
-import pymunk
 import py5
-
+import pymunk
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -111,7 +110,9 @@ def mouse_pressed() -> None:
     mouse_body.position = (py5.mouse_x, py5.height - py5.mouse_y)
 
     # Find shape under mouse
-    point_query = space.point_query_nearest((py5.mouse_x, py5.height - py5.mouse_y), 20, pymunk.ShapeFilter())
+    point_query = space.point_query_nearest(
+        (py5.mouse_x, py5.height - py5.mouse_y), 20, pymunk.ShapeFilter()
+    )
 
     if point_query:
         shape = point_query.shape

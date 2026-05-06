@@ -1,11 +1,16 @@
-from pathlib import Path
 import sys
+from pathlib import Path
 
 import py5
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
-from tiling_patterns.deformation_helpers import draw_poly, draw_tiling, koch_points, square_lattice, square_vertices
-
+from tiling_patterns.deformation_helpers import (
+    draw_poly,
+    draw_tiling,
+    koch_points,
+    square_lattice,
+    square_vertices,
+)
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 NUM = 10

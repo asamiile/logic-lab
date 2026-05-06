@@ -1,8 +1,7 @@
 from pathlib import Path
 
-import pymunk
 import py5
-
+import pymunk
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 

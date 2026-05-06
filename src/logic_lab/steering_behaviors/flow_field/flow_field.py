@@ -3,7 +3,6 @@ from pathlib import Path
 
 import py5
 
-
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 debug = True
@@ -121,7 +120,9 @@ def setup() -> None:
     py5.size(640, 240)
     flow_field = FlowField(20)
     vehicles = [
-        Vehicle(py5.random(py5.width), py5.random(py5.height), py5.random(2, 5), py5.random(0.1, 0.5))
+        Vehicle(
+            py5.random(py5.width), py5.random(py5.height), py5.random(2, 5), py5.random(0.1, 0.5)
+        )
         for _ in range(120)
     ]
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)

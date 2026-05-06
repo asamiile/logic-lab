@@ -2,7 +2,6 @@ from pathlib import Path
 
 import py5
 
-
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 
@@ -68,8 +67,7 @@ def setup() -> None:
     global movers, attractor
     py5.size(640, 240)
     movers = [
-        Mover(py5.random(py5.width), py5.random(py5.height), py5.random(0.1, 2))
-        for _ in range(20)
+        Mover(py5.random(py5.width), py5.random(py5.height), py5.random(0.1, 2)) for _ in range(20)
     ]
     attractor = Attractor()
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)

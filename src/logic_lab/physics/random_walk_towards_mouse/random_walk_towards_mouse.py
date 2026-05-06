@@ -2,7 +2,6 @@ from pathlib import Path
 
 import py5
 
-
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 
@@ -58,9 +57,7 @@ def draw() -> None:
 
 def key_pressed() -> None:
     if py5.key == "s":
-        py5.save_frame(
-            str(SCREENSHOT_DIR / "random_walk_towards_mouse_####.png")
-        )
+        py5.save_frame(str(SCREENSHOT_DIR / "random_walk_towards_mouse_####.png"))
 
 
 py5.run_sketch()

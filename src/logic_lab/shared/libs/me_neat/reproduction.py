@@ -1,6 +1,7 @@
-import random
 import itertools
+import random
 from copy import deepcopy
+
 
 class Reproduction:
     def __init__(self, config, genome_type):
@@ -29,8 +30,8 @@ class Reproduction:
                 while not constraint_function(genome, self.config, generation):
                     genome = self.create_new(key)
 
-            setattr(genome, 'generation', generation)
-            setattr(genome, 'parent', [-1])
+            genome.generation = generation
+            genome.parent = [-1]
             population[key] = genome
 
         return population
@@ -51,17 +52,21 @@ class Reproduction:
                     parent_key, parent = random.choice(list(population.items()))
                     offspring = self.mutate(key, parent)
 
-            setattr(offspring, 'fitness', None)
-            setattr(offspring, 'generation', generation)
-            setattr(offspring, 'parent', parent_key)
+            offspring.fitness = None
+            offspring.generation = generation
+            offspring.parent = parent_key
             offsprings[key] = offspring
 
         return offsprings
 
     def reproduce(self, population, offspring_size, generation, constraint_function=None):
-        if len(population)==0:
-            population = self.create_init(offspring_size, generation, constraint_function=constraint_function)
+        if len(population) == 0:
+            population = self.create_init(
+                offspring_size, generation, constraint_function=constraint_function
+            )
         else:
-            population = self.create_offsprings(population, offspring_size, generation, constraint_function=constraint_function)
+            population = self.create_offsprings(
+                population, offspring_size, generation, constraint_function=constraint_function
+            )
 
         return population

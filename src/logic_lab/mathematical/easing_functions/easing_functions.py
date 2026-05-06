@@ -1,6 +1,7 @@
-from pathlib import Path
-import py5
 import math
+from pathlib import Path
+
+import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -132,7 +133,7 @@ def draw() -> None:
     py5.end_shape()
 
     # Draw animated dot
-    t_anim = (time_offset % 1.0)
+    t_anim = time_offset % 1.0
     y_anim = func(t_anim)
     x_anim = graph_x + (t_anim * graph_w)
     y_anim_pixel = graph_y + graph_h - (y_anim * graph_h)

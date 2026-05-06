@@ -1,8 +1,7 @@
-from pathlib import Path
 import math
+from pathlib import Path
 
 import py5
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -26,7 +25,7 @@ class KochLine:
     def koch_b(self) -> py5.Py5Vector:
         # 1/3 of the way from a to b
         v = self.b - self.a
-        v *= (1.0 / 3.0)
+        v *= 1.0 / 3.0
         return self.a + v
 
     def koch_c(self) -> py5.Py5Vector:
@@ -35,7 +34,7 @@ class KochLine:
 
         # Move 1/3 of the way to b
         v = self.b - self.a
-        v *= (1.0 / 3.0)
+        v *= 1.0 / 3.0
         a += v
 
         # Rotate by -PI/3 (negative so it rotates "up")
@@ -51,7 +50,7 @@ class KochLine:
     def koch_d(self) -> py5.Py5Vector:
         # 2/3 of the way from a to b
         v = self.b - self.a
-        v *= (2.0 / 3.0)
+        v *= 2.0 / 3.0
         return self.a + v
 
     def koch_e(self) -> py5.Py5Vector:

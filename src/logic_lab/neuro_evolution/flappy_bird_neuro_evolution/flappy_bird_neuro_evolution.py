@@ -1,10 +1,9 @@
-from pathlib import Path
-import random as rand_module
-import math
 import copy
+import math
+import random as rand_module
+from pathlib import Path
 
 import py5
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -20,9 +19,13 @@ class NeuralNetwork:
         self.output_size = output_size
 
         # Initialize weights
-        self.w1 = [[rand_module.gauss(0, 0.5) for _ in range(input_size)] for _ in range(hidden_size)]
+        self.w1 = [
+            [rand_module.gauss(0, 0.5) for _ in range(input_size)] for _ in range(hidden_size)
+        ]
         self.b1 = [rand_module.gauss(0, 0.5) for _ in range(hidden_size)]
-        self.w2 = [[rand_module.gauss(0, 0.5) for _ in range(hidden_size)] for _ in range(output_size)]
+        self.w2 = [
+            [rand_module.gauss(0, 0.5) for _ in range(hidden_size)] for _ in range(output_size)
+        ]
         self.b2 = [rand_module.gauss(0, 0.5) for _ in range(output_size)]
 
     def sigmoid(self, x: float) -> float:

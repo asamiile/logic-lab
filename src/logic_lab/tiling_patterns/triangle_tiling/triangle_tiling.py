@@ -1,8 +1,7 @@
-from math import ceil, sqrt
+from math import ceil
 from pathlib import Path
 
 import py5
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -74,4 +73,3 @@ def key_pressed() -> None:
 
 
 py5.run_sketch()
-

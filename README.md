@@ -13,104 +13,138 @@ uv sync
 ## MCP Server
 
 Logic Lab includes a local read-only MCP server for AI agents. Clone this
-repository locally, run `uv sync`, register the server with the local path, then
-use it from any other workspace as an algorithm reference.
+repository locally, install dependencies with `uv sync`, then register the server
+for use across your workspace.
 
 With the MCP server, agents can search the Logic Lab manifest, find algorithms
 by visual intent or category, read short summaries, and fetch bounded source
 snippets for selected examples.
 
-Register with Codex:
+### Installation
 
 ```bash
-codex mcp add logic-lab -- uv run --project /path/to/logic-lab python /path/to/logic-lab/mcp/logic_lab_server.py
+git clone https://github.com/asamiii/logic-lab.git
+cd logic-lab
+uv sync
 ```
 
-Register with Claude Code:
+### Registration
 
+After installation, register the server with your AI tool using the `logic-lab-mcp` command:
+
+**Claude Code:**
 ```bash
-claude mcp add logic-lab -- uv run --project /path/to/logic-lab python /path/to/logic-lab/mcp/logic_lab_server.py
+claude mcp add logic-lab -- logic-lab-mcp
 ```
 
-Register with GitHub Copilot in VS Code (`.vscode/mcp.json` or user MCP settings):
+**Codex:**
+```bash
+codex mcp add logic-lab -- logic-lab-mcp
+```
 
+**GitHub Copilot in VS Code** (`.vscode/mcp.json` or user MCP settings):
 ```json
 {
   "servers": {
     "logic-lab": {
       "type": "stdio",
-      "command": "uv",
-      "args": [
-        "run",
-        "--project",
-        "/path/to/logic-lab",
-        "python",
-        "/path/to/logic-lab/mcp/logic_lab_server.py"
-      ]
+      "command": "logic-lab-mcp"
     }
   }
 }
 ```
 
-Register with Cursor (`.cursor/mcp.json` or `~/.cursor/mcp.json`):
-
+**Cursor** (`.cursor/mcp.json` or `~/.cursor/mcp.json`):
 ```json
 {
   "mcpServers": {
     "logic-lab": {
       "type": "stdio",
-      "command": "uv",
-      "args": [
-        "run",
-        "--project",
-        "/path/to/logic-lab",
-        "python",
-        "/path/to/logic-lab/mcp/logic_lab_server.py"
-      ]
+      "command": "logic-lab-mcp"
     }
   }
 }
 ```
 
-Register with Antigravity:
+See [src/logic_lab/mcp/README.md](src/logic_lab/mcp/README.md) for tools, security notes, and usage details.
 
-Add this server entry to your Antigravity MCP settings file:
+## Repository Structure
 
-```json
-{
-  "mcpServers": {
-    "logic-lab": {
-      "command": "uv",
-      "args": [
-        "run",
-        "--project",
-        "/path/to/logic-lab",
-        "python",
-        "/path/to/logic-lab/mcp/logic_lab_server.py"
-      ],
-      "env": {}
-    }
-  }
-}
+```
+logic-lab/
+├── src/logic_lab/                 # Package root
+│   ├── __init__.py
+│   ├── mcp/                       # MCP server for AI agent access
+│   ├── physics/                   # Motion, forces, particles, simulations
+│   ├── steering_behaviors/        # Autonomous agents, flow fields, flocking
+│   ├── genetic_algorithms/        # Selection, mutation, evolutionary search
+│   ├── neuro_evolution/           # Neural networks evolved via genetics
+│   ├── fractals/                  # Recursion, trees, Koch curves, L-systems
+│   ├── cellular_automata/         # Rule-based grids, lattice systems
+│   ├── mathematical/              # Noise, curves, geometry, harmony
+│   ├── tiling_patterns/           # Symmetry, tessellation, ornaments
+│   ├── research/                  # Experimental and hybrid systems
+│   ├── simulation/                # Prototypes and reference implementations
+│   ├── shared/                    # Reusable utilities and helpers
+│   └── shader/                    # GLSL shader experiments
+├── tests/                         # Pytest test suite
+├── CONTRIBUTING.md                # Contributor guidelines and conventions
+├── CHANGELOG.md                   # Version history and release notes
+├── pyproject.toml                 # Package configuration and dependencies
+└── .github/workflows/
+    ├── test.yml                   # CI: lint and test automation
+    └── release.yml                # CD: automated releases with release-please
 ```
 
-See [mcp/README.md](mcp/README.md) for tools, security notes, and usage details.
+### Algorithm Domains
 
-## Repository Map
+- **mathematical/** - Generative geometry, color harmony, noise functions, fractals
+- **physics/** - Particle systems, forces, spring physics, fluid dynamics, collision
+- **steering_behaviors/** - Autonomous agents, flocking, pathfinding, flow fields
+- **genetic_algorithms/** - Evolution, selection, crossover, mutation
+- **neuro_evolution/** - Neural networks evolved via genetic algorithms
+- **fractals/** - Recursive structures, space-filling curves, Mandelbrot sets
+- **cellular_automata/** - Rule-based systems, Game of Life, emergence
+- **tiling_patterns/** - Symmetry, tessellations, ornamental patterns
+- **research/** - Experimental systems combining multiple domains
+- **simulation/** - Prototype implementations and archived experiments
+- **shader/** - GLSL fragment shaders for TouchDesigner and UE5
 
-- **physics/** - motion, forces, waves, oscillation, particles, and physical systems
-- **steering_behaviors/** - autonomous agents, seek/arrive, path following, flow fields, and flocking
-- **genetic_algorithms/** - selection, mutation, fitness, DNA, and evolutionary search
-- **neuro_evolution/** - neural networks evolved by genetic algorithms
-- **fractals/** - recursion, trees, Koch curves, L-systems, and spatial subdivision
-- **cellular_automata/** - rule-based grids, lattice systems, and emergent patterns
-- **mathematical/** - spirals, Bezier curves, modular arithmetic, Fibonacci systems, and generative geometry
-- **tiling_patterns/** - symmetry, tiling, textile patterns, deformations, and ornaments
-- **research/** - experimental or hybrid systems that do not fit a single domain
-- **simulation/** - older experiments and custom prototypes kept for reference
-- **shared/** - reusable support libraries
-- **shader/** - GLSL shader experiments
-- **mcp/** - read-only MCP server for AI agent access to algorithm references
+## Development
+
+To contribute new algorithms or fixes, see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on:
+- Development setup with `uv`
+- Algorithm addition workflow
+- py5 code patterns and templates
+- Testing requirements
+- Conventional Commits specification
+- Automated release process
+
+### Running Tests
+
+```bash
+# Install dev dependencies
+uv sync --group dev
+
+# Run all tests
+uv run pytest tests/
+
+# Run with coverage
+uv run pytest tests/ --cov=src/logic_lab
+```
+
+### Code Quality
+
+```bash
+# Lint with ruff
+uv run ruff check src/ tests/
+
+# Format with black
+uv run black src/ tests/
+
+# Lint and fix
+uv run ruff check --fix src/ tests/
+```
 
 ## Reference
 

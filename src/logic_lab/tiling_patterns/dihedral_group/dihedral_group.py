@@ -2,7 +2,6 @@ from pathlib import Path
 
 import py5
 
-
 BASE_DIR = Path(__file__).parent
 SCREENSHOT_DIR = BASE_DIR / "screenshots"
 
@@ -68,4 +67,3 @@ def key_pressed() -> None:
 
 
 py5.run_sketch()
-

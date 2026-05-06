@@ -1,6 +1,6 @@
-from pathlib import Path
-from math import sqrt
 import sys
+from math import sqrt
+from pathlib import Path
 
 import py5
 
@@ -11,7 +11,6 @@ from tiling_patterns.deformation_helpers import (
     draw_tiling,
     tv08_vertices,
 )
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 ROW = 10

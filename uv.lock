@@ -1553,7 +1553,10 @@ ml = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "black" },
+    { name = "pytest" },
     { name = "pytest-cov" },
+    { name = "ruff" },
 ]
 
 [package.metadata]
@@ -1579,7 +1582,12 @@ requires-dist = [
 provides-extras = ["dev", "ml", "extended"]
 
 [package.metadata.requires-dev]
-dev = [{ name = "pytest-cov", specifier = ">=7.1.0" }]
+dev = [
+    { name = "black", specifier = ">=23.0" },
+    { name = "pytest", specifier = ">=7.0" },
+    { name = "pytest-cov", specifier = ">=4.0" },
+    { name = "ruff", specifier = ">=0.1.0" },
+]
 
 [[package]]
 name = "markupsafe"

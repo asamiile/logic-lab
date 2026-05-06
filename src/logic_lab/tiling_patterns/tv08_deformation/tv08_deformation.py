@@ -1,12 +1,16 @@
-from pathlib import Path
-from math import sqrt
 import sys
+from math import sqrt
+from pathlib import Path
 
 import py5
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
-from tiling_patterns.deformation_helpers import deformed_hex_lattice, draw_poly, draw_tiling, tv08_vertices
-
+from tiling_patterns.deformation_helpers import (
+    deformed_hex_lattice,
+    draw_poly,
+    draw_tiling,
+    tv08_vertices,
+)
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 ROW = 10

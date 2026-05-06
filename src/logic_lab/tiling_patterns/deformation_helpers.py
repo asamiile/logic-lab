@@ -4,7 +4,6 @@ from math import ceil, cos, pi, sin, sqrt
 
 import py5
 
-
 Point = tuple[float, float]
 
 
@@ -35,7 +34,10 @@ def hex_vertices(scalar: float) -> list[Point]:
 
 def square_vertices(scalar: float) -> list[Point]:
     radius = scalar / sqrt(2)
-    return [(cos(2 * pi * (i + 0.5) / 4) * radius, sin(2 * pi * (i + 0.5) / 4) * radius) for i in range(4)]
+    return [
+        (cos(2 * pi * (i + 0.5) / 4) * radius, sin(2 * pi * (i + 0.5) / 4) * radius)
+        for i in range(4)
+    ]
 
 
 def hex_lattice(rows: int, scalar: float, height: float, ih02: bool = False) -> list[list[Point]]:
@@ -45,7 +47,10 @@ def hex_lattice(rows: int, scalar: float, height: float, ih02: bool = False) -> 
     cols = ceil(rows / denom)
     return [
         [
-            ((base0[0] * i + base1[0] * j) * scalar, ((base0[1] * i + base1[1] * j) * scalar) % (height + scalar))
+            (
+                (base0[0] * i + base1[0] * j) * scalar,
+                ((base0[1] * i + base1[1] * j) * scalar) % (height + scalar),
+            )
             for j in range(cols + 1)
         ]
         for i in range(rows + 1)
@@ -72,7 +77,9 @@ def square_lattice(num: int, scalar: float) -> list[list[Point]]:
     return [[(j * scalar, i * scalar) for j in range(num + 1)] for i in range(num + 1)]
 
 
-def koch_points(start: Point, end: Point, upper_limit: int, convex: bool = True, itr: int = 0) -> list[Point]:
+def koch_points(
+    start: Point, end: Point, upper_limit: int, convex: bool = True, itr: int = 0
+) -> list[Point]:
     if itr == upper_limit or itr > 5:
         return [start, end]
 
@@ -115,7 +122,9 @@ def draw_bezier_poly(vertices: list[Point], mode: str, fill_color: int) -> None:
     for i in range(len(vertices)):
         controls = parameterize(vertices, i, rand, mode)
         end = vertices[(i + 1) % len(vertices)]
-        py5.bezier_vertex(controls[0][0], controls[0][1], controls[1][0], controls[1][1], end[0], end[1])
+        py5.bezier_vertex(
+            controls[0][0], controls[0][1], controls[1][0], controls[1][1], end[0], end[1]
+        )
     py5.end_shape(py5.CLOSE)
 
 
@@ -162,4 +171,3 @@ def draw_tiling(lattice: list[list[Point]], draw_tile, mirror_by_column: bool = 
                 py5.scale(pow(-1, j), 1)
             draw_tile(i, j)
             py5.pop_matrix()
-

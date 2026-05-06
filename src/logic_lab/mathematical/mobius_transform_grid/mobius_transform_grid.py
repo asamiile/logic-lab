@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-from pathlib import Path
 import cmath
 import math
+from pathlib import Path
 
 import py5
 
@@ -79,7 +79,9 @@ def draw_transformed_grid() -> None:
     for i, value in enumerate(values):
         hue = (198 + i * 7) % 360
         draw_transformed_line([complex(value, t) for t in sample_range(-2.1, 2.1, 190)], hue)
-        draw_transformed_line([complex(t, value) for t in sample_range(-2.1, 2.1, 190)], (hue + 46) % 360)
+        draw_transformed_line(
+            [complex(t, value) for t in sample_range(-2.1, 2.1, 190)], (hue + 46) % 360
+        )
 
 
 def draw_transformed_unit_circle() -> None:

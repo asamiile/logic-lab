@@ -1,8 +1,8 @@
+from dataclasses import dataclass
 from pathlib import Path
 
-import py5
 import numpy as np
-from dataclasses import dataclass
+import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 

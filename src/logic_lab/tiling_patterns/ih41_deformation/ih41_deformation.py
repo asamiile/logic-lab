@@ -1,11 +1,15 @@
-from pathlib import Path
 import sys
+from pathlib import Path
 
 import py5
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
-from tiling_patterns.deformation_helpers import draw_bezier_poly, draw_tiling, square_lattice, square_vertices
-
+from tiling_patterns.deformation_helpers import (
+    draw_bezier_poly,
+    draw_tiling,
+    square_lattice,
+    square_vertices,
+)
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 NUM = 10
@@ -27,7 +31,9 @@ def setup() -> None:
 def draw_current() -> None:
     py5.background(1, 0, 1)
     vertices = square_vertices(scalar)
-    draw_tiling(lattice, lambda _i, _j: draw_bezier_poly(vertices, "ih41", py5.color(py5.random(1), 1, 1)))
+    draw_tiling(
+        lattice, lambda _i, _j: draw_bezier_poly(vertices, "ih41", py5.color(py5.random(1), 1, 1))
+    )
 
 
 def mouse_clicked() -> None:

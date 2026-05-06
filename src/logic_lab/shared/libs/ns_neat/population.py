@@ -1,20 +1,26 @@
 from neat_cppn import Population
+
 from . import metrices
 
 
 class CompleteExtinctionException(Exception):
     pass
 
+
 class Population(Population):
 
     def __init__(self, config, initial_state=None, constraint_function=None):
-        super().__init__(config, initial_state=initial_state, constraint_function=constraint_function)
+        super().__init__(
+            config, initial_state=initial_state, constraint_function=constraint_function
+        )
 
         self.archive = {}
         self.novelty_threshold = config.threshold_init
         self.time_out = 0
         self.metric_func = getattr(metrices, config.metric, None)
-        assert self.metric_func is not None, f'metric {config.metric} is not impelemented in distances.py'
+        assert (
+            self.metric_func is not None
+        ), f"metric {config.metric} is not impelemented in distances.py"
 
     def run(self, evaluate_function, constraint_function=None, n=None):
 
@@ -35,9 +41,9 @@ class Population(Population):
             # Gather and report statistics.
             best = None
             for g in self.population.values():
-                score = getattr(g, 'score', None)
+                score = getattr(g, "score", None)
                 if score is None:
-                    raise RuntimeError("Score not assigned to genome {}".format(g.key))
+                    raise RuntimeError(f"Score not assigned to genome {g.key}")
 
                 if best is None or score > best.score:
                     best = g
@@ -56,8 +62,12 @@ class Population(Population):
 
             # Create the next generation from the current generation.
             self.population = self.reproduction.reproduce(
-                self.config, self.species, self.config.pop_size, self.generation,
-                constraint_function=constraint_function)
+                self.config,
+                self.species,
+                self.config.pop_size,
+                self.generation,
+                constraint_function=constraint_function,
+            )
 
             # Check for complete extinction.
             if not self.species.species:
@@ -67,8 +77,11 @@ class Population(Population):
                 # otherwise raise an exception.
                 if self.config.reset_on_extinction:
                     self.population = self.reproduction.create_new(
-                        self.config.genome_type, self.config.genome_config, self.config.pop_size,
-                        constraint_function=constraint_function)
+                        self.config.genome_type,
+                        self.config.genome_config,
+                        self.config.pop_size,
+                        constraint_function=constraint_function,
+                    )
                 else:
                     raise CompleteExtinctionException()
 
@@ -86,11 +99,11 @@ class Population(Population):
 
     def evaluate_novelty_fitness(self):
         new_archive = {}
-        for key,genome in self.population.items():
+        for key, genome in self.population.items():
 
-            score = getattr(genome, 'score', None)
+            score = getattr(genome, "score", None)
             if score is None:
-                raise RuntimeError("score not assigned to genome {}".format(genome.key))
+                raise RuntimeError(f"score not assigned to genome {genome.key}")
 
             if score < self.config.mcns:
                 genome.fitness = -1
@@ -107,9 +120,7 @@ class Population(Population):
                 new_archive[key] = genome
 
             distances_current.update(distances_archive)
-            novelty = self.knn(
-                list(distances_current.values()),
-                k=self.config.neighbors)
+            novelty = self.knn(list(distances_current.values()), k=self.config.neighbors)
 
             # Ensure fitness is a Python float for neat-python type checking
             genome.fitness = float(novelty)
@@ -118,8 +129,8 @@ class Population(Population):
 
     def map_distance(self, key1, genome1, genomes):
         distances = {}
-        for key2,genome2 in genomes.items():
-            if key1==key2:
+        for key2, genome2 in genomes.items():
+            if key1 == key2:
                 continue
 
             d = self.metric_func(genome1.data, genome2.data)
@@ -128,8 +139,8 @@ class Population(Population):
         return distances
 
     def knn(self, distances, k=1):
-        if len(distances)==0:
-            return float('inf')
+        if len(distances) == 0:
+            return float("inf")
 
         distances = sorted(distances)
 
@@ -138,7 +149,7 @@ class Population(Population):
         return density
 
     def update_novelty_archive(self, new_archive):
-        if len(new_archive)>0:
+        if len(new_archive) > 0:
             self.time_out = 0
         else:
             self.time_out += 1

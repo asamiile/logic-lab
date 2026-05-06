@@ -1,8 +1,7 @@
-from pathlib import Path
 import random as rand_module
+from pathlib import Path
 
 import py5
-
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -123,7 +122,10 @@ class Food:
 class World:
     def __init__(self, population_size: int) -> None:
         self.bloops = [
-            Bloop(py5.Py5Vector(rand_module.random() * py5.width, rand_module.random() * py5.height), DNA())
+            Bloop(
+                py5.Py5Vector(rand_module.random() * py5.width, rand_module.random() * py5.height),
+                DNA(),
+            )
             for _ in range(population_size)
         ]
         self.food = Food(population_size)

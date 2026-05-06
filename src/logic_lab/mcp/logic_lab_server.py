@@ -6,7 +6,6 @@ from typing import Any
 
 from mcp.server.fastmcp import FastMCP
 
-
 SERVER_NAME = "logic-lab"
 DEFAULT_MAX_CHARS = 12_000
 ABSOLUTE_MAX_CHARS = 20_000
@@ -194,7 +193,9 @@ def get_manifest() -> dict[str, Any]:
 
 
 @mcp.tool()
-def search_algorithms(query: str, category: str | None = None, limit: int = 5) -> list[dict[str, Any]]:
+def search_algorithms(
+    query: str, category: str | None = None, limit: int = 5
+) -> list[dict[str, Any]]:
     """Search manifest entries by title, category, concepts, visual_use, and good_for."""
     normalized_category = category.lower().strip() if category else None
     max_results = max(1, min(int(limit), 50))

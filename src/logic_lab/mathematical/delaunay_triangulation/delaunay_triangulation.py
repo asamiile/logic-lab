@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-from pathlib import Path
 import math
 import random
+from pathlib import Path
 
 import py5
 
@@ -72,11 +72,7 @@ def bowyer_watson(input_points: list[Point]) -> list[Triangle]:
             candidate = orient_triangle((edge[0], edge[1], point_index), working_points)
             result.append(candidate)
 
-    return [
-        triangle
-        for triangle in result
-        if all(vertex < super_start for vertex in triangle)
-    ]
+    return [triangle for triangle in result if all(vertex < super_start for vertex in triangle)]
 
 
 def make_super_triangle(input_points: list[Point]) -> list[Point]:
@@ -134,11 +130,7 @@ def boundary_edges(bad_triangles: list[Triangle]) -> list[tuple[int, int]]:
             edge_counts[key] = edge_counts.get(key, 0) + 1
             oriented_edges[key] = edge
 
-    return [
-        oriented_edges[key]
-        for key, count in edge_counts.items()
-        if count == 1
-    ]
+    return [oriented_edges[key] for key, count in edge_counts.items() if count == 1]
 
 
 def orient_triangle(triangle: Triangle, all_points: list[Point]) -> Triangle:

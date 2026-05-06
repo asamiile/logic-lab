@@ -1,7 +1,6 @@
 """Tests for mathematical/voronoi module."""
 
 import math
-import pytest
 import sys
 from pathlib import Path
 
@@ -62,8 +61,7 @@ class TestVoronoiUtilities:
         test_point = (10, 10)
 
         distances = [
-            math.sqrt((s[0] - test_point[0]) ** 2 + (s[1] - test_point[1]) ** 2)
-            for s in seeds
+            math.sqrt((s[0] - test_point[0]) ** 2 + (s[1] - test_point[1]) ** 2) for s in seeds
         ]
         nearest_idx = distances.index(min(distances))
 

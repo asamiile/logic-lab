@@ -16,4 +16,3 @@ def euclidean_algorithm(a: int, b: int) -> int:
 
 if __name__ == "__main__":
     euclidean_algorithm(10, 6)
-

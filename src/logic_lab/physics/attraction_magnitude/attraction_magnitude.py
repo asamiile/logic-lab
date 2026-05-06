@@ -2,7 +2,6 @@ from pathlib import Path
 
 import py5
 
-
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 
@@ -18,9 +17,7 @@ class Mover:
         mouse = py5.Py5Vector(py5.mouse_x, py5.mouse_y)
 
         direction = mouse - self.position
-        new_magnitude = py5.remap(
-            direction.mag, 0, max(py5.width, py5.height), 0, 0.2
-        )
+        new_magnitude = py5.remap(direction.mag, 0, max(py5.width, py5.height), 0, 0.2)
         direction = direction.norm * new_magnitude
         self.acceleration = direction
 
