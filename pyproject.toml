@@ -1,21 +1,129 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "logic-lab"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.2.0"
+description = "Creative coding algorithms and simulations using py5, organized by domain (physics, steering, genetics, neural networks, fractals, cellular automata, tiling patterns, mathematics)."
 readme = "README.md"
 requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Asami Kakuishi", email = "asami@asami.tokyo" }
+]
+keywords = [
+    "py5", "generative-art", "creative-coding", "mcp", "algorithms",
+    "physics", "steering-behaviors", "genetic-algorithms", "neural-networks",
+    "fractals", "cellular-automata", "tiling", "mathematics"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Natural Language :: Japanese",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Artistic Software",
+    "Topic :: Education",
+    "Topic :: Multimedia :: Graphics",
+]
+
 dependencies = [
-    "jupyterlab>=4.5.6",
     "mcp>=1.0.0",
     "numpy>=2.4.4",
     "py5>=0.10.9a1",
-    "pymunk>=7.2.0",
+    "scipy>=1.10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.1.0",
+    "black>=23.0",
+]
+ml = [
     "neat-python==0.92",
     "networkx>=3.0",
-    "matplotlib>=3.8.0",
-    "scipy>=1.10.0",
     "gymnasium[mujoco,box2d]>=1.0.0",
     "mujoco>=3.1.0",
+]
+extended = [
+    "jupyterlab>=4.5.6",
+    "matplotlib>=3.8.0",
     "moviepy>=2.2.1",
     "sounddevice>=0.5.5",
+    "pymunk>=7.2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/asamiii/logic-lab"
+Repository = "https://github.com/asamiii/logic-lab.git"
+Documentation = "https://github.com/asamiii/logic-lab#readme"
+Issues = "https://github.com/asamiii/logic-lab/issues"
+Changelog = "https://github.com/asamiii/logic-lab/blob/main/CHANGELOG.md"
+
+[project.scripts]
+logic-lab-mcp = "logic_lab.mcp.logic_lab_server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/logic_lab"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+addopts = "--cov=src/logic_lab --cov-report=term-missing:skip-covered --cov-report=html"
+
+[tool.coverage.run]
+source = ["src/logic_lab"]
+omit = ["*/tests/*", "*/test_*.py"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if __name__ == .__main__.:",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+exclude = [".git", "__pycache__", "build", "dist", ".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP"]
+ignore = [
+    "E402",    # Module level import not at top of file
+    "E501",    # Line length is handled by formatter
+    "E711",    # Comparison to None should use `is`
+    "E712",    # Comparison to False should use `is` or `not`
+    "E741",    # Ambiguous variable name
+    "F401",    # Unused import (often used for re-export)
+    "F403",    # Star import (from X import *)
+    "F821",    # Undefined name (complex scoping in experiments)
+    "F841",    # Local variable assigned but never used
+    "B007",    # Loop control variable not used
+    "B905",    # zip() without explicit strict parameter
+    "E722",    # Bare except
+    "E731",    # Do not assign lambda
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+exclude = ".venv"
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.1.0",
+    "black>=23.0",
 ]
