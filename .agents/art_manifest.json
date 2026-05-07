@@ -113,6 +113,81 @@
       ]
     },
     {
+      "path": "fractals/botanical_l_system/botanical_l_system.py",
+      "title": "Botanical L-system",
+      "category": "fractals",
+      "concepts": [
+        "l-system",
+        "botanical growth",
+        "plants",
+        "leaves",
+        "flowers",
+        "organic branching"
+      ],
+      "visual_use": "Use for fern canopies, flowering herbs, vines, ornamental foliage, and plant-like organic silhouettes.",
+      "good_for": [
+        "botanical",
+        "plants",
+        "organic growth",
+        "foliage",
+        "natural forms"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/differential_growth/differential_growth.py",
+      "title": "Differential growth organic outline",
+      "category": "fractals",
+      "concepts": [
+        "differential growth",
+        "organic growth",
+        "leaves",
+        "coral",
+        "membrane",
+        "biological outline"
+      ],
+      "visual_use": "Use for ruffled leaves, coral edges, frilled petals, biological membranes, and soft organic borders.",
+      "good_for": [
+        "organic outlines",
+        "leaf edges",
+        "coral",
+        "petals",
+        "biological forms"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/leaf_venation/leaf_venation.py",
+      "title": "Leaf venation growth",
+      "category": "fractals",
+      "concepts": [
+        "leaf venation",
+        "space colonization",
+        "vascular network",
+        "plant anatomy",
+        "veins",
+        "botanical growth"
+      ],
+      "visual_use": "Use for leaf interiors, plant veins, vascular branching, botanical drawings, and organic networks inside a silhouette.",
+      "good_for": [
+        "leaves",
+        "veins",
+        "botanical",
+        "vascular networks",
+        "organic branching"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "fractals/quadtree_part_1/quadtree_part_1.py",
       "title": "Quadtree spatial partition",
       "category": "fractals",
@@ -128,6 +203,31 @@
         "spatial data",
         "adaptive grids",
         "optimization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/space_colonization/space_colonization.py",
+      "title": "Space colonization botanical branching",
+      "category": "fractals",
+      "concepts": [
+        "space colonization",
+        "tree growth",
+        "leaf veins",
+        "roots",
+        "vascular branching",
+        "botanical growth"
+      ],
+      "visual_use": "Use for tree crowns, root fans, leaf vein structures, plant-like branching, and vascular organic networks.",
+      "good_for": [
+        "trees",
+        "roots",
+        "leaf veins",
+        "botanical",
+        "organic branching"
       ],
       "complexity": "medium",
       "dependencies": [
@@ -595,6 +695,31 @@
         "phyllotaxis",
         "radial layout",
         "botanical forms"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/phyllotaxis_flower/phyllotaxis_flower.py",
+      "title": "Phyllotaxis flower",
+      "category": "mathematical",
+      "concepts": [
+        "phyllotaxis",
+        "golden angle",
+        "flowers",
+        "seed head",
+        "rosette",
+        "botanical spiral"
+      ],
+      "visual_use": "Use for sunflower seed heads, daisy florets, succulent rosettes, pinecone scales, and golden-angle plant compositions.",
+      "good_for": [
+        "flowers",
+        "seed heads",
+        "rosettes",
+        "botanical symmetry",
+        "spirals"
       ],
       "complexity": "low",
       "dependencies": [
@@ -1695,6 +1820,31 @@
         "py5",
         "touchdesigner",
         "ue5"
+      ]
+    },
+    {
+      "path": "steering_behaviors/curl_noise_vines/curl_noise_vines.py",
+      "title": "Curl noise vines",
+      "category": "steering_behaviors",
+      "concepts": [
+        "curl noise",
+        "vines",
+        "grass",
+        "roots",
+        "flow field",
+        "organic trails"
+      ],
+      "visual_use": "Use for climbing vines, wind-blown grass, root hairs, flowing plant fibers, and botanical line textures.",
+      "good_for": [
+        "vines",
+        "grass",
+        "roots",
+        "organic lines",
+        "botanical motion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
       ]
     },
     {
