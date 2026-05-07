@@ -47,6 +47,31 @@
       ]
     },
     {
+      "path": "cellular_automata/moss_colony_growth/moss_colony_growth.py",
+      "title": "Moss colony growth",
+      "category": "cellular_automata",
+      "concepts": [
+        "moss",
+        "lichen",
+        "cellular automata",
+        "colony growth",
+        "moisture field",
+        "organic texture"
+      ],
+      "visual_use": "Use for moss patches, lichen islands, fungal colonies, ground cover, and soft botanical surface growth.",
+      "good_for": [
+        "moss",
+        "lichen",
+        "fungal colonies",
+        "organic texture",
+        "surface growth"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "fractals/game_of_life/game_of_life.py",
       "title": "Game of Life",
       "category": "cellular_automata",
@@ -113,6 +138,81 @@
       ]
     },
     {
+      "path": "fractals/botanical_l_system/botanical_l_system.py",
+      "title": "Botanical L-system",
+      "category": "fractals",
+      "concepts": [
+        "l-system",
+        "botanical growth",
+        "plants",
+        "leaves",
+        "flowers",
+        "organic branching"
+      ],
+      "visual_use": "Use for fern canopies, flowering herbs, vines, ornamental foliage, and plant-like organic silhouettes.",
+      "good_for": [
+        "botanical",
+        "plants",
+        "organic growth",
+        "foliage",
+        "natural forms"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/differential_growth/differential_growth.py",
+      "title": "Differential growth organic outline",
+      "category": "fractals",
+      "concepts": [
+        "differential growth",
+        "organic growth",
+        "leaves",
+        "coral",
+        "membrane",
+        "biological outline"
+      ],
+      "visual_use": "Use for ruffled leaves, coral edges, frilled petals, biological membranes, and soft organic borders.",
+      "good_for": [
+        "organic outlines",
+        "leaf edges",
+        "coral",
+        "petals",
+        "biological forms"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/leaf_venation/leaf_venation.py",
+      "title": "Leaf venation growth",
+      "category": "fractals",
+      "concepts": [
+        "leaf venation",
+        "space colonization",
+        "vascular network",
+        "plant anatomy",
+        "veins",
+        "botanical growth"
+      ],
+      "visual_use": "Use for leaf interiors, plant veins, vascular branching, botanical drawings, and organic networks inside a silhouette.",
+      "good_for": [
+        "leaves",
+        "veins",
+        "botanical",
+        "vascular networks",
+        "organic branching"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "fractals/quadtree_part_1/quadtree_part_1.py",
       "title": "Quadtree spatial partition",
       "category": "fractals",
@@ -128,6 +228,31 @@
         "spatial data",
         "adaptive grids",
         "optimization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/space_colonization/space_colonization.py",
+      "title": "Space colonization botanical branching",
+      "category": "fractals",
+      "concepts": [
+        "space colonization",
+        "tree growth",
+        "leaf veins",
+        "roots",
+        "vascular branching",
+        "botanical growth"
+      ],
+      "visual_use": "Use for tree crowns, root fans, leaf vein structures, plant-like branching, and vascular organic networks.",
+      "good_for": [
+        "trees",
+        "roots",
+        "leaf veins",
+        "botanical",
+        "organic branching"
       ],
       "complexity": "medium",
       "dependencies": [
@@ -306,6 +431,31 @@
         "color blending",
         "triangles",
         "spatial weights"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/bark_growth_texture/bark_growth_texture.py",
+      "title": "Bark growth texture",
+      "category": "mathematical",
+      "concepts": [
+        "bark",
+        "tree trunk",
+        "wood texture",
+        "cracks",
+        "moss",
+        "organic material"
+      ],
+      "visual_use": "Use for bark ridges, tree trunk surfaces, wood scars, mossy texture, and botanical material backgrounds.",
+      "good_for": [
+        "bark",
+        "wood texture",
+        "tree trunks",
+        "mossy surfaces",
+        "organic backgrounds"
       ],
       "complexity": "medium",
       "dependencies": [
@@ -602,6 +752,31 @@
       ]
     },
     {
+      "path": "mathematical/phyllotaxis_flower/phyllotaxis_flower.py",
+      "title": "Phyllotaxis flower",
+      "category": "mathematical",
+      "concepts": [
+        "phyllotaxis",
+        "golden angle",
+        "flowers",
+        "seed head",
+        "rosette",
+        "botanical spiral"
+      ],
+      "visual_use": "Use for sunflower seed heads, daisy florets, succulent rosettes, pinecone scales, and golden-angle plant compositions.",
+      "good_for": [
+        "flowers",
+        "seed heads",
+        "rosettes",
+        "botanical symmetry",
+        "spirals"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/fibonacci_spiral/fibonacci_spiral.py",
       "title": "Fibonacci spiral",
       "category": "mathematical",
@@ -858,6 +1033,31 @@
       ]
     },
     {
+      "path": "mathematical/petal_morphogenesis/petal_morphogenesis.py",
+      "title": "Petal morphogenesis",
+      "category": "mathematical",
+      "concepts": [
+        "petals",
+        "flower",
+        "morphogenesis",
+        "radial symmetry",
+        "botanical form",
+        "organic symmetry"
+      ],
+      "visual_use": "Use for layered flower heads, petal profiles, blooming radial forms, floral ornaments, and soft botanical symmetry.",
+      "good_for": [
+        "flowers",
+        "petals",
+        "blooming",
+        "floral forms",
+        "organic symmetry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/metaball/metaball.py",
       "title": "Metaball field",
       "category": "mathematical",
@@ -1070,6 +1270,31 @@
         "flowers",
         "organic shapes",
         "parametric design"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/tree_ring_growth/tree_ring_growth.py",
+      "title": "Tree ring growth",
+      "category": "mathematical",
+      "concepts": [
+        "tree rings",
+        "annual rings",
+        "wood grain",
+        "botanical time",
+        "growth marks",
+        "organic circular texture"
+      ],
+      "visual_use": "Use for tree cross sections, cut stumps, annual rings, wood grain studies, and botanical time accumulation.",
+      "good_for": [
+        "tree rings",
+        "wood grain",
+        "cut stumps",
+        "botanical history",
+        "organic texture"
       ],
       "complexity": "medium",
       "dependencies": [
@@ -1429,6 +1654,31 @@
       ]
     },
     {
+      "path": "physics/pollen_dispersal/pollen_dispersal.py",
+      "title": "Pollen dispersal",
+      "category": "physics",
+      "concepts": [
+        "pollen",
+        "seeds",
+        "wind",
+        "dispersal",
+        "particles",
+        "botanical motion"
+      ],
+      "visual_use": "Use for pollen clouds, dandelion drift, seed bursts, windborne botanical particles, and soft natural atmosphere.",
+      "good_for": [
+        "pollen",
+        "seeds",
+        "wind",
+        "botanical atmosphere",
+        "particle motion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "physics/perlin_noise_walker_lines/perlin_noise_walker_lines.py",
       "title": "Perlin noise walker lines",
       "category": "physics",
@@ -1695,6 +1945,56 @@
         "py5",
         "touchdesigner",
         "ue5"
+      ]
+    },
+    {
+      "path": "steering_behaviors/ivy_wall_growth/ivy_wall_growth.py",
+      "title": "Ivy wall growth",
+      "category": "steering_behaviors",
+      "concepts": [
+        "ivy",
+        "vines",
+        "climbing plants",
+        "obstacle avoidance",
+        "branching",
+        "botanical growth"
+      ],
+      "visual_use": "Use for wall-climbing ivy, vines around windows, overgrown architecture, and obstacle-aware botanical line growth.",
+      "good_for": [
+        "ivy",
+        "vines",
+        "overgrown architecture",
+        "climbing plants",
+        "organic branching"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "steering_behaviors/curl_noise_vines/curl_noise_vines.py",
+      "title": "Curl noise vines",
+      "category": "steering_behaviors",
+      "concepts": [
+        "curl noise",
+        "vines",
+        "grass",
+        "roots",
+        "flow field",
+        "organic trails"
+      ],
+      "visual_use": "Use for climbing vines, wind-blown grass, root hairs, flowing plant fibers, and botanical line textures.",
+      "good_for": [
+        "vines",
+        "grass",
+        "roots",
+        "organic lines",
+        "botanical motion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
       ]
     },
     {
