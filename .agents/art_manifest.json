@@ -438,6 +438,31 @@
       ]
     },
     {
+      "path": "mathematical/bark_growth_texture/bark_growth_texture.py",
+      "title": "Bark growth texture",
+      "category": "mathematical",
+      "concepts": [
+        "bark",
+        "tree trunk",
+        "wood texture",
+        "cracks",
+        "moss",
+        "organic material"
+      ],
+      "visual_use": "Use for bark ridges, tree trunk surfaces, wood scars, mossy texture, and botanical material backgrounds.",
+      "good_for": [
+        "bark",
+        "wood texture",
+        "tree trunks",
+        "mossy surfaces",
+        "organic backgrounds"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/chaikin_curve_smoothing/chaikin_curve_smoothing.py",
       "title": "Chaikin curve smoothing",
       "category": "mathematical",
@@ -1252,6 +1277,31 @@
       ]
     },
     {
+      "path": "mathematical/tree_ring_growth/tree_ring_growth.py",
+      "title": "Tree ring growth",
+      "category": "mathematical",
+      "concepts": [
+        "tree rings",
+        "annual rings",
+        "wood grain",
+        "botanical time",
+        "growth marks",
+        "organic circular texture"
+      ],
+      "visual_use": "Use for tree cross sections, cut stumps, annual rings, wood grain studies, and botanical time accumulation.",
+      "good_for": [
+        "tree rings",
+        "wood grain",
+        "cut stumps",
+        "botanical history",
+        "organic texture"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/ulam_spiral/ulam_spiral.py",
       "title": "Ulam spiral prime pattern",
       "category": "mathematical",
@@ -1597,6 +1647,31 @@
         "mist",
         "texture",
         "atmosphere"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/pollen_dispersal/pollen_dispersal.py",
+      "title": "Pollen dispersal",
+      "category": "physics",
+      "concepts": [
+        "pollen",
+        "seeds",
+        "wind",
+        "dispersal",
+        "particles",
+        "botanical motion"
+      ],
+      "visual_use": "Use for pollen clouds, dandelion drift, seed bursts, windborne botanical particles, and soft natural atmosphere.",
+      "good_for": [
+        "pollen",
+        "seeds",
+        "wind",
+        "botanical atmosphere",
+        "particle motion"
       ],
       "complexity": "medium",
       "dependencies": [
