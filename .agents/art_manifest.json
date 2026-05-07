@@ -47,6 +47,31 @@
       ]
     },
     {
+      "path": "cellular_automata/moss_colony_growth/moss_colony_growth.py",
+      "title": "Moss colony growth",
+      "category": "cellular_automata",
+      "concepts": [
+        "moss",
+        "lichen",
+        "cellular automata",
+        "colony growth",
+        "moisture field",
+        "organic texture"
+      ],
+      "visual_use": "Use for moss patches, lichen islands, fungal colonies, ground cover, and soft botanical surface growth.",
+      "good_for": [
+        "moss",
+        "lichen",
+        "fungal colonies",
+        "organic texture",
+        "surface growth"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "fractals/game_of_life/game_of_life.py",
       "title": "Game of Life",
       "category": "cellular_automata",
@@ -983,6 +1008,31 @@
       ]
     },
     {
+      "path": "mathematical/petal_morphogenesis/petal_morphogenesis.py",
+      "title": "Petal morphogenesis",
+      "category": "mathematical",
+      "concepts": [
+        "petals",
+        "flower",
+        "morphogenesis",
+        "radial symmetry",
+        "botanical form",
+        "organic symmetry"
+      ],
+      "visual_use": "Use for layered flower heads, petal profiles, blooming radial forms, floral ornaments, and soft botanical symmetry.",
+      "good_for": [
+        "flowers",
+        "petals",
+        "blooming",
+        "floral forms",
+        "organic symmetry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/metaball/metaball.py",
       "title": "Metaball field",
       "category": "mathematical",
@@ -1820,6 +1870,31 @@
         "py5",
         "touchdesigner",
         "ue5"
+      ]
+    },
+    {
+      "path": "steering_behaviors/ivy_wall_growth/ivy_wall_growth.py",
+      "title": "Ivy wall growth",
+      "category": "steering_behaviors",
+      "concepts": [
+        "ivy",
+        "vines",
+        "climbing plants",
+        "obstacle avoidance",
+        "branching",
+        "botanical growth"
+      ],
+      "visual_use": "Use for wall-climbing ivy, vines around windows, overgrown architecture, and obstacle-aware botanical line growth.",
+      "good_for": [
+        "ivy",
+        "vines",
+        "overgrown architecture",
+        "climbing plants",
+        "organic branching"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
       ]
     },
     {
