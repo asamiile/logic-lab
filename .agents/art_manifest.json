@@ -1382,6 +1382,74 @@
       ]
     },
     {
+      "path": "mathematical/color_temperature_mixing/color_temperature_mixing.py",
+      "title": "Color temperature field",
+      "category": "mathematical",
+      "concepts": [
+        "color temperature",
+        "additive color",
+        "light mixing",
+        "gradient field"
+      ],
+      "visual_use": "Use for neon palettes, sunset lighting, mixed studio lights, or multiple light sources blending across space.",
+      "good_for": [
+        "neon",
+        "sunset",
+        "lighting palette",
+        "gradients"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/light_interference/light_interference.py",
+      "title": "Diffraction and interference pattern",
+      "category": "mathematical",
+      "concepts": [
+        "interference",
+        "wave optics",
+        "phase",
+        "diffraction"
+      ],
+      "visual_use": "Use for rainbow bands, hologram-like fields, ripple interference, or precise wave stripe patterns.",
+      "good_for": [
+        "hologram",
+        "wave bands",
+        "interference",
+        "optics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/reflection_billiards/reflection_billiards.py",
+      "title": "Reflection billiards",
+      "category": "mathematical",
+      "concepts": [
+        "reflection",
+        "ray tracing",
+        "mirror",
+        "angle of incidence"
+      ],
+      "visual_use": "Use for kaleidoscopic lines, reflection mazes, geometric light paths, or angular mirror patterns.",
+      "good_for": [
+        "kaleidoscope",
+        "reflection maze",
+        "geometry",
+        "light paths"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "neuro_evolution/flappy_bird_neuro_evolution/flappy_bird_neuro_evolution.py",
       "title": "Flappy bird neuro-evolution",
       "category": "neuro_evolution",
@@ -1754,6 +1822,117 @@
         "py5",
         "touchdesigner",
         "ue5"
+      ]
+    },
+    {
+      "path": "physics/caustic_light_field/caustic_light_field.py",
+      "title": "Caustics approximation",
+      "category": "physics",
+      "concepts": [
+        "caustics",
+        "light concentration",
+        "wave surface",
+        "density field"
+      ],
+      "visual_use": "Use for underwater shimmer, glass focus patterns, magical light pools, or luminous density textures.",
+      "good_for": [
+        "water light",
+        "glass",
+        "caustics",
+        "shimmer"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/light_falloff_field/light_falloff_field.py",
+      "title": "Inverse square light particles",
+      "category": "physics",
+      "concepts": [
+        "inverse square law",
+        "illumination",
+        "falloff",
+        "gradient field"
+      ],
+      "visual_use": "Use for glowing bodies, stars, fireflies, city lights, or radiant particle textures.",
+      "good_for": [
+        "glow",
+        "stars",
+        "fireflies",
+        "illumination"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/light_ray_casting/light_ray_casting.py",
+      "title": "2D light ray casting",
+      "category": "physics",
+      "concepts": [
+        "ray casting",
+        "shadow",
+        "visibility polygon",
+        "occlusion"
+      ],
+      "visual_use": "Use for streetlights, caves, stage lighting, shadow puppets, or visible light cones.",
+      "good_for": [
+        "shadows",
+        "visibility",
+        "stage lighting",
+        "occlusion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/refraction_prism/refraction_prism.py",
+      "title": "Refraction through glass",
+      "category": "physics",
+      "concepts": [
+        "refraction",
+        "Snell's law",
+        "prism",
+        "optics"
+      ],
+      "visual_use": "Use for prisms, lenses, transparent objects, bent backgrounds, or spectral light.",
+      "good_for": [
+        "prism",
+        "lens",
+        "spectrum",
+        "transparent objects"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/volumetric_light_beams/volumetric_light_beams.py",
+      "title": "Volumetric light beams",
+      "category": "physics",
+      "concepts": [
+        "volumetric light",
+        "scattering",
+        "fog",
+        "god rays"
+      ],
+      "visual_use": "Use for forest light, stage lighting, visible beams in fog, or atmospheric depth.",
+      "good_for": [
+        "god rays",
+        "fog",
+        "stage lighting",
+        "atmosphere"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
       ]
     },
     {
