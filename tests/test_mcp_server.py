@@ -1,5 +1,7 @@
 """Tests for Logic Lab MCP path handling."""
 
+# ruff: noqa: I001
+
 import pytest
 from logic_lab.mcp import logic_lab_server as server
 
