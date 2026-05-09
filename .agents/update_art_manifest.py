@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
+SOURCE_ROOT = ROOT / "src" / "logic_lab"
 MANIFEST_PATH = ROOT / ".agents" / "art_manifest.json"
 BASELINE_PATH = ROOT / ".agents" / "art_manifest_baseline.json"
 SCAN_DOMAINS = {
@@ -152,14 +153,14 @@ def complexity_for(path: Path) -> str:
 def discover_algorithm_files() -> list[Path]:
     files: list[Path] = []
     for domain in sorted(SCAN_DOMAINS):
-        root = ROOT / domain
+        root = SOURCE_ROOT / domain
         if not root.exists():
             continue
         for path in root.rglob("*.py"):
             if path.name == "__init__.py" or path.name.endswith("_helpers.py"):
                 continue
             files.append(path)
-    return sorted(files, key=lambda p: p.relative_to(ROOT).as_posix())
+    return sorted(files, key=lambda p: p.relative_to(SOURCE_ROOT).as_posix())
 
 
 def load_manifest() -> dict[str, Any]:
@@ -180,7 +181,7 @@ def load_baseline_paths() -> set[str]:
 
 
 def build_entry(path: Path) -> dict[str, Any]:
-    rel_path = path.relative_to(ROOT).as_posix()
+    rel_path = path.relative_to(SOURCE_ROOT).as_posix()
     category = rel_path.split("/", 1)[0]
     return {
         "path": rel_path,
@@ -203,8 +204,8 @@ def update_manifest(write: bool) -> int:
     additions = [
         build_entry(path)
         for path in discover_algorithm_files()
-        if path.relative_to(ROOT).as_posix() not in existing_paths
-        and path.relative_to(ROOT).as_posix() not in baseline_paths
+        if path.relative_to(SOURCE_ROOT).as_posix() not in existing_paths
+        and path.relative_to(SOURCE_ROOT).as_posix() not in baseline_paths
     ]
 
     if not additions:
