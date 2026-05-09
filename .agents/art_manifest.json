@@ -2589,6 +2589,147 @@
       "dependencies": [
         "py5"
       ]
+    },
+    {
+      "path": "physics/collision_events/collision_events.py",
+      "title": "Collision Events",
+      "category": "physics",
+      "concepts": [
+        "collision response",
+        "contact normals",
+        "impulse",
+        "debug visualization",
+        "rigid body"
+      ],
+      "visual_use": "Use for visualizing impacts, contact points, normals, and velocity vectors in collision-driven motion.",
+      "good_for": [
+        "impact rings",
+        "physics debugging",
+        "kinetic abstraction",
+        "contact visuals"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/fluid_particles/fluid_particles.py",
+      "title": "Fluid Particles",
+      "category": "physics",
+      "concepts": [
+        "particle system",
+        "fluid simulation",
+        "density pressure",
+        "viscosity",
+        "SPH-like"
+      ],
+      "visual_use": "Use for water drops, poured particles, bubbles, ink beads, or soft fluid-like clusters.",
+      "good_for": [
+        "water",
+        "bubbles",
+        "fluid motion",
+        "pouring"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/mass_spring_cloth/mass_spring_cloth.py",
+      "title": "Mass Spring Cloth",
+      "category": "physics",
+      "concepts": [
+        "cloth",
+        "constraints",
+        "verlet integration",
+        "mass spring",
+        "soft body",
+        "wind"
+      ],
+      "visual_use": "Use for hanging fabric, elastic nets, banners, membranes, or wind-swept soft surfaces.",
+      "good_for": [
+        "fabric",
+        "soft body",
+        "deformation",
+        "interactive mesh"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/particle_force_fields/particle_force_fields.py",
+      "title": "Particle Force Fields",
+      "category": "physics",
+      "concepts": [
+        "particle system",
+        "force field",
+        "radial attraction",
+        "vortex",
+        "drag",
+        "orbital motion"
+      ],
+      "visual_use": "Use for magnetic fields, orbital swirls, sparks, invisible attractors, or force-line textures.",
+      "good_for": [
+        "fields",
+        "orbits",
+        "sparks",
+        "swirling motion"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/rigid_body_collision/rigid_body_collision.py",
+      "title": "Rigid Body Collision",
+      "category": "physics",
+      "concepts": [
+        "rigid body",
+        "circle collision",
+        "impulse resolution",
+        "restitution",
+        "gravity",
+        "angular motion"
+      ],
+      "visual_use": "Use for bouncing bodies, pinball-like motion, kinetic compositions, or compact physics-engine studies.",
+      "good_for": [
+        "collisions",
+        "kinetic motion",
+        "bouncing bodies",
+        "pinball"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/verlet_constraints/verlet_constraints.py",
+      "title": "Verlet Constraints",
+      "category": "physics",
+      "concepts": [
+        "verlet integration",
+        "distance constraints",
+        "rope",
+        "position based dynamics",
+        "constraints"
+      ],
+      "visual_use": "Use for ropes, chains, pendulum strings, articulated links, or compact position-based dynamics demos.",
+      "good_for": [
+        "rope",
+        "chains",
+        "constraints",
+        "interactive motion"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
     }
   ]
 }
