@@ -1,9 +1,13 @@
 from logic_lab.shared.physics2d import (
     CircleBody,
     DistanceConstraint,
+    SpatialHash,
     Vec2,
     VerletPoint,
+    ray_segment_intersection,
+    rectangle_vertices,
     resolve_circle_collision,
+    sat_collision,
 )
 
 
@@ -30,3 +34,29 @@ def test_circle_collision_exchanges_velocity_direction() -> None:
     assert event is not None
     assert a.vel.x < 0
     assert b.vel.x > 0
+
+
+def test_sat_collision_detects_overlapping_rectangles() -> None:
+    a = rectangle_vertices(10, 10)
+    b = [vertex + Vec2(5, 0) for vertex in rectangle_vertices(10, 10)]
+
+    result = sat_collision(a, b)
+
+    assert result.overlaps
+    assert result.depth > 0
+
+
+def test_spatial_hash_reports_potential_pair() -> None:
+    grid = SpatialHash(cell_size=20)
+    grid.insert_circle(0, Vec2(10, 10), 5)
+    grid.insert_circle(1, Vec2(14, 14), 5)
+
+    assert (0, 1) in grid.potential_pairs()
+
+
+def test_ray_segment_intersection_returns_nearest_hit_data() -> None:
+    hit = ray_segment_intersection(Vec2(0, 0), Vec2(1, 0), Vec2(5, -2), Vec2(5, 2))
+
+    assert hit is not None
+    assert hit.point == Vec2(5, 0)
+    assert hit.distance == 5

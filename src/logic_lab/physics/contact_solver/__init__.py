@@ -1,0 +1,1 @@
+"""Contact solver sketch."""

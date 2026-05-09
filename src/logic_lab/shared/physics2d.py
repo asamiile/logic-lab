@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from collections.abc import Iterable
 from dataclasses import dataclass, field
-from math import cos, hypot, sin
+from math import cos, hypot, inf, sin
 from random import Random
 
 EPSILON = 1.0e-9
@@ -198,6 +198,120 @@ class CollisionEvent:
     impulse: float
 
 
+@dataclass(frozen=True, slots=True)
+class AABB:
+    center: Vec2
+    half: Vec2
+
+    @property
+    def min_x(self) -> float:
+        return self.center.x - self.half.x
+
+    @property
+    def max_x(self) -> float:
+        return self.center.x + self.half.x
+
+    @property
+    def min_y(self) -> float:
+        return self.center.y - self.half.y
+
+    @property
+    def max_y(self) -> float:
+        return self.center.y + self.half.y
+
+    def overlaps(self, other: AABB) -> bool:
+        return (
+            self.min_x <= other.max_x
+            and self.max_x >= other.min_x
+            and self.min_y <= other.max_y
+            and self.max_y >= other.min_y
+        )
+
+
+@dataclass(slots=True)
+class OrientedBox:
+    center: Vec2
+    half: Vec2
+    angle: float = 0.0
+    vel: Vec2 = field(default_factory=Vec2)
+    spin: float = 0.0
+
+    def vertices(self) -> list[Vec2]:
+        right = Vec2.from_angle(self.angle)
+        up = right.perp()
+        return [
+            self.center + right * self.half.x + up * self.half.y,
+            self.center - right * self.half.x + up * self.half.y,
+            self.center - right * self.half.x - up * self.half.y,
+            self.center + right * self.half.x - up * self.half.y,
+        ]
+
+    def aabb(self) -> AABB:
+        vertices = self.vertices()
+        min_x = min(v.x for v in vertices)
+        max_x = max(v.x for v in vertices)
+        min_y = min(v.y for v in vertices)
+        max_y = max(v.y for v in vertices)
+        return AABB(
+            Vec2((min_x + max_x) * 0.5, (min_y + max_y) * 0.5),
+            Vec2((max_x - min_x) * 0.5, (max_y - min_y) * 0.5),
+        )
+
+    def step(self, dt: float) -> None:
+        self.center = self.center + self.vel * dt
+        self.angle += self.spin * dt
+
+
+@dataclass(slots=True)
+class PolygonBody:
+    pos: Vec2
+    local_vertices: list[Vec2]
+    vel: Vec2 = field(default_factory=Vec2)
+    angle: float = 0.0
+    spin: float = 0.0
+    mass: float = 1.0
+    restitution: float = 0.75
+
+    def vertices(self) -> list[Vec2]:
+        c = cos(self.angle)
+        s = sin(self.angle)
+        return [
+            Vec2(v.x * c - v.y * s + self.pos.x, v.x * s + v.y * c + self.pos.y)
+            for v in self.local_vertices
+        ]
+
+    def aabb(self) -> AABB:
+        vertices = self.vertices()
+        min_x = min(v.x for v in vertices)
+        max_x = max(v.x for v in vertices)
+        min_y = min(v.y for v in vertices)
+        max_y = max(v.y for v in vertices)
+        return AABB(
+            Vec2((min_x + max_x) * 0.5, (min_y + max_y) * 0.5),
+            Vec2((max_x - min_x) * 0.5, (max_y - min_y) * 0.5),
+        )
+
+    def step(self, dt: float, gravity: Vec2 = Vec2()) -> None:
+        self.vel = self.vel + gravity * dt
+        self.pos = self.pos + self.vel * dt
+        self.angle += self.spin * dt
+
+
+@dataclass(frozen=True, slots=True)
+class SATResult:
+    overlaps: bool
+    normal: Vec2 = field(default_factory=Vec2)
+    depth: float = 0.0
+
+
+@dataclass(frozen=True, slots=True)
+class RayHit:
+    point: Vec2
+    normal: Vec2
+    distance: float
+    index: int
+
+
 def resolve_circle_collision(a: CircleBody, b: CircleBody) -> CollisionEvent | None:
     delta = b.pos - a.pos
     distance = delta.mag()
@@ -364,3 +478,169 @@ def apply_density_pressure(
             viscous = relative * (viscosity * overlap)
             a.apply_force(viscous)
             b.apply_force(viscous * -1.0)
+
+
+def project_vertices(vertices: list[Vec2], axis: Vec2) -> tuple[float, float]:
+    values = [vertex.dot(axis) for vertex in vertices]
+    return min(values), max(values)
+
+
+def sat_collision(a_vertices: list[Vec2], b_vertices: list[Vec2]) -> SATResult:
+    smallest_overlap = inf
+    smallest_axis = Vec2()
+    axes: list[Vec2] = []
+    for vertices in (a_vertices, b_vertices):
+        for i, vertex in enumerate(vertices):
+            edge = vertices[(i + 1) % len(vertices)] - vertex
+            axes.append(edge.perp().normalized())
+
+    for axis in axes:
+        a_min, a_max = project_vertices(a_vertices, axis)
+        b_min, b_max = project_vertices(b_vertices, axis)
+        overlap = min(a_max, b_max) - max(a_min, b_min)
+        if overlap <= 0:
+            return SATResult(False)
+        if overlap < smallest_overlap:
+            smallest_overlap = overlap
+            smallest_axis = axis
+
+    a_center = polygon_centroid(a_vertices)
+    b_center = polygon_centroid(b_vertices)
+    if (b_center - a_center).dot(smallest_axis) < 0:
+        smallest_axis = smallest_axis * -1.0
+    return SATResult(True, smallest_axis, smallest_overlap)
+
+
+def polygon_centroid(vertices: list[Vec2]) -> Vec2:
+    if not vertices:
+        return Vec2()
+    total = Vec2()
+    for vertex in vertices:
+        total = total + vertex
+    return total / len(vertices)
+
+
+def regular_polygon(radius: float, sides: int) -> list[Vec2]:
+    return [Vec2.from_angle(i * 6.283185307179586 / sides, radius) for i in range(sides)]
+
+
+def rectangle_vertices(width: float, height: float) -> list[Vec2]:
+    return [
+        Vec2(-width * 0.5, -height * 0.5),
+        Vec2(width * 0.5, -height * 0.5),
+        Vec2(width * 0.5, height * 0.5),
+        Vec2(-width * 0.5, height * 0.5),
+    ]
+
+
+def resolve_polygon_collision(a: PolygonBody, b: PolygonBody) -> CollisionEvent | None:
+    result = sat_collision(a.vertices(), b.vertices())
+    if not result.overlaps:
+        return None
+
+    total_mass = a.mass + b.mass
+    a.pos = a.pos - result.normal * (result.depth * (b.mass / total_mass))
+    b.pos = b.pos + result.normal * (result.depth * (a.mass / total_mass))
+
+    relative_velocity = b.vel - a.vel
+    velocity_along_normal = relative_velocity.dot(result.normal)
+    if velocity_along_normal > 0:
+        return CollisionEvent((a.pos + b.pos) * 0.5, result.normal, 0.0)
+
+    restitution = min(a.restitution, b.restitution)
+    impulse_mag = -(1.0 + restitution) * velocity_along_normal
+    impulse_mag /= (1.0 / a.mass) + (1.0 / b.mass)
+    impulse = result.normal * impulse_mag
+    a.vel = a.vel - impulse / a.mass
+    b.vel = b.vel + impulse / b.mass
+    a.spin -= impulse_mag * 0.0006
+    b.spin += impulse_mag * 0.0006
+    return CollisionEvent((a.pos + b.pos) * 0.5, result.normal, impulse_mag)
+
+
+def resolve_polygon_bounds(body: PolygonBody, width: float, height: float) -> CollisionEvent | None:
+    box = body.aabb()
+    event: CollisionEvent | None = None
+    if box.min_x < 0:
+        body.pos.x += -box.min_x
+        body.vel.x = abs(body.vel.x) * body.restitution
+        body.spin *= 0.92
+        event = CollisionEvent(body.pos.copy(), Vec2(1, 0), abs(body.vel.x) * body.mass)
+    elif box.max_x > width:
+        body.pos.x -= box.max_x - width
+        body.vel.x = -abs(body.vel.x) * body.restitution
+        body.spin *= 0.92
+        event = CollisionEvent(body.pos.copy(), Vec2(-1, 0), abs(body.vel.x) * body.mass)
+
+    if box.min_y < 0:
+        body.pos.y += -box.min_y
+        body.vel.y = abs(body.vel.y) * body.restitution
+        body.spin *= 0.92
+        event = CollisionEvent(body.pos.copy(), Vec2(0, 1), abs(body.vel.y) * body.mass)
+    elif box.max_y > height:
+        body.pos.y -= box.max_y - height
+        body.vel.y = -abs(body.vel.y) * body.restitution
+        body.vel.x *= 0.86
+        body.spin *= 0.9
+        event = CollisionEvent(body.pos.copy(), Vec2(0, -1), abs(body.vel.y) * body.mass)
+    return event
+
+
+class SpatialHash:
+    def __init__(self, cell_size: float) -> None:
+        self.cell_size = cell_size
+        self.cells: dict[tuple[int, int], list[int]] = {}
+
+    def clear(self) -> None:
+        self.cells.clear()
+
+    def cell_for(self, point: Vec2) -> tuple[int, int]:
+        return (int(point.x // self.cell_size), int(point.y // self.cell_size))
+
+    def insert_circle(self, index: int, center: Vec2, radius: float) -> None:
+        min_cell = self.cell_for(Vec2(center.x - radius, center.y - radius))
+        max_cell = self.cell_for(Vec2(center.x + radius, center.y + radius))
+        for y in range(min_cell[1], max_cell[1] + 1):
+            for x in range(min_cell[0], max_cell[0] + 1):
+                self.cells.setdefault((x, y), []).append(index)
+
+    def potential_pairs(self) -> set[tuple[int, int]]:
+        pairs: set[tuple[int, int]] = set()
+        for values in self.cells.values():
+            for i, a in enumerate(values):
+                for b in values[i + 1 :]:
+                    pairs.add((a, b) if a < b else (b, a))
+        return pairs
+
+
+def ray_segment_intersection(
+    origin: Vec2,
+    direction: Vec2,
+    a: Vec2,
+    b: Vec2,
+    index: int = 0,
+) -> RayHit | None:
+    ray = direction.normalized()
+    segment = b - a
+    denom = ray.x * segment.y - ray.y * segment.x
+    if abs(denom) < EPSILON:
+        return None
+    delta = a - origin
+    t = (delta.x * segment.y - delta.y * segment.x) / denom
+    u = (delta.x * ray.y - delta.y * ray.x) / denom
+    if t < 0 or not (0 <= u <= 1):
+        return None
+    point = origin + ray * t
+    normal = segment.perp().normalized()
+    if normal.dot(ray) > 0:
+        normal = normal * -1.0
+    return RayHit(point, normal, t, index)
+
+
+def raycast_polygon(origin: Vec2, direction: Vec2, vertices: list[Vec2]) -> RayHit | None:
+    closest: RayHit | None = None
+    for i, a in enumerate(vertices):
+        hit = ray_segment_intersection(origin, direction, a, vertices[(i + 1) % len(vertices)], i)
+        if hit and (closest is None or hit.distance < closest.distance):
+            closest = hit
+    return closest

@@ -2730,6 +2730,237 @@
       "dependencies": [
         "py5"
       ]
+    },
+    {
+      "path": "physics/box_collision/box_collision.py",
+      "title": "Box Collision",
+      "category": "physics",
+      "concepts": [
+        "AABB",
+        "OBB",
+        "box collision",
+        "broad phase",
+        "SAT"
+      ],
+      "visual_use": "Use for visualizing axis-aligned and rotated rectangle overlap tests before full collision response.",
+      "good_for": [
+        "collision detection",
+        "debug overlays",
+        "interactive geometry",
+        "engine basics"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/contact_solver/contact_solver.py",
+      "title": "Contact Solver",
+      "category": "physics",
+      "concepts": [
+        "contact solver",
+        "stacking",
+        "AABB",
+        "resting contact",
+        "friction"
+      ],
+      "visual_use": "Use for stacked boxes, resting contacts, simple platform physics, or contact correction studies.",
+      "good_for": [
+        "stacking",
+        "block piles",
+        "contact debugging",
+        "gravity"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/fracture_dynamics/fracture_dynamics.py",
+      "title": "Fracture Dynamics",
+      "category": "physics",
+      "concepts": [
+        "fracture",
+        "impact impulse",
+        "debris",
+        "polygon shards",
+        "breakage"
+      ],
+      "visual_use": "Use for breaking objects, impact debris, shattered abstract forms, or threshold-triggered fragmentation.",
+      "good_for": [
+        "shards",
+        "impact",
+        "destruction",
+        "debris"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/joints_and_constraints/joints_and_constraints.py",
+      "title": "Joints And Constraints",
+      "category": "physics",
+      "concepts": [
+        "joints",
+        "distance constraints",
+        "truss",
+        "bridge",
+        "position based dynamics"
+      ],
+      "visual_use": "Use for bridges, linked mechanisms, ragdoll structures, or articulated constraint networks.",
+      "good_for": [
+        "bridges",
+        "mechanisms",
+        "constraint networks",
+        "interactive joints"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/raycast_queries/raycast_queries.py",
+      "title": "Raycast Queries",
+      "category": "physics",
+      "concepts": [
+        "ray casting",
+        "shape query",
+        "surface normal",
+        "line intersection",
+        "sensor"
+      ],
+      "visual_use": "Use for laser beams, sensors, sight lines, picking, visibility checks, or collision query debugging.",
+      "good_for": [
+        "sensors",
+        "visibility",
+        "lasers",
+        "debug rays"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/rotating_rigid_bodies/rotating_rigid_bodies.py",
+      "title": "Rotating Rigid Bodies",
+      "category": "physics",
+      "concepts": [
+        "rigid body",
+        "rotating polygons",
+        "SAT collision",
+        "angular velocity",
+        "impulse"
+      ],
+      "visual_use": "Use for tumbling boxes, rotating convex bodies, falling debris, or engine-like polygon motion.",
+      "good_for": [
+        "tumbling",
+        "kinetic geometry",
+        "rigid bodies",
+        "debris"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/sat_polygon_collision/sat_polygon_collision.py",
+      "title": "SAT Polygon Collision",
+      "category": "physics",
+      "concepts": [
+        "separating axis theorem",
+        "convex polygons",
+        "minimum translation vector",
+        "collision detection",
+        "SAT"
+      ],
+      "visual_use": "Use for convex polygon overlap tests, collision normals, and minimum-translation debug visuals.",
+      "good_for": [
+        "collision detection",
+        "geometry debugging",
+        "convex shapes",
+        "engine foundations"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/soft_body_lattice/soft_body_lattice.py",
+      "title": "Soft Body Lattice",
+      "category": "physics",
+      "concepts": [
+        "soft body",
+        "lattice",
+        "constraints",
+        "jelly",
+        "deformation"
+      ],
+      "visual_use": "Use for jelly-like bodies, elastic grids, squishy materials, or deformable mesh studies.",
+      "good_for": [
+        "soft bodies",
+        "elastic forms",
+        "deformation",
+        "interactive mesh"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/spatial_hash_broad_phase/spatial_hash_broad_phase.py",
+      "title": "Spatial Hash Broad Phase",
+      "category": "physics",
+      "concepts": [
+        "spatial hash",
+        "broad phase",
+        "collision optimization",
+        "uniform grid",
+        "particle collisions"
+      ],
+      "visual_use": "Use for dense particle or body simulations where grid partitioning reduces collision pair checks.",
+      "good_for": [
+        "many particles",
+        "optimization",
+        "collision grids",
+        "debug overlays"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/stable_fluids_2d/stable_fluids_2d.py",
+      "title": "Stable Fluids 2D",
+      "category": "physics",
+      "concepts": [
+        "stable fluids",
+        "grid advection",
+        "density field",
+        "diffusion",
+        "velocity field"
+      ],
+      "visual_use": "Use for smoke, ink, dye fields, field-based fluid flow, or soft atmospheric motion.",
+      "good_for": [
+        "smoke",
+        "ink",
+        "dye",
+        "fluid fields"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
     }
   ]
 }
