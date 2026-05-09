@@ -1848,6 +1848,31 @@
       ]
     },
     {
+      "path": "physics/dye_plume_field/dye_plume_field.py",
+      "title": "Dye plume field",
+      "category": "physics",
+      "concepts": [
+        "dye",
+        "plume",
+        "density field",
+        "advection",
+        "buoyancy"
+      ],
+      "visual_use": "Use for ink dropped in water, colored smoke plumes, underwater dye trails, or translucent fluid clouds.",
+      "good_for": [
+        "dye",
+        "plumes",
+        "water",
+        "smoke",
+        "fluid motion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "physics/light_falloff_field/light_falloff_field.py",
       "title": "Inverse square light particles",
       "category": "physics",
@@ -1866,6 +1891,55 @@
       ],
       "complexity": "medium",
       "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/ink_smoke_advection/ink_smoke_advection.py",
+      "title": "Ink smoke advection",
+      "category": "physics",
+      "concepts": [
+        "ink",
+        "smoke",
+        "advection",
+        "diffusion",
+        "flow field"
+      ],
+      "visual_use": "Use for watercolor-like ink clouds, smoke plumes, dye spreading through space, or soft translucent color fields.",
+      "good_for": [
+        "ink",
+        "smoke",
+        "watercolor",
+        "plumes",
+        "atmosphere"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/watercolor_ink_diffusion/watercolor_ink_diffusion.py",
+      "title": "Watercolor ink diffusion",
+      "category": "physics",
+      "concepts": [
+        "watercolor",
+        "ink",
+        "diffusion",
+        "paper texture",
+        "wet edge"
+      ],
+      "visual_use": "Use for watercolor washes, paper ink bleed, soft stain maps, pigment pools, or organic background textures.",
+      "good_for": [
+        "watercolor",
+        "ink bleed",
+        "paper texture",
+        "pigment",
+        "backgrounds"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
         "py5"
       ]
     },
