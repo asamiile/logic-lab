@@ -4,7 +4,7 @@ Local stdio MCP server for read-only access to Logic Lab algorithm references.
 
 Because this is a local stdio MCP server, the `logic-lab` repository must be
 cloned on the same machine where the MCP client runs. Register the server with
-the local repository path using `uv run --project /path/to/logic-lab ...`.
+the local repository path using `uv run --project /path/to/logic-lab logic-lab-mcp`.
 
 ## Tools
 
@@ -32,7 +32,7 @@ You usually do not run the server manually. MCP clients start this command for
 you after registration. Manual execution is mainly for smoke testing:
 
 ```bash
-uv run python /path/to/logic-lab/mcp/logic_lab_server.py
+uv run --project /path/to/logic-lab logic-lab-mcp
 ```
 
 ## Register
@@ -43,7 +43,7 @@ Codex, Claude Code, GitHub Copilot in VS Code, Cursor, and Antigravity examples.
 The server command is always the same:
 
 ```bash
-uv run --project /path/to/logic-lab python /path/to/logic-lab/mcp/logic_lab_server.py
+uv run --project /path/to/logic-lab logic-lab-mcp
 ```
 
 ## GitHub Copilot Cloud Agent
@@ -66,8 +66,7 @@ Example shape:
         "run",
         "--project",
         "/path/to/logic-lab",
-        "python",
-        "/path/to/logic-lab/mcp/logic_lab_server.py"
+        "logic-lab-mcp"
       ],
       "tools": [
         "get_manifest",

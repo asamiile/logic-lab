@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
@@ -11,6 +12,8 @@ DEFAULT_MAX_CHARS = 12_000
 ABSOLUTE_MAX_CHARS = 20_000
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
+SOURCE_ROOT = REPO_ROOT / "src" / "logic_lab"
+SOURCE_PREFIX = SOURCE_ROOT.relative_to(REPO_ROOT).as_posix()
 MANIFEST_PATH = REPO_ROOT / ".agents" / "art_manifest.json"
 README_PATH = REPO_ROOT / "README.md"
 MCP_README_PATH = Path(__file__).parent / "README.md"
@@ -22,6 +25,7 @@ class AccessError(ValueError):
     pass
 
 
+@lru_cache(maxsize=1)
 def _load_manifest() -> dict[str, Any]:
     return json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
 
@@ -51,13 +55,39 @@ def _safe_repo_path(path: str) -> tuple[Path, str]:
     return resolved, rel_path
 
 
+def _manifest_rel_path(repo_rel_path: str) -> str:
+    prefix = f"{SOURCE_PREFIX}/"
+    if repo_rel_path.startswith(prefix):
+        return repo_rel_path.removeprefix(prefix)
+    return repo_rel_path
+
+
+def _resolve_readable_path(repo_rel_path: str) -> Path:
+    direct_path = (REPO_ROOT / repo_rel_path).resolve()
+    if direct_path.is_file():
+        return direct_path
+
+    manifest_rel_path = _manifest_rel_path(repo_rel_path)
+    source_path = (SOURCE_ROOT / manifest_rel_path).resolve()
+    try:
+        source_path.relative_to(SOURCE_ROOT)
+    except ValueError:
+        return direct_path
+    if source_path.is_file():
+        return source_path
+    return direct_path
+
+
 def _allowed_algorithm_path(path: str) -> tuple[Path, str]:
-    resolved, rel_path = _safe_repo_path(path)
+    _, repo_rel_path = _safe_repo_path(path)
+    rel_path = _manifest_rel_path(repo_rel_path)
+    resolved = _resolve_readable_path(repo_rel_path)
     manifest_paths = _manifest_paths()
 
     is_manifest_path = rel_path in manifest_paths
-    is_python = resolved.suffix == ".py"
-    is_readme = resolved.name == "README.md"
+    requested_path = Path(repo_rel_path)
+    is_python = requested_path.suffix == ".py"
+    is_readme = requested_path.name == "README.md"
 
     if not is_manifest_path and not (is_python or is_readme):
         raise AccessError("Only manifest entries, .py files, and README.md files can be read")
@@ -106,6 +136,7 @@ def _score_entry(entry: dict[str, Any], query: str) -> int:
 
 def _entry_for_path(path: str) -> dict[str, Any] | None:
     _, rel_path = _safe_repo_path(path)
+    rel_path = _manifest_rel_path(rel_path)
     for entry in _entries():
         if entry.get("path") == rel_path:
             return entry
