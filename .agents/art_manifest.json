@@ -1026,6 +1026,26 @@
       ]
     },
     {
+      "path": "mathematical/lorenz_attractor/lorenz_attractor.py",
+      "title": "Lorenz Attractor",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/mandelbrot_julia/mandelbrot_julia.py",
       "title": "Mandelbrot and Julia escape-time fractals",
       "category": "mathematical",
@@ -1318,6 +1338,26 @@
       ]
     },
     {
+      "path": "mathematical/rossler_attractor/rossler_attractor.py",
+      "title": "Rössler Attractor",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/signed_distance_field/signed_distance_field.py",
       "title": "Signed distance field shape composition",
       "category": "mathematical",
@@ -1384,6 +1424,26 @@
       ],
       "complexity": "medium",
       "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/thomas_attractor/thomas_attractor.py",
+      "title": "Thomas Attractor",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "numpy",
         "py5"
       ]
     },
@@ -2705,6 +2765,26 @@
       ]
     },
     {
+      "path": "research/pixel_sorting/pixel_sorting.py",
+      "title": "Pixel Sorting",
+      "category": "research",
+      "concepts": [
+        "simulation",
+        "system"
+      ],
+      "visual_use": "Use for experimental systems, hybrid simulations, or advanced visual behaviors.",
+      "good_for": [
+        "experiments",
+        "systems",
+        "hybrids"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "steering_behaviors/creature_sensors/creature_sensors.py",
       "title": "Creature sensors",
       "category": "steering_behaviors",
@@ -2975,6 +3055,28 @@
         "polygons",
         "recursion",
         "tiling"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/wave_function_collapse/wave_function_collapse.py",
+      "title": "Wave Function Collapse (WFC)",
+      "category": "tiling_patterns",
+      "concepts": [
+        "tiling",
+        "geometry",
+        "pattern",
+        "wave",
+        "oscillation"
+      ],
+      "visual_use": "Use for textile patterns, symmetry studies, ornaments, or tiled surfaces.",
+      "good_for": [
+        "tiling",
+        "symmetry",
+        "textiles"
       ],
       "complexity": "medium",
       "dependencies": [

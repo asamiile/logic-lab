@@ -58,6 +58,7 @@ extended = [
     "moviepy>=2.2.1",
     "sounddevice>=0.5.5",
     "pymunk>=7.2.0",
+    "pillow>=10.0.0",
 ]
 
 [project.urls]
