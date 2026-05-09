@@ -94,50 +94,6 @@
       ]
     },
     {
-      "path": "fractals/koch_snowflake/koch_snowflake.py",
-      "title": "Koch snowflake",
-      "category": "fractals",
-      "concepts": [
-        "fractal",
-        "koch curve",
-        "recursion",
-        "snowflake"
-      ],
-      "visual_use": "Use for crystalline outlines, recursive borders, branching edges, or geometric growth.",
-      "good_for": [
-        "fractals",
-        "crystals",
-        "borders",
-        "recursion"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "fractals/l_system/l_system.py",
-      "title": "L-system drawing",
-      "category": "fractals",
-      "concepts": [
-        "l-system",
-        "grammar",
-        "turtle graphics",
-        "recursion"
-      ],
-      "visual_use": "Use for rule-based plants, symbolic growth systems, or generative line structures.",
-      "good_for": [
-        "plants",
-        "rules",
-        "grammar",
-        "growth"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
       "path": "fractals/botanical_l_system/botanical_l_system.py",
       "title": "Botanical L-system",
       "category": "fractals",
@@ -181,6 +137,50 @@
         "coral",
         "petals",
         "biological forms"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/koch_snowflake/koch_snowflake.py",
+      "title": "Koch snowflake",
+      "category": "fractals",
+      "concepts": [
+        "fractal",
+        "koch curve",
+        "recursion",
+        "snowflake"
+      ],
+      "visual_use": "Use for crystalline outlines, recursive borders, branching edges, or geometric growth.",
+      "good_for": [
+        "fractals",
+        "crystals",
+        "borders",
+        "recursion"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/l_system/l_system.py",
+      "title": "L-system drawing",
+      "category": "fractals",
+      "concepts": [
+        "l-system",
+        "grammar",
+        "turtle graphics",
+        "recursion"
+      ],
+      "visual_use": "Use for rule-based plants, symbolic growth systems, or generative line structures.",
+      "good_for": [
+        "plants",
+        "rules",
+        "grammar",
+        "growth"
       ],
       "complexity": "medium",
       "dependencies": [
@@ -278,6 +278,26 @@
       ],
       "complexity": "medium",
       "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/substrate/substrate.py",
+      "title": "Substrate (Crack Pattern Generation)",
+      "category": "fractals",
+      "concepts": [
+        "fractal",
+        "recursion"
+      ],
+      "visual_use": "Use for recursive geometry, branching structures, or self-similar patterns.",
+      "good_for": [
+        "recursion",
+        "growth",
+        "geometry"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "numpy",
         "py5"
       ]
     },
@@ -415,29 +435,6 @@
       ]
     },
     {
-      "path": "mathematical/barycentric_coordinates/barycentric_coordinates.py",
-      "title": "Barycentric triangle interpolation",
-      "category": "mathematical",
-      "concepts": [
-        "barycentric coordinates",
-        "triangle interpolation",
-        "vertex weights",
-        "affine coordinates",
-        "attribute interpolation"
-      ],
-      "visual_use": "Use for triangle color interpolation, mesh attribute blending, point-in-triangle tests, or spatial weighting.",
-      "good_for": [
-        "mesh interpolation",
-        "color blending",
-        "triangles",
-        "spatial weights"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
       "path": "mathematical/bark_growth_texture/bark_growth_texture.py",
       "title": "Bark growth texture",
       "category": "mathematical",
@@ -456,6 +453,29 @@
         "tree trunks",
         "mossy surfaces",
         "organic backgrounds"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/barycentric_coordinates/barycentric_coordinates.py",
+      "title": "Barycentric triangle interpolation",
+      "category": "mathematical",
+      "concepts": [
+        "barycentric coordinates",
+        "triangle interpolation",
+        "vertex weights",
+        "affine coordinates",
+        "attribute interpolation"
+      ],
+      "visual_use": "Use for triangle color interpolation, mesh attribute blending, point-in-triangle tests, or spatial weighting.",
+      "good_for": [
+        "mesh interpolation",
+        "color blending",
+        "triangles",
+        "spatial weights"
       ],
       "complexity": "medium",
       "dependencies": [
@@ -557,6 +577,29 @@
         "py5",
         "touchdesigner",
         "ue5"
+      ]
+    },
+    {
+      "path": "mathematical/color_temperature_mixing/color_temperature_mixing.py",
+      "title": "Color temperature field",
+      "category": "mathematical",
+      "concepts": [
+        "color temperature",
+        "additive color",
+        "light mixing",
+        "gradient field"
+      ],
+      "visual_use": "Use for neon palettes, sunset lighting, mixed studio lights, or multiple light sources blending across space.",
+      "good_for": [
+        "neon",
+        "sunset",
+        "lighting palette",
+        "gradients"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
       ]
     },
     {
@@ -752,31 +795,6 @@
       ]
     },
     {
-      "path": "mathematical/phyllotaxis_flower/phyllotaxis_flower.py",
-      "title": "Phyllotaxis flower",
-      "category": "mathematical",
-      "concepts": [
-        "phyllotaxis",
-        "golden angle",
-        "flowers",
-        "seed head",
-        "rosette",
-        "botanical spiral"
-      ],
-      "visual_use": "Use for sunflower seed heads, daisy florets, succulent rosettes, pinecone scales, and golden-angle plant compositions.",
-      "good_for": [
-        "flowers",
-        "seed heads",
-        "rosettes",
-        "botanical symmetry",
-        "spirals"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
       "path": "mathematical/fibonacci_spiral/fibonacci_spiral.py",
       "title": "Fibonacci spiral",
       "category": "mathematical",
@@ -910,6 +928,29 @@
       ],
       "complexity": "medium",
       "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/light_interference/light_interference.py",
+      "title": "Diffraction and interference pattern",
+      "category": "mathematical",
+      "concepts": [
+        "interference",
+        "wave optics",
+        "phase",
+        "diffraction"
+      ],
+      "visual_use": "Use for rainbow bands, hologram-like fields, ripple interference, or precise wave stripe patterns.",
+      "good_for": [
+        "hologram",
+        "wave bands",
+        "interference",
+        "optics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
         "py5"
       ]
     },
@@ -1056,31 +1097,6 @@
       ]
     },
     {
-      "path": "mathematical/petal_morphogenesis/petal_morphogenesis.py",
-      "title": "Petal morphogenesis",
-      "category": "mathematical",
-      "concepts": [
-        "petals",
-        "flower",
-        "morphogenesis",
-        "radial symmetry",
-        "botanical form",
-        "organic symmetry"
-      ],
-      "visual_use": "Use for layered flower heads, petal profiles, blooming radial forms, floral ornaments, and soft botanical symmetry.",
-      "good_for": [
-        "flowers",
-        "petals",
-        "blooming",
-        "floral forms",
-        "organic symmetry"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
       "path": "mathematical/metaball/metaball.py",
       "title": "Metaball field",
       "category": "mathematical",
@@ -1179,6 +1195,56 @@
       ]
     },
     {
+      "path": "mathematical/petal_morphogenesis/petal_morphogenesis.py",
+      "title": "Petal morphogenesis",
+      "category": "mathematical",
+      "concepts": [
+        "petals",
+        "flower",
+        "morphogenesis",
+        "radial symmetry",
+        "botanical form",
+        "organic symmetry"
+      ],
+      "visual_use": "Use for layered flower heads, petal profiles, blooming radial forms, floral ornaments, and soft botanical symmetry.",
+      "good_for": [
+        "flowers",
+        "petals",
+        "blooming",
+        "floral forms",
+        "organic symmetry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/phyllotaxis_flower/phyllotaxis_flower.py",
+      "title": "Phyllotaxis flower",
+      "category": "mathematical",
+      "concepts": [
+        "phyllotaxis",
+        "golden angle",
+        "flowers",
+        "seed head",
+        "rosette",
+        "botanical spiral"
+      ],
+      "visual_use": "Use for sunflower seed heads, daisy florets, succulent rosettes, pinecone scales, and golden-angle plant compositions.",
+      "good_for": [
+        "flowers",
+        "seed heads",
+        "rosettes",
+        "botanical symmetry",
+        "spirals"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/poisson_disk/poisson_disk.py",
       "title": "Poisson disk sampling",
       "category": "mathematical",
@@ -1226,6 +1292,28 @@
       "complexity": "medium",
       "dependencies": [
         "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/reflection_billiards/reflection_billiards.py",
+      "title": "Reflection billiards",
+      "category": "mathematical",
+      "concepts": [
+        "reflection",
+        "ray tracing",
+        "mirror",
+        "angle of incidence"
+      ],
+      "visual_use": "Use for kaleidoscopic lines, reflection mazes, geometric light paths, or angular mirror patterns.",
+      "good_for": [
+        "kaleidoscope",
+        "reflection maze",
+        "geometry",
+        "light paths"
+      ],
+      "complexity": "medium",
+      "dependencies": [
         "py5"
       ]
     },
@@ -1405,74 +1493,6 @@
       ]
     },
     {
-      "path": "mathematical/color_temperature_mixing/color_temperature_mixing.py",
-      "title": "Color temperature field",
-      "category": "mathematical",
-      "concepts": [
-        "color temperature",
-        "additive color",
-        "light mixing",
-        "gradient field"
-      ],
-      "visual_use": "Use for neon palettes, sunset lighting, mixed studio lights, or multiple light sources blending across space.",
-      "good_for": [
-        "neon",
-        "sunset",
-        "lighting palette",
-        "gradients"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "numpy",
-        "py5"
-      ]
-    },
-    {
-      "path": "mathematical/light_interference/light_interference.py",
-      "title": "Diffraction and interference pattern",
-      "category": "mathematical",
-      "concepts": [
-        "interference",
-        "wave optics",
-        "phase",
-        "diffraction"
-      ],
-      "visual_use": "Use for rainbow bands, hologram-like fields, ripple interference, or precise wave stripe patterns.",
-      "good_for": [
-        "hologram",
-        "wave bands",
-        "interference",
-        "optics"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "numpy",
-        "py5"
-      ]
-    },
-    {
-      "path": "mathematical/reflection_billiards/reflection_billiards.py",
-      "title": "Reflection billiards",
-      "category": "mathematical",
-      "concepts": [
-        "reflection",
-        "ray tracing",
-        "mirror",
-        "angle of incidence"
-      ],
-      "visual_use": "Use for kaleidoscopic lines, reflection mazes, geometric light paths, or angular mirror patterns.",
-      "good_for": [
-        "kaleidoscope",
-        "reflection maze",
-        "geometry",
-        "light paths"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
       "path": "neuro_evolution/flappy_bird_neuro_evolution/flappy_bird_neuro_evolution.py",
       "title": "Flappy bird neuro-evolution",
       "category": "neuro_evolution",
@@ -1561,6 +1581,121 @@
       ]
     },
     {
+      "path": "physics/box_collision/box_collision.py",
+      "title": "Box Collision",
+      "category": "physics",
+      "concepts": [
+        "AABB",
+        "OBB",
+        "box collision",
+        "broad phase",
+        "SAT"
+      ],
+      "visual_use": "Use for visualizing axis-aligned and rotated rectangle overlap tests before full collision response.",
+      "good_for": [
+        "collision detection",
+        "debug overlays",
+        "interactive geometry",
+        "engine basics"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/caustic_light_field/caustic_light_field.py",
+      "title": "Caustics approximation",
+      "category": "physics",
+      "concepts": [
+        "caustics",
+        "light concentration",
+        "wave surface",
+        "density field"
+      ],
+      "visual_use": "Use for underwater shimmer, glass focus patterns, magical light pools, or luminous density textures.",
+      "good_for": [
+        "water light",
+        "glass",
+        "caustics",
+        "shimmer"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/chladni_plate/chladni_plate.py",
+      "title": "Chladni plate nodal patterns",
+      "category": "physics",
+      "concepts": [
+        "Chladni plate",
+        "standing wave",
+        "nodal lines",
+        "resonance",
+        "particles"
+      ],
+      "visual_use": "Use for sand-like particles gathering along acoustic nodal lines and cymatic resonance patterns.",
+      "good_for": [
+        "cymatics",
+        "resonance",
+        "nodal geometry",
+        "sand patterns"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/collision_events/collision_events.py",
+      "title": "Collision Events",
+      "category": "physics",
+      "concepts": [
+        "collision response",
+        "contact normals",
+        "impulse",
+        "debug visualization",
+        "rigid body"
+      ],
+      "visual_use": "Use for visualizing impacts, contact points, normals, and velocity vectors in collision-driven motion.",
+      "good_for": [
+        "impact rings",
+        "physics debugging",
+        "kinetic abstraction",
+        "contact visuals"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/contact_solver/contact_solver.py",
+      "title": "Contact Solver",
+      "category": "physics",
+      "concepts": [
+        "contact solver",
+        "stacking",
+        "AABB",
+        "resting contact",
+        "friction"
+      ],
+      "visual_use": "Use for stacked boxes, resting contacts, simple platform physics, or contact correction studies.",
+      "good_for": [
+        "stacking",
+        "block piles",
+        "contact debugging",
+        "gravity"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "physics/double_pendulum/double_pendulum.py",
       "title": "Double pendulum",
       "category": "physics",
@@ -1578,6 +1713,213 @@
         "oscillation"
       ],
       "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/dye_plume_field/dye_plume_field.py",
+      "title": "Dye plume field",
+      "category": "physics",
+      "concepts": [
+        "dye",
+        "plume",
+        "density field",
+        "advection",
+        "buoyancy"
+      ],
+      "visual_use": "Use for ink dropped in water, colored smoke plumes, underwater dye trails, or translucent fluid clouds.",
+      "good_for": [
+        "dye",
+        "plumes",
+        "water",
+        "smoke",
+        "fluid motion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/excitable_wavefronts/excitable_wavefronts.py",
+      "title": "Excitable Wavefronts",
+      "category": "physics",
+      "concepts": [
+        "wave",
+        "oscillation",
+        "motion",
+        "force"
+      ],
+      "visual_use": "Use for motion studies, forces, particles, fields, or physical animation.",
+      "good_for": [
+        "motion",
+        "fields",
+        "animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/fluid_particles/fluid_particles.py",
+      "title": "Fluid Particles",
+      "category": "physics",
+      "concepts": [
+        "particle system",
+        "fluid simulation",
+        "density pressure",
+        "viscosity",
+        "SPH-like"
+      ],
+      "visual_use": "Use for water drops, poured particles, bubbles, ink beads, or soft fluid-like clusters.",
+      "good_for": [
+        "water",
+        "bubbles",
+        "fluid motion",
+        "pouring"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/fracture_dynamics/fracture_dynamics.py",
+      "title": "Fracture Dynamics",
+      "category": "physics",
+      "concepts": [
+        "fracture",
+        "impact impulse",
+        "debris",
+        "polygon shards",
+        "breakage"
+      ],
+      "visual_use": "Use for breaking objects, impact debris, shattered abstract forms, or threshold-triggered fragmentation.",
+      "good_for": [
+        "shards",
+        "impact",
+        "destruction",
+        "debris"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/ink_smoke_advection/ink_smoke_advection.py",
+      "title": "Ink smoke advection",
+      "category": "physics",
+      "concepts": [
+        "ink",
+        "smoke",
+        "advection",
+        "diffusion",
+        "flow field"
+      ],
+      "visual_use": "Use for watercolor-like ink clouds, smoke plumes, dye spreading through space, or soft translucent color fields.",
+      "good_for": [
+        "ink",
+        "smoke",
+        "watercolor",
+        "plumes",
+        "atmosphere"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/joints_and_constraints/joints_and_constraints.py",
+      "title": "Joints And Constraints",
+      "category": "physics",
+      "concepts": [
+        "joints",
+        "distance constraints",
+        "truss",
+        "bridge",
+        "position based dynamics"
+      ],
+      "visual_use": "Use for bridges, linked mechanisms, ragdoll structures, or articulated constraint networks.",
+      "good_for": [
+        "bridges",
+        "mechanisms",
+        "constraint networks",
+        "interactive joints"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/light_falloff_field/light_falloff_field.py",
+      "title": "Inverse square light particles",
+      "category": "physics",
+      "concepts": [
+        "inverse square law",
+        "illumination",
+        "falloff",
+        "gradient field"
+      ],
+      "visual_use": "Use for glowing bodies, stars, fireflies, city lights, or radiant particle textures.",
+      "good_for": [
+        "glow",
+        "stars",
+        "fireflies",
+        "illumination"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/light_ray_casting/light_ray_casting.py",
+      "title": "2D light ray casting",
+      "category": "physics",
+      "concepts": [
+        "ray casting",
+        "shadow",
+        "visibility polygon",
+        "occlusion"
+      ],
+      "visual_use": "Use for streetlights, caves, stage lighting, shadow puppets, or visible light cones.",
+      "good_for": [
+        "shadows",
+        "visibility",
+        "stage lighting",
+        "occlusion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/mass_spring_cloth/mass_spring_cloth.py",
+      "title": "Mass Spring Cloth",
+      "category": "physics",
+      "concepts": [
+        "cloth",
+        "constraints",
+        "verlet integration",
+        "mass spring",
+        "soft body",
+        "wind"
+      ],
+      "visual_use": "Use for hanging fabric, elastic nets, banners, membranes, or wind-swept soft surfaces.",
+      "good_for": [
+        "fabric",
+        "soft body",
+        "deformation",
+        "interactive mesh"
+      ],
+      "complexity": "low",
       "dependencies": [
         "py5"
       ]
@@ -1701,6 +2043,30 @@
       ]
     },
     {
+      "path": "physics/particle_force_fields/particle_force_fields.py",
+      "title": "Particle Force Fields",
+      "category": "physics",
+      "concepts": [
+        "particle system",
+        "force field",
+        "radial attraction",
+        "vortex",
+        "drag",
+        "orbital motion"
+      ],
+      "visual_use": "Use for magnetic fields, orbital swirls, sparks, invisible attractors, or force-line textures.",
+      "good_for": [
+        "fields",
+        "orbits",
+        "sparks",
+        "swirling motion"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "physics/particle_system_with_repeller/particle_system_with_repeller.py",
       "title": "Particle system with repeller",
       "category": "physics",
@@ -1745,6 +2111,28 @@
       ]
     },
     {
+      "path": "physics/perlin_noise_walker_lines/perlin_noise_walker_lines.py",
+      "title": "Perlin noise walker lines",
+      "category": "physics",
+      "concepts": [
+        "perlin noise",
+        "random walk",
+        "line drawing",
+        "organic motion"
+      ],
+      "visual_use": "Use for natural wandering lines, terrain-like paths, or hand-drawn motion.",
+      "good_for": [
+        "organic lines",
+        "wandering",
+        "texture",
+        "terrain"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "physics/pollen_dispersal/pollen_dispersal.py",
       "title": "Pollen dispersal",
       "category": "physics",
@@ -1770,21 +2158,22 @@
       ]
     },
     {
-      "path": "physics/perlin_noise_walker_lines/perlin_noise_walker_lines.py",
-      "title": "Perlin noise walker lines",
+      "path": "physics/raycast_queries/raycast_queries.py",
+      "title": "Raycast Queries",
       "category": "physics",
       "concepts": [
-        "perlin noise",
-        "random walk",
-        "line drawing",
-        "organic motion"
+        "ray casting",
+        "shape query",
+        "surface normal",
+        "line intersection",
+        "sensor"
       ],
-      "visual_use": "Use for natural wandering lines, terrain-like paths, or hand-drawn motion.",
+      "visual_use": "Use for laser beams, sensors, sight lines, picking, visibility checks, or collision query debugging.",
       "good_for": [
-        "organic lines",
-        "wandering",
-        "texture",
-        "terrain"
+        "sensors",
+        "visibility",
+        "lasers",
+        "debug rays"
       ],
       "complexity": "low",
       "dependencies": [
@@ -1820,6 +2209,190 @@
       ]
     },
     {
+      "path": "physics/refraction_prism/refraction_prism.py",
+      "title": "Refraction through glass",
+      "category": "physics",
+      "concepts": [
+        "refraction",
+        "Snell's law",
+        "prism",
+        "optics"
+      ],
+      "visual_use": "Use for prisms, lenses, transparent objects, bent backgrounds, or spectral light.",
+      "good_for": [
+        "prism",
+        "lens",
+        "spectrum",
+        "transparent objects"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/rigid_body_collision/rigid_body_collision.py",
+      "title": "Rigid Body Collision",
+      "category": "physics",
+      "concepts": [
+        "rigid body",
+        "circle collision",
+        "impulse resolution",
+        "restitution",
+        "gravity",
+        "angular motion"
+      ],
+      "visual_use": "Use for bouncing bodies, pinball-like motion, kinetic compositions, or compact physics-engine studies.",
+      "good_for": [
+        "collisions",
+        "kinetic motion",
+        "bouncing bodies",
+        "pinball"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/ripple_field/ripple_field.py",
+      "title": "Circular ripple field",
+      "category": "physics",
+      "concepts": [
+        "ripple",
+        "circular wave",
+        "wavefront",
+        "interference",
+        "decay"
+      ],
+      "visual_use": "Use for rain-on-water surfaces, sonar pings, impact rings, or layered aquatic wave textures.",
+      "good_for": [
+        "water",
+        "ripples",
+        "impact waves",
+        "sonar"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/rotating_rigid_bodies/rotating_rigid_bodies.py",
+      "title": "Rotating Rigid Bodies",
+      "category": "physics",
+      "concepts": [
+        "rigid body",
+        "rotating polygons",
+        "SAT collision",
+        "angular velocity",
+        "impulse"
+      ],
+      "visual_use": "Use for tumbling boxes, rotating convex bodies, falling debris, or engine-like polygon motion.",
+      "good_for": [
+        "tumbling",
+        "kinetic geometry",
+        "rigid bodies",
+        "debris"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/sat_polygon_collision/sat_polygon_collision.py",
+      "title": "SAT Polygon Collision",
+      "category": "physics",
+      "concepts": [
+        "separating axis theorem",
+        "convex polygons",
+        "minimum translation vector",
+        "collision detection",
+        "SAT"
+      ],
+      "visual_use": "Use for convex polygon overlap tests, collision normals, and minimum-translation debug visuals.",
+      "good_for": [
+        "collision detection",
+        "geometry debugging",
+        "convex shapes",
+        "engine foundations"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/seismic_wave_field/seismic_wave_field.py",
+      "title": "Seismic wave field",
+      "category": "physics",
+      "concepts": [
+        "seismic waves",
+        "P-wave",
+        "S-wave",
+        "shockwave",
+        "terrain"
+      ],
+      "visual_use": "Use for earthquake maps, radar-like pulses, sonar rings, or expanding shockwave compositions.",
+      "good_for": [
+        "seismic maps",
+        "shockwaves",
+        "radar",
+        "propagation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/soft_body_lattice/soft_body_lattice.py",
+      "title": "Soft Body Lattice",
+      "category": "physics",
+      "concepts": [
+        "soft body",
+        "lattice",
+        "constraints",
+        "jelly",
+        "deformation"
+      ],
+      "visual_use": "Use for jelly-like bodies, elastic grids, squishy materials, or deformable mesh studies.",
+      "good_for": [
+        "soft bodies",
+        "elastic forms",
+        "deformation",
+        "interactive mesh"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/spatial_hash_broad_phase/spatial_hash_broad_phase.py",
+      "title": "Spatial Hash Broad Phase",
+      "category": "physics",
+      "concepts": [
+        "spatial hash",
+        "broad phase",
+        "collision optimization",
+        "uniform grid",
+        "particle collisions"
+      ],
+      "visual_use": "Use for dense particle or body simulations where grid partitioning reduces collision pair checks.",
+      "good_for": [
+        "many particles",
+        "optimization",
+        "collision grids",
+        "debug overlays"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "physics/spring_mesh/spring_mesh.py",
       "title": "Interactive spring mesh",
       "category": "physics",
@@ -1848,115 +2421,90 @@
       ]
     },
     {
-      "path": "physics/caustic_light_field/caustic_light_field.py",
-      "title": "Caustics approximation",
+      "path": "physics/stable_fluids_2d/stable_fluids_2d.py",
+      "title": "Stable Fluids 2D",
       "category": "physics",
       "concepts": [
-        "caustics",
-        "light concentration",
-        "wave surface",
-        "density field"
-      ],
-      "visual_use": "Use for underwater shimmer, glass focus patterns, magical light pools, or luminous density textures.",
-      "good_for": [
-        "water light",
-        "glass",
-        "caustics",
-        "shimmer"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "numpy",
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/chladni_plate/chladni_plate.py",
-      "title": "Chladni plate nodal patterns",
-      "category": "physics",
-      "concepts": [
-        "Chladni plate",
-        "standing wave",
-        "nodal lines",
-        "resonance",
-        "particles"
-      ],
-      "visual_use": "Use for sand-like particles gathering along acoustic nodal lines and cymatic resonance patterns.",
-      "good_for": [
-        "cymatics",
-        "resonance",
-        "nodal geometry",
-        "sand patterns"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/dye_plume_field/dye_plume_field.py",
-      "title": "Dye plume field",
-      "category": "physics",
-      "concepts": [
-        "dye",
-        "plume",
+        "stable fluids",
+        "grid advection",
         "density field",
-        "advection",
-        "buoyancy"
+        "diffusion",
+        "velocity field"
       ],
-      "visual_use": "Use for ink dropped in water, colored smoke plumes, underwater dye trails, or translucent fluid clouds.",
+      "visual_use": "Use for smoke, ink, dye fields, field-based fluid flow, or soft atmospheric motion.",
       "good_for": [
-        "dye",
-        "plumes",
-        "water",
         "smoke",
-        "fluid motion"
+        "ink",
+        "dye",
+        "fluid fields"
       ],
-      "complexity": "medium",
+      "complexity": "low",
       "dependencies": [
         "numpy",
         "py5"
       ]
     },
     {
-      "path": "physics/light_falloff_field/light_falloff_field.py",
-      "title": "Inverse square light particles",
+      "path": "physics/standing_wave/standing_wave.py",
+      "title": "Standing wave modes",
       "category": "physics",
       "concepts": [
-        "inverse square law",
-        "illumination",
-        "falloff",
-        "gradient field"
+        "standing wave",
+        "resonance",
+        "nodes",
+        "antinodes",
+        "harmonics"
       ],
-      "visual_use": "Use for glowing bodies, stars, fireflies, city lights, or radiant particle textures.",
+      "visual_use": "Use for vibrating strings, resonance diagrams, musical harmonics, or clean nodal waveform studies.",
       "good_for": [
-        "glow",
-        "stars",
-        "fireflies",
-        "illumination"
+        "resonance",
+        "strings",
+        "harmonics",
+        "wave education"
       ],
-      "complexity": "medium",
+      "complexity": "low",
       "dependencies": [
         "py5"
       ]
     },
     {
-      "path": "physics/ink_smoke_advection/ink_smoke_advection.py",
-      "title": "Ink smoke advection",
+      "path": "physics/verlet_constraints/verlet_constraints.py",
+      "title": "Verlet Constraints",
       "category": "physics",
       "concepts": [
-        "ink",
-        "smoke",
-        "advection",
-        "diffusion",
-        "flow field"
+        "verlet integration",
+        "distance constraints",
+        "rope",
+        "position based dynamics",
+        "constraints"
       ],
-      "visual_use": "Use for watercolor-like ink clouds, smoke plumes, dye spreading through space, or soft translucent color fields.",
+      "visual_use": "Use for ropes, chains, pendulum strings, articulated links, or compact position-based dynamics demos.",
       "good_for": [
-        "ink",
-        "smoke",
-        "watercolor",
-        "plumes",
+        "rope",
+        "chains",
+        "constraints",
+        "interactive motion"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/volumetric_light_beams/volumetric_light_beams.py",
+      "title": "Volumetric light beams",
+      "category": "physics",
+      "concepts": [
+        "volumetric light",
+        "scattering",
+        "fog",
+        "god rays"
+      ],
+      "visual_use": "Use for forest light, stage lighting, visible beams in fog, or atmospheric depth.",
+      "good_for": [
+        "god rays",
+        "fog",
+        "stage lighting",
         "atmosphere"
       ],
       "complexity": "medium",
@@ -1986,119 +2534,6 @@
       "complexity": "medium",
       "dependencies": [
         "numpy",
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/light_ray_casting/light_ray_casting.py",
-      "title": "2D light ray casting",
-      "category": "physics",
-      "concepts": [
-        "ray casting",
-        "shadow",
-        "visibility polygon",
-        "occlusion"
-      ],
-      "visual_use": "Use for streetlights, caves, stage lighting, shadow puppets, or visible light cones.",
-      "good_for": [
-        "shadows",
-        "visibility",
-        "stage lighting",
-        "occlusion"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/refraction_prism/refraction_prism.py",
-      "title": "Refraction through glass",
-      "category": "physics",
-      "concepts": [
-        "refraction",
-        "Snell's law",
-        "prism",
-        "optics"
-      ],
-      "visual_use": "Use for prisms, lenses, transparent objects, bent backgrounds, or spectral light.",
-      "good_for": [
-        "prism",
-        "lens",
-        "spectrum",
-        "transparent objects"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/ripple_field/ripple_field.py",
-      "title": "Circular ripple field",
-      "category": "physics",
-      "concepts": [
-        "ripple",
-        "circular wave",
-        "wavefront",
-        "interference",
-        "decay"
-      ],
-      "visual_use": "Use for rain-on-water surfaces, sonar pings, impact rings, or layered aquatic wave textures.",
-      "good_for": [
-        "water",
-        "ripples",
-        "impact waves",
-        "sonar"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/seismic_wave_field/seismic_wave_field.py",
-      "title": "Seismic wave field",
-      "category": "physics",
-      "concepts": [
-        "seismic waves",
-        "P-wave",
-        "S-wave",
-        "shockwave",
-        "terrain"
-      ],
-      "visual_use": "Use for earthquake maps, radar-like pulses, sonar rings, or expanding shockwave compositions.",
-      "good_for": [
-        "seismic maps",
-        "shockwaves",
-        "radar",
-        "propagation"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/standing_wave/standing_wave.py",
-      "title": "Standing wave modes",
-      "category": "physics",
-      "concepts": [
-        "standing wave",
-        "resonance",
-        "nodes",
-        "antinodes",
-        "harmonics"
-      ],
-      "visual_use": "Use for vibrating strings, resonance diagrams, musical harmonics, or clean nodal waveform studies.",
-      "good_for": [
-        "resonance",
-        "strings",
-        "harmonics",
-        "wave education"
-      ],
-      "complexity": "low",
-      "dependencies": [
         "py5"
       ]
     },
@@ -2167,28 +2602,6 @@
         "line animation"
       ],
       "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/volumetric_light_beams/volumetric_light_beams.py",
-      "title": "Volumetric light beams",
-      "category": "physics",
-      "concepts": [
-        "volumetric light",
-        "scattering",
-        "fog",
-        "god rays"
-      ],
-      "visual_use": "Use for forest light, stage lighting, visible beams in fog, or atmospheric depth.",
-      "good_for": [
-        "god rays",
-        "fog",
-        "stage lighting",
-        "atmosphere"
-      ],
-      "complexity": "medium",
       "dependencies": [
         "py5"
       ]
@@ -2307,6 +2720,31 @@
         "sensors",
         "artificial life",
         "interaction"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "steering_behaviors/curl_noise_vines/curl_noise_vines.py",
+      "title": "Curl noise vines",
+      "category": "steering_behaviors",
+      "concepts": [
+        "curl noise",
+        "vines",
+        "grass",
+        "roots",
+        "flow field",
+        "organic trails"
+      ],
+      "visual_use": "Use for climbing vines, wind-blown grass, root hairs, flowing plant fibers, and botanical line textures.",
+      "good_for": [
+        "vines",
+        "grass",
+        "roots",
+        "organic lines",
+        "botanical motion"
       ],
       "complexity": "medium",
       "dependencies": [
@@ -2434,31 +2872,6 @@
       ]
     },
     {
-      "path": "steering_behaviors/curl_noise_vines/curl_noise_vines.py",
-      "title": "Curl noise vines",
-      "category": "steering_behaviors",
-      "concepts": [
-        "curl noise",
-        "vines",
-        "grass",
-        "roots",
-        "flow field",
-        "organic trails"
-      ],
-      "visual_use": "Use for climbing vines, wind-blown grass, root hairs, flowing plant fibers, and botanical line textures.",
-      "good_for": [
-        "vines",
-        "grass",
-        "roots",
-        "organic lines",
-        "botanical motion"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
       "path": "steering_behaviors/path_following/path_following.py",
       "title": "Path following",
       "category": "steering_behaviors",
@@ -2565,378 +2978,6 @@
       ],
       "complexity": "medium",
       "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/collision_events/collision_events.py",
-      "title": "Collision Events",
-      "category": "physics",
-      "concepts": [
-        "collision response",
-        "contact normals",
-        "impulse",
-        "debug visualization",
-        "rigid body"
-      ],
-      "visual_use": "Use for visualizing impacts, contact points, normals, and velocity vectors in collision-driven motion.",
-      "good_for": [
-        "impact rings",
-        "physics debugging",
-        "kinetic abstraction",
-        "contact visuals"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/fluid_particles/fluid_particles.py",
-      "title": "Fluid Particles",
-      "category": "physics",
-      "concepts": [
-        "particle system",
-        "fluid simulation",
-        "density pressure",
-        "viscosity",
-        "SPH-like"
-      ],
-      "visual_use": "Use for water drops, poured particles, bubbles, ink beads, or soft fluid-like clusters.",
-      "good_for": [
-        "water",
-        "bubbles",
-        "fluid motion",
-        "pouring"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/mass_spring_cloth/mass_spring_cloth.py",
-      "title": "Mass Spring Cloth",
-      "category": "physics",
-      "concepts": [
-        "cloth",
-        "constraints",
-        "verlet integration",
-        "mass spring",
-        "soft body",
-        "wind"
-      ],
-      "visual_use": "Use for hanging fabric, elastic nets, banners, membranes, or wind-swept soft surfaces.",
-      "good_for": [
-        "fabric",
-        "soft body",
-        "deformation",
-        "interactive mesh"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/particle_force_fields/particle_force_fields.py",
-      "title": "Particle Force Fields",
-      "category": "physics",
-      "concepts": [
-        "particle system",
-        "force field",
-        "radial attraction",
-        "vortex",
-        "drag",
-        "orbital motion"
-      ],
-      "visual_use": "Use for magnetic fields, orbital swirls, sparks, invisible attractors, or force-line textures.",
-      "good_for": [
-        "fields",
-        "orbits",
-        "sparks",
-        "swirling motion"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/rigid_body_collision/rigid_body_collision.py",
-      "title": "Rigid Body Collision",
-      "category": "physics",
-      "concepts": [
-        "rigid body",
-        "circle collision",
-        "impulse resolution",
-        "restitution",
-        "gravity",
-        "angular motion"
-      ],
-      "visual_use": "Use for bouncing bodies, pinball-like motion, kinetic compositions, or compact physics-engine studies.",
-      "good_for": [
-        "collisions",
-        "kinetic motion",
-        "bouncing bodies",
-        "pinball"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/verlet_constraints/verlet_constraints.py",
-      "title": "Verlet Constraints",
-      "category": "physics",
-      "concepts": [
-        "verlet integration",
-        "distance constraints",
-        "rope",
-        "position based dynamics",
-        "constraints"
-      ],
-      "visual_use": "Use for ropes, chains, pendulum strings, articulated links, or compact position-based dynamics demos.",
-      "good_for": [
-        "rope",
-        "chains",
-        "constraints",
-        "interactive motion"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/box_collision/box_collision.py",
-      "title": "Box Collision",
-      "category": "physics",
-      "concepts": [
-        "AABB",
-        "OBB",
-        "box collision",
-        "broad phase",
-        "SAT"
-      ],
-      "visual_use": "Use for visualizing axis-aligned and rotated rectangle overlap tests before full collision response.",
-      "good_for": [
-        "collision detection",
-        "debug overlays",
-        "interactive geometry",
-        "engine basics"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/contact_solver/contact_solver.py",
-      "title": "Contact Solver",
-      "category": "physics",
-      "concepts": [
-        "contact solver",
-        "stacking",
-        "AABB",
-        "resting contact",
-        "friction"
-      ],
-      "visual_use": "Use for stacked boxes, resting contacts, simple platform physics, or contact correction studies.",
-      "good_for": [
-        "stacking",
-        "block piles",
-        "contact debugging",
-        "gravity"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/fracture_dynamics/fracture_dynamics.py",
-      "title": "Fracture Dynamics",
-      "category": "physics",
-      "concepts": [
-        "fracture",
-        "impact impulse",
-        "debris",
-        "polygon shards",
-        "breakage"
-      ],
-      "visual_use": "Use for breaking objects, impact debris, shattered abstract forms, or threshold-triggered fragmentation.",
-      "good_for": [
-        "shards",
-        "impact",
-        "destruction",
-        "debris"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/joints_and_constraints/joints_and_constraints.py",
-      "title": "Joints And Constraints",
-      "category": "physics",
-      "concepts": [
-        "joints",
-        "distance constraints",
-        "truss",
-        "bridge",
-        "position based dynamics"
-      ],
-      "visual_use": "Use for bridges, linked mechanisms, ragdoll structures, or articulated constraint networks.",
-      "good_for": [
-        "bridges",
-        "mechanisms",
-        "constraint networks",
-        "interactive joints"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/raycast_queries/raycast_queries.py",
-      "title": "Raycast Queries",
-      "category": "physics",
-      "concepts": [
-        "ray casting",
-        "shape query",
-        "surface normal",
-        "line intersection",
-        "sensor"
-      ],
-      "visual_use": "Use for laser beams, sensors, sight lines, picking, visibility checks, or collision query debugging.",
-      "good_for": [
-        "sensors",
-        "visibility",
-        "lasers",
-        "debug rays"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/rotating_rigid_bodies/rotating_rigid_bodies.py",
-      "title": "Rotating Rigid Bodies",
-      "category": "physics",
-      "concepts": [
-        "rigid body",
-        "rotating polygons",
-        "SAT collision",
-        "angular velocity",
-        "impulse"
-      ],
-      "visual_use": "Use for tumbling boxes, rotating convex bodies, falling debris, or engine-like polygon motion.",
-      "good_for": [
-        "tumbling",
-        "kinetic geometry",
-        "rigid bodies",
-        "debris"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/sat_polygon_collision/sat_polygon_collision.py",
-      "title": "SAT Polygon Collision",
-      "category": "physics",
-      "concepts": [
-        "separating axis theorem",
-        "convex polygons",
-        "minimum translation vector",
-        "collision detection",
-        "SAT"
-      ],
-      "visual_use": "Use for convex polygon overlap tests, collision normals, and minimum-translation debug visuals.",
-      "good_for": [
-        "collision detection",
-        "geometry debugging",
-        "convex shapes",
-        "engine foundations"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/soft_body_lattice/soft_body_lattice.py",
-      "title": "Soft Body Lattice",
-      "category": "physics",
-      "concepts": [
-        "soft body",
-        "lattice",
-        "constraints",
-        "jelly",
-        "deformation"
-      ],
-      "visual_use": "Use for jelly-like bodies, elastic grids, squishy materials, or deformable mesh studies.",
-      "good_for": [
-        "soft bodies",
-        "elastic forms",
-        "deformation",
-        "interactive mesh"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/spatial_hash_broad_phase/spatial_hash_broad_phase.py",
-      "title": "Spatial Hash Broad Phase",
-      "category": "physics",
-      "concepts": [
-        "spatial hash",
-        "broad phase",
-        "collision optimization",
-        "uniform grid",
-        "particle collisions"
-      ],
-      "visual_use": "Use for dense particle or body simulations where grid partitioning reduces collision pair checks.",
-      "good_for": [
-        "many particles",
-        "optimization",
-        "collision grids",
-        "debug overlays"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/stable_fluids_2d/stable_fluids_2d.py",
-      "title": "Stable Fluids 2D",
-      "category": "physics",
-      "concepts": [
-        "stable fluids",
-        "grid advection",
-        "density field",
-        "diffusion",
-        "velocity field"
-      ],
-      "visual_use": "Use for smoke, ink, dye fields, field-based fluid flow, or soft atmospheric motion.",
-      "good_for": [
-        "smoke",
-        "ink",
-        "dye",
-        "fluid fields"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "numpy",
         "py5"
       ]
     }

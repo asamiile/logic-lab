@@ -1,7 +1,7 @@
 # Substrate (Crack Pattern Generation)
 
 ```bash
-uv run python src/logic_lab/research/substrate/substrate.py
+uv run python src/logic_lab/fractals/substrate/substrate.py
 ```
 
 ## Overview
