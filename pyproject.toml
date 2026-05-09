@@ -115,6 +115,9 @@ ignore = [
     "E731",    # Do not assign lambda
 ]
 
+[tool.ruff.lint.isort]
+known-first-party = ["logic_lab"]
+
 [tool.black]
 line-length = 100
 target-version = ["py311"]

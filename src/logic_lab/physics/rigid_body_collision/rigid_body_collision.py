@@ -2,6 +2,7 @@ from pathlib import Path
 from random import Random
 
 import py5
+
 from logic_lab.shared.physics2d import CircleBody, Vec2, resolve_bounds, resolve_circle_collision
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"

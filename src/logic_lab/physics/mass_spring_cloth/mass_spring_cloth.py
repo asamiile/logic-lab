@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import py5
+
 from logic_lab.shared.physics2d import Vec2, build_cloth, enforce_verlet_bounds
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"

@@ -2,6 +2,7 @@ from pathlib import Path
 from random import Random
 
 import py5
+
 from logic_lab.shared.physics2d import PolygonBody, Vec2, regular_polygon, resolve_polygon_bounds
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"

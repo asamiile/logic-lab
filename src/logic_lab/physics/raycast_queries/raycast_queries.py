@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import py5
+
 from logic_lab.shared.physics2d import (
     PolygonBody,
     Vec2,
