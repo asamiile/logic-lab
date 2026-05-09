@@ -2667,6 +2667,26 @@
       ]
     },
     {
+      "path": "research/acrylic_pour/acrylic_pour.py",
+      "title": "Acrylic Pour",
+      "category": "research",
+      "concepts": [
+        "simulation",
+        "system"
+      ],
+      "visual_use": "Use for experimental systems, hybrid simulations, or advanced visual behaviors.",
+      "good_for": [
+        "experiments",
+        "systems",
+        "hybrids"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "research/audio_fft/audio_fft.py",
       "title": "Audio FFT and beat detection",
       "category": "research",
@@ -2720,6 +2740,26 @@
       ]
     },
     {
+      "path": "research/dry_brush_texture/dry_brush_texture.py",
+      "title": "Dry Brush Texture",
+      "category": "research",
+      "concepts": [
+        "simulation",
+        "system"
+      ],
+      "visual_use": "Use for experimental systems, hybrid simulations, or advanced visual behaviors.",
+      "good_for": [
+        "experiments",
+        "systems",
+        "hybrids"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "research/excitable_wavefronts/excitable_wavefronts.py",
       "title": "Excitable wavefronts",
       "category": "research",
@@ -2761,6 +2801,66 @@
       ],
       "complexity": "medium",
       "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "research/impasto_rendering/impasto_rendering.py",
+      "title": "Impasto Rendering",
+      "category": "research",
+      "concepts": [
+        "simulation",
+        "system"
+      ],
+      "visual_use": "Use for experimental systems, hybrid simulations, or advanced visual behaviors.",
+      "good_for": [
+        "experiments",
+        "systems",
+        "hybrids"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "research/layered_paint_mixing/layered_paint_mixing.py",
+      "title": "Layered Paint Mixing",
+      "category": "research",
+      "concepts": [
+        "simulation",
+        "system"
+      ],
+      "visual_use": "Use for experimental systems, hybrid simulations, or advanced visual behaviors.",
+      "good_for": [
+        "experiments",
+        "systems",
+        "hybrids"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "research/oil_paint_swirl/oil_paint_swirl.py",
+      "title": "Oil Paint Swirl",
+      "category": "research",
+      "concepts": [
+        "simulation",
+        "system"
+      ],
+      "visual_use": "Use for experimental systems, hybrid simulations, or advanced visual behaviors.",
+      "good_for": [
+        "experiments",
+        "systems",
+        "hybrids"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
         "py5"
       ]
     },
