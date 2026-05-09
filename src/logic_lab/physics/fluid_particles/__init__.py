@@ -1,0 +1,1 @@
+"""Fluid-like particle sketch."""

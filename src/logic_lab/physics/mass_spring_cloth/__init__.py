@@ -1,0 +1,1 @@
+"""Mass-spring cloth sketch."""
