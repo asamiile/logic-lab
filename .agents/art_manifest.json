@@ -2247,28 +2247,6 @@
       ]
     },
     {
-      "path": "research/cloth_simulation/cloth_simulation.py",
-      "title": "Cloth simulation",
-      "category": "research",
-      "concepts": [
-        "cloth",
-        "constraints",
-        "soft body",
-        "physics"
-      ],
-      "visual_use": "Use for fabric grids, hanging meshes, responsive surfaces, or soft physics studies.",
-      "good_for": [
-        "fabric",
-        "mesh",
-        "soft body",
-        "constraints"
-      ],
-      "complexity": "high",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
       "path": "research/excitable_wavefronts/excitable_wavefronts.py",
       "title": "Excitable wavefronts",
       "category": "research",
