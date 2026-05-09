@@ -38,6 +38,7 @@ def _entries() -> list[dict[str, Any]]:
     return entries
 
 
+@lru_cache(maxsize=1)
 def _manifest_paths() -> set[str]:
     return {entry["path"] for entry in _entries() if isinstance(entry.get("path"), str)}
 
@@ -121,6 +122,7 @@ def _score_entry(entry: dict[str, Any], query: str) -> int:
         return 1
 
     haystack = _search_text(entry)
+    concepts = {str(item).lower() for item in entry.get("concepts", [])}
     score = 0
     if query in haystack:
         score += 8
@@ -129,18 +131,20 @@ def _score_entry(entry: dict[str, Any], query: str) -> int:
             score += 2
         if token == str(entry.get("category", "")).lower():
             score += 3
-        if token in [str(item).lower() for item in entry.get("concepts", [])]:
+        if token in concepts:
             score += 4
     return score
+
+
+@lru_cache(maxsize=1)
+def _path_to_entry() -> dict[str, dict[str, Any]]:
+    return {entry["path"]: entry for entry in _entries() if isinstance(entry.get("path"), str)}
 
 
 def _entry_for_path(path: str) -> dict[str, Any] | None:
     _, rel_path = _safe_repo_path(path)
     rel_path = _manifest_rel_path(rel_path)
-    for entry in _entries():
-        if entry.get("path") == rel_path:
-            return entry
-    return None
+    return _path_to_entry().get(rel_path)
 
 
 def _manifest_summary() -> dict[str, Any]:
