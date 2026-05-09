@@ -845,6 +845,29 @@
       ]
     },
     {
+      "path": "mathematical/fourier_wave_synthesis/fourier_wave_synthesis.py",
+      "title": "Fourier wave synthesis",
+      "category": "mathematical",
+      "concepts": [
+        "Fourier series",
+        "harmonics",
+        "waveform synthesis",
+        "signal processing",
+        "additive synthesis"
+      ],
+      "visual_use": "Use for reconstructing square, sawtooth, or triangle waves from harmonic sine components.",
+      "good_for": [
+        "signals",
+        "harmonics",
+        "synthesizers",
+        "waveform design"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/harmonograph/harmonograph.py",
       "title": "Harmonograph",
       "category": "mathematical",
@@ -1848,6 +1871,29 @@
       ]
     },
     {
+      "path": "physics/chladni_plate/chladni_plate.py",
+      "title": "Chladni plate nodal patterns",
+      "category": "physics",
+      "concepts": [
+        "Chladni plate",
+        "standing wave",
+        "nodal lines",
+        "resonance",
+        "particles"
+      ],
+      "visual_use": "Use for sand-like particles gathering along acoustic nodal lines and cymatic resonance patterns.",
+      "good_for": [
+        "cymatics",
+        "resonance",
+        "nodal geometry",
+        "sand patterns"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "physics/dye_plume_field/dye_plume_field.py",
       "title": "Dye plume field",
       "category": "physics",
@@ -1988,6 +2034,144 @@
       ]
     },
     {
+      "path": "physics/ripple_field/ripple_field.py",
+      "title": "Circular ripple field",
+      "category": "physics",
+      "concepts": [
+        "ripple",
+        "circular wave",
+        "wavefront",
+        "interference",
+        "decay"
+      ],
+      "visual_use": "Use for rain-on-water surfaces, sonar pings, impact rings, or layered aquatic wave textures.",
+      "good_for": [
+        "water",
+        "ripples",
+        "impact waves",
+        "sonar"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/seismic_wave_field/seismic_wave_field.py",
+      "title": "Seismic wave field",
+      "category": "physics",
+      "concepts": [
+        "seismic waves",
+        "P-wave",
+        "S-wave",
+        "shockwave",
+        "terrain"
+      ],
+      "visual_use": "Use for earthquake maps, radar-like pulses, sonar rings, or expanding shockwave compositions.",
+      "good_for": [
+        "seismic maps",
+        "shockwaves",
+        "radar",
+        "propagation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/standing_wave/standing_wave.py",
+      "title": "Standing wave modes",
+      "category": "physics",
+      "concepts": [
+        "standing wave",
+        "resonance",
+        "nodes",
+        "antinodes",
+        "harmonics"
+      ],
+      "visual_use": "Use for vibrating strings, resonance diagrams, musical harmonics, or clean nodal waveform studies.",
+      "good_for": [
+        "resonance",
+        "strings",
+        "harmonics",
+        "wave education"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/wave_equation_grid/wave_equation_grid.py",
+      "title": "Wave equation grid",
+      "category": "physics",
+      "concepts": [
+        "wave equation",
+        "height field",
+        "grid simulation",
+        "propagation",
+        "damping"
+      ],
+      "visual_use": "Use for interactive water membranes, shock propagation, impact fields, or numerical wave surfaces.",
+      "good_for": [
+        "water surface",
+        "impacts",
+        "height fields",
+        "simulation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/wave_interference_field/wave_interference_field.py",
+      "title": "Wave interference field",
+      "category": "physics",
+      "concepts": [
+        "wave interference",
+        "phase",
+        "radial waves",
+        "nodes",
+        "constructive interference"
+      ],
+      "visual_use": "Use for moire-like wave fields, water interference, acoustic nodes, or scientific energy maps.",
+      "good_for": [
+        "interference",
+        "moire",
+        "phase fields",
+        "water waves"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/wave_packet/wave_packet.py",
+      "title": "Gaussian wave packet",
+      "category": "physics",
+      "concepts": [
+        "wave packet",
+        "Gaussian envelope",
+        "group velocity",
+        "phase velocity",
+        "dispersion"
+      ],
+      "visual_use": "Use for quantum-like pulses, sound bursts, signal envelopes, or animated phase/group velocity diagrams.",
+      "good_for": [
+        "wave packets",
+        "signals",
+        "quantum visuals",
+        "line animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "physics/volumetric_light_beams/volumetric_light_beams.py",
       "title": "Volumetric light beams",
       "category": "physics",
@@ -2040,6 +2224,29 @@
       ]
     },
     {
+      "path": "research/audio_wave_scope/audio_wave_scope.py",
+      "title": "Audio waveform scope",
+      "category": "research",
+      "concepts": [
+        "oscilloscope",
+        "audio waveform",
+        "Lissajous",
+        "spectrum",
+        "signal visualization"
+      ],
+      "visual_use": "Use for oscilloscope traces, synthetic audio interfaces, phase plots, or waveform-driven compositions.",
+      "good_for": [
+        "audio visuals",
+        "oscilloscope",
+        "signals",
+        "music graphics"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "research/cloth_simulation/cloth_simulation.py",
       "title": "Cloth simulation",
       "category": "research",
@@ -2057,6 +2264,29 @@
         "constraints"
       ],
       "complexity": "high",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "research/excitable_wavefronts/excitable_wavefronts.py",
+      "title": "Excitable wavefronts",
+      "category": "research",
+      "concepts": [
+        "excitable medium",
+        "cellular wave",
+        "reaction diffusion",
+        "refractory state",
+        "wavefront"
+      ],
+      "visual_use": "Use for chemical waves, cardiac-like propagation, spiral waves, organic rings, or emergent cellular textures.",
+      "good_for": [
+        "chemical waves",
+        "cellular patterns",
+        "organic rings",
+        "emergence"
+      ],
+      "complexity": "medium",
       "dependencies": [
         "py5"
       ]
