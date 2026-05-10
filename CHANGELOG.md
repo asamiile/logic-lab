@@ -5,6 +5,33 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0](https://github.com/asamiile/logic-lab/compare/v0.1.0...v0.2.0) (2026-05-10)
+
+
+### Features
+
+* 30個の新規アルゴリズム追加 + コード品質向上 + MCPサーバー精度向上 ([7eba1fd](https://github.com/asamiile/logic-lab/commit/7eba1fd5a3628f1e3d7575de4b2173e47224b9b0))
+* add 30 new algorithms + improve code quality + enhance MCP server precision ([a800668](https://github.com/asamiile/logic-lab/commit/a8006687a9632bf534ead05d67089e031b00fa0f))
+* add 5 more shape-focused algorithms (Round 2) ([80fe91e](https://github.com/asamiile/logic-lab/commit/80fe91e6a480cc371207e0cc139a6302817d29d3))
+* add paint texture algorithms ([7194751](https://github.com/asamiile/logic-lab/commit/719475194eb418ce6b1838ec0d52ed45f11acbbc))
+* add shape-focused algorithms + enhance MCP search precision ([d5f7e4e](https://github.com/asamiile/logic-lab/commit/d5f7e4e89d696542c72d33456ac4438e6acd3dd5))
+* add shape-focused algorithms + enhance MCP search precision ([d5bfaf7](https://github.com/asamiile/logic-lab/commit/d5bfaf716e77e5bc2c4a04c5faec4c0e09704a10))
+* fix lint error ([218ac2b](https://github.com/asamiile/logic-lab/commit/218ac2b545e2daa5e255d38a5edbba5289f46c0d))
+* fix lint error ([bbe4e55](https://github.com/asamiile/logic-lab/commit/bbe4e550bcbc0c5460c2d3f0da5d9dfccec4b715))
+* improvement MCP Server ([7a257c0](https://github.com/asamiile/logic-lab/commit/7a257c0a533ff2ce1990b3ab3f5badb55a63addf))
+* mcp refactor ([aaca8b0](https://github.com/asamiile/logic-lab/commit/aaca8b079bbb3be05bb02073c8dfa0d637218063))
+* physics ([5906aac](https://github.com/asamiile/logic-lab/commit/5906aac83f13937c53756a36abbfffc09fe5f728))
+* physics ([4dec448](https://github.com/asamiile/logic-lab/commit/4dec44856bd527d7a24b8228add489b0003e8076))
+* refactor duplicate files ([c484238](https://github.com/asamiile/logic-lab/commit/c4842382e524b5d00a7789fc1cdcc1bd2bada891))
+* Refactor file classification ([5e5570a](https://github.com/asamiile/logic-lab/commit/5e5570a63ecdc44be9bbce1362afb1287bcc35b9))
+* water color ink ([ceee3b2](https://github.com/asamiile/logic-lab/commit/ceee3b253e71ccc1ded2dc56d4be5e04d681e9d7))
+* waves ([b35f270](https://github.com/asamiile/logic-lab/commit/b35f270965e48906704e11252d68e593d0ea731c))
+
+
+### Bug Fixes
+
+* correct screenshot save paths for attractors and WFC ([1c98f9e](https://github.com/asamiile/logic-lab/commit/1c98f9e5fa3c95dd0ca107609d896411919ad8e8))
+
 ## 0.1.0 (2026-05-08)
 
 
