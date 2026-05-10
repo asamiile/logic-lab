@@ -32,6 +32,7 @@ SYNONYMS: dict[str, list[str]] = {
     "shape": ["form", "contour", "outline", "silhouette", "morphology"],
     "tiling": ["tessellation", "mosaic", "grid", "periodic", "wallpaper"],
     "symmetry": ["reflection", "rotation", "dihedral", "wallpaper group"],
+    "polyhedra": ["platonic solid", "3D shape", "wireframe", "tetrahedron", "cube", "octahedron"],
 }
 
 REPO_ROOT = Path(__file__).resolve().parents[3]

@@ -698,6 +698,28 @@
       ]
     },
     {
+      "path": "mathematical/blob_generator/blob_generator.py",
+      "title": "Blob Generator",
+      "category": "mathematical",
+      "concepts": [
+        "blob",
+        "organic",
+        "implicit surface",
+        "shape",
+        "metaball"
+      ],
+      "visual_use": "Use for organic flowing shapes, amoeba-like forms, or living creature animation.",
+      "good_for": [
+        "organic",
+        "shape",
+        "animation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/chaikin_curve_smoothing/chaikin_curve_smoothing.py",
       "title": "Chaikin curve smoothing",
       "category": "mathematical",
@@ -1277,6 +1299,28 @@
       ]
     },
     {
+      "path": "mathematical/grid_deformation/grid_deformation.py",
+      "title": "Grid Deformation",
+      "category": "mathematical",
+      "concepts": [
+        "grid",
+        "deformation",
+        "line",
+        "wave",
+        "animation"
+      ],
+      "visual_use": "Use for wave patterns, undulating grids, or flow visualization.",
+      "good_for": [
+        "waves",
+        "patterns",
+        "animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/harmonograph/harmonograph.py",
       "title": "Harmonograph",
       "category": "mathematical",
@@ -1295,6 +1339,28 @@
         "ornament"
       ],
       "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/hatching_patterns/hatching_patterns.py",
+      "title": "Hatching Patterns",
+      "category": "mathematical",
+      "concepts": [
+        "line",
+        "hatching",
+        "shading",
+        "geometry",
+        "brightness"
+      ],
+      "visual_use": "Use for shading via line density, tonal artwork, or technical rendering.",
+      "good_for": [
+        "shading",
+        "line art",
+        "texture"
+      ],
+      "complexity": "low",
       "dependencies": [
         "py5"
       ]
@@ -1815,6 +1881,28 @@
       ]
     },
     {
+      "path": "mathematical/polyhedra_wireframe/polyhedra_wireframe.py",
+      "title": "Polyhedra Wireframe",
+      "category": "mathematical",
+      "concepts": [
+        "polyhedra",
+        "3D",
+        "wireframe",
+        "rotation",
+        "projection"
+      ],
+      "visual_use": "Use for 3D geometric visualization, platonic solids, or wireframe rotation studies.",
+      "good_for": [
+        "3D",
+        "geometry",
+        "rotation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/prime_spiral/prime_spiral.py",
       "title": "Prime Spiral",
       "category": "mathematical",
@@ -2075,6 +2163,28 @@
         "flowers",
         "organic shapes",
         "parametric design"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/tangent_art/tangent_art.py",
+      "title": "Tangent Art",
+      "category": "mathematical",
+      "concepts": [
+        "tangent",
+        "line",
+        "circle",
+        "polygon",
+        "geometry"
+      ],
+      "visual_use": "Use for geometric line compositions, tangent constructions, or circle geometry art.",
+      "good_for": [
+        "line art",
+        "geometry",
+        "circles"
       ],
       "complexity": "medium",
       "dependencies": [
