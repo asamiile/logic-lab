@@ -27,6 +27,11 @@ SYNONYMS: dict[str, list[str]] = {
     "game of life": ["conway", "glider", "blinker", "still life"],
     "organic": ["growth", "biological", "natural", "living"],
     "wave": ["oscillation", "propagation", "frequency", "vibration"],
+    "polygon": ["angular", "vertices", "edge", "multi-sided", "geometric shape"],
+    "line art": ["hatching", "stripes", "linework", "crosshatch", "straight lines"],
+    "shape": ["form", "contour", "outline", "silhouette", "morphology"],
+    "tiling": ["tessellation", "mosaic", "grid", "periodic", "wallpaper"],
+    "symmetry": ["reflection", "rotation", "dihedral", "wallpaper group"],
 }
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
