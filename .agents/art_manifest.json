@@ -698,6 +698,28 @@
       ]
     },
     {
+      "path": "mathematical/blob_generator/blob_generator.py",
+      "title": "Blob Generator",
+      "category": "mathematical",
+      "concepts": [
+        "blob",
+        "organic",
+        "implicit surface",
+        "shape",
+        "metaball"
+      ],
+      "visual_use": "Use for organic flowing shapes, amoeba-like forms, or living creature animation.",
+      "good_for": [
+        "organic",
+        "shape",
+        "animation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/chaikin_curve_smoothing/chaikin_curve_smoothing.py",
       "title": "Chaikin curve smoothing",
       "category": "mathematical",
@@ -856,6 +878,28 @@
         "composition"
       ],
       "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/continued_fraction_mondrian/continued_fraction_mondrian.py",
+      "title": "Mondrian Continued Fraction",
+      "category": "mathematical",
+      "concepts": [
+        "mondrian",
+        "rectangle",
+        "continued fraction",
+        "geometry",
+        "division"
+      ],
+      "visual_use": "Use for Mondrian-style continued fraction art, colored rectangular divisions, or abstract compositions.",
+      "good_for": [
+        "geometry",
+        "number theory",
+        "abstract art"
+      ],
+      "complexity": "medium",
       "dependencies": [
         "py5"
       ]
@@ -1032,6 +1076,50 @@
       ]
     },
     {
+      "path": "mathematical/envelope_art/envelope_art.py",
+      "title": "Envelope Art",
+      "category": "mathematical",
+      "concepts": [
+        "line",
+        "tangent",
+        "geometry",
+        "envelope",
+        "curve"
+      ],
+      "visual_use": "Use for envelope curves, tangent line families, or organic flowing line patterns.",
+      "good_for": [
+        "line art",
+        "geometry",
+        "curves"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/euclid_div_rect/euclid_div_rect.py",
+      "title": "Euclidean Division Rectangle",
+      "category": "mathematical",
+      "concepts": [
+        "euclidean",
+        "rectangle",
+        "division",
+        "geometry",
+        "algorithm"
+      ],
+      "visual_use": "Use for Euclidean algorithm visualizations, recursive rectangular divisions, or GCD art.",
+      "good_for": [
+        "geometry",
+        "number theory",
+        "recursion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/fermat_spiral/fermat_spiral.py",
       "title": "Fermat spiral",
       "category": "mathematical",
@@ -1047,6 +1135,50 @@
         "phyllotaxis",
         "radial layout",
         "botanical forms"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/fermat_spiral_line/fermat_spiral_line.py",
+      "title": "Fermat Spiral Line",
+      "category": "mathematical",
+      "concepts": [
+        "line",
+        "spiral",
+        "geometry",
+        "parametric",
+        "curved path"
+      ],
+      "visual_use": "Use for linear spiral renderings, line-based spirals, or parametric curve art.",
+      "good_for": [
+        "spiral",
+        "geometry",
+        "curves"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/fibonacci_rect/fibonacci_rect.py",
+      "title": "Fibonacci Rectangle",
+      "category": "mathematical",
+      "concepts": [
+        "fibonacci",
+        "rectangle",
+        "division",
+        "geometry",
+        "golden ratio"
+      ],
+      "visual_use": "Use for Fibonacci rectangular divisions, golden ratio compositions, or recursive subdivisions.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "recursion"
       ],
       "complexity": "low",
       "dependencies": [
@@ -1145,6 +1277,50 @@
       ]
     },
     {
+      "path": "mathematical/geometric_art/geometric_art.py",
+      "title": "Geometric Art",
+      "category": "mathematical",
+      "concepts": [
+        "polygon",
+        "geometry",
+        "pattern",
+        "recursion",
+        "fractal"
+      ],
+      "visual_use": "Use for recursive geometric primitives, fractal compositions, or structured abstract art.",
+      "good_for": [
+        "polygon",
+        "recursion",
+        "geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/grid_deformation/grid_deformation.py",
+      "title": "Grid Deformation",
+      "category": "mathematical",
+      "concepts": [
+        "grid",
+        "deformation",
+        "line",
+        "wave",
+        "animation"
+      ],
+      "visual_use": "Use for wave patterns, undulating grids, or flow visualization.",
+      "good_for": [
+        "waves",
+        "patterns",
+        "animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/harmonograph/harmonograph.py",
       "title": "Harmonograph",
       "category": "mathematical",
@@ -1161,6 +1337,50 @@
         "line art",
         "decay curves",
         "ornament"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/hatching_patterns/hatching_patterns.py",
+      "title": "Hatching Patterns",
+      "category": "mathematical",
+      "concepts": [
+        "line",
+        "hatching",
+        "shading",
+        "geometry",
+        "brightness"
+      ],
+      "visual_use": "Use for shading via line density, tonal artwork, or technical rendering.",
+      "good_for": [
+        "shading",
+        "line art",
+        "texture"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/higher_bezier/higher_bezier.py",
+      "title": "Higher Bezier",
+      "category": "mathematical",
+      "concepts": [
+        "bezier",
+        "curve",
+        "control point",
+        "polynomial",
+        "interpolation"
+      ],
+      "visual_use": "Use for high-degree Bézier curves, smooth polynomial interpolations, or control-point art.",
+      "good_for": [
+        "curves",
+        "geometry",
+        "interpolation"
       ],
       "complexity": "medium",
       "dependencies": [
@@ -1252,6 +1472,28 @@
       ]
     },
     {
+      "path": "mathematical/line_interference/line_interference.py",
+      "title": "Line Interference",
+      "category": "mathematical",
+      "concepts": [
+        "line",
+        "interference",
+        "wave",
+        "geometry",
+        "moiré"
+      ],
+      "visual_use": "Use for moiré patterns, line grid interference, or wave-like geometric effects.",
+      "good_for": [
+        "line art",
+        "patterns",
+        "geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/lissajous_curves/lissajous_curves.py",
       "title": "Lissajous harmonic curves",
       "category": "mathematical",
@@ -1295,6 +1537,28 @@
       "complexity": "medium",
       "dependencies": [
         "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/log_spiral/log_spiral.py",
+      "title": "Logarithmic Spiral",
+      "category": "mathematical",
+      "concepts": [
+        "logarithm",
+        "spiral",
+        "growth",
+        "geometry",
+        "parametric"
+      ],
+      "visual_use": "Use for logarithmic spirals, golden spiral variants, or exponential growth visualizations.",
+      "good_for": [
+        "spiral",
+        "growth",
+        "geometry"
+      ],
+      "complexity": "low",
+      "dependencies": [
         "py5"
       ]
     },
@@ -1472,6 +1736,28 @@
       ]
     },
     {
+      "path": "mathematical/modular_power_visual/modular_power_visual.py",
+      "title": "Modular Power Visual",
+      "category": "mathematical",
+      "concepts": [
+        "modular arithmetic",
+        "polygon",
+        "line",
+        "chord",
+        "number theory"
+      ],
+      "visual_use": "Use for modular multiplication chords, circular number patterns, or arithmetic string art.",
+      "good_for": [
+        "geometry",
+        "number theory",
+        "patterns"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/modular_table_visual/modular_table_visual.py",
       "title": "Modular multiplication table",
       "category": "mathematical",
@@ -1595,6 +1881,28 @@
       ]
     },
     {
+      "path": "mathematical/polyhedra_wireframe/polyhedra_wireframe.py",
+      "title": "Polyhedra Wireframe",
+      "category": "mathematical",
+      "concepts": [
+        "polyhedra",
+        "3D",
+        "wireframe",
+        "rotation",
+        "projection"
+      ],
+      "visual_use": "Use for 3D geometric visualization, platonic solids, or wireframe rotation studies.",
+      "good_for": [
+        "3D",
+        "geometry",
+        "rotation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/prime_spiral/prime_spiral.py",
       "title": "Prime Spiral",
       "category": "mathematical",
@@ -1707,6 +2015,28 @@
       ]
     },
     {
+      "path": "mathematical/shape_morphing/shape_morphing.py",
+      "title": "Shape Morphing",
+      "category": "mathematical",
+      "concepts": [
+        "shape",
+        "polygon",
+        "morphing",
+        "interpolation",
+        "animation"
+      ],
+      "visual_use": "Use for polygon transformations, shape transitions, or smooth morphing animations.",
+      "good_for": [
+        "shape",
+        "animation",
+        "geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/signed_distance_field/signed_distance_field.py",
       "title": "Signed distance field shape composition",
       "category": "mathematical",
@@ -1754,6 +2084,50 @@
       ]
     },
     {
+      "path": "mathematical/spirolateral/spirolateral.py",
+      "title": "Spirolateral",
+      "category": "mathematical",
+      "concepts": [
+        "polygon",
+        "recursion",
+        "angular",
+        "line",
+        "spiral"
+      ],
+      "visual_use": "Use for angular spiral recursion, fixed-angle turning patterns, or geometric spirals.",
+      "good_for": [
+        "polygon",
+        "recursion",
+        "geometry"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/string_art/string_art.py",
+      "title": "String Art",
+      "category": "mathematical",
+      "concepts": [
+        "polygon",
+        "line art",
+        "angular",
+        "chord",
+        "vertices"
+      ],
+      "visual_use": "Use for angular chord patterns, string art designs, or vertex-connected polygon artwork.",
+      "good_for": [
+        "line art",
+        "geometry",
+        "polygon"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/superellipse/superellipse.py",
       "title": "Superellipse",
       "category": "mathematical",
@@ -1789,6 +2163,28 @@
         "flowers",
         "organic shapes",
         "parametric design"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/tangent_art/tangent_art.py",
+      "title": "Tangent Art",
+      "category": "mathematical",
+      "concepts": [
+        "tangent",
+        "line",
+        "circle",
+        "polygon",
+        "geometry"
+      ],
+      "visual_use": "Use for geometric line compositions, tangent constructions, or circle geometry art.",
+      "good_for": [
+        "line art",
+        "geometry",
+        "circles"
       ],
       "complexity": "medium",
       "dependencies": [
@@ -3582,6 +3978,73 @@
       ]
     },
     {
+      "path": "tiling_patterns/dihedral_group/dihedral_group.py",
+      "title": "Dihedral Group",
+      "category": "tiling_patterns",
+      "concepts": [
+        "dihedral",
+        "symmetry",
+        "group",
+        "wallpaper",
+        "reflection"
+      ],
+      "visual_use": "Use for dihedral symmetry patterns, reflection symmetries, or wallpaper group visualizations.",
+      "good_for": [
+        "symmetry",
+        "patterns",
+        "geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/hex_rhomb/hex_rhomb.py",
+      "title": "Hex Rhomb Tiling",
+      "category": "tiling_patterns",
+      "concepts": [
+        "hexagon",
+        "rhombus",
+        "polygon",
+        "tiling",
+        "geometry"
+      ],
+      "visual_use": "Use for mixed hexagonal-rhombic tessellations or geometric transformations.",
+      "good_for": [
+        "tiling",
+        "geometry",
+        "patterns"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/hex_tiling/hex_tiling.py",
+      "title": "Hex Tiling",
+      "category": "tiling_patterns",
+      "concepts": [
+        "hexagon",
+        "honeycomb",
+        "tiling",
+        "polygon",
+        "symmetric"
+      ],
+      "visual_use": "Use for honeycomb patterns, hexagonal grids, or symmetric tessellations.",
+      "good_for": [
+        "tiling",
+        "symmetry",
+        "geometry",
+        "patterns"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "tiling_patterns/ih02_tv08/ih02_tv08.py",
       "title": "IH02 TV08 tiling",
       "category": "tiling_patterns",
@@ -3619,6 +4082,50 @@
         "textiles"
       ],
       "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/p3_pattern/p3_pattern.py",
+      "title": "P3 Wallpaper Pattern",
+      "category": "tiling_patterns",
+      "concepts": [
+        "wallpaper group",
+        "p3",
+        "symmetry",
+        "rotation",
+        "tessellation"
+      ],
+      "visual_use": "Use for p3 wallpaper group tessellations or 3-fold rotational symmetry designs.",
+      "good_for": [
+        "symmetry",
+        "tiling",
+        "patterns"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/p6m_pattern/p6m_pattern.py",
+      "title": "P6M Wallpaper Pattern",
+      "category": "tiling_patterns",
+      "concepts": [
+        "wallpaper group",
+        "p6m",
+        "hexagonal symmetry",
+        "rotation",
+        "reflection"
+      ],
+      "visual_use": "Use for p6m highest-symmetry wallpaper patterns with hexagonal and reflective elements.",
+      "good_for": [
+        "symmetry",
+        "tiling",
+        "patterns"
+      ],
+      "complexity": "medium",
       "dependencies": [
         "py5"
       ]
@@ -3666,6 +4173,27 @@
       ]
     },
     {
+      "path": "tiling_patterns/pythagoras_periodic/pythagoras_periodic.py",
+      "title": "Pythagoras Periodic Tiling",
+      "category": "tiling_patterns",
+      "concepts": [
+        "pythagoras tree",
+        "polygon",
+        "periodic",
+        "recursion"
+      ],
+      "visual_use": "Use for Pythagoras tree tessellations, fractal squares, or periodic recursive patterns.",
+      "good_for": [
+        "tiling",
+        "recursion",
+        "geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "tiling_patterns/recur_pentagon/recur_pentagon.py",
       "title": "Recursive pentagon tiling",
       "category": "tiling_patterns",
@@ -3688,6 +4216,28 @@
       ]
     },
     {
+      "path": "tiling_patterns/recur_triangle/recur_triangle.py",
+      "title": "Recursive Triangle",
+      "category": "tiling_patterns",
+      "concepts": [
+        "triangle",
+        "recursion",
+        "subdivision",
+        "angular",
+        "fractal"
+      ],
+      "visual_use": "Use for recursive triangle subdivision, Sierpinski-like patterns, or angular fractals.",
+      "good_for": [
+        "recursion",
+        "geometry",
+        "fractals"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "tiling_patterns/rep_tiles/rep_tiles.py",
       "title": "Rep Tiles",
       "category": "tiling_patterns",
@@ -3703,6 +4253,139 @@
         "textiles"
       ],
       "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/square_tiling/square_tiling.py",
+      "title": "Square Tiling",
+      "category": "tiling_patterns",
+      "concepts": [
+        "square",
+        "grid",
+        "polygon",
+        "periodic",
+        "tiling"
+      ],
+      "visual_use": "Use for square grid patterns, tessellated designs, or regular geometric divisions.",
+      "good_for": [
+        "tiling",
+        "grid",
+        "geometry",
+        "patterns"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/square_triangle_periodic/square_triangle_periodic.py",
+      "title": "Square Triangle Periodic",
+      "category": "tiling_patterns",
+      "concepts": [
+        "polygon",
+        "mixed tiling",
+        "periodic",
+        "square",
+        "triangle"
+      ],
+      "visual_use": "Use for mixed square-triangle tessellations or periodic geometric combinations.",
+      "good_for": [
+        "tiling",
+        "geometry",
+        "patterns"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/symmetric_shape/symmetric_shape.py",
+      "title": "Symmetric Shape",
+      "category": "tiling_patterns",
+      "concepts": [
+        "symmetry",
+        "polygon",
+        "geometric shape",
+        "reflection"
+      ],
+      "visual_use": "Use for symmetric patterns, mirror designs, or geometric reflection art.",
+      "good_for": [
+        "symmetry",
+        "geometry",
+        "patterns"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/textile_generator/textile_generator.py",
+      "title": "Textile Generator",
+      "category": "tiling_patterns",
+      "concepts": [
+        "textile",
+        "pattern",
+        "line",
+        "geometry",
+        "weaving"
+      ],
+      "visual_use": "Use for fabric-like patterns, woven designs, or textile-inspired tessellations.",
+      "good_for": [
+        "tiling",
+        "patterns",
+        "textiles"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/triangle_tiling/triangle_tiling.py",
+      "title": "Triangle Tiling",
+      "category": "tiling_patterns",
+      "concepts": [
+        "triangle",
+        "polygon",
+        "angular",
+        "tiling",
+        "subdivision"
+      ],
+      "visual_use": "Use for triangular tessellations, angular patterns, or recursive geometric designs.",
+      "good_for": [
+        "tiling",
+        "geometry",
+        "patterns",
+        "subdivision"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/triangular_spiral/triangular_spiral.py",
+      "title": "Triangular Spiral",
+      "category": "tiling_patterns",
+      "concepts": [
+        "triangle",
+        "spiral",
+        "angular",
+        "recursion",
+        "rotation"
+      ],
+      "visual_use": "Use for angular spirals, recursive triangle arrangements, or rotational growth patterns.",
+      "good_for": [
+        "spiral",
+        "geometry",
+        "recursion"
+      ],
+      "complexity": "medium",
       "dependencies": [
         "py5"
       ]
