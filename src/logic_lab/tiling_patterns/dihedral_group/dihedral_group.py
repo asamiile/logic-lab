@@ -2,8 +2,7 @@ from pathlib import Path
 
 import py5
 
-BASE_DIR = Path(__file__).parent
-SCREENSHOT_DIR = BASE_DIR / "screenshots"
+SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 img = None
 gon = 6
@@ -17,7 +16,7 @@ def setup() -> None:
     py5.size(300, 300)
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
     scalar = py5.height * 0.4
-    img = py5.load_shape(str(BASE_DIR / "F.svg"))
+    img = py5.load_shape(str(Path(__file__).parent / "F.svg"))
     draw_shape()
     py5.no_loop()
 

@@ -1,9 +1,11 @@
 # Double Pendulum
 
+Multiple chaotic pendulum trajectories with microscopic initial condition differences.
+
 ```bash
 uv run python src/logic_lab/physics/double_pendulum/double_pendulum.py
 ```
 
-- A double pendulum evolves with coupled angular acceleration equations.
-- The second bob leaves a trail on an off-screen graphics buffer.
-- Press `s` to save a screenshot to `physics/double_pendulum/screenshots/`.
+Press `s` to save a screenshot.
+
+Shows trajectory trails and particle count for each pendulum.

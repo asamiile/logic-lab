@@ -6,6 +6,8 @@ from scipy.spatial import Voronoi
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
+stippling: "WeightedVoronoiStippling | None" = None
+
 
 class WeightedVoronoiStippling:
     def __init__(self, width=800, height=800, num_points=500, iterations=5):
@@ -92,14 +94,14 @@ class WeightedVoronoiStippling:
             py5.circle(x, y, size)
 
 
-def setup():
+def setup() -> None:
     py5.size(800, 800)
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
     global stippling
     stippling = WeightedVoronoiStippling(py5.width, py5.height, num_points=400)
 
 
-def draw():
+def draw() -> None:
     for _ in range(2):
         stippling.relax()
 
@@ -110,7 +112,7 @@ def draw():
     py5.text("Weighted Voronoi Stippling - Lloyd Relaxation", 10, 20)
 
 
-def key_pressed():
+def key_pressed() -> None:
     if py5.key == "s":
         py5.save_frame(str(SCREENSHOT_DIR / "weighted_voronoi_stippling_####.png"))
 

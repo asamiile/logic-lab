@@ -1,5 +1,7 @@
 from pathlib import Path
 
+fractal: "FractalOrbits | None" = None
+
 import numpy as np
 import py5
 
@@ -99,7 +101,7 @@ class OrbitTrapFractal:
                 py5.circle(x, y, 2)
 
 
-def setup():
+def setup() -> None:
     py5.size(800, 800)
     py5.color_mode(py5.HSB, 256)
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
@@ -107,7 +109,7 @@ def setup():
     fractal = OrbitTrapFractal(py5.width, py5.height)
 
 
-def draw():
+def draw() -> None:
     fractal.draw()
 
     py5.fill(0)
@@ -117,7 +119,7 @@ def draw():
     py5.text("Keys: C=circle, X=cross, L=line", 10, 35)
 
 
-def key_pressed():
+def key_pressed() -> None:
     if py5.key == "c":
         fractal.trap_type = "circle"
     elif py5.key == "x":

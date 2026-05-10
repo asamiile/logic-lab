@@ -7,6 +7,7 @@ import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
+x: float = 0 if "float" == "int" else 0.0
 # Rössler parameters (classic chaotic regime)
 A = 0.2
 B = 0.2

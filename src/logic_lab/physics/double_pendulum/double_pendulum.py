@@ -1,92 +1,79 @@
+import math
 from pathlib import Path
 
 import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
-
-r1 = 100
-r2 = 100
-m1 = 10
-m2 = 10
-a1 = 0.0
-a2 = 0.0
-a1_v = 0.0
-a2_v = 0.0
-g = 1
-
-px2 = -1.0
-py2 = -1.0
-cx = 0.0
-cy = 0.0
-
-buffer: py5.Py5Graphics
+pendulums: list[dict] = []
 
 
 def setup() -> None:
-    global a1, a2, cx, cy, buffer
-    py5.size(640, 240)
-    a1 = py5.PI / 2
-    a2 = py5.PI / 2
-    cx = py5.width / 2
-    cy = 20
-    buffer = py5.create_graphics(py5.width, py5.height)
-    buffer.begin_draw()
-    buffer.background(255)
-    buffer.end_draw()
+    global pendulums
+    py5.size(1000, 800)
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
+
+    for i in range(5):
+        pendulums.append(
+            {
+                "angle1": math.pi / 4 + i * 0.001,
+                "angle2": 0,
+                "vel1": 0,
+                "vel2": 0,
+                "trail": [],
+                "color": (100 + i * 30, 150, 255 - i * 30),
+            }
+        )
 
 
 def draw() -> None:
-    global a1, a2, a1_v, a2_v, px2, py2
-    py5.background(255)
-    py5.image_mode(py5.CORNER)
-    py5.image(buffer, 0, 0, py5.width, py5.height)
+    py5.background(20)
 
-    num1 = -g * (2 * m1 + m2) * py5.sin(a1)
-    num2 = -m2 * g * py5.sin(a1 - 2 * a2)
-    num3 = -2 * py5.sin(a1 - a2) * m2
-    num4 = a2_v * a2_v * r2 + a1_v * a1_v * r1 * py5.cos(a1 - a2)
-    den = r1 * (2 * m1 + m2 - m2 * py5.cos(2 * a1 - 2 * a2))
-    a1_a = (num1 + num2 + num3 * num4) / den
+    g, L1, L2 = 1, 200, 150
 
-    num1 = 2 * py5.sin(a1 - a2)
-    num2 = a1_v * a1_v * r1 * (m1 + m2)
-    num3 = g * (m1 + m2) * py5.cos(a1)
-    num4 = a2_v * a2_v * r2 * m2 * py5.cos(a1 - a2)
-    den = r2 * (2 * m1 + m2 - m2 * py5.cos(2 * a1 - 2 * a2))
-    a2_a = (num1 * (num2 + num3 + num4)) / den
+    for pend in pendulums:
+        a1, a2 = pend["angle1"], pend["angle2"]
+        v1, v2 = pend["vel1"], pend["vel2"]
 
-    py5.translate(cx, cy)
-    py5.stroke(0)
-    py5.stroke_weight(2)
+        a1_accel = (
+            -g / L1 * math.sin(a1)
+            - 0.5 * math.sin(a1 - a2) * (L2 * v2 * v2 + g * math.cos(a1 - a2)) / L1
+        )
+        a2_accel = -g / L2 * math.sin(a2) + L1 * v1 * v1 * math.sin(a1 - a2) / L2
 
-    x1 = r1 * py5.sin(a1)
-    y1 = r1 * py5.cos(a1)
+        v1 += a1_accel * 0.01
+        v2 += a2_accel * 0.01
+        a1 += v1 * 0.01
+        a2 += v2 * 0.01
 
-    x2 = x1 + r2 * py5.sin(a2)
-    y2 = y1 + r2 * py5.cos(a2)
+        pend["angle1"] = a1
+        pend["angle2"] = a2
+        pend["vel1"] = v1 * 0.99
+        pend["vel2"] = v2 * 0.99
 
-    py5.line(0, 0, x1, y1)
-    py5.fill(0)
-    py5.ellipse(x1, y1, m1, m1)
+        x1 = py5.width / 2 + L1 * math.sin(a1)
+        y1 = 100 + L1 * math.cos(a1)
+        x2 = x1 + L2 * math.sin(a2)
+        y2 = y1 + L2 * math.cos(a2)
 
-    py5.line(x1, y1, x2, y2)
-    py5.fill(0)
-    py5.ellipse(x2, y2, m2, m2)
+        pend["trail"].append((x2, y2))
+        if len(pend["trail"]) > 100:
+            pend["trail"].pop(0)
 
-    a1_v += a1_a
-    a2_v += a2_a
-    a1 += a1_v
-    a2 += a2_v
+        py5.stroke(*pend["color"])
+        py5.stroke_weight(1)
+        for i in range(len(pend["trail"]) - 1):
+            py5.line(
+                pend["trail"][i][0],
+                pend["trail"][i][1],
+                pend["trail"][i + 1][0],
+                pend["trail"][i + 1][1],
+            )
 
-    buffer.begin_draw()
-    buffer.stroke(0)
-    if py5.frame_count > 1:
-        buffer.line(px2 + cx, py2 + cy, x2 + cx, y2 + cy)
-    buffer.end_draw()
-
-    px2 = x2
-    py2 = y2
+        py5.stroke_weight(3)
+        py5.line(py5.width / 2, 100, x1, y1)
+        py5.line(x1, y1, x2, y2)
+        py5.fill(*pend["color"])
+        py5.circle(x2, y2, 3)
 
 
 def key_pressed() -> None:

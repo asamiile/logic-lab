@@ -11,6 +11,24 @@ SERVER_NAME = "logic-lab"
 DEFAULT_MAX_CHARS = 12_000
 ABSOLUTE_MAX_CHARS = 20_000
 
+SYNONYMS: dict[str, list[str]] = {
+    "chaos": ["butterfly effect", "lorenz", "strange attractor", "chaotic", "sensitivity"],
+    "artificial life": ["alife", "amoeba", "creature", "lenia", "organism"],
+    "falling sand": ["powder", "granular", "sand game", "gravity", "particle"],
+    "flow field": ["vector field", "curl noise", "streamlines", "flow", "motion"],
+    "reaction diffusion": ["turing pattern", "gray scott", "activator inhibitor"],
+    "cellular automata": ["CA", "rules", "automaton", "grid", "evolution"],
+    "fractal": ["self-similar", "recursive", "mandelbrot", "julia", "scaling"],
+    "strange attractor": ["chaos", "attractor", "dynamic system", "trajectory"],
+    "circle packing": ["apollonius", "tangent", "gasket", "packing"],
+    "space filling": ["hilbert", "peano", "curve", "locality"],
+    "emergence": ["emergent", "pattern", "self-organization", "complex"],
+    "spiral": ["spiral wave", "vortex", "rotation", "cyclic"],
+    "game of life": ["conway", "glider", "blinker", "still life"],
+    "organic": ["growth", "biological", "natural", "living"],
+    "wave": ["oscillation", "propagation", "frequency", "vibration"],
+}
+
 REPO_ROOT = Path(__file__).resolve().parents[3]
 SOURCE_ROOT = REPO_ROOT / "src" / "logic_lab"
 SOURCE_PREFIX = SOURCE_ROOT.relative_to(REPO_ROOT).as_posix()
@@ -103,6 +121,15 @@ def _clamp_max_chars(max_chars: int | None) -> int:
     return max(1, min(int(max_chars), ABSOLUTE_MAX_CHARS))
 
 
+def _expand_query_with_synonyms(query: str) -> set[str]:
+    tokens = set(query.lower().split())
+    expanded = tokens.copy()
+    for token in tokens:
+        if token in SYNONYMS:
+            expanded.update(SYNONYMS[token])
+    return expanded
+
+
 def _search_text(entry: dict[str, Any]) -> str:
     values: list[str] = []
     for key in ("title", "category", "visual_use"):
@@ -123,16 +150,23 @@ def _score_entry(entry: dict[str, Any], query: str) -> int:
 
     haystack = _search_text(entry)
     concepts = {str(item).lower() for item in entry.get("concepts", [])}
+    expanded_tokens = _expand_query_with_synonyms(query)
+
     score = 0
+
+    # Exact phrase match (original query)
     if query in haystack:
         score += 8
-    for token in query.split():
+
+    # Token-based scoring with synonym expansion
+    for token in expanded_tokens:
         if token in haystack:
             score += 2
         if token == str(entry.get("category", "")).lower():
             score += 3
         if token in concepts:
             score += 4
+
     return score
 
 

@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 from pathlib import Path
 
+physarum: "Physarum | None" = None
+
 import numpy as np
 import py5
 
@@ -116,21 +118,21 @@ class PhysarumNetwork:
         py5.text(f"Agents: {len(self.agents)}", 10, 20)
 
 
-def setup():
+def setup() -> None:
     py5.size(800, 800)
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
     global physarum
     physarum = PhysarumNetwork(py5.width, py5.height, num_agents=400, num_attractors=4)
 
 
-def draw():
+def draw() -> None:
     for _ in range(3):
         physarum.update()
 
     physarum.draw()
 
 
-def key_pressed():
+def key_pressed() -> None:
     if py5.key == "s":
         py5.save_frame(str(SCREENSHOT_DIR / "physarum_####.png"))
 
