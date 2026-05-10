@@ -7,6 +7,7 @@ import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
+x: float = 0 if "float" == "int" else 0.0
 # Lorenz parameters (classic chaotic regime)
 SIGMA = 10.0
 RHO = 28.0

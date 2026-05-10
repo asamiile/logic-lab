@@ -7,6 +7,7 @@ import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
+x: float = 0 if "float" == "int" else 0.0
 # Thomas parameters
 B = 0.208186  # Sweet spot for knot formation
 DT = 0.01

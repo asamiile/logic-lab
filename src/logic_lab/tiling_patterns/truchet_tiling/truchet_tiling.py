@@ -5,6 +5,8 @@ import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
+tiling: "TruchetTiling | None" = None
+
 
 class TruchetTiling:
     def __init__(self, width=800, height=800, tile_size=40):
@@ -53,21 +55,21 @@ class TruchetTiling:
                 self.draw_tile(x, y, rotation)
 
 
-def setup():
+def setup() -> None:
     py5.size(800, 800)
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
     global tiling
     tiling = TruchetTiling(py5.width, py5.height, tile_size=40)
 
 
-def draw():
+def draw() -> None:
     tiling.draw()
     py5.fill(0)
     py5.text_align(py5.LEFT)
     py5.text("Truchet Tiling - Press SPACE to regenerate", 10, 20)
 
 
-def key_pressed():
+def key_pressed() -> None:
     if py5.key == " ":
         global tiling
         tiling = TruchetTiling(py5.width, py5.height, tile_size=40)

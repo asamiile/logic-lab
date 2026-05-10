@@ -2,7 +2,7 @@ from pathlib import Path
 
 import py5
 
-OUTPUT_DIR = Path(__file__).parent / "screenshots"
+SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 NUM_A = 10
 NUM_B = 6
@@ -12,9 +12,9 @@ RATIO = NUM_B / NUM_A
 def setup() -> None:
     py5.size(500, 500)
     py5.color_mode(py5.HSB, 1)
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
     draw_division()
-    py5.save(OUTPUT_DIR / f"{NUM_A}_{NUM_B}.png")
+    py5.save(SCREENSHOT_DIR / f"{NUM_A}_{NUM_B}.png")
     py5.no_loop()
 
 
@@ -45,7 +45,7 @@ def draw_division() -> None:
 
 def key_pressed() -> None:
     if py5.key == "s":
-        py5.save_frame(str(OUTPUT_DIR / "euclid_div_square_recorder_####.png"))
+        py5.save_frame(str(SCREENSHOT_DIR / "euclid_div_square_recorder_####.png"))
 
 
 py5.run_sketch()

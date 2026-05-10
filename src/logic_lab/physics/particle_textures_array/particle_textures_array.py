@@ -3,8 +3,7 @@ from random import choice
 
 import py5
 
-BASE_DIR = Path(__file__).parent
-SCREENSHOT_DIR = BASE_DIR / "screenshots"
+SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
 particle_system: "ParticleSystem"
 textures: list[py5.Py5Graphics] = []

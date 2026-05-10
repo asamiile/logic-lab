@@ -6,6 +6,7 @@ import py5
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
+simulation: "PressureCurveSimulation | None" = None
 # Watercolor ink bleed parameters
 BLEED_ENABLED = True
 BLEED_RADIUS_SCALE = 3.5
@@ -157,14 +158,14 @@ class PressureCurveSimulation:
         return max(0, min(1, 0.5 + np.sin(py5.frame_count * 0.02 + y * 0.01) * 0.3))
 
 
-def setup():
+def setup() -> None:
     py5.size(800, 600)
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
     global simulation
     simulation = PressureCurveSimulation(py5.width, py5.height)
 
 
-def draw():
+def draw() -> None:
     # Check if mouse button is pressed
     if py5.mouse_button == py5.LEFT:
         pressure = simulation.simulate_pressure(py5.mouse_x, py5.mouse_y)
@@ -174,7 +175,7 @@ def draw():
     simulation.draw()
 
 
-def key_pressed():
+def key_pressed() -> None:
     global BLEED_ENABLED
     if py5.key == "r":
         simulation.reset()

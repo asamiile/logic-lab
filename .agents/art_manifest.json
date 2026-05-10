@@ -3,6 +3,54 @@
   "description": "Read-only manifest of selected Logic Lab algorithms for AI agents and MCP search.",
   "entries": [
     {
+      "path": "cellular_automata/brian_brain/brian_brain.py",
+      "title": "Brian Brain",
+      "category": "cellular_automata",
+      "concepts": [
+        "3-state CA",
+        "propagation",
+        "excitation",
+        "refractory",
+        "oscillation"
+      ],
+      "visual_use": "Use for oscillating patterns, excited regions, or refractory state dynamics.",
+      "good_for": [
+        "oscillation",
+        "wave",
+        "propagation",
+        "emergence",
+        "rules"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "cellular_automata/cyclic_ca/cyclic_ca.py",
+      "title": "Cyclic Ca",
+      "category": "cellular_automata",
+      "concepts": [
+        "cyclic",
+        "spiral wave",
+        "vortex",
+        "color cycle",
+        "rotation"
+      ],
+      "visual_use": "Use for spiraling waves, cyclic color rotations, or vortex-like patterns.",
+      "good_for": [
+        "spiral",
+        "wave",
+        "vortex",
+        "rotation",
+        "emergence"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "cellular_automata/elementary_ca/elementary_ca.py",
       "title": "Elementary cellular automaton",
       "category": "cellular_automata",
@@ -47,6 +95,30 @@
       ]
     },
     {
+      "path": "cellular_automata/langtons_ant/langtons_ant.py",
+      "title": "Langtons Ant",
+      "category": "cellular_automata",
+      "concepts": [
+        "langton",
+        "ant",
+        "highway",
+        "emergence",
+        "turing"
+      ],
+      "visual_use": "Use for emergent highway patterns, complex behavior from simple rules.",
+      "good_for": [
+        "emergence",
+        "highway",
+        "turing",
+        "complexity",
+        "rules"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "cellular_automata/moss_colony_growth/moss_colony_growth.py",
       "title": "Moss colony growth",
       "category": "cellular_automata",
@@ -67,6 +139,49 @@
         "surface growth"
       ],
       "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "cellular_automata/rule_variations/rule_variations.py",
+      "title": "Rule Variations",
+      "category": "cellular_automata",
+      "concepts": [
+        "cellular automata",
+        "rules"
+      ],
+      "visual_use": "Use for rule-based grids, emergent textures, or evolving binary patterns.",
+      "good_for": [
+        "emergence",
+        "grids",
+        "patterns"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "cellular_automata/smooth_life/smooth_life.py",
+      "title": "Smooth Life",
+      "category": "cellular_automata",
+      "concepts": [
+        "smooth",
+        "continuous",
+        "Game of Life",
+        "gliders",
+        "smooth dynamics"
+      ],
+      "visual_use": "Use for smooth cellular automata, glider-like structures, or continuous Game of Life.",
+      "good_for": [
+        "glider",
+        "smooth",
+        "continuous",
+        "dynamics",
+        "emergence"
+      ],
+      "complexity": "low",
       "dependencies": [
         "py5"
       ]
@@ -119,6 +234,30 @@
       ]
     },
     {
+      "path": "fractals/burning_ship/burning_ship.py",
+      "title": "Burning Ship",
+      "category": "fractals",
+      "concepts": [
+        "burning ship",
+        "absolute value",
+        "fire",
+        "fractal",
+        "mandelbrot variant"
+      ],
+      "visual_use": "Use for flame-like fractals, fire effects, or mandelbrot variants with absolute value.",
+      "good_for": [
+        "fractal",
+        "fire",
+        "flame",
+        "mathematical",
+        "texture"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "fractals/differential_growth/differential_growth.py",
       "title": "Differential growth organic outline",
       "category": "fractals",
@@ -139,6 +278,55 @@
         "biological forms"
       ],
       "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/hilbert_curve/hilbert_curve.py",
+      "title": "Hilbert Curve",
+      "category": "fractals",
+      "concepts": [
+        "space filling curve",
+        "hilbert",
+        "locality",
+        "recursion",
+        "peano"
+      ],
+      "visual_use": "Use for space-filling curves, recursive patterns, or locality-preserving mappings.",
+      "good_for": [
+        "curve",
+        "recursion",
+        "space-filling",
+        "mathematical",
+        "pattern"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/julia_set/julia_set.py",
+      "title": "Julia Set",
+      "category": "fractals",
+      "concepts": [
+        "julia set",
+        "complex plane",
+        "iteration",
+        "c parameter",
+        "escape time",
+        "fractal"
+      ],
+      "visual_use": "Use for complex plane fractals, animated c-parameter exploration, or escape-time rendering.",
+      "good_for": [
+        "fractal",
+        "complex",
+        "zoom",
+        "animation",
+        "mathematical"
+      ],
+      "complexity": "low",
       "dependencies": [
         "py5"
       ]
@@ -208,6 +396,31 @@
         "organic branching"
       ],
       "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/mandelbrot_set/mandelbrot_set.py",
+      "title": "Mandelbrot Set",
+      "category": "fractals",
+      "concepts": [
+        "mandelbrot",
+        "complex plane",
+        "escape time",
+        "zoom",
+        "boundary",
+        "fractal"
+      ],
+      "visual_use": "Use for infinite fractal boundary, zoom sequences, or escape-time coloring.",
+      "good_for": [
+        "fractal",
+        "complex",
+        "zoom",
+        "mathematical",
+        "boundary"
+      ],
+      "complexity": "low",
       "dependencies": [
         "py5"
       ]
@@ -416,18 +629,20 @@
       "title": "Apollonian gasket tangent circles",
       "category": "mathematical",
       "concepts": [
-        "Apollonian gasket",
-        "Descartes circle theorem",
-        "tangent circles",
+        "apollonius",
         "circle packing",
-        "curvature"
+        "tangent",
+        "descartes",
+        "gasket",
+        "fractal"
       ],
-      "visual_use": "Use for recursive tangent-circle packings, fractal circular textures, or curvature-driven compositions.",
+      "visual_use": "Use for circle packing fractals, tangent circle patterns, or apollonian gaskets.",
       "good_for": [
-        "circle fractal",
+        "fractal",
+        "circle",
         "packing",
-        "tangent geometry",
-        "ornamental texture"
+        "geometry",
+        "mathematical"
       ],
       "complexity": "medium",
       "dependencies": [
@@ -627,6 +842,25 @@
       ]
     },
     {
+      "path": "mathematical/conic_sections/conic_sections.py",
+      "title": "Conic Sections",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/convex_hull/convex_hull.py",
       "title": "Convex hull point boundary",
       "category": "mathematical",
@@ -743,6 +977,31 @@
         "py5",
         "touchdesigner",
         "ue5"
+      ]
+    },
+    {
+      "path": "mathematical/differential_growth/differential_growth.py",
+      "title": "Differential Growth",
+      "category": "mathematical",
+      "concepts": [
+        "growth",
+        "curve",
+        "node subdivision",
+        "organic",
+        "membrane",
+        "biological"
+      ],
+      "visual_use": "Use for organic growth patterns, membrane edges, or differential node expansion.",
+      "good_for": [
+        "growth",
+        "organic",
+        "biological",
+        "membrane",
+        "curve"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
       ]
     },
     {
@@ -932,6 +1191,44 @@
       ]
     },
     {
+      "path": "mathematical/isometric_grid/isometric_grid.py",
+      "title": "Isometric Grid",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/iterated_function_systems/iterated_function_systems.py",
+      "title": "Iterated Function Systems",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/light_interference/light_interference.py",
       "title": "Diffraction and interference pattern",
       "category": "mathematical",
@@ -1030,14 +1327,20 @@
       "title": "Lorenz Attractor",
       "category": "mathematical",
       "concepts": [
-        "geometry",
-        "mathematics"
+        "chaos",
+        "strange attractor",
+        "butterfly effect",
+        "lorenz",
+        "differential equations",
+        "3D"
       ],
-      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "visual_use": "Use for chaotic flows, butterfly patterns, or sensitivity to initial conditions.",
       "good_for": [
-        "geometry",
-        "patterns",
-        "composition"
+        "chaos",
+        "attractors",
+        "trajectory",
+        "dynamics",
+        "3D"
       ],
       "complexity": "low",
       "dependencies": [
@@ -1292,6 +1595,27 @@
       ]
     },
     {
+      "path": "mathematical/prime_spiral/prime_spiral.py",
+      "title": "Prime Spiral",
+      "category": "mathematical",
+      "concepts": [
+        "spiral",
+        "polar coordinates",
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/quasicrystal_interference/quasicrystal_interference.py",
       "title": "Quasicrystal wave interference",
       "category": "mathematical",
@@ -1312,6 +1636,25 @@
       "complexity": "medium",
       "dependencies": [
         "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/recaman_sequence/recaman_sequence.py",
+      "title": "Recaman Sequence",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
         "py5"
       ]
     },
@@ -1342,14 +1685,20 @@
       "title": "Rössler Attractor",
       "category": "mathematical",
       "concepts": [
-        "geometry",
-        "mathematics"
+        "chaos",
+        "strange attractor",
+        "rossler",
+        "spiral",
+        "3D",
+        "band"
       ],
-      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "visual_use": "Use for spiral chaos patterns, strange attractors, or 3D dynamic systems.",
       "good_for": [
-        "geometry",
-        "patterns",
-        "composition"
+        "chaos",
+        "attractors",
+        "spiral",
+        "3D",
+        "dynamics"
       ],
       "complexity": "low",
       "dependencies": [
@@ -1405,6 +1754,25 @@
       ]
     },
     {
+      "path": "mathematical/superellipse/superellipse.py",
+      "title": "Superellipse",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/superformula/superformula.py",
       "title": "Superformula parametric shapes",
       "category": "mathematical",
@@ -1432,14 +1800,20 @@
       "title": "Thomas Attractor",
       "category": "mathematical",
       "concepts": [
-        "geometry",
-        "mathematics"
+        "chaos",
+        "strange attractor",
+        "thomas",
+        "linked",
+        "3D",
+        "knot"
       ],
-      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "visual_use": "Use for linked chaos, knot-like patterns, or complex 3D strange attractors.",
       "good_for": [
-        "geometry",
-        "patterns",
-        "composition"
+        "chaos",
+        "attractors",
+        "knot",
+        "3D",
+        "topology"
       ],
       "complexity": "low",
       "dependencies": [
@@ -1468,6 +1842,27 @@
         "organic texture"
       ],
       "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/typography_particles/typography_particles.py",
+      "title": "Typography Particles",
+      "category": "mathematical",
+      "concepts": [
+        "particle system",
+        "emitter",
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
       "dependencies": [
         "py5"
       ]
@@ -1824,6 +2219,27 @@
       ]
     },
     {
+      "path": "physics/flow_field_art/flow_field_art.py",
+      "title": "Flow Field Art",
+      "category": "physics",
+      "concepts": [
+        "flow field",
+        "vectors",
+        "motion",
+        "force"
+      ],
+      "visual_use": "Use for motion studies, forces, particles, fields, or physical animation.",
+      "good_for": [
+        "motion",
+        "fields",
+        "animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "physics/fluid_particles/fluid_particles.py",
       "title": "Fluid Particles",
       "category": "physics",
@@ -1917,6 +2333,31 @@
       ]
     },
     {
+      "path": "physics/lenia/lenia.py",
+      "title": "Lenia",
+      "category": "physics",
+      "concepts": [
+        "artificial life",
+        "continuous CA",
+        "self-replication",
+        "amoeba",
+        "creature",
+        "Lenia"
+      ],
+      "visual_use": "Use for artificial life forms, self-replicating creatures, or continuous cellular automata evolution.",
+      "good_for": [
+        "creature",
+        "self-replication",
+        "artificial life",
+        "animation",
+        "emergence"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "physics/light_falloff_field/light_falloff_field.py",
       "title": "Inverse square light particles",
       "category": "physics",
@@ -1956,6 +2397,27 @@
         "occlusion"
       ],
       "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/magnetic_pendulum/magnetic_pendulum.py",
+      "title": "Magnetic Pendulum",
+      "category": "physics",
+      "concepts": [
+        "pendulum",
+        "oscillation",
+        "motion",
+        "force"
+      ],
+      "visual_use": "Use for motion studies, forces, particles, fields, or physical animation.",
+      "good_for": [
+        "motion",
+        "fields",
+        "animation"
+      ],
+      "complexity": "low",
       "dependencies": [
         "py5"
       ]
@@ -2354,6 +2816,30 @@
         "kinetic geometry",
         "rigid bodies",
         "debris"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/sand_simulation/sand_simulation.py",
+      "title": "Sand Simulation",
+      "category": "physics",
+      "concepts": [
+        "falling sand",
+        "powder",
+        "gravity",
+        "pixel simulation",
+        "granular"
+      ],
+      "visual_use": "Use for powder effects, falling sand art, gravity simulations, or granular material behavior.",
+      "good_for": [
+        "particle",
+        "gravity",
+        "simulation",
+        "texture",
+        "emergence"
       ],
       "complexity": "low",
       "dependencies": [
@@ -3118,6 +3604,26 @@
       ]
     },
     {
+      "path": "tiling_patterns/islamic_geometric/islamic_geometric.py",
+      "title": "Islamic Geometric",
+      "category": "tiling_patterns",
+      "concepts": [
+        "tiling",
+        "geometry",
+        "pattern"
+      ],
+      "visual_use": "Use for textile patterns, symmetry studies, ornaments, or tiled surfaces.",
+      "good_for": [
+        "tiling",
+        "symmetry",
+        "textiles"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "tiling_patterns/penrose_tiling/penrose_tiling.py",
       "title": "Penrose tiling",
       "category": "tiling_patterns",
@@ -3140,6 +3646,26 @@
       ]
     },
     {
+      "path": "tiling_patterns/pinwheel_tiling/pinwheel_tiling.py",
+      "title": "Pinwheel Tiling",
+      "category": "tiling_patterns",
+      "concepts": [
+        "tiling",
+        "geometry",
+        "pattern"
+      ],
+      "visual_use": "Use for textile patterns, symmetry studies, ornaments, or tiled surfaces.",
+      "good_for": [
+        "tiling",
+        "symmetry",
+        "textiles"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "tiling_patterns/recur_pentagon/recur_pentagon.py",
       "title": "Recursive pentagon tiling",
       "category": "tiling_patterns",
@@ -3157,6 +3683,26 @@
         "tiling"
       ],
       "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/rep_tiles/rep_tiles.py",
+      "title": "Rep Tiles",
+      "category": "tiling_patterns",
+      "concepts": [
+        "tiling",
+        "geometry",
+        "pattern"
+      ],
+      "visual_use": "Use for textile patterns, symmetry studies, ornaments, or tiled surfaces.",
+      "good_for": [
+        "tiling",
+        "symmetry",
+        "textiles"
+      ],
+      "complexity": "low",
       "dependencies": [
         "py5"
       ]
