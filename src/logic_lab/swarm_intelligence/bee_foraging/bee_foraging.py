@@ -443,4 +443,4 @@ def key_pressed() -> None:
 
 
 if __name__ == "__main__":
-    py5.run_sketch(setup=setup, draw=draw, key_pressed=key_pressed)
+    py5.run_sketch()
