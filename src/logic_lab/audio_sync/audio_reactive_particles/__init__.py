@@ -1,6 +1,7 @@
 """Audio-Reactive Particles - Frequency-driven particle visualization system."""
 
 from .audio_reactive_particles import (
+    HAS_SOUNDDEVICE,
     AudioCapture,
     AudioParticle,
     AudioReactiveField,
@@ -8,6 +9,7 @@ from .audio_reactive_particles import (
 )
 
 __all__ = [
+    "HAS_SOUNDDEVICE",
     "AudioParticle",
     "SpectrumBand",
     "AudioCapture",
