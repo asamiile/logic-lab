@@ -59,6 +59,8 @@ class BeeColony:
         step_size: float = 5.0,
         discovery_radius: float = 50.0,
         search_radius: float = 50.0,
+        canvas_width: float = 1024,
+        canvas_height: float = 768,
     ):
         """Initialize the bee colony.
 
@@ -71,6 +73,8 @@ class BeeColony:
             step_size: Distance scouts move per frame
             discovery_radius: Radius to discover food sources
             search_radius: Radius for employed bees to search around site
+            canvas_width: Width of the canvas for boundary checking
+            canvas_height: Height of the canvas for boundary checking
         """
         self.hive_x = hive_x
         self.hive_y = hive_y
@@ -82,6 +86,8 @@ class BeeColony:
         self.step_size = step_size
         self.discovery_radius = discovery_radius
         self.search_radius = search_radius
+        self.canvas_width = canvas_width
+        self.canvas_height = canvas_height
 
         self.bees: list[Bee] = []
         self.sites: list[FoodSite] = []
@@ -137,8 +143,8 @@ class BeeColony:
         for _ in range(num_initial_sites):
             self.sites.append(
                 FoodSite(
-                    x=random.uniform(50, py5.width - 50),
-                    y=random.uniform(50, py5.height - 50),
+                    x=random.uniform(50, self.canvas_width - 50),
+                    y=random.uniform(50, self.canvas_height - 50),
                     nectar=random.uniform(0.3, 1.0),
                 )
             )
@@ -157,10 +163,10 @@ class BeeColony:
         # Create artificial peaks across the canvas
         peaks = [
             (150, 150, 0.8),
-            (py5.width - 150, 150, 0.9),
-            (150, py5.height - 150, 0.85),
-            (py5.width - 150, py5.height - 150, 0.95),
-            (py5.width / 2, py5.height / 2, 0.7),
+            (self.canvas_width - 150, 150, 0.9),
+            (150, self.canvas_height - 150, 0.85),
+            (self.canvas_width - 150, self.canvas_height - 150, 0.95),
+            (self.canvas_width / 2, self.canvas_height / 2, 0.7),
         ]
 
         max_nectar = 0.1  # Base nectar value
@@ -199,8 +205,8 @@ class BeeColony:
             bee.y += self.step_size * math.sin(angle)
 
             # Wrap around canvas
-            bee.x = bee.x % py5.width
-            bee.y = bee.y % py5.height
+            bee.x = bee.x % self.canvas_width
+            bee.y = bee.y % self.canvas_height
 
             # Try to discover food source
             site_idx = self._find_nearby_site(bee.x, bee.y)
@@ -235,8 +241,8 @@ class BeeColony:
             neighbor_y = site.y + random.uniform(-self.search_radius, self.search_radius)
 
             # Clamp to canvas
-            neighbor_x = max(0, min(neighbor_x, py5.width))
-            neighbor_y = max(0, min(neighbor_y, py5.height))
+            neighbor_x = max(0, min(neighbor_x, self.canvas_width))
+            neighbor_y = max(0, min(neighbor_y, self.canvas_height))
 
             # Evaluate neighborhood
             nectar = self._calculate_nectar_at_location(neighbor_x, neighbor_y)
