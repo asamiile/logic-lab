@@ -371,7 +371,7 @@ def draw() -> None:
 
     py5.fill(200)
     py5.text_size(11)
-    py5.text(f"FPS: {py5.frame_rate():.1f}", 10, 20)
+    py5.text(f"FPS: {py5.get_frame_rate():.1f}", 10, 20)
     py5.text(f"Particles: {len(audio_field.particles)}", 10, 35)
     mode = "Demo" if audio_field.demo_mode else "Mic"
     py5.text(f"Mode: {mode} (m to toggle)", 10, 50)

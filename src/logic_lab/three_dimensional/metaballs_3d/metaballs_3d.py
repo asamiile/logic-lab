@@ -290,7 +290,7 @@ def draw() -> None:
     py5.text(f"Threshold: {field.threshold:.2f} (arrow up/down)", 10, 20)
     py5.text(f"Rotation speed: {field.rotation_speed:.4f} (mouse Y)", 10, 35)
     py5.text(f"Resolution: {field.resolution} (0-9 keys)", 10, 50)
-    py5.text(f"FPS: {py5.frame_rate():.1f}", 10, 65)
+    py5.text(f"FPS: {py5.get_frame_rate():.1f}", 10, 65)
     py5.text("Press 'd' for debug | 's' for screenshot | 'r' to reset", 10, py5.height - 10)
 
 

@@ -169,7 +169,7 @@ def draw() -> None:
     py5.text_size(12)
     py5.text(f"Threshold: {field.threshold:.2f} (arrow up/down)", 10, 20)
     py5.text(f"Resolution: {field.resolution} (0-9 keys)", 10, 35)
-    py5.text(f"FPS: {py5.frame_rate():.1f}", 10, 50)
+    py5.text(f"FPS: {py5.get_frame_rate():.1f}", 10, 50)
     py5.text("Press 'd' for debug mode | 's' for screenshot", 10, py5.height - 10)
 
 
