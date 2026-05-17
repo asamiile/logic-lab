@@ -237,10 +237,10 @@ def key_pressed() -> None:
         k = PRESETS["waves"]["k"]
         preset_name = "waves"
         U, V = initialize_grids()
-    elif py5.key == py5.UP_ARROW:
+    elif py5.key == py5.UP:
         # Increase F (feed rate)
         F = min(F + 0.001, 0.1)
-    elif py5.key == py5.DOWN_ARROW:
+    elif py5.key == py5.DOWN:
         # Decrease F (feed rate)
         F = max(F - 0.001, 0.0)
     elif py5.key == "r":
