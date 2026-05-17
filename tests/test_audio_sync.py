@@ -7,6 +7,7 @@ import numpy as np
 import pytest
 
 from logic_lab.audio_sync.audio_reactive_particles import (
+    HAS_SOUNDDEVICE,
     AudioCapture,
     AudioParticle,
     AudioReactiveField,
@@ -201,6 +202,7 @@ class TestAudioCapture:
         assert bass_spectrum.bass > bass_spectrum.mid
         assert bass_spectrum.bass > bass_spectrum.high
 
+    @pytest.mark.skipif(not HAS_SOUNDDEVICE, reason="sounddevice not available")
     def test_audio_capture_start_stop_idempotent(self) -> None:
         """start/stop should be safe to call multiple times."""
         capture = AudioCapture()
@@ -277,6 +279,7 @@ class TestAudioReactiveField:
     def test_field_update_removes_dead_particles(self) -> None:
         """Field update should remove particles with life <= 0."""
         field = AudioReactiveField()
+        field.demo_mode = False  # Disable demo mode to control particle generation
 
         # Manually add a dead particle
         dead_particle = AudioParticle(x=100, y=100, vx=0, vy=0, life=-0.1, color=(255, 255, 255))
@@ -289,6 +292,7 @@ class TestAudioReactiveField:
     def test_field_update_keeps_alive_particles(self) -> None:
         """Field update should keep particles with life > 0."""
         field = AudioReactiveField()
+        field.demo_mode = False  # Disable demo mode to control particle generation
 
         # Add an alive particle
         alive_particle = AudioParticle(x=100, y=100, vx=0, vy=0, life=0.5, color=(255, 255, 255))

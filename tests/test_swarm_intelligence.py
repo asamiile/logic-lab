@@ -411,8 +411,9 @@ class TestNectarCalculation:
         nectar = colony._calculate_nectar_at_location(150, 150)
         assert nectar > 0.3
 
-        # Test at another peak
-        nectar2 = colony._calculate_nectar_at_location(999, 999)
+        # Test at another peak (874, 618) which is near top-right corner
+        # Peak is at (canvas_width - 150, canvas_height - 150) with value 0.95
+        nectar2 = colony._calculate_nectar_at_location(874, 618)
         assert nectar2 > 0.3
 
     def test_nectar_decreases_with_distance(self):

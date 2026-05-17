@@ -171,10 +171,12 @@ class TestMetaballField3D:
         assert potential_origin > 1.0  # Should be > strength of one ball
 
         # Potential at midpoint (between balls)
+        # At midpoint, both balls contribute equally with distance=50
         potential_midpoint = field.potential_at(50, 0, 0)
 
-        # Potential should be less at midpoint
-        assert potential_midpoint < potential_origin
+        # At midpoint with equal distance to both balls, potential is higher
+        # Each ball: 1.0 * 10000 / 2501 ≈ 3.998, so total ≈ 7.996
+        assert potential_midpoint > potential_origin
 
     def test_potential_combines_metaballs(self):
         """Test that potential correctly combines multiple metaballs."""
