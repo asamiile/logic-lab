@@ -28,6 +28,11 @@ SCAN_DOMAINS = {
     "mathematical",
     "tiling_patterns",
     "research",
+    "three_dimensional",
+    "reaction_diffusion",
+    "swarm_intelligence",
+    "audio_sync",
+    "biological",
 }
 
 KEYWORD_CONCEPTS = {
@@ -89,6 +94,10 @@ KEYWORD_CONCEPTS = {
     "voronoi": ["voronoi", "diagram", "stippling"],
     "wave": ["wave", "oscillation"],
     "wavefront": ["wavefront", "propagation", "pattern"],
+    "metaball": ["isosurface", "implicit surface", "blob", "potential field"],
+    "gray_scott": ["reaction diffusion", "turing pattern", "activator inhibitor"],
+    "bee": ["swarm", "foraging", "colony", "waggle dance"],
+    "audio": ["sound", "frequency", "FFT", "reactive"],
 }
 
 CATEGORY_DEFAULTS = {
@@ -101,6 +110,11 @@ CATEGORY_DEFAULTS = {
     "mathematical": ["geometry", "mathematics"],
     "tiling_patterns": ["tiling", "pattern"],
     "research": ["simulation", "system"],
+    "three_dimensional": ["3D", "volumetric", "spatial"],
+    "reaction_diffusion": ["reaction diffusion", "pattern formation", "turing"],
+    "swarm_intelligence": ["swarm", "agents", "emergence"],
+    "audio_sync": ["audio", "sound", "frequency"],
+    "biological": ["biological", "organism", "colony"],
 }
 
 VISUAL_DEFAULTS = {
@@ -113,6 +127,11 @@ VISUAL_DEFAULTS = {
     "mathematical": "Use for geometric systems, numerical patterns, or structured generative art.",
     "tiling_patterns": "Use for textile patterns, symmetry studies, ornaments, or tiled surfaces.",
     "research": "Use for experimental systems, hybrid simulations, or advanced visual behaviors.",
+    "three_dimensional": "Use for 3D geometry, volumetric effects, spatial structures, or depth rendering.",
+    "reaction_diffusion": "Use for organic textures, spot/stripe patterns, chemical wave simulation, or Turing patterns.",
+    "swarm_intelligence": "Use for colony behavior, decentralized navigation, emergent foraging, or agent optimization.",
+    "audio_sync": "Use for audio-reactive visuals, frequency-driven animation, sound visualization, or music-synchronized art.",
+    "biological": "Use for biological organisms, colony growth, organic networks, or symbiotic systems.",
 }
 
 GOOD_FOR_DEFAULTS = {
@@ -125,6 +144,11 @@ GOOD_FOR_DEFAULTS = {
     "mathematical": ["geometry", "patterns", "composition"],
     "tiling_patterns": ["tiling", "symmetry", "textiles"],
     "research": ["experiments", "systems", "hybrids"],
+    "three_dimensional": ["3D", "spatial", "volumetric"],
+    "reaction_diffusion": ["patterns", "textures", "chemistry"],
+    "swarm_intelligence": ["swarms", "colonies", "optimization"],
+    "audio_sync": ["music", "sound", "reactive"],
+    "biological": ["organisms", "colonies", "networks"],
 }
 
 

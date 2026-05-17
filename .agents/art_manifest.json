@@ -3,6 +3,116 @@
   "description": "Read-only manifest of selected Logic Lab algorithms for AI agents and MCP search.",
   "entries": [
     {
+      "path": "audio_sync/audio_reactive_particles/audio_reactive_particles.py",
+      "title": "Audio-Reactive Particles",
+      "category": "audio_sync",
+      "concepts": [
+        "particle system",
+        "emitter",
+        "sound",
+        "frequency",
+        "FFT",
+        "reactive"
+      ],
+      "visual_use": "Use for audio-reactive visuals, frequency-driven animation, sound visualization, or music-synchronized art.",
+      "good_for": [
+        "music",
+        "sound",
+        "reactive"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy"
+      ]
+    },
+    {
+      "path": "audio_sync/audio_reactive_particles/example.py",
+      "title": "Audio-Reactive Particles",
+      "category": "audio_sync",
+      "concepts": [
+        "particle system",
+        "emitter",
+        "sound",
+        "frequency",
+        "FFT",
+        "reactive"
+      ],
+      "visual_use": "Use for audio-reactive visuals, frequency-driven animation, sound visualization, or music-synchronized art.",
+      "good_for": [
+        "music",
+        "sound",
+        "reactive"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "biological/ant_colony/ant_colony.py",
+      "title": "Ant Colony Optimization",
+      "category": "biological",
+      "concepts": [
+        "biological",
+        "organism",
+        "colony"
+      ],
+      "visual_use": "Use for biological organisms, colony growth, organic networks, or symbiotic systems.",
+      "good_for": [
+        "organisms",
+        "colonies",
+        "networks"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "biological/mycelium_growth/mycelium_growth.py",
+      "title": "Mycelium Growth Network",
+      "category": "biological",
+      "concepts": [
+        "biological",
+        "organism",
+        "colony"
+      ],
+      "visual_use": "Use for biological organisms, colony growth, organic networks, or symbiotic systems.",
+      "good_for": [
+        "organisms",
+        "colonies",
+        "networks"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "biological/physarum/physarum.py",
+      "title": "Physarum Polycephalum",
+      "category": "biological",
+      "concepts": [
+        "physarum",
+        "slime mold",
+        "network",
+        "biological",
+        "organism",
+        "colony"
+      ],
+      "visual_use": "Use for biological organisms, colony growth, organic networks, or symbiotic systems.",
+      "good_for": [
+        "organisms",
+        "colonies",
+        "networks"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "cellular_automata/brian_brain/brian_brain.py",
       "title": "Brian Brain",
       "category": "cellular_automata",
@@ -3549,6 +3659,29 @@
       ]
     },
     {
+      "path": "reaction_diffusion/gray_scott/gray_scott.py",
+      "title": "Gray-Scott Reaction-Diffusion System",
+      "category": "reaction_diffusion",
+      "concepts": [
+        "reaction diffusion",
+        "turing pattern",
+        "activator inhibitor",
+        "pattern formation",
+        "turing"
+      ],
+      "visual_use": "Use for organic textures, spot/stripe patterns, chemical wave simulation, or Turing patterns.",
+      "good_for": [
+        "patterns",
+        "textures",
+        "chemistry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "research/acrylic_pour/acrylic_pour.py",
       "title": "Acrylic Pour",
       "category": "research",
@@ -3973,6 +4106,52 @@
         "organic motion"
       ],
       "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "swarm_intelligence/bee_foraging/bee_foraging.py",
+      "title": "Bee Foraging Algorithm",
+      "category": "swarm_intelligence",
+      "concepts": [
+        "swarm",
+        "foraging",
+        "colony",
+        "waggle dance",
+        "agents",
+        "emergence"
+      ],
+      "visual_use": "Use for colony behavior, decentralized navigation, emergent foraging, or agent optimization.",
+      "good_for": [
+        "swarms",
+        "colonies",
+        "optimization"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "three_dimensional/metaballs_3d/metaballs_3d.py",
+      "title": "3D Metaballs with Perspective Projection",
+      "category": "three_dimensional",
+      "concepts": [
+        "isosurface",
+        "implicit surface",
+        "blob",
+        "potential field",
+        "3D",
+        "volumetric"
+      ],
+      "visual_use": "Use for 3D geometry, volumetric effects, spatial structures, or depth rendering.",
+      "good_for": [
+        "3D",
+        "spatial",
+        "volumetric"
+      ],
+      "complexity": "high",
       "dependencies": [
         "py5"
       ]

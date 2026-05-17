@@ -33,6 +33,13 @@ SYNONYMS: dict[str, list[str]] = {
     "tiling": ["tessellation", "mosaic", "grid", "periodic", "wallpaper"],
     "symmetry": ["reflection", "rotation", "dihedral", "wallpaper group"],
     "polyhedra": ["platonic solid", "3D shape", "wireframe", "tetrahedron", "cube", "octahedron"],
+    "metaball": ["isosurface", "implicit surface", "blob", "potential field", "3D"],
+    "gray scott": ["reaction diffusion", "turing pattern", "activator inhibitor", "chemical"],
+    "bee foraging": ["swarm intelligence", "colony", "waggle dance", "food site", "optimization"],
+    "audio": ["sound", "music", "frequency", "FFT", "reactive", "spectrum"],
+    "swarm": ["colony", "ants", "bees", "flock", "swarm intelligence"],
+    "volume": ["3D", "volumetric", "voxel", "metaball", "depth"],
+    "biological": ["organism", "colony", "growth", "natural", "living"],
 }
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
