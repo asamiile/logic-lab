@@ -4134,6 +4134,29 @@
       ]
     },
     {
+      "path": "three_dimensional/metaballs/metaballs.py",
+      "title": "Metaballs",
+      "category": "three_dimensional",
+      "concepts": [
+        "isosurface",
+        "implicit surface",
+        "blob",
+        "potential field",
+        "3D",
+        "volumetric"
+      ],
+      "visual_use": "Use for 3D geometry, volumetric effects, spatial structures, or depth rendering.",
+      "good_for": [
+        "3D",
+        "spatial",
+        "volumetric"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "three_dimensional/metaballs_3d/metaballs_3d.py",
       "title": "3D Metaballs with Perspective Projection",
       "category": "three_dimensional",

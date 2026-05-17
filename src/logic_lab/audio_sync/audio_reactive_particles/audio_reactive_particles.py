@@ -337,3 +337,70 @@ class AudioReactiveField:
         """Clean up audio resources."""
         if self.capture is not None:
             self.capture.stop()
+
+
+# Global field instance for py5 sketch
+audio_field: AudioReactiveField | None = None
+
+
+def setup() -> None:
+    """Initialize the sketch."""
+    global audio_field
+    py5.size(1000, 800)
+    py5.smooth()
+    py5.background(0)
+    audio_field = AudioReactiveField(width=1000, height=800)
+    print(f"Demo mode: {audio_field.demo_mode}")
+    print("Controls: m=mode, s=screenshot, r=reset, SPACE=pause, q=quit")
+
+
+def draw() -> None:
+    """Main animation loop."""
+    if audio_field is None:
+        return
+
+    audio_field.update()
+    py5.background(audio_field.bg_color)
+
+    for particle in audio_field.particles:
+        alpha = int(particle.life * 255)
+        py5.fill(*particle.color, alpha)
+        py5.no_stroke()
+        py5.circle(particle.x, particle.y, 4)
+
+    py5.fill(200)
+    py5.text_size(11)
+    py5.text(f"FPS: {py5.frame_rate():.1f}", 10, 20)
+    py5.text(f"Particles: {len(audio_field.particles)}", 10, 35)
+    mode = "Demo" if audio_field.demo_mode else "Mic"
+    py5.text(f"Mode: {mode} (m to toggle)", 10, 50)
+    py5.text("s=screenshot, r=reset, SPACE=pause", 10, py5.height - 10)
+
+
+def key_pressed() -> None:
+    """Handle key presses."""
+    if audio_field is None:
+        return
+
+    key = py5.key
+
+    if key == "s":
+        filename = f"audio_reactive_{py5.frame_count:05d}.png"
+        py5.save_frame(filename)
+        print(f"Screenshot saved: {filename}")
+
+    elif key == "m":
+        audio_field.toggle_mode()
+
+    elif key == "r":
+        audio_field.particles.clear()
+
+    elif key == " ":
+        audio_field.toggle_pause()
+
+    elif key == "q":
+        py5.exit_sketch()
+
+
+if __name__ == "__main__":
+    py5.run_sketch()
