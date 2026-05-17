@@ -96,7 +96,7 @@ This provides a smooth, predictable visualization for testing and demonstration.
 Interactive simulation with real-time controls:
 
 ```bash
-python -m logic_lab.audio_sync.audio_reactive_particles.audio_reactive_particles
+uv run python src/logic_lab/audio_sync/audio_reactive_particles/audio_reactive_particles.py
 ```
 
 ## Usage Example

@@ -46,7 +46,7 @@ The interplay between feed rate (F) and kill rate (k) produces distinct visual p
 Interactive simulation with real-time pattern control:
 
 ```bash
-python -m logic_lab.reaction_diffusion.gray_scott.gray_scott
+uv run python src/logic_lab/reaction_diffusion/gray_scott/gray_scott.py
 ```
 
 ## Controls

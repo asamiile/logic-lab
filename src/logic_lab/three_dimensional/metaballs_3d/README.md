@@ -85,7 +85,7 @@ Points with `rotated_z + f <= 0` are behind the camera and are culled.
 Interactive 3D visualization with real-time perspective control:
 
 ```bash
-python -m logic_lab.three_dimensional.metaballs_3d.metaballs_3d
+uv run python src/logic_lab/three_dimensional/metaballs_3d/metaballs_3d.py
 ```
 
 ## Controls
