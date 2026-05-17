@@ -91,6 +91,14 @@ high = sin(time * 8) * 0.3 + 0.3    # ~4 Hz oscillation
 
 This provides a smooth, predictable visualization for testing and demonstration.
 
+## Running the Simulation
+
+Interactive simulation with real-time controls:
+
+```bash
+python -m logic_lab.audio_sync.audio_reactive_particles.audio_reactive_particles
+```
+
 ## Usage Example
 
 ```python

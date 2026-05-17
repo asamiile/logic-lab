@@ -41,6 +41,14 @@ The interplay between feed rate (F) and kill rate (k) produces distinct visual p
    - Creates intricate spiral and labyrinth patterns
    - Most dynamic of the three presets
 
+## Running the Simulation
+
+Interactive simulation with real-time pattern control:
+
+```bash
+python -m logic_lab.reaction_diffusion.gray_scott.gray_scott
+```
+
 ## Controls
 
 ### Keyboard Shortcuts

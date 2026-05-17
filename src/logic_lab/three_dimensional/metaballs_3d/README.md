@@ -80,6 +80,14 @@ depth = (rotated_z + focal_distance) / (2 * focal_distance)  // 0-1 range
 
 Points with `rotated_z + f <= 0` are behind the camera and are culled.
 
+## Running the Simulation
+
+Interactive 3D visualization with real-time perspective control:
+
+```bash
+python -m logic_lab.three_dimensional.metaballs_3d.metaballs_3d
+```
+
 ## Controls
 
 | Key | Action |
