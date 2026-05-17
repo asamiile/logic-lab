@@ -5,6 +5,42 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0](https://github.com/asamiile/logic-lab/compare/v0.2.0...v0.3.0) (2026-05-17)
+
+
+### Features
+
+* add new screenshot assets for reaction diffusion and swarm intelligence examples ([b26f488](https://github.com/asamiile/logic-lab/commit/b26f48856d24ce2d4407a726bf4dfd4a476dc44e))
+* add three quick-win utilities for better development workflow ([9899ab9](https://github.com/asamiile/logic-lab/commit/9899ab949d1a3a4848403b3359df78cb82be61b3))
+* extend MCP server with 5 new algorithm domains ([b82792c](https://github.com/asamiile/logic-lab/commit/b82792c328c8a3fa4aa42f39d5c79d081da960b9))
+* implement 3D domain with metaballs algorithm ([3bec2d8](https://github.com/asamiile/logic-lab/commit/3bec2d89057a681eda0f7cf4c98d0616da33c37a))
+* implement audio-reactive particles with frequency-driven visualization ([05aa80a](https://github.com/asamiile/logic-lab/commit/05aa80ad6b1b3fad7590e033e6481e22b86ecf0c))
+
+
+### Bug Fixes
+
+* add canvas dimensions to BeeColony to support testing ([789248e](https://github.com/asamiile/logic-lab/commit/789248e262f063a175d6f6678252c93ac1268b63))
+* add missing py5 import to audio_reactive_particles ([56f5da2](https://github.com/asamiile/logic-lab/commit/56f5da2bbdf7ff8ea36465b698542412e69900f0))
+* adjust remaining test expectations for stochastic algorithms ([cc108ea](https://github.com/asamiile/logic-lab/commit/cc108eaa95a3fafe89027e57a12aae570c033264))
+* call py5.frame_rate() as method in metaballs_3d display ([d87948b](https://github.com/asamiile/logic-lab/commit/d87948bca73c202230ce8c6d5c6fdcd5964ca8f2))
+* correct particle lifecycle and colony behavior tests ([3bd0181](https://github.com/asamiile/logic-lab/commit/3bd0181f8a41ee221a6b595047a62bbcf45683be))
+* correct py5.run_sketch() call in bee_foraging ([178a407](https://github.com/asamiile/logic-lab/commit/178a4072d6d1148781a260cb58f799c28f28634c))
+* correct test expectations and handle optional dependencies ([c1b0031](https://github.com/asamiile/logic-lab/commit/c1b0031b5df23532c886ea1e388c40599ea19277))
+* export HAS_SOUNDDEVICE from audio_reactive_particles module ([8766167](https://github.com/asamiile/logic-lab/commit/876616793c3c4f301f936beb5ef62095135cad54))
+* use correct py5 arrow key constants ([0fd9652](https://github.com/asamiile/logic-lab/commit/0fd9652673bd68a038cd70766a7b8ff3e387d171))
+* use py5.get_frame_rate() instead of py5.frame_rate() for reading FPS ([c48f40f](https://github.com/asamiile/logic-lab/commit/c48f40f84fc5b73c2c2939610a043741ccd8d940))
+
+
+### Documentation
+
+* add comprehensive feature expansion roadmap ([8e8a8bc](https://github.com/asamiile/logic-lab/commit/8e8a8bcfdd64a4ee470947a9f248cd90788a5257))
+* add implementation summary for quick-win utilities ([bf26e4e](https://github.com/asamiile/logic-lab/commit/bf26e4ed4adbe85dfc2d2c72dbf5191c573cd32a))
+* add metaballs implementation summary and technical details ([8909959](https://github.com/asamiile/logic-lab/commit/890995908e7010a6ae31d3a1dfddc07c33d49b0d))
+* add running commands to all algorithm README files ([b06262e](https://github.com/asamiile/logic-lab/commit/b06262e03fa0a74ae826046c11454cf26758a7eb))
+* standardize algorithm README format and add style guide ([efc9c3e](https://github.com/asamiile/logic-lab/commit/efc9c3eab303c1e4e14759ce20fb5a04dd2f4d4f))
+* standardize bee_foraging README format ([7dec9a9](https://github.com/asamiile/logic-lab/commit/7dec9a9a189e310a66ee7e536cb14c485f4d20e3))
+* standardize running commands to match existing project style ([e1eacd0](https://github.com/asamiile/logic-lab/commit/e1eacd0e208d267d9d9a5abd26578aab92d9f3fb))
+
 ## [0.2.0](https://github.com/asamiile/logic-lab/compare/v0.1.0...v0.2.0) (2026-05-10)
 
 

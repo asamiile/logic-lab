@@ -9,7 +9,7 @@ All simulations are interactive and can be run with py5. The MCP server
 provides AI agent access to algorithm references and implementations.
 """
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 __author__ = "Asami Kakuishi"
 __email__ = "asami@asami.tokyo"
 
