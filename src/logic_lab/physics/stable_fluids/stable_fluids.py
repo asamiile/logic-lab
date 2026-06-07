@@ -216,24 +216,29 @@ def draw() -> None:
     if not paused:
         _step_fluid()
 
-    # Render
+    # Vectorized render — handles Retina/HiDPI via py5.pixel_width
+    d = np.clip(density, 0.0, 1.0)
+    # density axes: (x, y, rgb) → transpose to (y, x, rgb) = (row, col, rgb)
+    d_yx = d.transpose(1, 0, 2)
+    # Upscale grid cells to display pixels
+    d_scaled = np.repeat(np.repeat(d_yx, SCALE, axis=0), SCALE, axis=1)  # (HEIGHT, WIDTH, 3)
+    r_disp = (d_scaled[:, :, 0] * 255).clip(0, 255).astype(np.uint8)
+    g_disp = (d_scaled[:, :, 1] * 255).clip(0, 255).astype(np.uint8)
+    b_disp = (d_scaled[:, :, 2] * 255).clip(0, 255).astype(np.uint8)
+    # Further upscale for HiDPI (e.g. Retina 2×)
+    phys_scale = py5.pixel_width // WIDTH
+    if phys_scale > 1:
+        r_disp = np.repeat(np.repeat(r_disp, phys_scale, axis=0), phys_scale, axis=1)
+        g_disp = np.repeat(np.repeat(g_disp, phys_scale, axis=0), phys_scale, axis=1)
+        b_disp = np.repeat(np.repeat(b_disp, phys_scale, axis=0), phys_scale, axis=1)
+    argb = (
+        np.int32(-16777216)
+        | (r_disp.astype(np.int32) << 16)
+        | (g_disp.astype(np.int32) << 8)
+        | b_disp.astype(np.int32)
+    )
     py5.load_pixels()
-    pixels = py5.pixels
-    w = py5.width
-
-    d_clamped = np.clip(density, 0.0, 1.0)
-    for gy_ in range(N):
-        for gx_ in range(N):
-            rc = int(d_clamped[gx_, gy_, 0] * 255)
-            gc = int(d_clamped[gx_, gy_, 1] * 255)
-            bc = int(d_clamped[gx_, gy_, 2] * 255)
-            c = py5.color(rc, gc, bc)
-            for dy in range(SCALE):
-                for dx in range(SCALE):
-                    px = gx_ * SCALE + dx
-                    py_ = gy_ * SCALE + dy
-                    pixels[py_ * w + px] = c
-
+    py5.pixels[:] = argb.flatten()
     py5.update_pixels()
 
     py5.fill(220)

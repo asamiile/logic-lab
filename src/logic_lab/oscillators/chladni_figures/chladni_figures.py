@@ -62,9 +62,10 @@ _xs, _ys = np.meshgrid(
     np.linspace(0, 1, GRID, dtype=np.float32),
 )
 
-# Pixel-to-grid index maps (computed once)
-_px_to_gx = (np.arange(WIDTH) * GRID / WIDTH).astype(int).clip(0, GRID - 1)
-_py_to_gy = (np.arange(HEIGHT) * GRID / HEIGHT).astype(int).clip(0, GRID - 1)
+# Pixel-to-grid index maps — initialised in setup() using actual framebuffer size
+# (Retina displays use 2× physical pixels; py5.pixel_width reflects this)
+_px_to_gx: np.ndarray
+_py_to_gy: np.ndarray
 
 
 def _chladni(m: int, n: int) -> np.ndarray:
@@ -110,9 +111,15 @@ def _hsb_to_rgb_vec(
 
 
 def setup() -> None:
+    global _px_to_gx, _py_to_gy
     py5.size(WIDTH, HEIGHT)
     py5.background(10, 10, 18)
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
+    # Use actual framebuffer size to handle Retina/HiDPI displays
+    actual_w = py5.pixel_width
+    actual_h = py5.pixel_height
+    _px_to_gx = (np.arange(actual_w) * GRID / actual_w).astype(int).clip(0, GRID - 1)
+    _py_to_gy = (np.arange(actual_h) * GRID / actual_h).astype(int).clip(0, GRID - 1)
     _rebuild_cache()
 
 
