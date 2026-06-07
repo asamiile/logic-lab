@@ -5755,6 +5755,238 @@
         "numpy",
         "py5"
       ]
+    },
+    {
+      "path": "shared/lfo.py",
+      "title": "LFOBank (Modulation Utility)",
+      "category": "shared",
+      "concepts": [
+        "LFO",
+        "oscillator",
+        "modulation",
+        "sine",
+        "triangle",
+        "sawtooth",
+        "noise",
+        "animation"
+      ],
+      "visual_use": "Use as a modulation source to animate any numeric parameter — gravity, hue, feed rate, speed — with sine/triangle/sawtooth/pulse/noise waveforms.",
+      "good_for": [
+        "modulation",
+        "animation",
+        "parameter control",
+        "rhythm"
+      ],
+      "complexity": "low",
+      "dependencies": []
+    },
+    {
+      "path": "oscillators/lissajous_curves/lissajous_curves.py",
+      "title": "Lissajous Curves",
+      "category": "oscillators",
+      "concepts": [
+        "Lissajous",
+        "oscillator",
+        "XY",
+        "frequency ratio",
+        "phase",
+        "sine wave",
+        "trail"
+      ],
+      "visual_use": "Two oscillators drive X and Y to trace closed curves. LFO drifts the phase offset for continuously morphing figures. Use for hypnotic geometric loop art.",
+      "good_for": [
+        "geometric",
+        "loop",
+        "animation",
+        "hypnotic",
+        "trail"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "oscillators/chladni_figures/chladni_figures.py",
+      "title": "Chladni Figures",
+      "category": "oscillators",
+      "concepts": [
+        "Chladni",
+        "standing wave",
+        "resonance",
+        "nodal lines",
+        "mode",
+        "vibration"
+      ],
+      "visual_use": "Standing wave nodal patterns on a 2D plate — LFO morphs between resonant modes. Use for sand-pattern, mandala-like, or physics-based geometric art.",
+      "good_for": [
+        "geometric",
+        "mandala",
+        "pattern",
+        "organic",
+        "physics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "oscillators/harmonic_pantograph/harmonic_pantograph.py",
+      "title": "Harmonic Pantograph (Spirograph)",
+      "category": "oscillators",
+      "concepts": [
+        "spirograph",
+        "epicycloid",
+        "pantograph",
+        "Fourier",
+        "harmonic",
+        "rotating arm",
+        "trail"
+      ],
+      "visual_use": "Chain of rotating arms draws Fourier epicycle curves. LFO slowly modulates arm speeds for evolving spirograph patterns. Use for intricate line art and mandalas.",
+      "good_for": [
+        "geometric",
+        "mandala",
+        "intricate",
+        "trail",
+        "animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "oscillators/coupled_oscillators/coupled_oscillators.py",
+      "title": "Coupled Oscillators (Kuramoto Model)",
+      "category": "oscillators",
+      "concepts": [
+        "Kuramoto",
+        "coupled oscillators",
+        "synchronization",
+        "phase transition",
+        "emergence",
+        "collective"
+      ],
+      "visual_use": "N oscillators spontaneously synchronize above critical coupling K. Use for collective rhythm visualization, phase transition art, or network synchrony studies.",
+      "good_for": [
+        "emergent",
+        "animation",
+        "physics",
+        "network",
+        "chaotic"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "biological/dla/dla.py",
+      "title": "Diffusion-Limited Aggregation (DLA)",
+      "category": "biological",
+      "concepts": [
+        "DLA",
+        "random walk",
+        "fractal",
+        "aggregation",
+        "dendritic",
+        "crystal",
+        "growth"
+      ],
+      "visual_use": "Random-walk particles stick on contact, building fractal dendritic clusters. Use for snowflake, coral, lightning, or crystal growth art.",
+      "good_for": [
+        "fractal",
+        "growth",
+        "nature",
+        "crystal",
+        "organic"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "biological/space_colonization/space_colonization.py",
+      "title": "Space Colonization Algorithm",
+      "category": "biological",
+      "concepts": [
+        "space colonization",
+        "tree growth",
+        "branching",
+        "auxin",
+        "vascular",
+        "L-system alternative"
+      ],
+      "visual_use": "Branch tips compete for scattered attractors, generating realistic tree, root, and vascular network structures. Use for botanical, organic branching art.",
+      "good_for": [
+        "botanical",
+        "tree",
+        "branching",
+        "organic",
+        "network"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/stable_fluids/stable_fluids.py",
+      "title": "Stable Fluids (Jos Stam)",
+      "category": "physics",
+      "concepts": [
+        "fluid simulation",
+        "Navier-Stokes",
+        "advection",
+        "incompressible",
+        "dye",
+        "interactive"
+      ],
+      "visual_use": "Real-time incompressible fluid with mouse-painted dye. Use for flowing ink, smoke, aurora, or paint-mix art.",
+      "good_for": [
+        "fluid",
+        "interactive",
+        "flow",
+        "smoke",
+        "paint",
+        "organic"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/strange_attractors/strange_attractors.py",
+      "title": "Strange Attractors",
+      "category": "mathematical",
+      "concepts": [
+        "strange attractor",
+        "chaos",
+        "Lorenz",
+        "Rössler",
+        "fractal",
+        "dynamical system",
+        "3D"
+      ],
+      "visual_use": "Five classic chaotic attractors (Lorenz, Rössler, Thomas, Aizawa, Dadras) rendered in 3D with slow rotation. Use for cosmic, ethereal, chaotic depth art.",
+      "good_for": [
+        "chaos",
+        "3D",
+        "cosmic",
+        "ethereal",
+        "fractal",
+        "abstract"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
     }
   ]
 }
