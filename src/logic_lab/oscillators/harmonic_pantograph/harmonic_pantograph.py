@@ -71,6 +71,7 @@ def _tip_position(time: float, speed: float, arm2_drift: float) -> tuple[float, 
 
 def setup() -> None:
     py5.size(WIDTH, HEIGHT)
+    py5.smooth(8)
     py5.background(10, 10, 18)
     py5.color_mode(py5.HSB, 360, 100, 100, 100)
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)

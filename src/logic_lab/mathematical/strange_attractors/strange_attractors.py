@@ -17,11 +17,13 @@ based color for perceived volume. An LFO slowly rotates the view.
 """
 
 import math
+import random as _random
 from pathlib import Path
 
 import py5
 
 from logic_lab.shared.lfo import LFOBank
+from logic_lab.shared.rk4 import rk4_step
 
 SCREENSHOT_DIR = Path(__file__).parent / "screenshots"
 
@@ -98,23 +100,31 @@ lfo.add("rot_x", shape="sine", freq=0.005, low=-0.4, high=0.4)
 lfo.add("speed", shape="sine", freq=0.015, low=0.5, high=2.0)
 
 
-def _initialize() -> None:
+def _initialize(jitter: float = 0.0) -> None:
     global pts
-    sys = SYSTEMS[preset_name]
-    pts = [list(sys["init"](i)) for i in range(NUM_PARTICLES)]
+    sys_ = SYSTEMS[preset_name]
+    pts = []
+    for i in range(NUM_PARTICLES):
+        p = list(sys_["init"](i))
+        if jitter > 0:
+            p[0] += _random.uniform(-jitter, jitter)
+            p[1] += _random.uniform(-jitter, jitter)
+            p[2] += _random.uniform(-jitter, jitter)
+        pts.append(p)
 
 
 def _step(steps: int) -> None:
-    sys = SYSTEMS[preset_name]
-    deriv = sys["deriv"]
+    sys_ = SYSTEMS[preset_name]
+    deriv = sys_["deriv"]
     speed = lfo.peek("speed")
     dt = DT * speed
+
+    def f(_t: float, state: list[float]) -> list[float]:
+        return list(deriv(state[0], state[1], state[2]))
+
     for _ in range(steps):
-        for p in pts:
-            dx, dy, dz = deriv(p[0], p[1], p[2])
-            p[0] += dx * dt
-            p[1] += dy * dt
-            p[2] += dz * dt
+        for i in range(len(pts)):
+            pts[i] = rk4_step(f, 0.0, pts[i], dt)
 
 
 def _project(
@@ -146,6 +156,7 @@ def _depth_color(val: float, lo: float, hi: float) -> tuple[int, int, int]:
 
 def setup() -> None:
     py5.size(WIDTH, HEIGHT)
+    py5.smooth(4)
     py5.background(8, 8, 18)
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
     _initialize()
@@ -212,6 +223,8 @@ def key_pressed() -> None:
         _initialize()
     elif py5.key == " ":
         paused = not paused
+    elif py5.key == "n":
+        _initialize(jitter=0.5)
     elif py5.key == "s":
         py5.save_frame(str(SCREENSHOT_DIR / f"attractor_{preset_name}_####.png"))
 

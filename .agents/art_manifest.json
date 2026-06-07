@@ -5987,6 +5987,52 @@
       "dependencies": [
         "py5"
       ]
+    },
+    {
+      "path": "shared/rk4.py",
+      "title": "RK4 Integrator (4th-order Runge-Kutta)",
+      "category": "shared",
+      "concepts": [
+        "RK4",
+        "numerical integration",
+        "ODE",
+        "differential equations",
+        "accuracy"
+      ],
+      "visual_use": "Drop-in replacement for Euler integration in any ODE-based simulation. Reduces trajectory error from O(dt²) to O(dt⁵) — keeps chaotic attractors accurate and prevents numerical drift over long runs.",
+      "good_for": [
+        "precision",
+        "simulation accuracy",
+        "chaotic systems",
+        "particle trajectories"
+      ],
+      "complexity": "low",
+      "dependencies": []
+    },
+    {
+      "path": "shared/noise_field.py",
+      "title": "NoiseField (2D Value Noise with fBm)",
+      "category": "shared",
+      "concepts": [
+        "value noise",
+        "Perlin noise",
+        "fBm",
+        "fractal Brownian motion",
+        "organic",
+        "perturbation"
+      ],
+      "visual_use": "Generate organic, spatially coherent noise for parameter perturbation, symmetry breaking, or texture. Returns a scalar or a full (height, width) numpy array. Animates by incrementing the t parameter.",
+      "good_for": [
+        "organic variation",
+        "symmetry breaking",
+        "texture",
+        "parameter modulation",
+        "animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "numpy"
+      ]
     }
   ]
 }

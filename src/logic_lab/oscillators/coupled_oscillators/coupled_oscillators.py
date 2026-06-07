@@ -43,9 +43,9 @@ paused = False
 manual_k: float | None = None
 
 
-def _initialize() -> None:
+def _initialize(seed: int = 42) -> None:
     global thetas, omegas
-    rng = random.Random(42)
+    rng = random.Random(seed)
     thetas = [rng.uniform(0, math.tau) for _ in range(N)]
     omegas = [rng.gauss(0.0, 0.8) for _ in range(N)]
 
@@ -91,6 +91,7 @@ def _freq_color(omega: float) -> tuple[int, int, int]:
 
 def setup() -> None:
     py5.size(WIDTH, HEIGHT)
+    py5.smooth(8)
     py5.background(10, 10, 18)
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
     _initialize()
@@ -160,6 +161,9 @@ def key_pressed() -> None:
         paused = not paused
     elif py5.key == "r":
         _initialize()
+        manual_k = None
+    elif py5.key == "n":
+        _initialize(seed=py5.frame_count)
         manual_k = None
     elif py5.key == "s":
         py5.save_frame(str(SCREENSHOT_DIR / "kuramoto_####.png"))
