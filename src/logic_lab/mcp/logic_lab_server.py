@@ -40,7 +40,166 @@ SYNONYMS: dict[str, list[str]] = {
     "swarm": ["colony", "ants", "bees", "flock", "swarm intelligence"],
     "volume": ["3D", "volumetric", "voxel", "metaball", "depth"],
     "biological": ["organism", "colony", "growth", "natural", "living"],
+    "shader": ["GLSL", "fragment shader", "GPU", "raymarching", "SDF", "noise", "WebGL"],
+    "raymarching": ["SDF", "sphere tracing", "ray marching", "3D rendering", "distance field"],
+    "domain warp": ["FBM warp", "domain warping", "noise distortion", "space warp"],
+    "voronoi": ["cellular", "Worley", "distance field", "cells", "tessellation"],
+    "perlin": ["Perlin noise", "gradient noise", "smooth noise", "Ken Perlin"],
+    "fbm": ["fractional brownian motion", "octave noise", "multi-octave", "layered noise"],
+    "sdf": ["signed distance field", "SDF", "distance function", "implicit surface"],
 }
+
+MOOD_PROFILES: dict[str, dict[str, list[str]]] = {
+    "ethereal": {
+        "concepts": ["noise", "glow", "soft", "light", "FBM", "domain warp", "flow", "atmospheric"],
+        "categories": ["shader", "fractals", "mathematical"],
+        "good_for": ["atmospheric", "clouds", "abstract", "soft", "fluid"],
+    },
+    "chaotic": {
+        "concepts": ["chaos", "strange attractor", "particle", "swarm", "turbulence", "emergence"],
+        "categories": ["physics", "fractals", "steering_behaviors", "swarm_intelligence"],
+        "good_for": ["chaos", "dynamic", "complex", "energetic"],
+    },
+    "geometric": {
+        "concepts": ["SDF", "polygon", "tiling", "symmetry", "grid", "polyhedra", "boolean"],
+        "categories": ["shader", "tiling_patterns", "mathematical", "three_dimensional"],
+        "good_for": ["geometric", "architectural", "precise", "grid", "pattern"],
+    },
+    "organic": {
+        "concepts": [
+            "growth",
+            "biological",
+            "FBM",
+            "reaction diffusion",
+            "Voronoi",
+            "flow",
+            "domain warp",
+        ],
+        "categories": ["biological", "reaction_diffusion", "shader", "cellular_automata"],
+        "good_for": ["organic", "nature", "biological", "fluid", "texture"],
+    },
+    "cosmic": {
+        "concepts": [
+            "particle",
+            "galaxy",
+            "attractor",
+            "noise",
+            "depth",
+            "glow",
+            "3D",
+            "raymarching",
+        ],
+        "categories": ["physics", "shader", "fractals", "mathematical"],
+        "good_for": ["cosmic", "space", "deep", "3D", "atmospheric"],
+    },
+    "minimal": {
+        "concepts": ["line", "circle", "polygon", "SDF", "geometric", "simple"],
+        "categories": ["mathematical", "shader", "tiling_patterns"],
+        "good_for": ["minimal", "clean", "geometric", "graphic"],
+    },
+    "generative": {
+        "concepts": ["emergent", "growth", "evolution", "self-organization", "pattern"],
+        "categories": [
+            "cellular_automata",
+            "genetic_algorithms",
+            "biological",
+            "reaction_diffusion",
+        ],
+        "good_for": ["generative", "emergent", "pattern", "complex"],
+    },
+    "retro": {
+        "concepts": ["pixel", "posterization", "hash", "grid", "cellular"],
+        "categories": ["shader", "tiling_patterns", "cellular_automata"],
+        "good_for": ["retro", "pixel", "poster", "graphic", "grid"],
+    },
+}
+
+COMBINATION_RECIPES: list[dict[str, Any]] = [
+    {
+        "name": "Organic Flow Field",
+        "description": "Fluid, living motion through FBM-warped space with biological agents",
+        "moods": ["organic", "ethereal"],
+        "layers": [
+            {"role": "background", "query": "domain warp", "category": "shader"},
+            {"role": "agents", "query": "steering flow", "category": "steering_behaviors"},
+            {"role": "texture", "query": "FBM noise", "category": "shader"},
+        ],
+    },
+    {
+        "name": "Cosmic Particle Storm",
+        "description": "Deep-space particle systems driven by gravity and noise attractors",
+        "moods": ["cosmic", "chaotic"],
+        "layers": [
+            {"role": "background", "query": "perlin noise", "category": "shader"},
+            {"role": "dynamics", "query": "gravity particle", "category": "physics"},
+            {"role": "glow", "query": "raymarching sphere", "category": "shader"},
+        ],
+    },
+    {
+        "name": "Living Crystal",
+        "description": "Geometric 3D forms that grow and evolve like living organisms",
+        "moods": ["geometric", "generative"],
+        "layers": [
+            {"role": "form", "query": "SDF morphing", "category": "shader"},
+            {"role": "growth", "query": "reaction diffusion", "category": "reaction_diffusion"},
+            {"role": "structure", "query": "Voronoi", "category": "shader"},
+        ],
+    },
+    {
+        "name": "Swarm Texture",
+        "description": "Emergent patterns painted by swarm agents on a noise canvas",
+        "moods": ["organic", "generative"],
+        "layers": [
+            {"role": "canvas", "query": "value noise", "category": "shader"},
+            {"role": "agents", "query": "swarm intelligence", "category": "swarm_intelligence"},
+            {"role": "trails", "query": "steering behaviors", "category": "steering_behaviors"},
+        ],
+    },
+    {
+        "name": "Fractal Cosmos",
+        "description": "Infinite self-similar structures rendered with recursive depth",
+        "moods": ["cosmic", "ethereal"],
+        "layers": [
+            {"role": "base", "query": "FBM", "category": "shader"},
+            {"role": "structure", "query": "fractal", "category": "fractals"},
+            {"role": "detail", "query": "worley layers", "category": "shader"},
+        ],
+    },
+    {
+        "name": "Bio-Mechanical Growth",
+        "description": "Cellular automata patterns shaped by mycelium-like biological networks",
+        "moods": ["organic", "generative"],
+        "layers": [
+            {"role": "growth", "query": "cellular automata", "category": "cellular_automata"},
+            {"role": "network", "query": "mycelium biological", "category": "biological"},
+            {"role": "texture", "query": "Voronoi noise", "category": "shader"},
+        ],
+    },
+    {
+        "name": "Geometric Minimal",
+        "description": "Clean, precise shapes with SDF-based composition and subtle gradients",
+        "moods": ["minimal", "geometric"],
+        "layers": [
+            {"role": "shapes", "query": "SDF boolean 2D", "category": "shader"},
+            {"role": "pattern", "query": "tiling symmetry", "category": "tiling_patterns"},
+            {"role": "color", "query": "polar coordinates", "category": "shader"},
+        ],
+    },
+    {
+        "name": "Reaction Diffusion Landscape",
+        "description": "Chemical pattern formation evolving over animated terrain",
+        "moods": ["organic", "generative"],
+        "layers": [
+            {
+                "role": "chemistry",
+                "query": "gray scott reaction diffusion",
+                "category": "reaction_diffusion",
+            },
+            {"role": "terrain", "query": "domain warp FBM", "category": "shader"},
+            {"role": "detail", "query": "displacement surface", "category": "shader"},
+        ],
+    },
+]
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 SOURCE_ROOT = REPO_ROOT / "src" / "logic_lab"
@@ -354,6 +513,131 @@ def get_algorithm_summary(path: str) -> dict[str, Any]:
             "readme_excerpt": readme_excerpt,
         }
     return summary
+
+
+@mcp.tool()
+def search_by_mood(mood: str, style: str | None = None, limit: int = 8) -> dict[str, Any]:
+    """Return algorithms matching a creative mood or visual atmosphere.
+
+    Available moods: ethereal, chaotic, geometric, organic, cosmic, minimal, generative, retro.
+    Optional style narrows results further (e.g. "fluid", "crystalline", "dark").
+    """
+    normalized_mood = mood.lower().strip()
+    profile = MOOD_PROFILES.get(normalized_mood)
+
+    if profile is None:
+        available = sorted(MOOD_PROFILES.keys())
+        return {
+            "error": f"Unknown mood '{mood}'.",
+            "available_moods": available,
+            "tip": "Try one of the available moods, or use search_algorithms for free-text search.",
+        }
+
+    max_results = max(1, min(int(limit), 50))
+    style_tokens = set(style.lower().split()) if style else set()
+
+    scores: list[tuple[int, dict[str, Any]]] = []
+    for entry in _entries():
+        entry_category = str(entry.get("category", "")).lower()
+        entry_concepts = {str(c).lower() for c in entry.get("concepts", [])}
+        entry_good_for = {str(g).lower() for g in entry.get("good_for", [])}
+        haystack = _search_text(entry)
+
+        score = 0
+        # Category match
+        if entry_category in profile["categories"]:
+            score += 4
+        # Concept overlap
+        for concept in profile["concepts"]:
+            if concept in haystack or concept in entry_concepts:
+                score += 2
+        # good_for overlap
+        for tag in profile["good_for"]:
+            if tag in entry_good_for:
+                score += 3
+        # Optional style refinement
+        for token in style_tokens:
+            if token in haystack:
+                score += 5
+
+        if score > 0:
+            scores.append((score, entry))
+
+    scores.sort(key=lambda item: (-item[0], item[1].get("path", "")))
+    results = [entry for _, entry in scores[:max_results]]
+
+    return {
+        "mood": normalized_mood,
+        "style": style,
+        "profile_summary": {
+            "categories": profile["categories"],
+            "key_concepts": profile["concepts"][:6],
+        },
+        "results": results,
+    }
+
+
+@mcp.tool()
+def recommend_combinations(intent: str, count: int = 3) -> dict[str, Any]:
+    """Suggest multi-layer algorithm combinations for a given artistic intent.
+
+    Returns curated recipes and dynamically ranked algorithm suggestions per layer role.
+    Use this to plan layered generative artworks from a text description.
+    """
+    max_count = max(1, min(int(count), len(COMBINATION_RECIPES)))
+    intent_lower = intent.lower()
+
+    # Score recipes by how well they match the intent
+    recipe_scores: list[tuple[int, dict[str, Any]]] = []
+    for recipe in COMBINATION_RECIPES:
+        score = 0
+        if any(m in intent_lower for m in recipe["moods"]):
+            score += 6
+        for word in intent_lower.split():
+            if word in recipe["name"].lower() or word in recipe["description"].lower():
+                score += 2
+            for layer in recipe["layers"]:
+                if word in layer["query"]:
+                    score += 1
+        recipe_scores.append((score, recipe))
+
+    recipe_scores.sort(key=lambda x: -x[0])
+    top_recipes = [r for _, r in recipe_scores[:max_count]]
+
+    # Resolve each recipe's layers to actual manifest entries
+    resolved_recipes = []
+    for recipe in top_recipes:
+        resolved_layers = []
+        for layer in recipe["layers"]:
+            candidates = search_algorithms(
+                query=layer["query"],
+                category=layer.get("category"),
+                limit=2,
+            )
+            resolved_layers.append(
+                {
+                    "role": layer["role"],
+                    "query": layer["query"],
+                    "suggestions": candidates,
+                }
+            )
+        resolved_recipes.append(
+            {
+                "name": recipe["name"],
+                "description": recipe["description"],
+                "moods": recipe["moods"],
+                "layers": resolved_layers,
+            }
+        )
+
+    return {
+        "intent": intent,
+        "combinations": resolved_recipes,
+        "tip": (
+            "Each combination has layered roles (background, agents, texture, etc.). "
+            "Use get_algorithm or get_algorithm_summary on any suggested path for details."
+        ),
+    }
 
 
 def main() -> None:
