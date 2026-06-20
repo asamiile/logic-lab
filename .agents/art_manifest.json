@@ -2387,6 +2387,26 @@
       ]
     },
     {
+      "path": "mathematical/rose_curves/rose_curves.py",
+      "title": "Rose Curves",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/rossler_attractor/rossler_attractor.py",
       "title": "Rössler Attractor",
       "category": "mathematical",
@@ -5760,6 +5780,29 @@
       ],
       "complexity": "low",
       "dependencies": []
+    },
+    {
+      "path": "signal_processing/chladni_patterns/chladni_patterns.py",
+      "title": "Chladni Patterns",
+      "category": "signal_processing",
+      "concepts": [
+        "signal",
+        "frequency",
+        "filter",
+        "wavelet"
+      ],
+      "visual_use": "Use for frequency analysis, wavelet visualization, signal filtering, or time-frequency art.",
+      "good_for": [
+        "frequency",
+        "wavelet",
+        "filter",
+        "spectrum"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
     },
     {
       "path": "signal_processing/fourier_epicycles/fourier_epicycles.py",
