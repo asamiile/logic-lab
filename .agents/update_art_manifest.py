@@ -19,6 +19,7 @@ SOURCE_ROOT = ROOT / "src" / "logic_lab"
 MANIFEST_PATH = ROOT / ".agents" / "art_manifest.json"
 BASELINE_PATH = ROOT / ".agents" / "art_manifest_baseline.json"
 SCAN_DOMAINS = {
+    # Original domains
     "physics",
     "steering_behaviors",
     "genetic_algorithms",
@@ -33,6 +34,19 @@ SCAN_DOMAINS = {
     "swarm_intelligence",
     "audio_sync",
     "biological",
+    # Previously missing existing domains
+    "oscillators",
+    "shader",
+    "simulation",
+    # New domains (phase 2)
+    "crystal_growth",
+    "topology",
+    "network_dynamics",
+    "signal_processing",
+    "self_organizing",
+    "chaos_theory",
+    "procedural_terrain",
+    "optical",
 }
 
 KEYWORD_CONCEPTS = {
@@ -98,6 +112,31 @@ KEYWORD_CONCEPTS = {
     "gray_scott": ["reaction diffusion", "turing pattern", "activator inhibitor"],
     "bee": ["swarm", "foraging", "colony", "waggle dance"],
     "audio": ["sound", "frequency", "FFT", "reactive"],
+    # New domain keywords
+    "snowflake": ["crystal", "dendrite", "solidification", "ice", "6-fold symmetry"],
+    "crystal": ["crystallization", "lattice", "dendritic", "mineral", "solidification"],
+    "dendritic": ["dendrite", "branching", "crystal growth", "diffusion limited"],
+    "topology": ["topological", "manifold", "surface", "continuous deformation"],
+    "mobius": ["mobius strip", "non-orientable", "one-sided", "topology"],
+    "klein": ["klein bottle", "non-orientable", "4D", "topology"],
+    "knot": ["torus knot", "knot theory", "topology", "link"],
+    "torus": ["torus", "donut", "genus", "surface"],
+    "network": ["graph", "node", "edge", "connectivity", "network"],
+    "scale_free": ["power law", "hub", "barabasi", "preferential attachment"],
+    "small_world": ["watts strogatz", "clustering", "path length", "rewiring"],
+    "spanning_tree": ["minimum spanning tree", "kruskal", "prim", "graph"],
+    "wavelet": ["wavelet", "frequency", "time-frequency", "multiresolution"],
+    "spectrogram": ["spectrogram", "STFT", "frequency", "time series"],
+    "convolution": ["convolution", "kernel", "filter", "signal processing"],
+    "kohonen": ["self-organizing map", "SOM", "competitive learning", "neural"],
+    "potts": ["cellular potts", "cell", "morphogenesis", "energy minimization"],
+    "som": ["self-organizing map", "kohonen", "topology", "dimension reduction"],
+    "erosion": ["hydraulic erosion", "terrain", "geological", "water flow"],
+    "terrain": ["heightmap", "elevation", "landscape", "procedural terrain"],
+    "cloud": ["cloud", "atmospheric", "sky", "volumetric noise"],
+    "diffraction": ["diffraction", "wave", "interference", "optics", "light"],
+    "caustic": ["caustic", "light", "refraction", "lens", "underwater"],
+    "illusion": ["optical illusion", "perceptual", "impossible", "gestalt"],
 }
 
 CATEGORY_DEFAULTS = {
@@ -115,6 +154,19 @@ CATEGORY_DEFAULTS = {
     "swarm_intelligence": ["swarm", "agents", "emergence"],
     "audio_sync": ["audio", "sound", "frequency"],
     "biological": ["biological", "organism", "colony"],
+    # Previously missing
+    "oscillators": ["oscillation", "wave", "frequency"],
+    "shader": ["GLSL", "GPU", "noise", "raymarching"],
+    "simulation": ["simulation", "system", "dynamics"],
+    # New domains
+    "crystal_growth": ["crystal", "crystallization", "dendritic", "solidification"],
+    "topology": ["topology", "manifold", "surface"],
+    "network_dynamics": ["network", "graph", "node", "edge"],
+    "signal_processing": ["signal", "frequency", "filter", "wavelet"],
+    "self_organizing": ["self-organization", "emergence", "learning", "adaptation"],
+    "chaos_theory": ["chaos", "attractor", "bifurcation", "dynamical system"],
+    "procedural_terrain": ["terrain", "heightmap", "erosion", "landscape"],
+    "optical": ["light", "optics", "diffraction", "interference"],
 }
 
 VISUAL_DEFAULTS = {
@@ -132,6 +184,19 @@ VISUAL_DEFAULTS = {
     "swarm_intelligence": "Use for colony behavior, decentralized navigation, emergent foraging, or agent optimization.",
     "audio_sync": "Use for audio-reactive visuals, frequency-driven animation, sound visualization, or music-synchronized art.",
     "biological": "Use for biological organisms, colony growth, organic networks, or symbiotic systems.",
+    # Previously missing
+    "oscillators": "Use for wave patterns, resonance figures, coupled oscillations, or harmonic motion.",
+    "shader": "Use for GPU-accelerated visuals, procedural textures, raymarching, SDF rendering, or noise-based effects.",
+    "simulation": "Use for complex system dynamics, agent behavior, maze generation, or computational experiments.",
+    # New domains
+    "crystal_growth": "Use for crystalline structures, dendritic snowflakes, mineral growth, or 6-fold symmetric patterns.",
+    "topology": "Use for topological surfaces, non-orientable manifolds, knot diagrams, or continuous deformation art.",
+    "network_dynamics": "Use for graph visualization, network evolution, scale-free topologies, or spreading dynamics.",
+    "signal_processing": "Use for frequency analysis, wavelet visualization, signal filtering, or time-frequency art.",
+    "self_organizing": "Use for self-organizing maps, emergent structure, competitive learning, or adaptive pattern formation.",
+    "chaos_theory": "Use for chaotic dynamics, bifurcation diagrams, basin of attraction maps, or Poincaré sections.",
+    "procedural_terrain": "Use for landscape generation, hydraulic erosion, heightmap sculpting, or geological simulations.",
+    "optical": "Use for light caustics, diffraction patterns, interference fringes, or optical illusion geometry.",
 }
 
 GOOD_FOR_DEFAULTS = {
@@ -149,6 +214,19 @@ GOOD_FOR_DEFAULTS = {
     "swarm_intelligence": ["swarms", "colonies", "optimization"],
     "audio_sync": ["music", "sound", "reactive"],
     "biological": ["organisms", "colonies", "networks"],
+    # Previously missing
+    "oscillators": ["waves", "resonance", "harmonic"],
+    "shader": ["GPU", "texture", "procedural", "glow"],
+    "simulation": ["dynamics", "systems", "experiments"],
+    # New domains
+    "crystal_growth": ["crystals", "snowflakes", "dendrites", "minerals"],
+    "topology": ["surfaces", "manifolds", "knots", "deformation"],
+    "network_dynamics": ["networks", "graphs", "connectivity", "spreading"],
+    "signal_processing": ["frequency", "wavelet", "filter", "spectrum"],
+    "self_organizing": ["emergence", "adaptation", "learning", "self-organization"],
+    "chaos_theory": ["chaos", "bifurcation", "attractors", "dynamics"],
+    "procedural_terrain": ["terrain", "landscape", "erosion", "geology"],
+    "optical": ["light", "optics", "diffraction", "caustics"],
 }
 
 

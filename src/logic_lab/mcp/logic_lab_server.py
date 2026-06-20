@@ -47,6 +47,27 @@ SYNONYMS: dict[str, list[str]] = {
     "perlin": ["Perlin noise", "gradient noise", "smooth noise", "Ken Perlin"],
     "fbm": ["fractional brownian motion", "octave noise", "multi-octave", "layered noise"],
     "sdf": ["signed distance field", "SDF", "distance function", "implicit surface"],
+    # New domain synonyms
+    "crystal": ["snowflake", "dendrite", "crystallization", "ice", "mineral", "solidification"],
+    "snowflake": ["crystal growth", "dendritic", "6-fold symmetry", "Reiter model", "ice crystal"],
+    "dendrite": [
+        "branching crystal",
+        "dendritic solidification",
+        "crystal arm",
+        "diffusion limited",
+    ],
+    "topology": ["manifold", "Mobius", "Klein bottle", "torus knot", "genus", "non-orientable"],
+    "knot": ["torus knot", "trefoil", "knot theory", "link", "braid"],
+    "network": ["graph", "node", "edge", "scale-free", "small world", "Watts-Strogatz"],
+    "scale-free": ["power law", "hub", "Barabasi-Albert", "preferential attachment"],
+    "wavelet": ["wavelet transform", "frequency", "time-frequency", "multiresolution"],
+    "signal": ["signal processing", "filter", "frequency", "spectral", "convolution"],
+    "som": ["self-organizing map", "Kohonen", "competitive learning", "neural map"],
+    "erosion": ["hydraulic erosion", "terrain sculpting", "water flow", "geological"],
+    "terrain": ["heightmap", "elevation map", "landscape", "procedural terrain", "geology"],
+    "diffraction": ["wave diffraction", "interference fringe", "single slit", "double slit"],
+    "caustic": ["light caustic", "refraction", "lens effect", "underwater light"],
+    "illusion": ["optical illusion", "perceptual geometry", "impossible object", "gestalt"],
 }
 
 MOOD_PROFILES: dict[str, dict[str, list[str]]] = {
@@ -111,6 +132,26 @@ MOOD_PROFILES: dict[str, dict[str, list[str]]] = {
         "concepts": ["pixel", "posterization", "hash", "grid", "cellular"],
         "categories": ["shader", "tiling_patterns", "cellular_automata"],
         "good_for": ["retro", "pixel", "poster", "graphic", "grid"],
+    },
+    "crystalline": {
+        "concepts": ["crystal", "snowflake", "dendrite", "lattice", "6-fold", "mineral"],
+        "categories": ["crystal_growth", "mathematical", "tiling_patterns"],
+        "good_for": ["crystalline", "snowflake", "mineral", "symmetric", "nature"],
+    },
+    "topological": {
+        "concepts": ["topology", "manifold", "knot", "surface", "continuous", "deformation"],
+        "categories": ["topology", "mathematical", "three_dimensional"],
+        "good_for": ["topological", "abstract", "mathematical", "3D", "surface"],
+    },
+    "networked": {
+        "concepts": ["network", "graph", "node", "edge", "spreading", "connectivity"],
+        "categories": ["network_dynamics", "steering_behaviors", "swarm_intelligence"],
+        "good_for": ["networks", "graphs", "spreading", "connected", "emergent"],
+    },
+    "geological": {
+        "concepts": ["terrain", "erosion", "heightmap", "landscape", "geological", "noise"],
+        "categories": ["procedural_terrain", "physics", "mathematical"],
+        "good_for": ["terrain", "landscape", "erosion", "geological", "natural"],
     },
 }
 
@@ -197,6 +238,48 @@ COMBINATION_RECIPES: list[dict[str, Any]] = [
             },
             {"role": "terrain", "query": "domain warp FBM", "category": "shader"},
             {"role": "detail", "query": "displacement surface", "category": "shader"},
+        ],
+    },
+    {
+        "name": "Crystal Universe",
+        "description": "Dendritic snowflake growth rendered against a deep-space particle field",
+        "moods": ["crystalline", "cosmic"],
+        "layers": [
+            {"role": "background", "query": "perlin noise", "category": "shader"},
+            {
+                "role": "crystal",
+                "query": "snowflake crystal dendrite",
+                "category": "crystal_growth",
+            },
+            {"role": "glow", "query": "raymarching sphere glow", "category": "shader"},
+        ],
+    },
+    {
+        "name": "Network Bloom",
+        "description": "Scale-free network topology emerging from biological growth rules",
+        "moods": ["networked", "generative"],
+        "layers": [
+            {
+                "role": "structure",
+                "query": "scale-free network graph",
+                "category": "network_dynamics",
+            },
+            {"role": "growth", "query": "space colonization branch", "category": "biological"},
+            {"role": "texture", "query": "Voronoi stippling", "category": "mathematical"},
+        ],
+    },
+    {
+        "name": "Geological Strata",
+        "description": "Procedural terrain with hydraulic erosion and noise-driven layering",
+        "moods": ["geological", "ethereal"],
+        "layers": [
+            {
+                "role": "terrain",
+                "query": "hydraulic erosion heightmap",
+                "category": "procedural_terrain",
+            },
+            {"role": "detail", "query": "domain warp FBM", "category": "shader"},
+            {"role": "color", "query": "worley noise", "category": "mathematical"},
         ],
     },
 ]
