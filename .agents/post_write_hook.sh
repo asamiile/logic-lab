@@ -24,4 +24,4 @@ fi
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 echo "[manifest] New algorithm detected: $FILE_PATH"
 cd "$REPO_ROOT"
-python3 .agents/update_art_manifest.py --write 2>&1 | tail -5
+python3 .agents/update_art_manifest.py --write 2>&1 | tail -5 || true
