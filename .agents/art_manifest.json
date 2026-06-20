@@ -139,6 +139,27 @@
       ]
     },
     {
+      "path": "biological/predator_prey_dynamics/predator_prey_dynamics.py",
+      "title": "Predator Prey Dynamics",
+      "category": "biological",
+      "concepts": [
+        "biological",
+        "organism",
+        "colony"
+      ],
+      "visual_use": "Use for biological organisms, colony growth, organic networks, or symbiotic systems.",
+      "good_for": [
+        "organisms",
+        "colonies",
+        "networks"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "biological/space_colonization/space_colonization.py",
       "title": "Space Colonization Algorithm",
       "category": "biological",
@@ -6226,6 +6247,29 @@
       ],
       "complexity": "high",
       "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "swarm_intelligence/particle_swarm_optimization/particle_swarm_optimization.py",
+      "title": "Particle Swarm Optimization",
+      "category": "swarm_intelligence",
+      "concepts": [
+        "particle system",
+        "emitter",
+        "swarm",
+        "agents",
+        "emergence"
+      ],
+      "visual_use": "Use for colony behavior, decentralized navigation, emergent foraging, or agent optimization.",
+      "good_for": [
+        "swarms",
+        "colonies",
+        "optimization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
         "py5"
       ]
     },
