@@ -643,6 +643,26 @@
       ]
     },
     {
+      "path": "fractals/ifs_fractal/ifs_fractal.py",
+      "title": "Ifs Fractal",
+      "category": "fractals",
+      "concepts": [
+        "fractal",
+        "recursion"
+      ],
+      "visual_use": "Use for recursive geometry, branching structures, or self-similar patterns.",
+      "good_for": [
+        "recursion",
+        "growth",
+        "geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "fractals/julia_set/julia_set.py",
       "title": "Julia Set",
       "category": "fractals",
@@ -2845,6 +2865,31 @@
       ]
     },
     {
+      "path": "optical/caustics/caustics.py",
+      "title": "Caustics",
+      "category": "optical",
+      "concepts": [
+        "caustic",
+        "light",
+        "refraction",
+        "lens",
+        "underwater",
+        "optics"
+      ],
+      "visual_use": "Use for light caustics, diffraction patterns, interference fringes, or optical illusion geometry.",
+      "good_for": [
+        "light",
+        "optics",
+        "diffraction",
+        "caustics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "optical/diffraction_pattern/diffraction_pattern.py",
       "title": "Diffraction Pattern",
       "category": "optical",
@@ -4227,6 +4272,31 @@
         "geology"
       ],
       "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "procedural_terrain/voronoi_landscape/voronoi_landscape.py",
+      "title": "Voronoi Landscape",
+      "category": "procedural_terrain",
+      "concepts": [
+        "voronoi",
+        "diagram",
+        "stippling",
+        "heightmap",
+        "elevation",
+        "landscape"
+      ],
+      "visual_use": "Use for landscape generation, hydraulic erosion, heightmap sculpting, or geological simulations.",
+      "good_for": [
+        "terrain",
+        "landscape",
+        "erosion",
+        "geology"
+      ],
+      "complexity": "medium",
       "dependencies": [
         "numpy",
         "py5"
