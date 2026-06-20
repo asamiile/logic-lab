@@ -2652,6 +2652,30 @@
       ]
     },
     {
+      "path": "network_dynamics/sir_epidemic/sir_epidemic.py",
+      "title": "Sir Epidemic",
+      "category": "network_dynamics",
+      "concepts": [
+        "graph",
+        "node",
+        "edge",
+        "connectivity",
+        "network"
+      ],
+      "visual_use": "Use for graph visualization, network evolution, scale-free topologies, or spreading dynamics.",
+      "good_for": [
+        "networks",
+        "graphs",
+        "connectivity",
+        "spreading"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "neuro_evolution/flappy_bird_neuro_evolution/flappy_bird_neuro_evolution.py",
       "title": "Flappy bird neuro-evolution",
       "category": "neuro_evolution",
@@ -2705,6 +2729,29 @@
         "interference",
         "optics",
         "light"
+      ],
+      "visual_use": "Use for light caustics, diffraction patterns, interference fringes, or optical illusion geometry.",
+      "good_for": [
+        "light",
+        "optics",
+        "diffraction",
+        "caustics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "optical/thin_film/thin_film.py",
+      "title": "Thin Film",
+      "category": "optical",
+      "concepts": [
+        "light",
+        "optics",
+        "diffraction",
+        "interference"
       ],
       "visual_use": "Use for light caustics, diffraction patterns, interference fringes, or optical illusion geometry.",
       "good_for": [
@@ -6291,6 +6338,31 @@
       ],
       "complexity": "medium",
       "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "topology/mobius_strip/mobius_strip.py",
+      "title": "Mobius Strip",
+      "category": "topology",
+      "concepts": [
+        "topological",
+        "manifold",
+        "surface",
+        "continuous deformation",
+        "mobius strip",
+        "non-orientable"
+      ],
+      "visual_use": "Use for topological surfaces, non-orientable manifolds, knot diagrams, or continuous deformation art.",
+      "good_for": [
+        "surfaces",
+        "manifolds",
+        "knots",
+        "deformation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
         "py5"
       ]
     },
