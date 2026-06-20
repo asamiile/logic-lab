@@ -4552,6 +4552,31 @@
       ]
     },
     {
+      "path": "self_organizing/boids/boids.py",
+      "title": "Boids",
+      "category": "self_organizing",
+      "concepts": [
+        "boids",
+        "swarm",
+        "self-organization",
+        "emergence",
+        "learning",
+        "adaptation"
+      ],
+      "visual_use": "Use for self-organizing maps, emergent structure, competitive learning, or adaptive pattern formation.",
+      "good_for": [
+        "emergence",
+        "adaptation",
+        "learning",
+        "self-organization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "self_organizing/growing_neural_gas/growing_neural_gas.py",
       "title": "Growing Neural Gas",
       "category": "self_organizing",
@@ -4585,6 +4610,29 @@
         "neural",
         "kohonen",
         "topology"
+      ],
+      "visual_use": "Use for self-organizing maps, emergent structure, competitive learning, or adaptive pattern formation.",
+      "good_for": [
+        "emergence",
+        "adaptation",
+        "learning",
+        "self-organization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "self_organizing/reaction_diffusion/reaction_diffusion.py",
+      "title": "Reaction Diffusion",
+      "category": "self_organizing",
+      "concepts": [
+        "self-organization",
+        "emergence",
+        "learning",
+        "adaptation"
       ],
       "visual_use": "Use for self-organizing maps, emergent structure, competitive learning, or adaptive pattern formation.",
       "good_for": [
@@ -5629,6 +5677,31 @@
       "title": "Lissajous Figures",
       "category": "signal_processing",
       "concepts": [
+        "signal",
+        "frequency",
+        "filter",
+        "wavelet"
+      ],
+      "visual_use": "Use for frequency analysis, wavelet visualization, signal filtering, or time-frequency art.",
+      "good_for": [
+        "frequency",
+        "wavelet",
+        "filter",
+        "spectrum"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "signal_processing/wave_interference/wave_interference.py",
+      "title": "Wave Interference",
+      "category": "signal_processing",
+      "concepts": [
+        "wave",
+        "oscillation",
         "signal",
         "frequency",
         "filter",
