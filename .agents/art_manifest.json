@@ -5337,6 +5337,29 @@
       "dependencies": []
     },
     {
+      "path": "signal_processing/lissajous_figures/lissajous_figures.py",
+      "title": "Lissajous Figures",
+      "category": "signal_processing",
+      "concepts": [
+        "signal",
+        "frequency",
+        "filter",
+        "wavelet"
+      ],
+      "visual_use": "Use for frequency analysis, wavelet visualization, signal filtering, or time-frequency art.",
+      "good_for": [
+        "frequency",
+        "wavelet",
+        "filter",
+        "spectrum"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "simulation/random_walk/random_walk.py",
       "title": "Random Walk",
       "category": "simulation",
