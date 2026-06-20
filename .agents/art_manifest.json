@@ -2651,6 +2651,30 @@
       ]
     },
     {
+      "path": "optical/diffraction_pattern/diffraction_pattern.py",
+      "title": "Diffraction Pattern",
+      "category": "optical",
+      "concepts": [
+        "diffraction",
+        "wave",
+        "interference",
+        "optics",
+        "light"
+      ],
+      "visual_use": "Use for light caustics, diffraction patterns, interference fringes, or optical illusion geometry.",
+      "good_for": [
+        "light",
+        "optics",
+        "diffraction",
+        "caustics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "oscillators/chladni_figures/chladni_figures.py",
       "title": "Chladni Figures",
       "category": "oscillators",
@@ -3942,6 +3966,31 @@
       ]
     },
     {
+      "path": "procedural_terrain/hydraulic_erosion/hydraulic_erosion.py",
+      "title": "Hydraulic Erosion",
+      "category": "procedural_terrain",
+      "concepts": [
+        "hydraulic erosion",
+        "terrain",
+        "geological",
+        "water flow",
+        "heightmap",
+        "elevation"
+      ],
+      "visual_use": "Use for landscape generation, hydraulic erosion, heightmap sculpting, or geological simulations.",
+      "good_for": [
+        "terrain",
+        "landscape",
+        "erosion",
+        "geology"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "reaction_diffusion/belousov_zhabotinsky/belousov_zhabotinsky.py",
       "title": "Belousov-Zhabotinsky Reaction",
       "category": "reaction_diffusion",
@@ -4253,6 +4302,31 @@
         "experiments",
         "systems",
         "hybrids"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "self_organizing/kohonen_som/kohonen_som.py",
+      "title": "Kohonen Som",
+      "category": "self_organizing",
+      "concepts": [
+        "self-organizing map",
+        "SOM",
+        "competitive learning",
+        "neural",
+        "kohonen",
+        "topology"
+      ],
+      "visual_use": "Use for self-organizing maps, emergent structure, competitive learning, or adaptive pattern formation.",
+      "good_for": [
+        "emergence",
+        "adaptation",
+        "learning",
+        "self-organization"
       ],
       "complexity": "medium",
       "dependencies": [
