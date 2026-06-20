@@ -370,6 +370,31 @@
       ]
     },
     {
+      "path": "chaos_theory/henon_map/henon_map.py",
+      "title": "Henon Map",
+      "category": "chaos_theory",
+      "concepts": [
+        "chaos",
+        "strange attractor",
+        "butterfly effect",
+        "attractor",
+        "bifurcation",
+        "dynamical system"
+      ],
+      "visual_use": "Use for chaotic dynamics, bifurcation diagrams, basin of attraction maps, or Poincaré sections.",
+      "good_for": [
+        "chaos",
+        "bifurcation",
+        "attractors",
+        "dynamics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "crystal_growth/snowflake_growth/snowflake_growth.py",
       "title": "Snowflake Growth",
       "category": "crystal_growth",
@@ -2554,6 +2579,31 @@
         "py5",
         "touchdesigner",
         "ue5"
+      ]
+    },
+    {
+      "path": "network_dynamics/scale_free_network/scale_free_network.py",
+      "title": "Scale Free Network",
+      "category": "network_dynamics",
+      "concepts": [
+        "graph",
+        "node",
+        "edge",
+        "connectivity",
+        "network",
+        "power law"
+      ],
+      "visual_use": "Use for graph visualization, network evolution, scale-free topologies, or spreading dynamics.",
+      "good_for": [
+        "networks",
+        "graphs",
+        "connectivity",
+        "spreading"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
       ]
     },
     {
@@ -6076,6 +6126,31 @@
       ],
       "complexity": "medium",
       "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "topology/torus_knot/torus_knot.py",
+      "title": "Torus Knot",
+      "category": "topology",
+      "concepts": [
+        "topological",
+        "manifold",
+        "surface",
+        "continuous deformation",
+        "torus knot",
+        "knot theory"
+      ],
+      "visual_use": "Use for topological surfaces, non-orientable manifolds, knot diagrams, or continuous deformation art.",
+      "good_for": [
+        "surfaces",
+        "manifolds",
+        "knots",
+        "deformation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
         "py5"
       ]
     }
