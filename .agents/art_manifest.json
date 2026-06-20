@@ -1028,6 +1028,26 @@
       ]
     },
     {
+      "path": "genetic_algorithms/evolving_circles/evolving_circles.py",
+      "title": "Evolving Circles",
+      "category": "genetic_algorithms",
+      "concepts": [
+        "genetic algorithm",
+        "evolution"
+      ],
+      "visual_use": "Use for evolved forms, optimization, generations, or selection-driven variation.",
+      "good_for": [
+        "evolution",
+        "variation",
+        "optimization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "genetic_algorithms/ga_shakespeare/ga_shakespeare.py",
       "title": "Genetic algorithm Shakespeare",
       "category": "genetic_algorithms",
@@ -3193,6 +3213,27 @@
       ],
       "complexity": "low",
       "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "oscillators/van_der_pol/van_der_pol.py",
+      "title": "Van Der Pol",
+      "category": "oscillators",
+      "concepts": [
+        "oscillation",
+        "wave",
+        "frequency"
+      ],
+      "visual_use": "Use for wave patterns, resonance figures, coupled oscillations, or harmonic motion.",
+      "good_for": [
+        "waves",
+        "resonance",
+        "harmonic"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
         "py5"
       ]
     },
@@ -6296,6 +6337,30 @@
       ],
       "complexity": "medium",
       "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "three_dimensional/lorenz_strands/lorenz_strands.py",
+      "title": "Lorenz Strands",
+      "category": "three_dimensional",
+      "concepts": [
+        "lorenz",
+        "chaos",
+        "butterfly effect",
+        "attractor",
+        "3D",
+        "volumetric"
+      ],
+      "visual_use": "Use for 3D geometry, volumetric effects, spatial structures, or depth rendering.",
+      "good_for": [
+        "3D",
+        "spatial",
+        "volumetric"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
         "py5"
       ]
     },
