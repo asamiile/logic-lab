@@ -69,6 +69,32 @@
       ]
     },
     {
+      "path": "biological/dla/dla.py",
+      "title": "Diffusion-Limited Aggregation (DLA)",
+      "category": "biological",
+      "concepts": [
+        "DLA",
+        "random walk",
+        "fractal",
+        "aggregation",
+        "dendritic",
+        "crystal",
+        "growth"
+      ],
+      "visual_use": "Random-walk particles stick on contact, building fractal dendritic clusters. Use for snowflake, coral, lightning, or crystal growth art.",
+      "good_for": [
+        "fractal",
+        "growth",
+        "nature",
+        "crystal",
+        "organic"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "biological/mycelium_growth/mycelium_growth.py",
       "title": "Mycelium Growth Network",
       "category": "biological",
@@ -109,6 +135,31 @@
       "complexity": "medium",
       "dependencies": [
         "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "biological/space_colonization/space_colonization.py",
+      "title": "Space Colonization Algorithm",
+      "category": "biological",
+      "concepts": [
+        "space colonization",
+        "tree growth",
+        "branching",
+        "auxin",
+        "vascular",
+        "L-system alternative"
+      ],
+      "visual_use": "Branch tips compete for scattered attractors, generating realistic tree, root, and vascular network structures. Use for botanical, organic branching art.",
+      "good_for": [
+        "botanical",
+        "tree",
+        "branching",
+        "organic",
+        "network"
+      ],
+      "complexity": "medium",
+      "dependencies": [
         "py5"
       ]
     },
@@ -315,6 +366,31 @@
       ],
       "complexity": "low",
       "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "crystal_growth/snowflake_growth/snowflake_growth.py",
+      "title": "Snowflake Growth",
+      "category": "crystal_growth",
+      "concepts": [
+        "crystal",
+        "dendrite",
+        "solidification",
+        "ice",
+        "6-fold symmetry",
+        "crystallization"
+      ],
+      "visual_use": "Use for crystalline structures, dendritic snowflakes, mineral growth, or 6-fold symmetric patterns.",
+      "good_for": [
+        "crystals",
+        "snowflakes",
+        "dendrites",
+        "minerals"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
         "py5"
       ]
     },
@@ -2216,6 +2292,33 @@
       ]
     },
     {
+      "path": "mathematical/strange_attractors/strange_attractors.py",
+      "title": "Strange Attractors",
+      "category": "mathematical",
+      "concepts": [
+        "strange attractor",
+        "chaos",
+        "Lorenz",
+        "Rössler",
+        "fractal",
+        "dynamical system",
+        "3D"
+      ],
+      "visual_use": "Five classic chaotic attractors (Lorenz, Rössler, Thomas, Aizawa, Dadras) rendered in 3D with slow rotation. Use for cosmic, ethereal, chaotic depth art.",
+      "good_for": [
+        "chaos",
+        "3D",
+        "cosmic",
+        "ethereal",
+        "fractal",
+        "abstract"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "mathematical/string_art/string_art.py",
       "title": "String Art",
       "category": "mathematical",
@@ -2493,6 +2596,109 @@
         "trails"
       ],
       "complexity": "high",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "oscillators/chladni_figures/chladni_figures.py",
+      "title": "Chladni Figures",
+      "category": "oscillators",
+      "concepts": [
+        "Chladni",
+        "standing wave",
+        "resonance",
+        "nodal lines",
+        "mode",
+        "vibration"
+      ],
+      "visual_use": "Standing wave nodal patterns on a 2D plate — LFO morphs between resonant modes. Use for sand-pattern, mandala-like, or physics-based geometric art.",
+      "good_for": [
+        "geometric",
+        "mandala",
+        "pattern",
+        "organic",
+        "physics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "oscillators/coupled_oscillators/coupled_oscillators.py",
+      "title": "Coupled Oscillators (Kuramoto Model)",
+      "category": "oscillators",
+      "concepts": [
+        "Kuramoto",
+        "coupled oscillators",
+        "synchronization",
+        "phase transition",
+        "emergence",
+        "collective"
+      ],
+      "visual_use": "N oscillators spontaneously synchronize above critical coupling K. Use for collective rhythm visualization, phase transition art, or network synchrony studies.",
+      "good_for": [
+        "emergent",
+        "animation",
+        "physics",
+        "network",
+        "chaotic"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "oscillators/harmonic_pantograph/harmonic_pantograph.py",
+      "title": "Harmonic Pantograph (Spirograph)",
+      "category": "oscillators",
+      "concepts": [
+        "spirograph",
+        "epicycloid",
+        "pantograph",
+        "Fourier",
+        "harmonic",
+        "rotating arm",
+        "trail"
+      ],
+      "visual_use": "Chain of rotating arms draws Fourier epicycle curves. LFO slowly modulates arm speeds for evolving spirograph patterns. Use for intricate line art and mandalas.",
+      "good_for": [
+        "geometric",
+        "mandala",
+        "intricate",
+        "trail",
+        "animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "oscillators/lissajous_curves/lissajous_curves.py",
+      "title": "Lissajous Curves",
+      "category": "oscillators",
+      "concepts": [
+        "Lissajous",
+        "oscillator",
+        "XY",
+        "frequency ratio",
+        "phase",
+        "sine wave",
+        "trail"
+      ],
+      "visual_use": "Two oscillators drive X and Y to trace closed curves. LFO drifts the phase offset for continuously morphing figures. Use for hypnotic geometric loop art.",
+      "good_for": [
+        "geometric",
+        "loop",
+        "animation",
+        "hypnotic",
+        "trail"
+      ],
+      "complexity": "low",
       "dependencies": [
         "py5"
       ]
@@ -3473,6 +3679,33 @@
       ]
     },
     {
+      "path": "physics/stable_fluids/stable_fluids.py",
+      "title": "Stable Fluids (Jos Stam)",
+      "category": "physics",
+      "concepts": [
+        "fluid simulation",
+        "Navier-Stokes",
+        "advection",
+        "incompressible",
+        "dye",
+        "interactive"
+      ],
+      "visual_use": "Real-time incompressible fluid with mouse-painted dye. Use for flowing ink, smoke, aurora, or paint-mix art.",
+      "good_for": [
+        "fluid",
+        "interactive",
+        "flow",
+        "smoke",
+        "paint",
+        "organic"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "physics/stable_fluids_2d/stable_fluids_2d.py",
       "title": "Stable Fluids 2D",
       "category": "physics",
@@ -3659,6 +3892,32 @@
       ]
     },
     {
+      "path": "reaction_diffusion/belousov_zhabotinsky/belousov_zhabotinsky.py",
+      "title": "Belousov-Zhabotinsky Reaction",
+      "category": "reaction_diffusion",
+      "concepts": [
+        "BZ reaction",
+        "spiral wave",
+        "oscillation",
+        "chemical",
+        "self-organization"
+      ],
+      "visual_use": "Produces self-organizing spiral waves and concentric target patterns. Use for ethereal, hypnotic rotating wave art.",
+      "good_for": [
+        "spiral",
+        "wave",
+        "organic",
+        "animation",
+        "hypnotic"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "scipy",
+        "py5"
+      ]
+    },
+    {
       "path": "reaction_diffusion/gray_scott/gray_scott.py",
       "title": "Gray-Scott Reaction-Diffusion System",
       "category": "reaction_diffusion",
@@ -3678,6 +3937,58 @@
       "complexity": "medium",
       "dependencies": [
         "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "reaction_diffusion/lenia/lenia.py",
+      "title": "Lenia Continuous Cellular Automaton",
+      "category": "reaction_diffusion",
+      "concepts": [
+        "Lenia",
+        "continuous cellular automaton",
+        "artificial life",
+        "emergent",
+        "creature"
+      ],
+      "visual_use": "Continuous Game of Life that produces gliding life-like creatures. Use for organic, living, emergent pattern art.",
+      "good_for": [
+        "artificial life",
+        "organic",
+        "emergent",
+        "creature",
+        "animation"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "reaction_diffusion/turing_patterns/turing_patterns.py",
+      "title": "Turing Patterns (Gierer-Meinhardt)",
+      "category": "reaction_diffusion",
+      "concepts": [
+        "Turing pattern",
+        "morphogenesis",
+        "activator inhibitor",
+        "spots",
+        "stripes",
+        "labyrinth"
+      ],
+      "visual_use": "Gierer-Meinhardt activator-inhibitor system producing animal coat patterns: spots, stripes, labyrinths.",
+      "good_for": [
+        "texture",
+        "organic",
+        "nature",
+        "pattern",
+        "morphogenesis"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "scipy",
         "py5"
       ]
     },
@@ -3900,6 +4211,1028 @@
       ]
     },
     {
+      "path": "shader/advanced_sdf/boolean_ops_2d.frag",
+      "title": "2D Boolean SDF Operations",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "boolean",
+        "2D",
+        "union",
+        "intersection",
+        "subtraction"
+      ],
+      "visual_use": "Boolean operations on 2D signed distance fields for compositing flat graphic shapes.",
+      "good_for": [
+        "2D",
+        "geometric",
+        "graphic",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/boolean_ops_3d.frag",
+      "title": "3D Boolean SDF Operations",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "boolean",
+        "union",
+        "intersection",
+        "subtraction",
+        "3D",
+        "CSG"
+      ],
+      "visual_use": "Constructive solid geometry (CSG) with 3D SDFs: union, intersection, and subtraction of shapes.",
+      "good_for": [
+        "3D",
+        "geometric",
+        "sculptural",
+        "CSG"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/displacement.frag",
+      "title": "Surface Displacement",
+      "category": "shader",
+      "concepts": [
+        "displacement",
+        "SDF",
+        "surface detail",
+        "noise",
+        "deformation"
+      ],
+      "visual_use": "Add noise-based displacement to SDF surfaces for organic, rough, or alien textures on 3D forms.",
+      "good_for": [
+        "3D",
+        "texture",
+        "organic",
+        "deformation"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/infinite_repeat.frag",
+      "title": "Infinite Repetition (SDF)",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "infinite repeat",
+        "tiling",
+        "modulo",
+        "3D"
+      ],
+      "visual_use": "Repeat 3D SDF objects infinitely using modulo operations for tiled, crystalline, or lattice structures.",
+      "good_for": [
+        "3D",
+        "tiling",
+        "pattern",
+        "crystalline",
+        "infinite"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/octahedron.frag",
+      "title": "Octahedron SDF",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "octahedron",
+        "polyhedra",
+        "3D",
+        "geometric"
+      ],
+      "visual_use": "Raymarched octahedron using SDF. Use for crystalline, gem-like, or sharp geometric 3D art.",
+      "good_for": [
+        "3D",
+        "geometric",
+        "crystal",
+        "polyhedra"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/polyhedra_truncation.frag",
+      "title": "Polyhedra Truncation (SDF)",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "polyhedra",
+        "truncation",
+        "3D",
+        "geometric",
+        "Archimedean solid"
+      ],
+      "visual_use": "Generate truncated polyhedra (Archimedean solids) via SDF operations for precise architectural 3D forms.",
+      "good_for": [
+        "3D",
+        "geometric",
+        "architectural",
+        "polyhedra"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/sdf_morphing.frag",
+      "title": "SDF Morphing",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "morphing",
+        "interpolation",
+        "animation",
+        "3D",
+        "shape blending"
+      ],
+      "visual_use": "Smooth animated morphing between multiple 3D SDF shapes. Use for abstract transforming sculpture art.",
+      "good_for": [
+        "animation",
+        "morphing",
+        "3D",
+        "abstract",
+        "sculpture"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/smooth_min.frag",
+      "title": "Smooth Minimum (SDF Blending)",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "smooth minimum",
+        "smin",
+        "blending",
+        "3D",
+        "soft bodies"
+      ],
+      "visual_use": "Smoothly blend multiple SDF shapes using smooth-min for organic, blob-like 3D forms.",
+      "good_for": [
+        "organic",
+        "blob",
+        "3D",
+        "blending",
+        "soft"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/solid_texture.frag",
+      "title": "Solid Texturing (SDF)",
+      "category": "shader",
+      "concepts": [
+        "solid texture",
+        "procedural texture",
+        "SDF",
+        "3D",
+        "material"
+      ],
+      "visual_use": "Procedural solid texturing applied to raymarched 3D SDF objects for marble, wood, or layered material looks.",
+      "good_for": [
+        "3D",
+        "material",
+        "texture",
+        "marble",
+        "wood"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/fbm_warp/domain_warp.frag",
+      "title": "FBM Domain Warping",
+      "category": "shader",
+      "concepts": [
+        "domain warp",
+        "FBM",
+        "noise",
+        "organic",
+        "flow",
+        "distortion"
+      ],
+      "visual_use": "Warp space itself with FBM to create fluid, marble-like, or atmospheric art. One of the most powerful generative techniques.",
+      "good_for": [
+        "organic",
+        "fluid",
+        "marble",
+        "atmospheric",
+        "abstract"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/fbm_warp/fbm.frag",
+      "title": "Fractional Brownian Motion (FBM)",
+      "category": "shader",
+      "concepts": [
+        "FBM",
+        "noise",
+        "fractal",
+        "organic",
+        "texture"
+      ],
+      "visual_use": "Multi-octave noise layering to create natural-looking organic textures. Foundation for cloud, terrain, and fluid art.",
+      "good_for": [
+        "organic",
+        "texture",
+        "clouds",
+        "terrain"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/fbm_warp/noise_blending.frag",
+      "title": "Noise Blending",
+      "category": "shader",
+      "concepts": [
+        "noise",
+        "blending",
+        "layering",
+        "compositing"
+      ],
+      "visual_use": "Blend multiple noise functions with various modes for complex texture layering.",
+      "good_for": [
+        "texture",
+        "layering",
+        "abstract"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/fbm_warp/warp_rotation.frag",
+      "title": "Rotational Domain Warp",
+      "category": "shader",
+      "concepts": [
+        "domain warp",
+        "rotation",
+        "noise",
+        "swirl",
+        "spiral"
+      ],
+      "visual_use": "Rotation-based domain warping for swirling, spiral, and vortex-like distortions.",
+      "good_for": [
+        "swirl",
+        "vortex",
+        "spiral",
+        "abstract"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/gradient_noise/gradient_noise.frag",
+      "title": "Gradient Noise",
+      "category": "shader",
+      "concepts": [
+        "gradient noise",
+        "smooth",
+        "texture",
+        "interpolation"
+      ],
+      "visual_use": "Smooth gradient-based noise for soft, flowing textures and natural variation.",
+      "good_for": [
+        "texture",
+        "smooth",
+        "organic"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/gradient_noise/periodic_noise.frag",
+      "title": "Periodic Noise",
+      "category": "shader",
+      "concepts": [
+        "periodic noise",
+        "tiling",
+        "seamless",
+        "texture"
+      ],
+      "visual_use": "Seamlessly tileable noise texture. Essential for repeating patterns and textile-like art.",
+      "good_for": [
+        "tiling",
+        "seamless",
+        "texture",
+        "pattern"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/gradient_noise/perlin_noise.frag",
+      "title": "Perlin Noise",
+      "category": "shader",
+      "concepts": [
+        "Perlin noise",
+        "gradient noise",
+        "smooth",
+        "organic",
+        "texture"
+      ],
+      "visual_use": "Classic Perlin gradient noise. The most versatile base for natural-looking art: terrain, clouds, and motion.",
+      "good_for": [
+        "texture",
+        "organic",
+        "terrain",
+        "clouds",
+        "motion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/gradient_noise/rotation_noise.frag",
+      "title": "Rotation Noise",
+      "category": "shader",
+      "concepts": [
+        "noise",
+        "rotation",
+        "anisotropic",
+        "directional",
+        "texture"
+      ],
+      "visual_use": "Rotation-based noise for directional, streaky, or fiber-like textures.",
+      "good_for": [
+        "texture",
+        "directional",
+        "fiber"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/hash/hash_1d.frag",
+      "title": "1D Hash Functions",
+      "category": "shader",
+      "concepts": [
+        "hash",
+        "random",
+        "noise",
+        "1D"
+      ],
+      "visual_use": "GPU-friendly 1D hash for fast deterministic pseudo-random values. Used as a building block in noise shaders.",
+      "good_for": [
+        "random",
+        "noise",
+        "procedural"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/hash/hash_multidim.frag",
+      "title": "Multi-dimensional Hash",
+      "category": "shader",
+      "concepts": [
+        "hash",
+        "random",
+        "2D",
+        "3D",
+        "noise",
+        "building block"
+      ],
+      "visual_use": "2D/3D hash functions as building blocks for Voronoi, Worley, and other noise algorithms.",
+      "good_for": [
+        "random",
+        "noise",
+        "building block"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/interpolation/polar.frag",
+      "title": "Polar Coordinates",
+      "category": "shader",
+      "concepts": [
+        "polar coordinates",
+        "radial",
+        "angular",
+        "circular"
+      ],
+      "visual_use": "Transform UV to polar coordinates for radial, mandala-like, and circular generative patterns.",
+      "good_for": [
+        "radial",
+        "mandala",
+        "circular",
+        "symmetry"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/interpolation/polar_rotation.frag",
+      "title": "Polar Rotation",
+      "category": "shader",
+      "concepts": [
+        "polar",
+        "rotation",
+        "angular",
+        "symmetry",
+        "radial"
+      ],
+      "visual_use": "Polar coordinate rotation for spinning, rotating radial art and kaleidoscope effects.",
+      "good_for": [
+        "rotation",
+        "radial",
+        "kaleidoscope",
+        "symmetry"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/interpolation/posterization.frag",
+      "title": "Posterization",
+      "category": "shader",
+      "concepts": [
+        "posterization",
+        "color",
+        "quantization",
+        "graphic",
+        "retro"
+      ],
+      "visual_use": "Reduce color bands for a posterized, screen-print, or retro graphic poster look.",
+      "good_for": [
+        "color",
+        "graphic",
+        "retro",
+        "poster"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/box_march.frag",
+      "title": "Box Raymarching",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "SDF",
+        "3D",
+        "box",
+        "geometry"
+      ],
+      "visual_use": "Use for rendering 3D boxes and rectangular forms via SDF raymarching.",
+      "good_for": [
+        "3D",
+        "geometric",
+        "architectural"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/diffuse_lighting.frag",
+      "title": "Diffuse Lighting (Raymarching)",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "lighting",
+        "normals",
+        "diffuse",
+        "shading"
+      ],
+      "visual_use": "Demonstrates normal-based diffuse shading in a raymarched scene. Use as lighting template.",
+      "good_for": [
+        "3D",
+        "lighting",
+        "shading"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/noise_texture.frag",
+      "title": "Noise-Textured Raymarching",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "noise",
+        "texture",
+        "3D",
+        "procedural"
+      ],
+      "visual_use": "Raymarched 3D scene with procedural noise texture. Combines volumetric and noise techniques.",
+      "good_for": [
+        "3D",
+        "texture",
+        "organic"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/normal_mapping.frag",
+      "title": "Normal Mapping (Raymarching)",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "normals",
+        "SDF gradient",
+        "surface detail"
+      ],
+      "visual_use": "Surface normal calculation via SDF gradient for bump/normal mapping effects.",
+      "good_for": [
+        "3D",
+        "surface detail",
+        "texture"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/ray_silhouette.frag",
+      "title": "Silhouette Raymarching",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "silhouette",
+        "outline",
+        "contour",
+        "SDF"
+      ],
+      "visual_use": "Render 3D shape silhouettes and outlines. Use for graphic, contour-focused art styles.",
+      "good_for": [
+        "silhouette",
+        "outline",
+        "graphic"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/raymarching_2d.frag",
+      "title": "2D Raymarching",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "2D",
+        "SDF",
+        "distance field"
+      ],
+      "visual_use": "2D variant of raymarching using signed distance fields. Great for stylized flat shapes with glow.",
+      "good_for": [
+        "2D",
+        "SDF",
+        "glow",
+        "geometric"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/sphere_march.frag",
+      "title": "Sphere Raymarching",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "SDF",
+        "3D",
+        "sphere",
+        "lighting"
+      ],
+      "visual_use": "Use for 3D sphere rendering with diffuse lighting via raymarching. Foundation for all SDF-based 3D art.",
+      "good_for": [
+        "3D",
+        "raymarching",
+        "geometric"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/sphere_rotating.frag",
+      "title": "Rotating Sphere Raymarching",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "SDF",
+        "3D",
+        "rotation",
+        "animation"
+      ],
+      "visual_use": "Animated rotating 3D sphere with Euler rotation. Good starting point for animated SDF scenes.",
+      "good_for": [
+        "3D",
+        "animation",
+        "rotation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/sdf_2d/circle_sdf.frag",
+      "title": "Circle SDF (2D)",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "circle",
+        "2D",
+        "distance field",
+        "glow"
+      ],
+      "visual_use": "2D signed distance field for circles. Use for glow, outline, and smooth shape effects.",
+      "good_for": [
+        "2D",
+        "SDF",
+        "glow",
+        "geometric"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/sdf_2d/lp_voronoi.frag",
+      "title": "Lp-norm Voronoi",
+      "category": "shader",
+      "concepts": [
+        "Voronoi",
+        "Lp-norm",
+        "2D",
+        "distance",
+        "cells"
+      ],
+      "visual_use": "Voronoi with Lp-norm distance for diamond, circular, and intermediate cell shapes.",
+      "good_for": [
+        "cellular",
+        "Voronoi",
+        "geometric"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/sdf_2d/rect_sdf.frag",
+      "title": "Rectangle SDF (2D)",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "rectangle",
+        "2D",
+        "distance field"
+      ],
+      "visual_use": "2D signed distance field for rectangles. Foundation for grid-based and architectural art.",
+      "good_for": [
+        "2D",
+        "SDF",
+        "geometric",
+        "grid"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/sdf_2d/voronoi_metrics.frag",
+      "title": "Voronoi Metrics (2D)",
+      "category": "shader",
+      "concepts": [
+        "Voronoi",
+        "distance metrics",
+        "2D",
+        "cells",
+        "tiling"
+      ],
+      "visual_use": "Voronoi diagrams with varied distance metrics (Euclidean, Manhattan, etc.) for diverse cellular art.",
+      "good_for": [
+        "cellular",
+        "Voronoi",
+        "tiling",
+        "abstract"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/value_noise/value_noise.frag",
+      "title": "Value Noise",
+      "category": "shader",
+      "concepts": [
+        "value noise",
+        "interpolation",
+        "texture",
+        "smooth"
+      ],
+      "visual_use": "Interpolated random value noise. Simpler than Perlin, good for blocky or watercolor-like textures.",
+      "good_for": [
+        "texture",
+        "smooth",
+        "watercolor"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/value_noise/value_noise_grad.frag",
+      "title": "Value Noise Gradient",
+      "category": "shader",
+      "concepts": [
+        "value noise",
+        "gradient",
+        "derivative",
+        "flow",
+        "direction"
+      ],
+      "visual_use": "Value noise with gradient/derivative information for flow-field and directional art.",
+      "good_for": [
+        "flow",
+        "directional",
+        "texture"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/worley/cellular_noise.frag",
+      "title": "Cellular Noise",
+      "category": "shader",
+      "concepts": [
+        "cellular noise",
+        "Worley",
+        "organic",
+        "cells"
+      ],
+      "visual_use": "Cellular noise pattern with grid-based randomness. Use for tile-like or cell-like patterns.",
+      "good_for": [
+        "cellular",
+        "texture",
+        "organic"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/worley/voronoi.frag",
+      "title": "Voronoi Noise",
+      "category": "shader",
+      "concepts": [
+        "Voronoi",
+        "cellular noise",
+        "cells",
+        "tiling",
+        "organic"
+      ],
+      "visual_use": "Classic Voronoi cellular noise. Use for biological cell patterns, cracked surfaces, stone textures.",
+      "good_for": [
+        "cellular",
+        "organic",
+        "texture",
+        "nature"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/worley/worley_f1_f4.frag",
+      "title": "Worley F1-F4 Features",
+      "category": "shader",
+      "concepts": [
+        "Worley noise",
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "cellular",
+        "distance"
+      ],
+      "visual_use": "Compare F1 through F4 Worley distance features for different cellular art styles.",
+      "good_for": [
+        "cellular",
+        "comparison",
+        "texture"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/worley/worley_layers.frag",
+      "title": "Layered Worley Noise",
+      "category": "shader",
+      "concepts": [
+        "Worley noise",
+        "layering",
+        "octaves",
+        "texture",
+        "cellular"
+      ],
+      "visual_use": "Multi-octave layered Worley noise for rich, complex organic textures with fine detail.",
+      "good_for": [
+        "texture",
+        "organic",
+        "detail",
+        "layering"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/worley/worley_noise.frag",
+      "title": "Worley Noise",
+      "category": "shader",
+      "concepts": [
+        "Worley noise",
+        "cellular",
+        "F1",
+        "texture",
+        "organic"
+      ],
+      "visual_use": "F1 Worley/cellular noise for skin, scales, stone, and organic surface textures.",
+      "good_for": [
+        "texture",
+        "organic",
+        "biological",
+        "surface"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shared/lfo.py",
+      "title": "LFOBank (Modulation Utility)",
+      "category": "shared",
+      "concepts": [
+        "LFO",
+        "oscillator",
+        "modulation",
+        "sine",
+        "triangle",
+        "sawtooth",
+        "noise",
+        "animation"
+      ],
+      "visual_use": "Use as a modulation source to animate any numeric parameter — gravity, hue, feed rate, speed — with sine/triangle/sawtooth/pulse/noise waveforms.",
+      "good_for": [
+        "modulation",
+        "animation",
+        "parameter control",
+        "rhythm"
+      ],
+      "complexity": "low",
+      "dependencies": []
+    },
+    {
+      "path": "shared/noise_field.py",
+      "title": "NoiseField (2D Value Noise with fBm)",
+      "category": "shared",
+      "concepts": [
+        "value noise",
+        "Perlin noise",
+        "fBm",
+        "fractal Brownian motion",
+        "organic",
+        "perturbation"
+      ],
+      "visual_use": "Generate organic, spatially coherent noise for parameter perturbation, symmetry breaking, or texture. Returns a scalar or a full (height, width) numpy array. Animates by incrementing the t parameter.",
+      "good_for": [
+        "organic variation",
+        "symmetry breaking",
+        "texture",
+        "parameter modulation",
+        "animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "numpy"
+      ]
+    },
+    {
+      "path": "shared/rk4.py",
+      "title": "RK4 Integrator (4th-order Runge-Kutta)",
+      "category": "shared",
+      "concepts": [
+        "RK4",
+        "numerical integration",
+        "ODE",
+        "differential equations",
+        "accuracy"
+      ],
+      "visual_use": "Drop-in replacement for Euler integration in any ODE-based simulation. Reduces trajectory error from O(dt²) to O(dt⁵) — keeps chaotic attractors accurate and prevents numerical drift over long runs.",
+      "good_for": [
+        "precision",
+        "simulation accuracy",
+        "chaotic systems",
+        "particle trajectories"
+      ],
+      "complexity": "low",
+      "dependencies": []
+    },
+    {
+      "path": "simulation/random_walk/random_walk.py",
+      "title": "Random Walk",
+      "category": "simulation",
+      "concepts": [
+        "simulation",
+        "system",
+        "dynamics"
+      ],
+      "visual_use": "Use for complex system dynamics, agent behavior, maze generation, or computational experiments.",
+      "good_for": [
+        "dynamics",
+        "systems",
+        "experiments"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
       "path": "steering_behaviors/creature_sensors/creature_sensors.py",
       "title": "Creature sensors",
       "category": "steering_behaviors",
@@ -4111,6 +5444,32 @@
       ]
     },
     {
+      "path": "swarm_intelligence/ant_colony_pheromone/ant_colony_pheromone.py",
+      "title": "Ant Colony Pheromone Trails",
+      "category": "swarm_intelligence",
+      "concepts": [
+        "ant colony",
+        "pheromone",
+        "stigmergy",
+        "trail",
+        "foraging",
+        "emergence"
+      ],
+      "visual_use": "Ants deposit glowing pheromone trails that form organic networks. Use for trail-network, flow-line, or connection-graph art.",
+      "good_for": [
+        "trail",
+        "network",
+        "organic",
+        "emergence",
+        "animation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "swarm_intelligence/bee_foraging/bee_foraging.py",
       "title": "Bee Foraging Algorithm",
       "category": "swarm_intelligence",
@@ -4129,6 +5488,58 @@
         "optimization"
       ],
       "complexity": "high",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "swarm_intelligence/predator_prey_flocking/predator_prey_flocking.py",
+      "title": "Predator-Prey Flocking",
+      "category": "swarm_intelligence",
+      "concepts": [
+        "flocking",
+        "Boids",
+        "predator",
+        "prey",
+        "escape",
+        "emergence",
+        "swarm"
+      ],
+      "visual_use": "Flock of prey with emergent escape maneuvers under predator threat. Use for dynamic, tension-filled swarm art.",
+      "good_for": [
+        "flocking",
+        "dynamic",
+        "emergent",
+        "animation",
+        "chaotic"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "three_dimensional/lsystem_3d/lsystem_3d.py",
+      "title": "3D L-System (Fractal Tree)",
+      "category": "three_dimensional",
+      "concepts": [
+        "L-system",
+        "Lindenmayer",
+        "3D tree",
+        "fractal",
+        "branching",
+        "botanical"
+      ],
+      "visual_use": "3D branching tree and plant structures via L-system symbol rewriting. Use for botanical, forest, coral, or fractal-growth art.",
+      "good_for": [
+        "botanical",
+        "tree",
+        "fractal",
+        "branching",
+        "nature",
+        "3D"
+      ],
+      "complexity": "medium",
       "dependencies": [
         "py5"
       ]
@@ -4176,6 +5587,60 @@
       ],
       "complexity": "high",
       "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "three_dimensional/point_cloud_morph/point_cloud_morph.py",
+      "title": "Point Cloud Morphing",
+      "category": "three_dimensional",
+      "concepts": [
+        "point cloud",
+        "morphing",
+        "3D",
+        "interpolation",
+        "animation",
+        "shape"
+      ],
+      "visual_use": "3D point cloud that smoothly morphs between sphere, torus, cube, and helix. Use for sculptural, transformative, or data-art aesthetics.",
+      "good_for": [
+        "3D",
+        "animation",
+        "morphing",
+        "sculpture",
+        "abstract"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "three_dimensional/volumetric_fog/volumetric_fog.py",
+      "title": "Volumetric Fog",
+      "category": "three_dimensional",
+      "concepts": [
+        "volumetric",
+        "fog",
+        "raymarching",
+        "FBM",
+        "3D",
+        "atmospheric",
+        "noise"
+      ],
+      "visual_use": "Ray-marched 3D FBM fog/cloud with directional lighting. Use for atmospheric depth, dreamy cloudscape, or ethereal cosmic art.",
+      "good_for": [
+        "atmospheric",
+        "3D",
+        "fog",
+        "clouds",
+        "ethereal",
+        "cosmic"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
         "py5"
       ]
     },
@@ -4612,1426 +6077,6 @@
       "complexity": "medium",
       "dependencies": [
         "py5"
-      ]
-    },
-    {
-      "path": "shader/raymarching/sphere_march.frag",
-      "title": "Sphere Raymarching",
-      "category": "shader",
-      "concepts": [
-        "raymarching",
-        "SDF",
-        "3D",
-        "sphere",
-        "lighting"
-      ],
-      "visual_use": "Use for 3D sphere rendering with diffuse lighting via raymarching. Foundation for all SDF-based 3D art.",
-      "good_for": [
-        "3D",
-        "raymarching",
-        "geometric"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/raymarching/sphere_rotating.frag",
-      "title": "Rotating Sphere Raymarching",
-      "category": "shader",
-      "concepts": [
-        "raymarching",
-        "SDF",
-        "3D",
-        "rotation",
-        "animation"
-      ],
-      "visual_use": "Animated rotating 3D sphere with Euler rotation. Good starting point for animated SDF scenes.",
-      "good_for": [
-        "3D",
-        "animation",
-        "rotation"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/raymarching/box_march.frag",
-      "title": "Box Raymarching",
-      "category": "shader",
-      "concepts": [
-        "raymarching",
-        "SDF",
-        "3D",
-        "box",
-        "geometry"
-      ],
-      "visual_use": "Use for rendering 3D boxes and rectangular forms via SDF raymarching.",
-      "good_for": [
-        "3D",
-        "geometric",
-        "architectural"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/raymarching/diffuse_lighting.frag",
-      "title": "Diffuse Lighting (Raymarching)",
-      "category": "shader",
-      "concepts": [
-        "raymarching",
-        "lighting",
-        "normals",
-        "diffuse",
-        "shading"
-      ],
-      "visual_use": "Demonstrates normal-based diffuse shading in a raymarched scene. Use as lighting template.",
-      "good_for": [
-        "3D",
-        "lighting",
-        "shading"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/raymarching/noise_texture.frag",
-      "title": "Noise-Textured Raymarching",
-      "category": "shader",
-      "concepts": [
-        "raymarching",
-        "noise",
-        "texture",
-        "3D",
-        "procedural"
-      ],
-      "visual_use": "Raymarched 3D scene with procedural noise texture. Combines volumetric and noise techniques.",
-      "good_for": [
-        "3D",
-        "texture",
-        "organic"
-      ],
-      "complexity": "high",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/raymarching/normal_mapping.frag",
-      "title": "Normal Mapping (Raymarching)",
-      "category": "shader",
-      "concepts": [
-        "raymarching",
-        "normals",
-        "SDF gradient",
-        "surface detail"
-      ],
-      "visual_use": "Surface normal calculation via SDF gradient for bump/normal mapping effects.",
-      "good_for": [
-        "3D",
-        "surface detail",
-        "texture"
-      ],
-      "complexity": "high",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/raymarching/ray_silhouette.frag",
-      "title": "Silhouette Raymarching",
-      "category": "shader",
-      "concepts": [
-        "raymarching",
-        "silhouette",
-        "outline",
-        "contour",
-        "SDF"
-      ],
-      "visual_use": "Render 3D shape silhouettes and outlines. Use for graphic, contour-focused art styles.",
-      "good_for": [
-        "silhouette",
-        "outline",
-        "graphic"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/raymarching/raymarching_2d.frag",
-      "title": "2D Raymarching",
-      "category": "shader",
-      "concepts": [
-        "raymarching",
-        "2D",
-        "SDF",
-        "distance field"
-      ],
-      "visual_use": "2D variant of raymarching using signed distance fields. Great for stylized flat shapes with glow.",
-      "good_for": [
-        "2D",
-        "SDF",
-        "glow",
-        "geometric"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/fbm_warp/fbm.frag",
-      "title": "Fractional Brownian Motion (FBM)",
-      "category": "shader",
-      "concepts": [
-        "FBM",
-        "noise",
-        "fractal",
-        "organic",
-        "texture"
-      ],
-      "visual_use": "Multi-octave noise layering to create natural-looking organic textures. Foundation for cloud, terrain, and fluid art.",
-      "good_for": [
-        "organic",
-        "texture",
-        "clouds",
-        "terrain"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/fbm_warp/domain_warp.frag",
-      "title": "FBM Domain Warping",
-      "category": "shader",
-      "concepts": [
-        "domain warp",
-        "FBM",
-        "noise",
-        "organic",
-        "flow",
-        "distortion"
-      ],
-      "visual_use": "Warp space itself with FBM to create fluid, marble-like, or atmospheric art. One of the most powerful generative techniques.",
-      "good_for": [
-        "organic",
-        "fluid",
-        "marble",
-        "atmospheric",
-        "abstract"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/fbm_warp/warp_rotation.frag",
-      "title": "Rotational Domain Warp",
-      "category": "shader",
-      "concepts": [
-        "domain warp",
-        "rotation",
-        "noise",
-        "swirl",
-        "spiral"
-      ],
-      "visual_use": "Rotation-based domain warping for swirling, spiral, and vortex-like distortions.",
-      "good_for": [
-        "swirl",
-        "vortex",
-        "spiral",
-        "abstract"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/fbm_warp/noise_blending.frag",
-      "title": "Noise Blending",
-      "category": "shader",
-      "concepts": [
-        "noise",
-        "blending",
-        "layering",
-        "compositing"
-      ],
-      "visual_use": "Blend multiple noise functions with various modes for complex texture layering.",
-      "good_for": [
-        "texture",
-        "layering",
-        "abstract"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/sdf_2d/circle_sdf.frag",
-      "title": "Circle SDF (2D)",
-      "category": "shader",
-      "concepts": [
-        "SDF",
-        "circle",
-        "2D",
-        "distance field",
-        "glow"
-      ],
-      "visual_use": "2D signed distance field for circles. Use for glow, outline, and smooth shape effects.",
-      "good_for": [
-        "2D",
-        "SDF",
-        "glow",
-        "geometric"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/sdf_2d/rect_sdf.frag",
-      "title": "Rectangle SDF (2D)",
-      "category": "shader",
-      "concepts": [
-        "SDF",
-        "rectangle",
-        "2D",
-        "distance field"
-      ],
-      "visual_use": "2D signed distance field for rectangles. Foundation for grid-based and architectural art.",
-      "good_for": [
-        "2D",
-        "SDF",
-        "geometric",
-        "grid"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/sdf_2d/voronoi_metrics.frag",
-      "title": "Voronoi Metrics (2D)",
-      "category": "shader",
-      "concepts": [
-        "Voronoi",
-        "distance metrics",
-        "2D",
-        "cells",
-        "tiling"
-      ],
-      "visual_use": "Voronoi diagrams with varied distance metrics (Euclidean, Manhattan, etc.) for diverse cellular art.",
-      "good_for": [
-        "cellular",
-        "Voronoi",
-        "tiling",
-        "abstract"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/sdf_2d/lp_voronoi.frag",
-      "title": "Lp-norm Voronoi",
-      "category": "shader",
-      "concepts": [
-        "Voronoi",
-        "Lp-norm",
-        "2D",
-        "distance",
-        "cells"
-      ],
-      "visual_use": "Voronoi with Lp-norm distance for diamond, circular, and intermediate cell shapes.",
-      "good_for": [
-        "cellular",
-        "Voronoi",
-        "geometric"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/worley/voronoi.frag",
-      "title": "Voronoi Noise",
-      "category": "shader",
-      "concepts": [
-        "Voronoi",
-        "cellular noise",
-        "cells",
-        "tiling",
-        "organic"
-      ],
-      "visual_use": "Classic Voronoi cellular noise. Use for biological cell patterns, cracked surfaces, stone textures.",
-      "good_for": [
-        "cellular",
-        "organic",
-        "texture",
-        "nature"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/worley/worley_noise.frag",
-      "title": "Worley Noise",
-      "category": "shader",
-      "concepts": [
-        "Worley noise",
-        "cellular",
-        "F1",
-        "texture",
-        "organic"
-      ],
-      "visual_use": "F1 Worley/cellular noise for skin, scales, stone, and organic surface textures.",
-      "good_for": [
-        "texture",
-        "organic",
-        "biological",
-        "surface"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/worley/worley_layers.frag",
-      "title": "Layered Worley Noise",
-      "category": "shader",
-      "concepts": [
-        "Worley noise",
-        "layering",
-        "octaves",
-        "texture",
-        "cellular"
-      ],
-      "visual_use": "Multi-octave layered Worley noise for rich, complex organic textures with fine detail.",
-      "good_for": [
-        "texture",
-        "organic",
-        "detail",
-        "layering"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/worley/worley_f1_f4.frag",
-      "title": "Worley F1-F4 Features",
-      "category": "shader",
-      "concepts": [
-        "Worley noise",
-        "F1",
-        "F2",
-        "F3",
-        "F4",
-        "cellular",
-        "distance"
-      ],
-      "visual_use": "Compare F1 through F4 Worley distance features for different cellular art styles.",
-      "good_for": [
-        "cellular",
-        "comparison",
-        "texture"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/worley/cellular_noise.frag",
-      "title": "Cellular Noise",
-      "category": "shader",
-      "concepts": [
-        "cellular noise",
-        "Worley",
-        "organic",
-        "cells"
-      ],
-      "visual_use": "Cellular noise pattern with grid-based randomness. Use for tile-like or cell-like patterns.",
-      "good_for": [
-        "cellular",
-        "texture",
-        "organic"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/gradient_noise/perlin_noise.frag",
-      "title": "Perlin Noise",
-      "category": "shader",
-      "concepts": [
-        "Perlin noise",
-        "gradient noise",
-        "smooth",
-        "organic",
-        "texture"
-      ],
-      "visual_use": "Classic Perlin gradient noise. The most versatile base for natural-looking art: terrain, clouds, and motion.",
-      "good_for": [
-        "texture",
-        "organic",
-        "terrain",
-        "clouds",
-        "motion"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/gradient_noise/gradient_noise.frag",
-      "title": "Gradient Noise",
-      "category": "shader",
-      "concepts": [
-        "gradient noise",
-        "smooth",
-        "texture",
-        "interpolation"
-      ],
-      "visual_use": "Smooth gradient-based noise for soft, flowing textures and natural variation.",
-      "good_for": [
-        "texture",
-        "smooth",
-        "organic"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/gradient_noise/periodic_noise.frag",
-      "title": "Periodic Noise",
-      "category": "shader",
-      "concepts": [
-        "periodic noise",
-        "tiling",
-        "seamless",
-        "texture"
-      ],
-      "visual_use": "Seamlessly tileable noise texture. Essential for repeating patterns and textile-like art.",
-      "good_for": [
-        "tiling",
-        "seamless",
-        "texture",
-        "pattern"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/gradient_noise/rotation_noise.frag",
-      "title": "Rotation Noise",
-      "category": "shader",
-      "concepts": [
-        "noise",
-        "rotation",
-        "anisotropic",
-        "directional",
-        "texture"
-      ],
-      "visual_use": "Rotation-based noise for directional, streaky, or fiber-like textures.",
-      "good_for": [
-        "texture",
-        "directional",
-        "fiber"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/value_noise/value_noise.frag",
-      "title": "Value Noise",
-      "category": "shader",
-      "concepts": [
-        "value noise",
-        "interpolation",
-        "texture",
-        "smooth"
-      ],
-      "visual_use": "Interpolated random value noise. Simpler than Perlin, good for blocky or watercolor-like textures.",
-      "good_for": [
-        "texture",
-        "smooth",
-        "watercolor"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/value_noise/value_noise_grad.frag",
-      "title": "Value Noise Gradient",
-      "category": "shader",
-      "concepts": [
-        "value noise",
-        "gradient",
-        "derivative",
-        "flow",
-        "direction"
-      ],
-      "visual_use": "Value noise with gradient/derivative information for flow-field and directional art.",
-      "good_for": [
-        "flow",
-        "directional",
-        "texture"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/advanced_sdf/sdf_morphing.frag",
-      "title": "SDF Morphing",
-      "category": "shader",
-      "concepts": [
-        "SDF",
-        "morphing",
-        "interpolation",
-        "animation",
-        "3D",
-        "shape blending"
-      ],
-      "visual_use": "Smooth animated morphing between multiple 3D SDF shapes. Use for abstract transforming sculpture art.",
-      "good_for": [
-        "animation",
-        "morphing",
-        "3D",
-        "abstract",
-        "sculpture"
-      ],
-      "complexity": "high",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/advanced_sdf/smooth_min.frag",
-      "title": "Smooth Minimum (SDF Blending)",
-      "category": "shader",
-      "concepts": [
-        "SDF",
-        "smooth minimum",
-        "smin",
-        "blending",
-        "3D",
-        "soft bodies"
-      ],
-      "visual_use": "Smoothly blend multiple SDF shapes using smooth-min for organic, blob-like 3D forms.",
-      "good_for": [
-        "organic",
-        "blob",
-        "3D",
-        "blending",
-        "soft"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/advanced_sdf/boolean_ops_3d.frag",
-      "title": "3D Boolean SDF Operations",
-      "category": "shader",
-      "concepts": [
-        "SDF",
-        "boolean",
-        "union",
-        "intersection",
-        "subtraction",
-        "3D",
-        "CSG"
-      ],
-      "visual_use": "Constructive solid geometry (CSG) with 3D SDFs: union, intersection, and subtraction of shapes.",
-      "good_for": [
-        "3D",
-        "geometric",
-        "sculptural",
-        "CSG"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/advanced_sdf/boolean_ops_2d.frag",
-      "title": "2D Boolean SDF Operations",
-      "category": "shader",
-      "concepts": [
-        "SDF",
-        "boolean",
-        "2D",
-        "union",
-        "intersection",
-        "subtraction"
-      ],
-      "visual_use": "Boolean operations on 2D signed distance fields for compositing flat graphic shapes.",
-      "good_for": [
-        "2D",
-        "geometric",
-        "graphic",
-        "composition"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/advanced_sdf/displacement.frag",
-      "title": "Surface Displacement",
-      "category": "shader",
-      "concepts": [
-        "displacement",
-        "SDF",
-        "surface detail",
-        "noise",
-        "deformation"
-      ],
-      "visual_use": "Add noise-based displacement to SDF surfaces for organic, rough, or alien textures on 3D forms.",
-      "good_for": [
-        "3D",
-        "texture",
-        "organic",
-        "deformation"
-      ],
-      "complexity": "high",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/advanced_sdf/solid_texture.frag",
-      "title": "Solid Texturing (SDF)",
-      "category": "shader",
-      "concepts": [
-        "solid texture",
-        "procedural texture",
-        "SDF",
-        "3D",
-        "material"
-      ],
-      "visual_use": "Procedural solid texturing applied to raymarched 3D SDF objects for marble, wood, or layered material looks.",
-      "good_for": [
-        "3D",
-        "material",
-        "texture",
-        "marble",
-        "wood"
-      ],
-      "complexity": "high",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/advanced_sdf/infinite_repeat.frag",
-      "title": "Infinite Repetition (SDF)",
-      "category": "shader",
-      "concepts": [
-        "SDF",
-        "infinite repeat",
-        "tiling",
-        "modulo",
-        "3D"
-      ],
-      "visual_use": "Repeat 3D SDF objects infinitely using modulo operations for tiled, crystalline, or lattice structures.",
-      "good_for": [
-        "3D",
-        "tiling",
-        "pattern",
-        "crystalline",
-        "infinite"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/advanced_sdf/octahedron.frag",
-      "title": "Octahedron SDF",
-      "category": "shader",
-      "concepts": [
-        "SDF",
-        "octahedron",
-        "polyhedra",
-        "3D",
-        "geometric"
-      ],
-      "visual_use": "Raymarched octahedron using SDF. Use for crystalline, gem-like, or sharp geometric 3D art.",
-      "good_for": [
-        "3D",
-        "geometric",
-        "crystal",
-        "polyhedra"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/advanced_sdf/polyhedra_truncation.frag",
-      "title": "Polyhedra Truncation (SDF)",
-      "category": "shader",
-      "concepts": [
-        "SDF",
-        "polyhedra",
-        "truncation",
-        "3D",
-        "geometric",
-        "Archimedean solid"
-      ],
-      "visual_use": "Generate truncated polyhedra (Archimedean solids) via SDF operations for precise architectural 3D forms.",
-      "good_for": [
-        "3D",
-        "geometric",
-        "architectural",
-        "polyhedra"
-      ],
-      "complexity": "high",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/hash/hash_1d.frag",
-      "title": "1D Hash Functions",
-      "category": "shader",
-      "concepts": [
-        "hash",
-        "random",
-        "noise",
-        "1D"
-      ],
-      "visual_use": "GPU-friendly 1D hash for fast deterministic pseudo-random values. Used as a building block in noise shaders.",
-      "good_for": [
-        "random",
-        "noise",
-        "procedural"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/hash/hash_multidim.frag",
-      "title": "Multi-dimensional Hash",
-      "category": "shader",
-      "concepts": [
-        "hash",
-        "random",
-        "2D",
-        "3D",
-        "noise",
-        "building block"
-      ],
-      "visual_use": "2D/3D hash functions as building blocks for Voronoi, Worley, and other noise algorithms.",
-      "good_for": [
-        "random",
-        "noise",
-        "building block"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/interpolation/posterization.frag",
-      "title": "Posterization",
-      "category": "shader",
-      "concepts": [
-        "posterization",
-        "color",
-        "quantization",
-        "graphic",
-        "retro"
-      ],
-      "visual_use": "Reduce color bands for a posterized, screen-print, or retro graphic poster look.",
-      "good_for": [
-        "color",
-        "graphic",
-        "retro",
-        "poster"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/interpolation/polar.frag",
-      "title": "Polar Coordinates",
-      "category": "shader",
-      "concepts": [
-        "polar coordinates",
-        "radial",
-        "angular",
-        "circular"
-      ],
-      "visual_use": "Transform UV to polar coordinates for radial, mandala-like, and circular generative patterns.",
-      "good_for": [
-        "radial",
-        "mandala",
-        "circular",
-        "symmetry"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "shader/interpolation/polar_rotation.frag",
-      "title": "Polar Rotation",
-      "category": "shader",
-      "concepts": [
-        "polar",
-        "rotation",
-        "angular",
-        "symmetry",
-        "radial"
-      ],
-      "visual_use": "Polar coordinate rotation for spinning, rotating radial art and kaleidoscope effects.",
-      "good_for": [
-        "rotation",
-        "radial",
-        "kaleidoscope",
-        "symmetry"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "GLSL"
-      ]
-    },
-    {
-      "path": "reaction_diffusion/belousov_zhabotinsky/belousov_zhabotinsky.py",
-      "title": "Belousov-Zhabotinsky Reaction",
-      "category": "reaction_diffusion",
-      "concepts": [
-        "BZ reaction",
-        "spiral wave",
-        "oscillation",
-        "chemical",
-        "self-organization"
-      ],
-      "visual_use": "Produces self-organizing spiral waves and concentric target patterns. Use for ethereal, hypnotic rotating wave art.",
-      "good_for": [
-        "spiral",
-        "wave",
-        "organic",
-        "animation",
-        "hypnotic"
-      ],
-      "complexity": "high",
-      "dependencies": [
-        "numpy",
-        "scipy",
-        "py5"
-      ]
-    },
-    {
-      "path": "reaction_diffusion/lenia/lenia.py",
-      "title": "Lenia Continuous Cellular Automaton",
-      "category": "reaction_diffusion",
-      "concepts": [
-        "Lenia",
-        "continuous cellular automaton",
-        "artificial life",
-        "emergent",
-        "creature"
-      ],
-      "visual_use": "Continuous Game of Life that produces gliding life-like creatures. Use for organic, living, emergent pattern art.",
-      "good_for": [
-        "artificial life",
-        "organic",
-        "emergent",
-        "creature",
-        "animation"
-      ],
-      "complexity": "high",
-      "dependencies": [
-        "numpy",
-        "py5"
-      ]
-    },
-    {
-      "path": "reaction_diffusion/turing_patterns/turing_patterns.py",
-      "title": "Turing Patterns (Gierer-Meinhardt)",
-      "category": "reaction_diffusion",
-      "concepts": [
-        "Turing pattern",
-        "morphogenesis",
-        "activator inhibitor",
-        "spots",
-        "stripes",
-        "labyrinth"
-      ],
-      "visual_use": "Gierer-Meinhardt activator-inhibitor system producing animal coat patterns: spots, stripes, labyrinths.",
-      "good_for": [
-        "texture",
-        "organic",
-        "nature",
-        "pattern",
-        "morphogenesis"
-      ],
-      "complexity": "high",
-      "dependencies": [
-        "numpy",
-        "scipy",
-        "py5"
-      ]
-    },
-    {
-      "path": "swarm_intelligence/ant_colony_pheromone/ant_colony_pheromone.py",
-      "title": "Ant Colony Pheromone Trails",
-      "category": "swarm_intelligence",
-      "concepts": [
-        "ant colony",
-        "pheromone",
-        "stigmergy",
-        "trail",
-        "foraging",
-        "emergence"
-      ],
-      "visual_use": "Ants deposit glowing pheromone trails that form organic networks. Use for trail-network, flow-line, or connection-graph art.",
-      "good_for": [
-        "trail",
-        "network",
-        "organic",
-        "emergence",
-        "animation"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "numpy",
-        "py5"
-      ]
-    },
-    {
-      "path": "swarm_intelligence/predator_prey_flocking/predator_prey_flocking.py",
-      "title": "Predator-Prey Flocking",
-      "category": "swarm_intelligence",
-      "concepts": [
-        "flocking",
-        "Boids",
-        "predator",
-        "prey",
-        "escape",
-        "emergence",
-        "swarm"
-      ],
-      "visual_use": "Flock of prey with emergent escape maneuvers under predator threat. Use for dynamic, tension-filled swarm art.",
-      "good_for": [
-        "flocking",
-        "dynamic",
-        "emergent",
-        "animation",
-        "chaotic"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "three_dimensional/volumetric_fog/volumetric_fog.py",
-      "title": "Volumetric Fog",
-      "category": "three_dimensional",
-      "concepts": [
-        "volumetric",
-        "fog",
-        "raymarching",
-        "FBM",
-        "3D",
-        "atmospheric",
-        "noise"
-      ],
-      "visual_use": "Ray-marched 3D FBM fog/cloud with directional lighting. Use for atmospheric depth, dreamy cloudscape, or ethereal cosmic art.",
-      "good_for": [
-        "atmospheric",
-        "3D",
-        "fog",
-        "clouds",
-        "ethereal",
-        "cosmic"
-      ],
-      "complexity": "high",
-      "dependencies": [
-        "numpy",
-        "py5"
-      ]
-    },
-    {
-      "path": "three_dimensional/lsystem_3d/lsystem_3d.py",
-      "title": "3D L-System (Fractal Tree)",
-      "category": "three_dimensional",
-      "concepts": [
-        "L-system",
-        "Lindenmayer",
-        "3D tree",
-        "fractal",
-        "branching",
-        "botanical"
-      ],
-      "visual_use": "3D branching tree and plant structures via L-system symbol rewriting. Use for botanical, forest, coral, or fractal-growth art.",
-      "good_for": [
-        "botanical",
-        "tree",
-        "fractal",
-        "branching",
-        "nature",
-        "3D"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "three_dimensional/point_cloud_morph/point_cloud_morph.py",
-      "title": "Point Cloud Morphing",
-      "category": "three_dimensional",
-      "concepts": [
-        "point cloud",
-        "morphing",
-        "3D",
-        "interpolation",
-        "animation",
-        "shape"
-      ],
-      "visual_use": "3D point cloud that smoothly morphs between sphere, torus, cube, and helix. Use for sculptural, transformative, or data-art aesthetics.",
-      "good_for": [
-        "3D",
-        "animation",
-        "morphing",
-        "sculpture",
-        "abstract"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "numpy",
-        "py5"
-      ]
-    },
-    {
-      "path": "shared/lfo.py",
-      "title": "LFOBank (Modulation Utility)",
-      "category": "shared",
-      "concepts": [
-        "LFO",
-        "oscillator",
-        "modulation",
-        "sine",
-        "triangle",
-        "sawtooth",
-        "noise",
-        "animation"
-      ],
-      "visual_use": "Use as a modulation source to animate any numeric parameter — gravity, hue, feed rate, speed — with sine/triangle/sawtooth/pulse/noise waveforms.",
-      "good_for": [
-        "modulation",
-        "animation",
-        "parameter control",
-        "rhythm"
-      ],
-      "complexity": "low",
-      "dependencies": []
-    },
-    {
-      "path": "oscillators/lissajous_curves/lissajous_curves.py",
-      "title": "Lissajous Curves",
-      "category": "oscillators",
-      "concepts": [
-        "Lissajous",
-        "oscillator",
-        "XY",
-        "frequency ratio",
-        "phase",
-        "sine wave",
-        "trail"
-      ],
-      "visual_use": "Two oscillators drive X and Y to trace closed curves. LFO drifts the phase offset for continuously morphing figures. Use for hypnotic geometric loop art.",
-      "good_for": [
-        "geometric",
-        "loop",
-        "animation",
-        "hypnotic",
-        "trail"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "oscillators/chladni_figures/chladni_figures.py",
-      "title": "Chladni Figures",
-      "category": "oscillators",
-      "concepts": [
-        "Chladni",
-        "standing wave",
-        "resonance",
-        "nodal lines",
-        "mode",
-        "vibration"
-      ],
-      "visual_use": "Standing wave nodal patterns on a 2D plate — LFO morphs between resonant modes. Use for sand-pattern, mandala-like, or physics-based geometric art.",
-      "good_for": [
-        "geometric",
-        "mandala",
-        "pattern",
-        "organic",
-        "physics"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "numpy",
-        "py5"
-      ]
-    },
-    {
-      "path": "oscillators/harmonic_pantograph/harmonic_pantograph.py",
-      "title": "Harmonic Pantograph (Spirograph)",
-      "category": "oscillators",
-      "concepts": [
-        "spirograph",
-        "epicycloid",
-        "pantograph",
-        "Fourier",
-        "harmonic",
-        "rotating arm",
-        "trail"
-      ],
-      "visual_use": "Chain of rotating arms draws Fourier epicycle curves. LFO slowly modulates arm speeds for evolving spirograph patterns. Use for intricate line art and mandalas.",
-      "good_for": [
-        "geometric",
-        "mandala",
-        "intricate",
-        "trail",
-        "animation"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "oscillators/coupled_oscillators/coupled_oscillators.py",
-      "title": "Coupled Oscillators (Kuramoto Model)",
-      "category": "oscillators",
-      "concepts": [
-        "Kuramoto",
-        "coupled oscillators",
-        "synchronization",
-        "phase transition",
-        "emergence",
-        "collective"
-      ],
-      "visual_use": "N oscillators spontaneously synchronize above critical coupling K. Use for collective rhythm visualization, phase transition art, or network synchrony studies.",
-      "good_for": [
-        "emergent",
-        "animation",
-        "physics",
-        "network",
-        "chaotic"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "biological/dla/dla.py",
-      "title": "Diffusion-Limited Aggregation (DLA)",
-      "category": "biological",
-      "concepts": [
-        "DLA",
-        "random walk",
-        "fractal",
-        "aggregation",
-        "dendritic",
-        "crystal",
-        "growth"
-      ],
-      "visual_use": "Random-walk particles stick on contact, building fractal dendritic clusters. Use for snowflake, coral, lightning, or crystal growth art.",
-      "good_for": [
-        "fractal",
-        "growth",
-        "nature",
-        "crystal",
-        "organic"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "biological/space_colonization/space_colonization.py",
-      "title": "Space Colonization Algorithm",
-      "category": "biological",
-      "concepts": [
-        "space colonization",
-        "tree growth",
-        "branching",
-        "auxin",
-        "vascular",
-        "L-system alternative"
-      ],
-      "visual_use": "Branch tips compete for scattered attractors, generating realistic tree, root, and vascular network structures. Use for botanical, organic branching art.",
-      "good_for": [
-        "botanical",
-        "tree",
-        "branching",
-        "organic",
-        "network"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "physics/stable_fluids/stable_fluids.py",
-      "title": "Stable Fluids (Jos Stam)",
-      "category": "physics",
-      "concepts": [
-        "fluid simulation",
-        "Navier-Stokes",
-        "advection",
-        "incompressible",
-        "dye",
-        "interactive"
-      ],
-      "visual_use": "Real-time incompressible fluid with mouse-painted dye. Use for flowing ink, smoke, aurora, or paint-mix art.",
-      "good_for": [
-        "fluid",
-        "interactive",
-        "flow",
-        "smoke",
-        "paint",
-        "organic"
-      ],
-      "complexity": "high",
-      "dependencies": [
-        "numpy",
-        "py5"
-      ]
-    },
-    {
-      "path": "mathematical/strange_attractors/strange_attractors.py",
-      "title": "Strange Attractors",
-      "category": "mathematical",
-      "concepts": [
-        "strange attractor",
-        "chaos",
-        "Lorenz",
-        "Rössler",
-        "fractal",
-        "dynamical system",
-        "3D"
-      ],
-      "visual_use": "Five classic chaotic attractors (Lorenz, Rössler, Thomas, Aizawa, Dadras) rendered in 3D with slow rotation. Use for cosmic, ethereal, chaotic depth art.",
-      "good_for": [
-        "chaos",
-        "3D",
-        "cosmic",
-        "ethereal",
-        "fractal",
-        "abstract"
-      ],
-      "complexity": "medium",
-      "dependencies": [
-        "py5"
-      ]
-    },
-    {
-      "path": "shared/rk4.py",
-      "title": "RK4 Integrator (4th-order Runge-Kutta)",
-      "category": "shared",
-      "concepts": [
-        "RK4",
-        "numerical integration",
-        "ODE",
-        "differential equations",
-        "accuracy"
-      ],
-      "visual_use": "Drop-in replacement for Euler integration in any ODE-based simulation. Reduces trajectory error from O(dt²) to O(dt⁵) — keeps chaotic attractors accurate and prevents numerical drift over long runs.",
-      "good_for": [
-        "precision",
-        "simulation accuracy",
-        "chaotic systems",
-        "particle trajectories"
-      ],
-      "complexity": "low",
-      "dependencies": []
-    },
-    {
-      "path": "shared/noise_field.py",
-      "title": "NoiseField (2D Value Noise with fBm)",
-      "category": "shared",
-      "concepts": [
-        "value noise",
-        "Perlin noise",
-        "fBm",
-        "fractal Brownian motion",
-        "organic",
-        "perturbation"
-      ],
-      "visual_use": "Generate organic, spatially coherent noise for parameter perturbation, symmetry breaking, or texture. Returns a scalar or a full (height, width) numpy array. Animates by incrementing the t parameter.",
-      "good_for": [
-        "organic variation",
-        "symmetry breaking",
-        "texture",
-        "parameter modulation",
-        "animation"
-      ],
-      "complexity": "low",
-      "dependencies": [
-        "numpy"
       ]
     }
   ]
