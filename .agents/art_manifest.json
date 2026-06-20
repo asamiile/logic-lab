@@ -234,6 +234,28 @@
       ]
     },
     {
+      "path": "cellular_automata/game_of_life/game_of_life.py",
+      "title": "Game Of Life",
+      "category": "cellular_automata",
+      "concepts": [
+        "cellular automata",
+        "rules",
+        "emergence",
+        "glider"
+      ],
+      "visual_use": "Use for rule-based grids, emergent textures, or evolving binary patterns.",
+      "good_for": [
+        "emergence",
+        "grids",
+        "patterns"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
       "path": "cellular_automata/hex_lattice_ca/hex_lattice_ca.py",
       "title": "Hex lattice cellular automaton",
       "category": "cellular_automata",
@@ -2429,6 +2451,26 @@
         "implicit geometry",
         "smooth blending",
         "contours"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/spirograph/spirograph.py",
+      "title": "Spirograph",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
       ],
       "complexity": "medium",
       "dependencies": [
@@ -6667,6 +6709,31 @@
         "surface",
         "continuous deformation",
         "topology"
+      ],
+      "visual_use": "Use for topological surfaces, non-orientable manifolds, knot diagrams, or continuous deformation art.",
+      "good_for": [
+        "surfaces",
+        "manifolds",
+        "knots",
+        "deformation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "topology/klein_bottle/klein_bottle.py",
+      "title": "Klein Bottle",
+      "category": "topology",
+      "concepts": [
+        "topological",
+        "manifold",
+        "surface",
+        "continuous deformation",
+        "klein bottle",
+        "non-orientable"
       ],
       "visual_use": "Use for topological surfaces, non-orientable manifolds, knot diagrams, or continuous deformation art.",
       "good_for": [
