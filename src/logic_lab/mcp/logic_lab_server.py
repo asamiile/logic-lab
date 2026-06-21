@@ -3,9 +3,10 @@ from __future__ import annotations
 import json
 from functools import lru_cache
 from pathlib import Path
-from typing import Any
+from typing import Annotated, Any
 
 from mcp.server.fastmcp import FastMCP
+from pydantic import Field
 
 from logic_lab.mcp._data import COMBINATION_RECIPES, MOOD_PROFILES, SYNONYMS
 
@@ -240,15 +241,76 @@ def mcp_readme_resource() -> str:
 
 @mcp.tool()
 def get_manifest() -> dict[str, Any]:
-    """Return the Logic Lab art algorithm manifest."""
+    """Return the full Logic Lab art algorithm manifest as a JSON object.
+
+    The manifest contains an 'entries' array. Each entry includes:
+    - path (str): manifest-relative path to the source file (e.g. 'physics/wave/wave.py')
+    - title (str): human-readable algorithm name
+    - category (str): domain (physics, steering_behaviors, genetic_algorithms,
+      neuro_evolution, fractals, cellular_automata, mathematical, tiling_patterns,
+      research, simulation, shader)
+    - concepts (list[str]): key algorithmic concepts demonstrated
+    - visual_use (str): one-line description of the visual output
+    - good_for (list[str]): suggested use-cases and aesthetic tags
+    - complexity (str): 'low', 'medium', or 'high'
+    - dependencies (list[str]): required Python packages beyond py5
+
+    This tool is read-only and returns cached data for the current session.
+    Prefer search_algorithms for filtered discovery. Use get_manifest when you
+    need the full entry list or want to enumerate all available categories.
+    """
     return _load_manifest()
 
 
 @mcp.tool()
 def search_algorithms(
-    query: str, category: str | None = None, limit: int = 5
+    query: Annotated[
+        str,
+        Field(
+            description=(
+                "Free-text search terms matched against title, category, concepts, "
+                "visual_use, and good_for fields. Use short descriptive phrases such as "
+                "'flow field particles', 'recursive tree', or 'emergent flocking'. "
+                "Synonym expansion is applied automatically (e.g. 'flow' also matches 'fluid')."
+            )
+        ),
+    ],
+    category: Annotated[
+        str | None,
+        Field(
+            description=(
+                "Exact category filter (case-insensitive). Limits results to a single domain. "
+                "Available values: physics, steering_behaviors, genetic_algorithms, "
+                "neuro_evolution, fractals, cellular_automata, mathematical, tiling_patterns, "
+                "research, simulation, shader. Omit to search across all categories."
+            )
+        ),
+    ] = None,
+    limit: Annotated[
+        int,
+        Field(
+            description=(
+                "Maximum number of results to return. Accepts integers in the range 1–50. "
+                "Default: 5. Results are sorted by relevance score descending."
+            )
+        ),
+    ] = 5,
 ) -> list[dict[str, Any]]:
-    """Search manifest entries by title, category, concepts, visual_use, and good_for."""
+    """Search the Logic Lab manifest for algorithms by keyword, category, or visual intent.
+
+    Returns a list of manifest entries sorted by relevance score. Each entry includes
+    path, title, category, concepts, visual_use, good_for, complexity, and dependencies.
+    Returns an empty list when no entries match — this is not an error.
+
+    This tool returns manifest metadata only; it never reads source files.
+    Synonym expansion is applied automatically so queries like 'flow' also match
+    'fluid' and 'stream'. Combining query with category narrows results to a
+    specific domain.
+
+    Recommended workflow: call this tool for discovery, then get_algorithm_summary
+    for short context on candidates, then get_algorithm only for paths you intend
+    to use.
+    """
     normalized_category = category.lower().strip() if category else None
     max_results = max(1, min(int(limit), 50))
 
@@ -266,8 +328,51 @@ def search_algorithms(
 
 
 @mcp.tool()
-def get_algorithm(path: str, max_chars: int = DEFAULT_MAX_CHARS) -> dict[str, Any]:
-    """Return read-only source text for a safe repository .py or README.md path."""
+def get_algorithm(
+    path: Annotated[
+        str,
+        Field(
+            description=(
+                "Manifest-relative path to a .py or README.md file within the Logic Lab "
+                "repository (e.g. 'physics/wave/wave.py' or 'fractals/mandelbrot/README.md'). "
+                "Must be a relative path — absolute paths are rejected. Paths that escape "
+                "the repository root are rejected. Use search_algorithms or get_manifest "
+                "to discover valid paths."
+            )
+        ),
+    ],
+    max_chars: Annotated[
+        int,
+        Field(
+            description=(
+                f"Maximum characters of source text to return. Accepts integers in the "
+                f"range 1–{ABSOLUTE_MAX_CHARS}. Default: {DEFAULT_MAX_CHARS}. "
+                f"When the file exceeds this limit the response sets truncated=true and "
+                f"includes a notice. Increase this value for large source files, up to "
+                f"the hard limit of {ABSOLUTE_MAX_CHARS}."
+            )
+        ),
+    ] = DEFAULT_MAX_CHARS,
+) -> dict[str, Any]:
+    """Return the source text of a Logic Lab .py file or README.md.
+
+    This tool is read-only: it reads only .py files and README.md files within
+    the repository boundary. File creation, editing, deletion, and shell execution
+    are not available through this server.
+
+    Returns a dict with:
+    - path (str): normalized manifest-relative path
+    - content (str): file text, possibly truncated
+    - truncated (bool): true when the file exceeded max_chars
+    - notice (str | null): truncation message with the current limit and maximum,
+      or null when content was not truncated
+
+    Raises AccessError when the path escapes the repository root, points to a
+    non-existent file, or refers to a disallowed file type (not .py or README.md).
+
+    Call get_algorithm_summary first to confirm relevance before fetching full
+    source. Call search_algorithms or get_manifest to discover valid paths.
+    """
     resolved, rel_path = _allowed_algorithm_path(path)
     limit = _clamp_max_chars(max_chars)
     text = resolved.read_text(encoding="utf-8", errors="replace")
@@ -290,8 +395,33 @@ def get_algorithm(path: str, max_chars: int = DEFAULT_MAX_CHARS) -> dict[str, An
 
 
 @mcp.tool()
-def get_algorithm_summary(path: str) -> dict[str, Any]:
-    """Return a short summary from the manifest entry and nearby README when available."""
+def get_algorithm_summary(
+    path: Annotated[
+        str,
+        Field(
+            description=(
+                "Manifest-relative path to a .py or README.md file "
+                "(e.g. 'physics/wave/wave.py'). Must be a relative path within the "
+                "Logic Lab repository. Use search_algorithms to discover valid paths."
+            )
+        ),
+    ],
+) -> dict[str, Any]:
+    """Return a short summary of a Logic Lab algorithm without fetching full source.
+
+    For paths in the manifest, returns all metadata fields:
+    - path, title, category, concepts, visual_use, good_for, complexity, dependencies
+    - readme_excerpt: first ~6 non-empty lines of the nearest README.md (up to 1200
+      chars) when a README.md exists in the same directory
+
+    For paths not in the manifest, returns a minimal summary derived from the file
+    path (title inferred from directory name, category from the first path segment)
+    plus readme_excerpt when available.
+
+    This tool never returns source code — call get_algorithm for that. Use this
+    tool to assess relevance before committing to a full source fetch. It is
+    cheaper in context than get_algorithm for files you may not end up using.
+    """
     resolved, rel_path = _allowed_algorithm_path(path)
     entry = _path_to_entry().get(rel_path)
 
@@ -326,12 +456,58 @@ def get_algorithm_summary(path: str) -> dict[str, Any]:
 
 
 @mcp.tool()
-def search_by_mood(mood: str, style: str | None = None, limit: int = 8) -> dict[str, Any]:
-    """Return algorithms matching a creative mood or visual atmosphere.
+def search_by_mood(
+    mood: Annotated[
+        str,
+        Field(
+            description=(
+                "Creative mood or visual atmosphere. Must be one of: ethereal, chaotic, "
+                "geometric, organic, cosmic, minimal, generative, retro, crystalline, "
+                "topological, networked, geological. Case-insensitive. Returns an error "
+                "dict with available_moods when the value is not recognized."
+            )
+        ),
+    ],
+    style: Annotated[
+        str | None,
+        Field(
+            description=(
+                "Optional style refinement as free-text tokens (e.g. 'fluid', 'dark', "
+                "'crystalline', 'monochrome'). Tokens are matched against algorithm "
+                "metadata to boost ranking within the mood results. Omit to use the "
+                "mood profile alone."
+            )
+        ),
+    ] = None,
+    limit: Annotated[
+        int,
+        Field(
+            description=(
+                "Maximum number of results to return. Accepts integers in the range 1–50. "
+                "Default: 8. Results are sorted by combined mood-profile and style score."
+            )
+        ),
+    ] = 8,
+) -> dict[str, Any]:
+    """Search algorithms by creative mood or visual atmosphere.
+
+    Returns a dict with:
+    - mood (str): the normalized mood used for the query
+    - style (str | null): the style refinement if provided
+    - profile_summary (dict): the mood's associated categories and key concepts
+    - results (list): ranked manifest entries matching the mood
+
+    Each mood maps to a curated set of algorithm categories, concepts, and good_for
+    tags. The style parameter re-ranks results by matching its tokens against all
+    metadata fields. When the mood is unrecognized, returns an error dict containing
+    'error', 'available_moods', and a 'tip'.
+
+    Prefer search_algorithms for free-text queries without a clear aesthetic direction.
+    Use this tool when you have a specific visual mood in mind (e.g. 'cosmic',
+    'minimal', 'chaotic').
 
     Available moods: ethereal, chaotic, geometric, organic, cosmic, minimal,
     generative, retro, crystalline, topological, networked, geological.
-    Optional style narrows results further (e.g. "fluid", "crystalline", "dark").
     """
     normalized_mood = mood.lower().strip()
     profile = MOOD_PROFILES.get(normalized_mood)
@@ -384,11 +560,50 @@ def search_by_mood(mood: str, style: str | None = None, limit: int = 8) -> dict[
 
 
 @mcp.tool()
-def recommend_combinations(intent: str, count: int = 3) -> dict[str, Any]:
+def recommend_combinations(
+    intent: Annotated[
+        str,
+        Field(
+            description=(
+                "Free-text description of the artistic intent or visual goal "
+                "(e.g. 'cosmic void with particle trails', 'organic growth with "
+                "geometric structure', 'flowing smoke with invisible force fields'). "
+                "Used to rank curated multi-layer recipes by keyword relevance."
+            )
+        ),
+    ],
+    count: Annotated[
+        int,
+        Field(
+            description=(
+                "Number of combination recipes to return. Accepts integers in the range "
+                "1 to the total number of available recipes. Default: 3. Recipes are "
+                "ranked by how closely their name, description, moods, and layer queries "
+                "match the intent."
+            )
+        ),
+    ] = 3,
+) -> dict[str, Any]:
     """Suggest multi-layer algorithm combinations for a given artistic intent.
 
-    Returns curated recipes and dynamically ranked algorithm suggestions per layer role.
-    Use this to plan layered generative artworks from a text description.
+    Returns a dict with:
+    - intent (str): the original intent string
+    - combinations (list): ranked list of layered recipes
+    - tip (str): guidance for following up on returned paths
+
+    Each combination includes:
+    - name (str): recipe name
+    - description (str): recipe description
+    - moods (list[str]): associated creative moods
+    - layers (list): each layer has role (str), query (str), and suggestions
+      (list of manifest entries resolved by search_algorithms)
+
+    Layer roles describe compositional function (e.g. background, agents, texture,
+    overlay). Suggestions are live manifest entries — use get_algorithm_summary or
+    get_algorithm on any suggested path for full details.
+
+    Use this tool to plan layered generative artworks from a text description.
+    It combines curated recipes with dynamic algorithm lookup per layer.
     """
     max_count = max(1, min(int(count), len(COMBINATION_RECIPES)))
     intent_lower = intent.lower()
