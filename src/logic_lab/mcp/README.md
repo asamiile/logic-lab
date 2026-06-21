@@ -26,6 +26,16 @@ Algorithm source files are intentionally not exposed as static resources. Use
 `search_algorithms`, `get_algorithm_summary`, and `get_algorithm` so path checks
 and `max_chars` limits are applied.
 
+## Manual install
+
+Requires [uv](https://docs.astral.sh/uv/).
+
+```bash
+git clone https://github.com/asamiile/logic-lab.git
+cd logic-lab
+uv sync
+```
+
 ## Run
 
 You usually do not run the server manually. MCP clients start this command for

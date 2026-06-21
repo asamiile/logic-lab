@@ -1,0 +1,7028 @@
+{
+  "schema_version": 1,
+  "description": "Read-only manifest of selected Logic Lab algorithms for AI agents and MCP search.",
+  "entries": [
+    {
+      "path": "audio_sync/audio_reactive_particles/audio_reactive_particles.py",
+      "title": "Audio-Reactive Particles",
+      "category": "audio_sync",
+      "concepts": [
+        "particle system",
+        "emitter",
+        "sound",
+        "frequency",
+        "FFT",
+        "reactive"
+      ],
+      "visual_use": "Use for audio-reactive visuals, frequency-driven animation, sound visualization, or music-synchronized art.",
+      "good_for": [
+        "music",
+        "sound",
+        "reactive"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy"
+      ]
+    },
+    {
+      "path": "audio_sync/audio_reactive_particles/example.py",
+      "title": "Audio-Reactive Particles",
+      "category": "audio_sync",
+      "concepts": [
+        "particle system",
+        "emitter",
+        "sound",
+        "frequency",
+        "FFT",
+        "reactive"
+      ],
+      "visual_use": "Use for audio-reactive visuals, frequency-driven animation, sound visualization, or music-synchronized art.",
+      "good_for": [
+        "music",
+        "sound",
+        "reactive"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "biological/ant_colony/ant_colony.py",
+      "title": "Ant Colony Optimization",
+      "category": "biological",
+      "concepts": [
+        "biological",
+        "organism",
+        "colony"
+      ],
+      "visual_use": "Use for biological organisms, colony growth, organic networks, or symbiotic systems.",
+      "good_for": [
+        "organisms",
+        "colonies",
+        "networks"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "biological/dla/dla.py",
+      "title": "Diffusion-Limited Aggregation (DLA)",
+      "category": "biological",
+      "concepts": [
+        "DLA",
+        "random walk",
+        "fractal",
+        "aggregation",
+        "dendritic",
+        "crystal",
+        "growth"
+      ],
+      "visual_use": "Random-walk particles stick on contact, building fractal dendritic clusters. Use for snowflake, coral, lightning, or crystal growth art.",
+      "good_for": [
+        "fractal",
+        "growth",
+        "nature",
+        "crystal",
+        "organic"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "biological/mycelium_growth/mycelium_growth.py",
+      "title": "Mycelium Growth Network",
+      "category": "biological",
+      "concepts": [
+        "biological",
+        "organism",
+        "colony"
+      ],
+      "visual_use": "Use for biological organisms, colony growth, organic networks, or symbiotic systems.",
+      "good_for": [
+        "organisms",
+        "colonies",
+        "networks"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "biological/physarum/physarum.py",
+      "title": "Physarum Polycephalum",
+      "category": "biological",
+      "concepts": [
+        "physarum",
+        "slime mold",
+        "network",
+        "biological",
+        "organism",
+        "colony"
+      ],
+      "visual_use": "Use for biological organisms, colony growth, organic networks, or symbiotic systems.",
+      "good_for": [
+        "organisms",
+        "colonies",
+        "networks"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "biological/predator_prey_dynamics/predator_prey_dynamics.py",
+      "title": "Predator Prey Dynamics",
+      "category": "biological",
+      "concepts": [
+        "biological",
+        "organism",
+        "colony"
+      ],
+      "visual_use": "Use for biological organisms, colony growth, organic networks, or symbiotic systems.",
+      "good_for": [
+        "organisms",
+        "colonies",
+        "networks"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "biological/space_colonization/space_colonization.py",
+      "title": "Space Colonization Algorithm",
+      "category": "biological",
+      "concepts": [
+        "space colonization",
+        "tree growth",
+        "branching",
+        "auxin",
+        "vascular",
+        "L-system alternative"
+      ],
+      "visual_use": "Branch tips compete for scattered attractors, generating realistic tree, root, and vascular network structures. Use for botanical, organic branching art.",
+      "good_for": [
+        "botanical",
+        "tree",
+        "branching",
+        "organic",
+        "network"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "cellular_automata/brian_brain/brian_brain.py",
+      "title": "Brian Brain",
+      "category": "cellular_automata",
+      "concepts": [
+        "3-state CA",
+        "propagation",
+        "excitation",
+        "refractory",
+        "oscillation"
+      ],
+      "visual_use": "Use for oscillating patterns, excited regions, or refractory state dynamics.",
+      "good_for": [
+        "oscillation",
+        "wave",
+        "propagation",
+        "emergence",
+        "rules"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "cellular_automata/cyclic_ca/cyclic_ca.py",
+      "title": "Cyclic Ca",
+      "category": "cellular_automata",
+      "concepts": [
+        "cyclic",
+        "spiral wave",
+        "vortex",
+        "color cycle",
+        "rotation"
+      ],
+      "visual_use": "Use for spiraling waves, cyclic color rotations, or vortex-like patterns.",
+      "good_for": [
+        "spiral",
+        "wave",
+        "vortex",
+        "rotation",
+        "emergence"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "cellular_automata/elementary_ca/elementary_ca.py",
+      "title": "Elementary cellular automaton",
+      "category": "cellular_automata",
+      "concepts": [
+        "cellular automata",
+        "rules",
+        "binary state",
+        "emergence"
+      ],
+      "visual_use": "Use for rule-based stripes, woven time diagrams, or emergent binary patterns.",
+      "good_for": [
+        "patterns",
+        "rules",
+        "emergence",
+        "textiles"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "cellular_automata/game_of_life/game_of_life.py",
+      "title": "Game Of Life",
+      "category": "cellular_automata",
+      "concepts": [
+        "cellular automata",
+        "rules",
+        "emergence",
+        "glider"
+      ],
+      "visual_use": "Use for rule-based grids, emergent textures, or evolving binary patterns.",
+      "good_for": [
+        "emergence",
+        "grids",
+        "patterns"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "cellular_automata/hex_lattice_ca/hex_lattice_ca.py",
+      "title": "Hex lattice cellular automaton",
+      "category": "cellular_automata",
+      "concepts": [
+        "cellular automata",
+        "hex grid",
+        "lattice",
+        "rules"
+      ],
+      "visual_use": "Use for honeycomb automata, tiling-like growth, or non-square emergent textures.",
+      "good_for": [
+        "hex grids",
+        "lattice",
+        "patterns",
+        "emergence"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "cellular_automata/langtons_ant/langtons_ant.py",
+      "title": "Langtons Ant",
+      "category": "cellular_automata",
+      "concepts": [
+        "langton",
+        "ant",
+        "highway",
+        "emergence",
+        "turing"
+      ],
+      "visual_use": "Use for emergent highway patterns, complex behavior from simple rules.",
+      "good_for": [
+        "emergence",
+        "highway",
+        "turing",
+        "complexity",
+        "rules"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "cellular_automata/moss_colony_growth/moss_colony_growth.py",
+      "title": "Moss colony growth",
+      "category": "cellular_automata",
+      "concepts": [
+        "moss",
+        "lichen",
+        "cellular automata",
+        "colony growth",
+        "moisture field",
+        "organic texture"
+      ],
+      "visual_use": "Use for moss patches, lichen islands, fungal colonies, ground cover, and soft botanical surface growth.",
+      "good_for": [
+        "moss",
+        "lichen",
+        "fungal colonies",
+        "organic texture",
+        "surface growth"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "cellular_automata/rule_variations/rule_variations.py",
+      "title": "Rule Variations",
+      "category": "cellular_automata",
+      "concepts": [
+        "cellular automata",
+        "rules"
+      ],
+      "visual_use": "Use for rule-based grids, emergent textures, or evolving binary patterns.",
+      "good_for": [
+        "emergence",
+        "grids",
+        "patterns"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "cellular_automata/smooth_life/smooth_life.py",
+      "title": "Smooth Life",
+      "category": "cellular_automata",
+      "concepts": [
+        "smooth",
+        "continuous",
+        "Game of Life",
+        "gliders",
+        "smooth dynamics"
+      ],
+      "visual_use": "Use for smooth cellular automata, glider-like structures, or continuous Game of Life.",
+      "good_for": [
+        "glider",
+        "smooth",
+        "continuous",
+        "dynamics",
+        "emergence"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/game_of_life/game_of_life.py",
+      "title": "Game of Life",
+      "category": "cellular_automata",
+      "concepts": [
+        "cellular automata",
+        "emergence",
+        "grid",
+        "life rules"
+      ],
+      "visual_use": "Use for pulsing grids, emergent colonies, digital organisms, or evolving textures.",
+      "good_for": [
+        "emergence",
+        "grid",
+        "digital life",
+        "texture"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "chaos_theory/chua_circuit/chua_circuit.py",
+      "title": "Chua Circuit",
+      "category": "chaos_theory",
+      "concepts": [
+        "chaos",
+        "strange attractor",
+        "butterfly effect",
+        "attractor",
+        "bifurcation",
+        "dynamical system"
+      ],
+      "visual_use": "Use for chaotic dynamics, bifurcation diagrams, basin of attraction maps, or Poincaré sections.",
+      "good_for": [
+        "chaos",
+        "bifurcation",
+        "attractors",
+        "dynamics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "chaos_theory/double_pendulum/double_pendulum.py",
+      "title": "Double Pendulum",
+      "category": "chaos_theory",
+      "concepts": [
+        "chaos",
+        "strange attractor",
+        "butterfly effect",
+        "pendulum",
+        "oscillation",
+        "physics"
+      ],
+      "visual_use": "Use for chaotic dynamics, bifurcation diagrams, basin of attraction maps, or Poincaré sections.",
+      "good_for": [
+        "chaos",
+        "bifurcation",
+        "attractors",
+        "dynamics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "chaos_theory/henon_map/henon_map.py",
+      "title": "Henon Map",
+      "category": "chaos_theory",
+      "concepts": [
+        "chaos",
+        "strange attractor",
+        "butterfly effect",
+        "attractor",
+        "bifurcation",
+        "dynamical system"
+      ],
+      "visual_use": "Use for chaotic dynamics, bifurcation diagrams, basin of attraction maps, or Poincaré sections.",
+      "good_for": [
+        "chaos",
+        "bifurcation",
+        "attractors",
+        "dynamics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "chaos_theory/logistic_map/logistic_map.py",
+      "title": "Logistic Map",
+      "category": "chaos_theory",
+      "concepts": [
+        "chaos",
+        "strange attractor",
+        "butterfly effect",
+        "attractor",
+        "bifurcation",
+        "dynamical system"
+      ],
+      "visual_use": "Use for chaotic dynamics, bifurcation diagrams, basin of attraction maps, or Poincaré sections.",
+      "good_for": [
+        "chaos",
+        "bifurcation",
+        "attractors",
+        "dynamics"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "chaos_theory/lorenz_attractor/lorenz_attractor.py",
+      "title": "Lorenz Attractor",
+      "category": "chaos_theory",
+      "concepts": [
+        "attractor",
+        "chaos",
+        "strange attractor",
+        "butterfly effect",
+        "lorenz",
+        "bifurcation"
+      ],
+      "visual_use": "Use for chaotic dynamics, bifurcation diagrams, basin of attraction maps, or Poincaré sections.",
+      "good_for": [
+        "chaos",
+        "bifurcation",
+        "attractors",
+        "dynamics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "chaos_theory/rossler_attractor/rossler_attractor.py",
+      "title": "Rossler Attractor",
+      "category": "chaos_theory",
+      "concepts": [
+        "attractor",
+        "chaos",
+        "strange attractor",
+        "butterfly effect",
+        "rossler",
+        "spiral"
+      ],
+      "visual_use": "Use for chaotic dynamics, bifurcation diagrams, basin of attraction maps, or Poincaré sections.",
+      "good_for": [
+        "chaos",
+        "bifurcation",
+        "attractors",
+        "dynamics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "crystal_growth/crystal_solidification/crystal_solidification.py",
+      "title": "Crystal Solidification",
+      "category": "crystal_growth",
+      "concepts": [
+        "crystallization",
+        "lattice",
+        "dendritic",
+        "mineral",
+        "solidification",
+        "crystal"
+      ],
+      "visual_use": "Use for crystalline structures, dendritic snowflakes, mineral growth, or 6-fold symmetric patterns.",
+      "good_for": [
+        "crystals",
+        "snowflakes",
+        "dendrites",
+        "minerals"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "crystal_growth/dla_cluster/dla_cluster.py",
+      "title": "Dla Cluster",
+      "category": "crystal_growth",
+      "concepts": [
+        "diffusion limited aggregation",
+        "random walk",
+        "crystallization",
+        "lattice",
+        "dendritic",
+        "mineral"
+      ],
+      "visual_use": "Use for crystalline structures, dendritic snowflakes, mineral growth, or 6-fold symmetric patterns.",
+      "good_for": [
+        "crystals",
+        "snowflakes",
+        "dendrites",
+        "minerals"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "crystal_growth/snowflake_growth/snowflake_growth.py",
+      "title": "Snowflake Growth",
+      "category": "crystal_growth",
+      "concepts": [
+        "crystal",
+        "dendrite",
+        "solidification",
+        "ice",
+        "6-fold symmetry",
+        "crystallization"
+      ],
+      "visual_use": "Use for crystalline structures, dendritic snowflakes, mineral growth, or 6-fold symmetric patterns.",
+      "good_for": [
+        "crystals",
+        "snowflakes",
+        "dendrites",
+        "minerals"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/botanical_l_system/botanical_l_system.py",
+      "title": "Botanical L-system",
+      "category": "fractals",
+      "concepts": [
+        "l-system",
+        "botanical growth",
+        "plants",
+        "leaves",
+        "flowers",
+        "organic branching"
+      ],
+      "visual_use": "Use for fern canopies, flowering herbs, vines, ornamental foliage, and plant-like organic silhouettes.",
+      "good_for": [
+        "botanical",
+        "plants",
+        "organic growth",
+        "foliage",
+        "natural forms"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/burning_ship/burning_ship.py",
+      "title": "Burning Ship",
+      "category": "fractals",
+      "concepts": [
+        "burning ship",
+        "absolute value",
+        "fire",
+        "fractal",
+        "mandelbrot variant"
+      ],
+      "visual_use": "Use for flame-like fractals, fire effects, or mandelbrot variants with absolute value.",
+      "good_for": [
+        "fractal",
+        "fire",
+        "flame",
+        "mathematical",
+        "texture"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/differential_growth/differential_growth.py",
+      "title": "Differential growth organic outline",
+      "category": "fractals",
+      "concepts": [
+        "differential growth",
+        "organic growth",
+        "leaves",
+        "coral",
+        "membrane",
+        "biological outline"
+      ],
+      "visual_use": "Use for ruffled leaves, coral edges, frilled petals, biological membranes, and soft organic borders.",
+      "good_for": [
+        "organic outlines",
+        "leaf edges",
+        "coral",
+        "petals",
+        "biological forms"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/hilbert_curve/hilbert_curve.py",
+      "title": "Hilbert Curve",
+      "category": "fractals",
+      "concepts": [
+        "space filling curve",
+        "hilbert",
+        "locality",
+        "recursion",
+        "peano"
+      ],
+      "visual_use": "Use for space-filling curves, recursive patterns, or locality-preserving mappings.",
+      "good_for": [
+        "curve",
+        "recursion",
+        "space-filling",
+        "mathematical",
+        "pattern"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/ifs_fractal/ifs_fractal.py",
+      "title": "Ifs Fractal",
+      "category": "fractals",
+      "concepts": [
+        "fractal",
+        "recursion"
+      ],
+      "visual_use": "Use for recursive geometry, branching structures, or self-similar patterns.",
+      "good_for": [
+        "recursion",
+        "growth",
+        "geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/julia_set/julia_set.py",
+      "title": "Julia Set",
+      "category": "fractals",
+      "concepts": [
+        "julia set",
+        "complex plane",
+        "iteration",
+        "c parameter",
+        "escape time",
+        "fractal"
+      ],
+      "visual_use": "Use for complex plane fractals, animated c-parameter exploration, or escape-time rendering.",
+      "good_for": [
+        "fractal",
+        "complex",
+        "zoom",
+        "animation",
+        "mathematical"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/koch_snowflake/koch_snowflake.py",
+      "title": "Koch snowflake",
+      "category": "fractals",
+      "concepts": [
+        "fractal",
+        "koch curve",
+        "recursion",
+        "snowflake"
+      ],
+      "visual_use": "Use for crystalline outlines, recursive borders, branching edges, or geometric growth.",
+      "good_for": [
+        "fractals",
+        "crystals",
+        "borders",
+        "recursion"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/l_system/l_system.py",
+      "title": "L-system drawing",
+      "category": "fractals",
+      "concepts": [
+        "l-system",
+        "grammar",
+        "turtle graphics",
+        "recursion"
+      ],
+      "visual_use": "Use for rule-based plants, symbolic growth systems, or generative line structures.",
+      "good_for": [
+        "plants",
+        "rules",
+        "grammar",
+        "growth"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/leaf_venation/leaf_venation.py",
+      "title": "Leaf venation growth",
+      "category": "fractals",
+      "concepts": [
+        "leaf venation",
+        "space colonization",
+        "vascular network",
+        "plant anatomy",
+        "veins",
+        "botanical growth"
+      ],
+      "visual_use": "Use for leaf interiors, plant veins, vascular branching, botanical drawings, and organic networks inside a silhouette.",
+      "good_for": [
+        "leaves",
+        "veins",
+        "botanical",
+        "vascular networks",
+        "organic branching"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/mandelbrot_set/mandelbrot_set.py",
+      "title": "Mandelbrot Set",
+      "category": "fractals",
+      "concepts": [
+        "mandelbrot",
+        "complex plane",
+        "escape time",
+        "zoom",
+        "boundary",
+        "fractal"
+      ],
+      "visual_use": "Use for infinite fractal boundary, zoom sequences, or escape-time coloring.",
+      "good_for": [
+        "fractal",
+        "complex",
+        "zoom",
+        "mathematical",
+        "boundary"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/newton_basins/newton_basins.py",
+      "title": "Newton Basins",
+      "category": "fractals",
+      "concepts": [
+        "fractal",
+        "recursion"
+      ],
+      "visual_use": "Use for recursive geometry, branching structures, or self-similar patterns.",
+      "good_for": [
+        "recursion",
+        "growth",
+        "geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/quadtree_part_1/quadtree_part_1.py",
+      "title": "Quadtree spatial partition",
+      "category": "fractals",
+      "concepts": [
+        "quadtree",
+        "spatial partitioning",
+        "subdivision",
+        "optimization"
+      ],
+      "visual_use": "Use for recursive spatial subdivision, adaptive grids, or efficient point lookup visuals.",
+      "good_for": [
+        "subdivision",
+        "spatial data",
+        "adaptive grids",
+        "optimization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/space_colonization/space_colonization.py",
+      "title": "Space colonization botanical branching",
+      "category": "fractals",
+      "concepts": [
+        "space colonization",
+        "tree growth",
+        "leaf veins",
+        "roots",
+        "vascular branching",
+        "botanical growth"
+      ],
+      "visual_use": "Use for tree crowns, root fans, leaf vein structures, plant-like branching, and vascular organic networks.",
+      "good_for": [
+        "trees",
+        "roots",
+        "leaf veins",
+        "botanical",
+        "organic branching"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/stochastic_tree/stochastic_tree.py",
+      "title": "Stochastic tree",
+      "category": "fractals",
+      "concepts": [
+        "recursion",
+        "randomness",
+        "branching",
+        "tree"
+      ],
+      "visual_use": "Use for less regular branching, natural plants, roots, or organic silhouettes.",
+      "good_for": [
+        "trees",
+        "organic growth",
+        "randomness",
+        "nature"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/substrate/substrate.py",
+      "title": "Substrate (Crack Pattern Generation)",
+      "category": "fractals",
+      "concepts": [
+        "fractal",
+        "recursion"
+      ],
+      "visual_use": "Use for recursive geometry, branching structures, or self-similar patterns.",
+      "good_for": [
+        "recursion",
+        "growth",
+        "geometry"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "fractals/tree/tree.py",
+      "title": "Recursive tree",
+      "category": "fractals",
+      "concepts": [
+        "recursion",
+        "branching",
+        "tree",
+        "fractal"
+      ],
+      "visual_use": "Use for botanical structures, branching diagrams, recursive silhouettes, or growth studies.",
+      "good_for": [
+        "trees",
+        "branching",
+        "growth",
+        "nature"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "genetic_algorithms/evolving_bloops/evolving_bloops.py",
+      "title": "Evolving bloops",
+      "category": "genetic_algorithms",
+      "concepts": [
+        "genetic algorithm",
+        "ecosystem",
+        "creatures",
+        "selection"
+      ],
+      "visual_use": "Use for artificial life scenes with heredity, survival pressure, and visible variation.",
+      "good_for": [
+        "ecosystem",
+        "creatures",
+        "evolution",
+        "variation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "genetic_algorithms/evolving_circles/evolving_circles.py",
+      "title": "Evolving Circles",
+      "category": "genetic_algorithms",
+      "concepts": [
+        "genetic algorithm",
+        "evolution"
+      ],
+      "visual_use": "Use for evolved forms, optimization, generations, or selection-driven variation.",
+      "good_for": [
+        "evolution",
+        "variation",
+        "optimization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "genetic_algorithms/ga_shakespeare/ga_shakespeare.py",
+      "title": "Genetic algorithm Shakespeare",
+      "category": "genetic_algorithms",
+      "concepts": [
+        "genetic algorithm",
+        "selection",
+        "mutation",
+        "text evolution"
+      ],
+      "visual_use": "Use as a compact reference for evolving a target string or explaining GA mechanics.",
+      "good_for": [
+        "evolution",
+        "text",
+        "optimization",
+        "teaching"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "genetic_algorithms/interactive_selection/interactive_selection.py",
+      "title": "Interactive selection",
+      "category": "genetic_algorithms",
+      "concepts": [
+        "interactive evolution",
+        "selection",
+        "phenotype",
+        "user choice"
+      ],
+      "visual_use": "Use for human-guided evolution of forms, flowers, icons, or generative variants.",
+      "good_for": [
+        "interactive art",
+        "evolution",
+        "variation",
+        "selection"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "genetic_algorithms/smart_rockets/smart_rockets.py",
+      "title": "Smart rockets",
+      "category": "genetic_algorithms",
+      "concepts": [
+        "genetic algorithm",
+        "dna",
+        "fitness",
+        "navigation"
+      ],
+      "visual_use": "Use for evolved motion trails, goal seeking, obstacle navigation, or generational progress.",
+      "good_for": [
+        "evolution",
+        "navigation",
+        "trails",
+        "optimization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/apollonian_gasket/apollonian_gasket.py",
+      "title": "Apollonian gasket tangent circles",
+      "category": "mathematical",
+      "concepts": [
+        "apollonius",
+        "circle packing",
+        "tangent",
+        "descartes",
+        "gasket",
+        "fractal"
+      ],
+      "visual_use": "Use for circle packing fractals, tangent circle patterns, or apollonian gaskets.",
+      "good_for": [
+        "fractal",
+        "circle",
+        "packing",
+        "geometry",
+        "mathematical"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/bark_growth_texture/bark_growth_texture.py",
+      "title": "Bark growth texture",
+      "category": "mathematical",
+      "concepts": [
+        "bark",
+        "tree trunk",
+        "wood texture",
+        "cracks",
+        "moss",
+        "organic material"
+      ],
+      "visual_use": "Use for bark ridges, tree trunk surfaces, wood scars, mossy texture, and botanical material backgrounds.",
+      "good_for": [
+        "bark",
+        "wood texture",
+        "tree trunks",
+        "mossy surfaces",
+        "organic backgrounds"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/barycentric_coordinates/barycentric_coordinates.py",
+      "title": "Barycentric triangle interpolation",
+      "category": "mathematical",
+      "concepts": [
+        "barycentric coordinates",
+        "triangle interpolation",
+        "vertex weights",
+        "affine coordinates",
+        "attribute interpolation"
+      ],
+      "visual_use": "Use for triangle color interpolation, mesh attribute blending, point-in-triangle tests, or spatial weighting.",
+      "good_for": [
+        "mesh interpolation",
+        "color blending",
+        "triangles",
+        "spatial weights"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/blob_generator/blob_generator.py",
+      "title": "Blob Generator",
+      "category": "mathematical",
+      "concepts": [
+        "blob",
+        "organic",
+        "implicit surface",
+        "shape",
+        "metaball"
+      ],
+      "visual_use": "Use for organic flowing shapes, amoeba-like forms, or living creature animation.",
+      "good_for": [
+        "organic",
+        "shape",
+        "animation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/chaikin_curve_smoothing/chaikin_curve_smoothing.py",
+      "title": "Chaikin curve smoothing",
+      "category": "mathematical",
+      "concepts": [
+        "Chaikin",
+        "corner cutting",
+        "polyline smoothing",
+        "subdivision curve",
+        "control polygon"
+      ],
+      "visual_use": "Use for softening polygonal paths, organic outlines, hand-drawn smoothing, or subdivision-style linework.",
+      "good_for": [
+        "smooth outlines",
+        "curves",
+        "organic shape",
+        "path smoothing"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/circle_packing/circle_packing.py",
+      "title": "Circle packing growth",
+      "category": "mathematical",
+      "concepts": [
+        "circle packing",
+        "non-overlapping circles",
+        "growth algorithm",
+        "boundary mask",
+        "spatial packing"
+      ],
+      "visual_use": "Use for organic bubble fills, pebble textures, masked stippling, or non-overlapping circular layouts.",
+      "good_for": [
+        "bubbles",
+        "stippling",
+        "organic texture",
+        "masked fill"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/clifford_attractor/clifford_attractor.py",
+      "title": "Clifford chaotic attractor",
+      "category": "mathematical",
+      "concepts": [
+        "Clifford attractor",
+        "chaotic map",
+        "iterated function",
+        "density rendering",
+        "strange attractor"
+      ],
+      "visual_use": "Use for dense chaotic point clouds, filament textures, nebula-like forms, or organic mathematical fields.",
+      "good_for": [
+        "chaos",
+        "abstract texture",
+        "particle density",
+        "organic forms"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/color_harmony/color_harmony.py",
+      "title": "HSV color harmony palette",
+      "category": "mathematical",
+      "concepts": [
+        "color theory",
+        "HSB color space",
+        "complementary colors",
+        "palette generation"
+      ],
+      "visual_use": "Use for generating harmonious color palettes, animated hue cycling, or HSB-based composition.",
+      "good_for": [
+        "color palette",
+        "harmonics",
+        "animation",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ],
+      "platforms": [
+        "py5",
+        "touchdesigner",
+        "ue5"
+      ]
+    },
+    {
+      "path": "mathematical/color_temperature_mixing/color_temperature_mixing.py",
+      "title": "Color temperature field",
+      "category": "mathematical",
+      "concepts": [
+        "color temperature",
+        "additive color",
+        "light mixing",
+        "gradient field"
+      ],
+      "visual_use": "Use for neon palettes, sunset lighting, mixed studio lights, or multiple light sources blending across space.",
+      "good_for": [
+        "neon",
+        "sunset",
+        "lighting palette",
+        "gradients"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/complex_domain_coloring/complex_domain_coloring.py",
+      "title": "Complex domain coloring",
+      "category": "mathematical",
+      "concepts": [
+        "complex analysis",
+        "domain coloring",
+        "phase",
+        "magnitude",
+        "zeros and poles"
+      ],
+      "visual_use": "Use for visualizing complex functions, phase fields, singularities, zeros, poles, or analytic symmetries.",
+      "good_for": [
+        "complex functions",
+        "phase color",
+        "mathematical texture",
+        "singularity visualization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/conic_sections/conic_sections.py",
+      "title": "Conic Sections",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/continued_fraction_mondrian/continued_fraction_mondrian.py",
+      "title": "Mondrian Continued Fraction",
+      "category": "mathematical",
+      "concepts": [
+        "mondrian",
+        "rectangle",
+        "continued fraction",
+        "geometry",
+        "division"
+      ],
+      "visual_use": "Use for Mondrian-style continued fraction art, colored rectangular divisions, or abstract compositions.",
+      "good_for": [
+        "geometry",
+        "number theory",
+        "abstract art"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/convex_hull/convex_hull.py",
+      "title": "Convex hull point boundary",
+      "category": "mathematical",
+      "concepts": [
+        "convex hull",
+        "monotonic chain",
+        "point cloud",
+        "cross product",
+        "spatial boundary"
+      ],
+      "visual_use": "Use for extracting outer silhouettes from point clouds, collision bounds, or enclosing generative shapes.",
+      "good_for": [
+        "point clouds",
+        "silhouettes",
+        "boundaries",
+        "spatial summary"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/cubic_bezier/cubic_bezier.py",
+      "title": "Cubic Bezier curve",
+      "category": "mathematical",
+      "concepts": [
+        "bezier",
+        "curve",
+        "control points",
+        "interpolation"
+      ],
+      "visual_use": "Use for smooth custom paths, typographic curves, or controllable motion splines.",
+      "good_for": [
+        "curves",
+        "paths",
+        "motion",
+        "shape design"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/de_casteljau_subdivision/de_casteljau_subdivision.py",
+      "title": "De Casteljau Bezier subdivision",
+      "category": "mathematical",
+      "concepts": [
+        "De Casteljau",
+        "Bezier",
+        "linear interpolation",
+        "curve subdivision",
+        "control points"
+      ],
+      "visual_use": "Use for visualizing Bezier construction, curve subdivision, interpolation levels, or controllable spline design.",
+      "good_for": [
+        "curves",
+        "splines",
+        "interpolation",
+        "control geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/delaunay_triangulation/delaunay_triangulation.py",
+      "title": "Delaunay triangulation mesh",
+      "category": "mathematical",
+      "concepts": [
+        "Delaunay triangulation",
+        "Bowyer-Watson",
+        "triangle mesh",
+        "circumcircle",
+        "Voronoi dual"
+      ],
+      "visual_use": "Use for low-poly meshes, proximity networks, terrain triangulation, or Voronoi-adjacent geometry.",
+      "good_for": [
+        "low poly",
+        "mesh generation",
+        "point networks",
+        "spatial structure"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/diamond_square/diamond_square.py",
+      "title": "Diamond-square fractal terrain",
+      "category": "mathematical",
+      "concepts": [
+        "diamond-square",
+        "fractal terrain",
+        "heightmap",
+        "procedural generation"
+      ],
+      "visual_use": "Use for procedural landscape textures, heightmaps, terrain color fields, or abstract topographies.",
+      "good_for": [
+        "terrain",
+        "landscape",
+        "heightmap",
+        "procedural texture"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ],
+      "platforms": [
+        "py5",
+        "touchdesigner",
+        "ue5"
+      ]
+    },
+    {
+      "path": "mathematical/differential_growth/differential_growth.py",
+      "title": "Differential Growth",
+      "category": "mathematical",
+      "concepts": [
+        "growth",
+        "curve",
+        "node subdivision",
+        "organic",
+        "membrane",
+        "biological"
+      ],
+      "visual_use": "Use for organic growth patterns, membrane edges, or differential node expansion.",
+      "good_for": [
+        "growth",
+        "organic",
+        "biological",
+        "membrane",
+        "curve"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/easing_functions/easing_functions.py",
+      "title": "Easing functions library",
+      "category": "mathematical",
+      "concepts": [
+        "easing",
+        "interpolation",
+        "animation curves",
+        "tweening"
+      ],
+      "visual_use": "Use for smooth motion transitions, non-linear animation curves, or visualizing timing functions.",
+      "good_for": [
+        "animation",
+        "motion design",
+        "timing",
+        "smooth interpolation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ],
+      "platforms": [
+        "py5",
+        "touchdesigner",
+        "ue5"
+      ]
+    },
+    {
+      "path": "mathematical/envelope_art/envelope_art.py",
+      "title": "Envelope Art",
+      "category": "mathematical",
+      "concepts": [
+        "line",
+        "tangent",
+        "geometry",
+        "envelope",
+        "curve"
+      ],
+      "visual_use": "Use for envelope curves, tangent line families, or organic flowing line patterns.",
+      "good_for": [
+        "line art",
+        "geometry",
+        "curves"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/euclid_div_rect/euclid_div_rect.py",
+      "title": "Euclidean Division Rectangle",
+      "category": "mathematical",
+      "concepts": [
+        "euclidean",
+        "rectangle",
+        "division",
+        "geometry",
+        "algorithm"
+      ],
+      "visual_use": "Use for Euclidean algorithm visualizations, recursive rectangular divisions, or GCD art.",
+      "good_for": [
+        "geometry",
+        "number theory",
+        "recursion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/fermat_spiral/fermat_spiral.py",
+      "title": "Fermat spiral",
+      "category": "mathematical",
+      "concepts": [
+        "spiral",
+        "polar coordinates",
+        "phyllotaxis",
+        "geometry"
+      ],
+      "visual_use": "Use for sunflower-like point layouts, radial packing, or spiral compositions.",
+      "good_for": [
+        "spirals",
+        "phyllotaxis",
+        "radial layout",
+        "botanical forms"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/fermat_spiral_line/fermat_spiral_line.py",
+      "title": "Fermat Spiral Line",
+      "category": "mathematical",
+      "concepts": [
+        "line",
+        "spiral",
+        "geometry",
+        "parametric",
+        "curved path"
+      ],
+      "visual_use": "Use for linear spiral renderings, line-based spirals, or parametric curve art.",
+      "good_for": [
+        "spiral",
+        "geometry",
+        "curves"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/fibonacci_rect/fibonacci_rect.py",
+      "title": "Fibonacci Rectangle",
+      "category": "mathematical",
+      "concepts": [
+        "fibonacci",
+        "rectangle",
+        "division",
+        "geometry",
+        "golden ratio"
+      ],
+      "visual_use": "Use for Fibonacci rectangular divisions, golden ratio compositions, or recursive subdivisions.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "recursion"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/fibonacci_spiral/fibonacci_spiral.py",
+      "title": "Fibonacci spiral",
+      "category": "mathematical",
+      "concepts": [
+        "fibonacci",
+        "golden ratio",
+        "spiral",
+        "geometry"
+      ],
+      "visual_use": "Use for golden-ratio compositions, shell-like curves, or growth diagrams.",
+      "good_for": [
+        "spirals",
+        "golden ratio",
+        "shells",
+        "growth"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/ford_circles/ford_circles.py",
+      "title": "Ford circles rational fractions",
+      "category": "mathematical",
+      "concepts": [
+        "Ford circles",
+        "Farey sequence",
+        "rational numbers",
+        "continued fractions",
+        "tangent circles"
+      ],
+      "visual_use": "Use for visualizing rational approximations, fraction hierarchies, tangent circle structures, or number-line ornament.",
+      "good_for": [
+        "number theory",
+        "fraction patterns",
+        "circle tangency",
+        "ornamental linework"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/fourier_epicycles/fourier_epicycles.py",
+      "title": "Fourier epicycles path reconstruction",
+      "category": "mathematical",
+      "concepts": [
+        "Fourier transform",
+        "DFT",
+        "epicycles",
+        "frequency decomposition",
+        "path reconstruction"
+      ],
+      "visual_use": "Use for reconstructing drawn paths with rotating circles, harmonic motion, or frequency-based line animation.",
+      "good_for": [
+        "line drawing",
+        "harmonic motion",
+        "animated curves",
+        "signal visualization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/fourier_wave_synthesis/fourier_wave_synthesis.py",
+      "title": "Fourier wave synthesis",
+      "category": "mathematical",
+      "concepts": [
+        "Fourier series",
+        "harmonics",
+        "waveform synthesis",
+        "signal processing",
+        "additive synthesis"
+      ],
+      "visual_use": "Use for reconstructing square, sawtooth, or triangle waves from harmonic sine components.",
+      "good_for": [
+        "signals",
+        "harmonics",
+        "synthesizers",
+        "waveform design"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/geometric_art/geometric_art.py",
+      "title": "Geometric Art",
+      "category": "mathematical",
+      "concepts": [
+        "polygon",
+        "geometry",
+        "pattern",
+        "recursion",
+        "fractal"
+      ],
+      "visual_use": "Use for recursive geometric primitives, fractal compositions, or structured abstract art.",
+      "good_for": [
+        "polygon",
+        "recursion",
+        "geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/grid_deformation/grid_deformation.py",
+      "title": "Grid Deformation",
+      "category": "mathematical",
+      "concepts": [
+        "grid",
+        "deformation",
+        "line",
+        "wave",
+        "animation"
+      ],
+      "visual_use": "Use for wave patterns, undulating grids, or flow visualization.",
+      "good_for": [
+        "waves",
+        "patterns",
+        "animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/harmonograph/harmonograph.py",
+      "title": "Harmonograph",
+      "category": "mathematical",
+      "concepts": [
+        "harmonograph",
+        "damped oscillator",
+        "harmonic motion",
+        "parametric curve",
+        "sine waves"
+      ],
+      "visual_use": "Use for damped harmonic linework, pendulum-like drawings, looping curves, or ornamental decay patterns.",
+      "good_for": [
+        "harmonics",
+        "line art",
+        "decay curves",
+        "ornament"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/hatching_patterns/hatching_patterns.py",
+      "title": "Hatching Patterns",
+      "category": "mathematical",
+      "concepts": [
+        "line",
+        "hatching",
+        "shading",
+        "geometry",
+        "brightness"
+      ],
+      "visual_use": "Use for shading via line density, tonal artwork, or technical rendering.",
+      "good_for": [
+        "shading",
+        "line art",
+        "texture"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/higher_bezier/higher_bezier.py",
+      "title": "Higher Bezier",
+      "category": "mathematical",
+      "concepts": [
+        "bezier",
+        "curve",
+        "control point",
+        "polynomial",
+        "interpolation"
+      ],
+      "visual_use": "Use for high-degree Bézier curves, smooth polynomial interpolations, or control-point art.",
+      "good_for": [
+        "curves",
+        "geometry",
+        "interpolation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/hilbert_curve/hilbert_curve.py",
+      "title": "Hilbert space-filling curve",
+      "category": "mathematical",
+      "concepts": [
+        "Hilbert curve",
+        "space-filling curve",
+        "spatial locality",
+        "bit rotation",
+        "grid traversal"
+      ],
+      "visual_use": "Use for locality-preserving paths, recursive grid traversal, image scan orders, or continuous line compositions.",
+      "good_for": [
+        "space filling",
+        "line art",
+        "spatial indexing",
+        "recursive geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/isometric_grid/isometric_grid.py",
+      "title": "Isometric Grid",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/iterated_function_systems/iterated_function_systems.py",
+      "title": "Iterated Function Systems",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/light_interference/light_interference.py",
+      "title": "Diffraction and interference pattern",
+      "category": "mathematical",
+      "concepts": [
+        "interference",
+        "wave optics",
+        "phase",
+        "diffraction"
+      ],
+      "visual_use": "Use for rainbow bands, hologram-like fields, ripple interference, or precise wave stripe patterns.",
+      "good_for": [
+        "hologram",
+        "wave bands",
+        "interference",
+        "optics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/line_interference/line_interference.py",
+      "title": "Line Interference",
+      "category": "mathematical",
+      "concepts": [
+        "line",
+        "interference",
+        "wave",
+        "geometry",
+        "moiré"
+      ],
+      "visual_use": "Use for moiré patterns, line grid interference, or wave-like geometric effects.",
+      "good_for": [
+        "line art",
+        "patterns",
+        "geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/lissajous_curves/lissajous_curves.py",
+      "title": "Lissajous harmonic curves",
+      "category": "mathematical",
+      "concepts": [
+        "Lissajous curve",
+        "parametric curve",
+        "harmonic motion",
+        "frequency ratio",
+        "phase offset"
+      ],
+      "visual_use": "Use for oscilloscope-like curves, harmonic linework, looping motion paths, or ornamental parametric forms.",
+      "good_for": [
+        "curves",
+        "harmonics",
+        "motion paths",
+        "line art"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/lloyd_relaxation/lloyd_relaxation.py",
+      "title": "Lloyd relaxation point distribution",
+      "category": "mathematical",
+      "concepts": [
+        "Lloyd relaxation",
+        "Voronoi centroid",
+        "centroidal Voronoi",
+        "point distribution",
+        "blue noise"
+      ],
+      "visual_use": "Use for evening out scatter points, centroidal Voronoi layouts, or blue-noise-like distributions.",
+      "good_for": [
+        "scatter layout",
+        "Voronoi",
+        "point relaxation",
+        "even distribution"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/log_spiral/log_spiral.py",
+      "title": "Logarithmic Spiral",
+      "category": "mathematical",
+      "concepts": [
+        "logarithm",
+        "spiral",
+        "growth",
+        "geometry",
+        "parametric"
+      ],
+      "visual_use": "Use for logarithmic spirals, golden spiral variants, or exponential growth visualizations.",
+      "good_for": [
+        "spiral",
+        "growth",
+        "geometry"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/logistic_bifurcation/logistic_bifurcation.py",
+      "title": "Logistic map bifurcation diagram",
+      "category": "mathematical",
+      "concepts": [
+        "logistic map",
+        "bifurcation diagram",
+        "chaos",
+        "period doubling",
+        "nonlinear dynamics"
+      ],
+      "visual_use": "Use for visualizing chaotic transitions, recurrence behavior, period windows, or dense nonlinear structure.",
+      "good_for": [
+        "chaos",
+        "dynamical systems",
+        "density plot",
+        "recurrence"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/lorenz_attractor/lorenz_attractor.py",
+      "title": "Lorenz Attractor",
+      "category": "mathematical",
+      "concepts": [
+        "chaos",
+        "strange attractor",
+        "butterfly effect",
+        "lorenz",
+        "differential equations",
+        "3D"
+      ],
+      "visual_use": "Use for chaotic flows, butterfly patterns, or sensitivity to initial conditions.",
+      "good_for": [
+        "chaos",
+        "attractors",
+        "trajectory",
+        "dynamics",
+        "3D"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/mandelbrot_julia/mandelbrot_julia.py",
+      "title": "Mandelbrot and Julia escape-time fractals",
+      "category": "mathematical",
+      "concepts": [
+        "Mandelbrot set",
+        "Julia set",
+        "escape time",
+        "complex dynamics",
+        "quadratic map"
+      ],
+      "visual_use": "Use for complex-plane fractals, escape-time textures, Julia variations, or recursive boundary structures.",
+      "good_for": [
+        "fractals",
+        "complex plane",
+        "escape fields",
+        "mathematical texture"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/marching_squares/marching_squares.py",
+      "title": "Marching squares contour extraction",
+      "category": "mathematical",
+      "concepts": [
+        "marching squares",
+        "contour lines",
+        "isoline",
+        "scalar field",
+        "interpolation"
+      ],
+      "visual_use": "Use for extracting contour lines from noise, heightmaps, metaballs, or other scalar fields.",
+      "good_for": [
+        "contours",
+        "topography",
+        "field visualization",
+        "organic boundaries"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/maurer_rose/maurer_rose.py",
+      "title": "Maurer rose modular chords",
+      "category": "mathematical",
+      "concepts": [
+        "Maurer rose",
+        "rose curve",
+        "polar coordinates",
+        "modular stepping",
+        "chord pattern"
+      ],
+      "visual_use": "Use for rosette linework, modular chord structures, polar flower curves, or ornamental lace patterns.",
+      "good_for": [
+        "rosettes",
+        "line art",
+        "polar geometry",
+        "ornament"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/metaball/metaball.py",
+      "title": "Metaball field",
+      "category": "mathematical",
+      "concepts": [
+        "metaball",
+        "isosurface",
+        "implicit surface",
+        "blob",
+        "distance field"
+      ],
+      "visual_use": "Use for morphing blob shapes, organic liquid merging, implicit surface art, or smooth junction forms.",
+      "good_for": [
+        "blobs",
+        "organic forms",
+        "morphing",
+        "liquid"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ],
+      "platforms": [
+        "py5",
+        "touchdesigner",
+        "ue5"
+      ]
+    },
+    {
+      "path": "mathematical/mobius_transform_grid/mobius_transform_grid.py",
+      "title": "Mobius transform grid",
+      "category": "mathematical",
+      "concepts": [
+        "Mobius transformation",
+        "complex mapping",
+        "conformal map",
+        "complex plane",
+        "grid warp"
+      ],
+      "visual_use": "Use for complex-plane grid warps, conformal distortion, analytic mapping studies, or ornamental line fields.",
+      "good_for": [
+        "complex geometry",
+        "grid distortion",
+        "line art",
+        "conformal maps"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/modular_power_visual/modular_power_visual.py",
+      "title": "Modular Power Visual",
+      "category": "mathematical",
+      "concepts": [
+        "modular arithmetic",
+        "polygon",
+        "line",
+        "chord",
+        "number theory"
+      ],
+      "visual_use": "Use for modular multiplication chords, circular number patterns, or arithmetic string art.",
+      "good_for": [
+        "geometry",
+        "number theory",
+        "patterns"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/modular_table_visual/modular_table_visual.py",
+      "title": "Modular multiplication table",
+      "category": "mathematical",
+      "concepts": [
+        "modular arithmetic",
+        "circle chords",
+        "number theory",
+        "patterns"
+      ],
+      "visual_use": "Use for circular chord patterns, mathematical string art, or animated number systems.",
+      "good_for": [
+        "string art",
+        "circles",
+        "math patterns",
+        "symmetry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/newton_fractal/newton_fractal.py",
+      "title": "Newton fractal root basins",
+      "category": "mathematical",
+      "concepts": [
+        "Newton fractal",
+        "Newton-Raphson",
+        "complex dynamics",
+        "root basin",
+        "convergence"
+      ],
+      "visual_use": "Use for visualizing polynomial root basins, numerical convergence, complex dynamics, or fractal textures.",
+      "good_for": [
+        "fractals",
+        "complex plane",
+        "convergence fields",
+        "mathematical texture"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/petal_morphogenesis/petal_morphogenesis.py",
+      "title": "Petal morphogenesis",
+      "category": "mathematical",
+      "concepts": [
+        "petals",
+        "flower",
+        "morphogenesis",
+        "radial symmetry",
+        "botanical form",
+        "organic symmetry"
+      ],
+      "visual_use": "Use for layered flower heads, petal profiles, blooming radial forms, floral ornaments, and soft botanical symmetry.",
+      "good_for": [
+        "flowers",
+        "petals",
+        "blooming",
+        "floral forms",
+        "organic symmetry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/phyllotaxis_flower/phyllotaxis_flower.py",
+      "title": "Phyllotaxis flower",
+      "category": "mathematical",
+      "concepts": [
+        "phyllotaxis",
+        "golden angle",
+        "flowers",
+        "seed head",
+        "rosette",
+        "botanical spiral"
+      ],
+      "visual_use": "Use for sunflower seed heads, daisy florets, succulent rosettes, pinecone scales, and golden-angle plant compositions.",
+      "good_for": [
+        "flowers",
+        "seed heads",
+        "rosettes",
+        "botanical symmetry",
+        "spirals"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/poisson_disk/poisson_disk.py",
+      "title": "Poisson disk sampling",
+      "category": "mathematical",
+      "concepts": [
+        "Poisson disk sampling",
+        "blue noise",
+        "spatial distribution",
+        "minimum distance"
+      ],
+      "visual_use": "Use for scatter layouts with guaranteed minimum spacing, stippling, or seed point placement.",
+      "good_for": [
+        "stippling",
+        "scatter",
+        "natural placement",
+        "spatial layout"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ],
+      "platforms": [
+        "py5",
+        "touchdesigner",
+        "ue5"
+      ]
+    },
+    {
+      "path": "mathematical/polyhedra_wireframe/polyhedra_wireframe.py",
+      "title": "Polyhedra Wireframe",
+      "category": "mathematical",
+      "concepts": [
+        "polyhedra",
+        "3D",
+        "wireframe",
+        "rotation",
+        "projection"
+      ],
+      "visual_use": "Use for 3D geometric visualization, platonic solids, or wireframe rotation studies.",
+      "good_for": [
+        "3D",
+        "geometry",
+        "rotation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/prime_spiral/prime_spiral.py",
+      "title": "Prime Spiral",
+      "category": "mathematical",
+      "concepts": [
+        "spiral",
+        "polar coordinates",
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/quasicrystal_interference/quasicrystal_interference.py",
+      "title": "Quasicrystal wave interference",
+      "category": "mathematical",
+      "concepts": [
+        "quasicrystal",
+        "plane waves",
+        "interference",
+        "rotational symmetry",
+        "quasi-periodic pattern"
+      ],
+      "visual_use": "Use for quasi-periodic textures, moire-like fields, rotational symmetry studies, or ornamental wave patterns.",
+      "good_for": [
+        "textures",
+        "symmetry",
+        "interference",
+        "ornament"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/recaman_sequence/recaman_sequence.py",
+      "title": "Recaman Sequence",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/reflection_billiards/reflection_billiards.py",
+      "title": "Reflection billiards",
+      "category": "mathematical",
+      "concepts": [
+        "reflection",
+        "ray tracing",
+        "mirror",
+        "angle of incidence"
+      ],
+      "visual_use": "Use for kaleidoscopic lines, reflection mazes, geometric light paths, or angular mirror patterns.",
+      "good_for": [
+        "kaleidoscope",
+        "reflection maze",
+        "geometry",
+        "light paths"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/rose_curves/rose_curves.py",
+      "title": "Rose Curves",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/rossler_attractor/rossler_attractor.py",
+      "title": "Rössler Attractor",
+      "category": "mathematical",
+      "concepts": [
+        "chaos",
+        "strange attractor",
+        "rossler",
+        "spiral",
+        "3D",
+        "band"
+      ],
+      "visual_use": "Use for spiral chaos patterns, strange attractors, or 3D dynamic systems.",
+      "good_for": [
+        "chaos",
+        "attractors",
+        "spiral",
+        "3D",
+        "dynamics"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/shape_morphing/shape_morphing.py",
+      "title": "Shape Morphing",
+      "category": "mathematical",
+      "concepts": [
+        "shape",
+        "polygon",
+        "morphing",
+        "interpolation",
+        "animation"
+      ],
+      "visual_use": "Use for polygon transformations, shape transitions, or smooth morphing animations.",
+      "good_for": [
+        "shape",
+        "animation",
+        "geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/signed_distance_field/signed_distance_field.py",
+      "title": "Signed distance field shape composition",
+      "category": "mathematical",
+      "concepts": [
+        "signed distance field",
+        "SDF",
+        "boolean operations",
+        "smooth union",
+        "contour lines"
+      ],
+      "visual_use": "Use for procedural shape composition, smooth boolean blends, contour maps, or shader-like geometry.",
+      "good_for": [
+        "shape design",
+        "implicit geometry",
+        "smooth blending",
+        "contours"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/spirograph/spirograph.py",
+      "title": "Spirograph",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/spirograph_curves/spirograph_curves.py",
+      "title": "Spirograph trochoid curves",
+      "category": "mathematical",
+      "concepts": [
+        "spirograph",
+        "hypotrochoid",
+        "epitrochoid",
+        "parametric curve",
+        "rolling circle"
+      ],
+      "visual_use": "Use for rosettes, guilloche linework, orbital loops, or rolling-circle ornamental patterns.",
+      "good_for": [
+        "rosettes",
+        "ornament",
+        "line art",
+        "harmonic curves"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/spirolateral/spirolateral.py",
+      "title": "Spirolateral",
+      "category": "mathematical",
+      "concepts": [
+        "polygon",
+        "recursion",
+        "angular",
+        "line",
+        "spiral"
+      ],
+      "visual_use": "Use for angular spiral recursion, fixed-angle turning patterns, or geometric spirals.",
+      "good_for": [
+        "polygon",
+        "recursion",
+        "geometry"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/strange_attractors/strange_attractors.py",
+      "title": "Strange Attractors",
+      "category": "mathematical",
+      "concepts": [
+        "strange attractor",
+        "chaos",
+        "Lorenz",
+        "Rössler",
+        "fractal",
+        "dynamical system",
+        "3D"
+      ],
+      "visual_use": "Five classic chaotic attractors (Lorenz, Rössler, Thomas, Aizawa, Dadras) rendered in 3D with slow rotation. Use for cosmic, ethereal, chaotic depth art.",
+      "good_for": [
+        "chaos",
+        "3D",
+        "cosmic",
+        "ethereal",
+        "fractal",
+        "abstract"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/string_art/string_art.py",
+      "title": "String Art",
+      "category": "mathematical",
+      "concepts": [
+        "polygon",
+        "line art",
+        "angular",
+        "chord",
+        "vertices"
+      ],
+      "visual_use": "Use for angular chord patterns, string art designs, or vertex-connected polygon artwork.",
+      "good_for": [
+        "line art",
+        "geometry",
+        "polygon"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/superellipse/superellipse.py",
+      "title": "Superellipse",
+      "category": "mathematical",
+      "concepts": [
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/superformula/superformula.py",
+      "title": "Superformula parametric shapes",
+      "category": "mathematical",
+      "concepts": [
+        "superformula",
+        "polar coordinates",
+        "parametric shape",
+        "radial symmetry",
+        "organic geometry"
+      ],
+      "visual_use": "Use for generating flower-like forms, stars, shells, crystals, or organic radial outlines.",
+      "good_for": [
+        "radial forms",
+        "flowers",
+        "organic shapes",
+        "parametric design"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/tangent_art/tangent_art.py",
+      "title": "Tangent Art",
+      "category": "mathematical",
+      "concepts": [
+        "tangent",
+        "line",
+        "circle",
+        "polygon",
+        "geometry"
+      ],
+      "visual_use": "Use for geometric line compositions, tangent constructions, or circle geometry art.",
+      "good_for": [
+        "line art",
+        "geometry",
+        "circles"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/thomas_attractor/thomas_attractor.py",
+      "title": "Thomas Attractor",
+      "category": "mathematical",
+      "concepts": [
+        "chaos",
+        "strange attractor",
+        "thomas",
+        "linked",
+        "3D",
+        "knot"
+      ],
+      "visual_use": "Use for linked chaos, knot-like patterns, or complex 3D strange attractors.",
+      "good_for": [
+        "chaos",
+        "attractors",
+        "knot",
+        "3D",
+        "topology"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/tree_ring_growth/tree_ring_growth.py",
+      "title": "Tree ring growth",
+      "category": "mathematical",
+      "concepts": [
+        "tree rings",
+        "annual rings",
+        "wood grain",
+        "botanical time",
+        "growth marks",
+        "organic circular texture"
+      ],
+      "visual_use": "Use for tree cross sections, cut stumps, annual rings, wood grain studies, and botanical time accumulation.",
+      "good_for": [
+        "tree rings",
+        "wood grain",
+        "cut stumps",
+        "botanical history",
+        "organic texture"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/typography_particles/typography_particles.py",
+      "title": "Typography Particles",
+      "category": "mathematical",
+      "concepts": [
+        "particle system",
+        "emitter",
+        "geometry",
+        "mathematics"
+      ],
+      "visual_use": "Use for geometric systems, numerical patterns, or structured generative art.",
+      "good_for": [
+        "geometry",
+        "patterns",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/ulam_spiral/ulam_spiral.py",
+      "title": "Ulam spiral prime pattern",
+      "category": "mathematical",
+      "concepts": [
+        "Ulam spiral",
+        "prime numbers",
+        "number theory",
+        "Sieve of Eratosthenes",
+        "modular arithmetic"
+      ],
+      "visual_use": "Use for visualizing prime distributions, diagonal number patterns, or residue-class color structures.",
+      "good_for": [
+        "prime patterns",
+        "number theory",
+        "grid composition",
+        "modular coloring"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "mathematical/voronoi/voronoi.py",
+      "title": "Voronoi diagram",
+      "category": "mathematical",
+      "concepts": [
+        "Voronoi",
+        "Delaunay",
+        "proximity",
+        "spatial partition",
+        "distance field"
+      ],
+      "visual_use": "Use for territory maps, cell diagrams, proximity-colored fields, or organic region division.",
+      "good_for": [
+        "territories",
+        "cells",
+        "organic tiling",
+        "space division"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ],
+      "platforms": [
+        "py5",
+        "touchdesigner",
+        "ue5"
+      ]
+    },
+    {
+      "path": "mathematical/worley_noise/worley_noise.py",
+      "title": "Worley noise (cellular noise)",
+      "category": "mathematical",
+      "concepts": [
+        "Worley noise",
+        "cellular noise",
+        "distance field",
+        "Voronoi distance"
+      ],
+      "visual_use": "Use for organic cellular textures, cracked surfaces, skin patterns, or stone-like fields.",
+      "good_for": [
+        "texture",
+        "organic surface",
+        "cells",
+        "cracks"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ],
+      "platforms": [
+        "py5",
+        "touchdesigner",
+        "ue5"
+      ]
+    },
+    {
+      "path": "network_dynamics/kuramoto_oscillators/kuramoto_oscillators.py",
+      "title": "Kuramoto Oscillators",
+      "category": "network_dynamics",
+      "concepts": [
+        "graph",
+        "node",
+        "edge",
+        "connectivity",
+        "network"
+      ],
+      "visual_use": "Use for graph visualization, network evolution, scale-free topologies, or spreading dynamics.",
+      "good_for": [
+        "networks",
+        "graphs",
+        "connectivity",
+        "spreading"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "network_dynamics/scale_free_network/scale_free_network.py",
+      "title": "Scale Free Network",
+      "category": "network_dynamics",
+      "concepts": [
+        "graph",
+        "node",
+        "edge",
+        "connectivity",
+        "network",
+        "power law"
+      ],
+      "visual_use": "Use for graph visualization, network evolution, scale-free topologies, or spreading dynamics.",
+      "good_for": [
+        "networks",
+        "graphs",
+        "connectivity",
+        "spreading"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "network_dynamics/sir_epidemic/sir_epidemic.py",
+      "title": "Sir Epidemic",
+      "category": "network_dynamics",
+      "concepts": [
+        "graph",
+        "node",
+        "edge",
+        "connectivity",
+        "network"
+      ],
+      "visual_use": "Use for graph visualization, network evolution, scale-free topologies, or spreading dynamics.",
+      "good_for": [
+        "networks",
+        "graphs",
+        "connectivity",
+        "spreading"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "network_dynamics/small_world_network/small_world_network.py",
+      "title": "Small World Network",
+      "category": "network_dynamics",
+      "concepts": [
+        "graph",
+        "node",
+        "edge",
+        "connectivity",
+        "network",
+        "watts strogatz"
+      ],
+      "visual_use": "Use for graph visualization, network evolution, scale-free topologies, or spreading dynamics.",
+      "good_for": [
+        "networks",
+        "graphs",
+        "connectivity",
+        "spreading"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "neuro_evolution/flappy_bird_neuro_evolution/flappy_bird_neuro_evolution.py",
+      "title": "Flappy bird neuro-evolution",
+      "category": "neuro_evolution",
+      "concepts": [
+        "neural network",
+        "genetic algorithm",
+        "game agent",
+        "fitness"
+      ],
+      "visual_use": "Use for agents learning timing, obstacle avoidance, or game-like training loops.",
+      "good_for": [
+        "learning agents",
+        "games",
+        "obstacles",
+        "training"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "neuro_evolution/smart_rockets_neuro_evolution/smart_rockets_neuro_evolution.py",
+      "title": "Smart rockets neuro-evolution",
+      "category": "neuro_evolution",
+      "concepts": [
+        "neural network",
+        "evolution",
+        "navigation",
+        "fitness"
+      ],
+      "visual_use": "Use for evolved neural motion, goal seeking, and obstacle-aware agent trajectories.",
+      "good_for": [
+        "learning agents",
+        "navigation",
+        "evolution",
+        "trails"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "optical/caustics/caustics.py",
+      "title": "Caustics",
+      "category": "optical",
+      "concepts": [
+        "caustic",
+        "light",
+        "refraction",
+        "lens",
+        "underwater",
+        "optics"
+      ],
+      "visual_use": "Use for light caustics, diffraction patterns, interference fringes, or optical illusion geometry.",
+      "good_for": [
+        "light",
+        "optics",
+        "diffraction",
+        "caustics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "optical/diffraction_pattern/diffraction_pattern.py",
+      "title": "Diffraction Pattern",
+      "category": "optical",
+      "concepts": [
+        "diffraction",
+        "wave",
+        "interference",
+        "optics",
+        "light"
+      ],
+      "visual_use": "Use for light caustics, diffraction patterns, interference fringes, or optical illusion geometry.",
+      "good_for": [
+        "light",
+        "optics",
+        "diffraction",
+        "caustics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "optical/thin_film/thin_film.py",
+      "title": "Thin Film",
+      "category": "optical",
+      "concepts": [
+        "light",
+        "optics",
+        "diffraction",
+        "interference"
+      ],
+      "visual_use": "Use for light caustics, diffraction patterns, interference fringes, or optical illusion geometry.",
+      "good_for": [
+        "light",
+        "optics",
+        "diffraction",
+        "caustics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "oscillators/chladni_figures/chladni_figures.py",
+      "title": "Chladni Figures",
+      "category": "oscillators",
+      "concepts": [
+        "Chladni",
+        "standing wave",
+        "resonance",
+        "nodal lines",
+        "mode",
+        "vibration"
+      ],
+      "visual_use": "Standing wave nodal patterns on a 2D plate — LFO morphs between resonant modes. Use for sand-pattern, mandala-like, or physics-based geometric art.",
+      "good_for": [
+        "geometric",
+        "mandala",
+        "pattern",
+        "organic",
+        "physics"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "oscillators/coupled_oscillators/coupled_oscillators.py",
+      "title": "Coupled Oscillators (Kuramoto Model)",
+      "category": "oscillators",
+      "concepts": [
+        "Kuramoto",
+        "coupled oscillators",
+        "synchronization",
+        "phase transition",
+        "emergence",
+        "collective"
+      ],
+      "visual_use": "N oscillators spontaneously synchronize above critical coupling K. Use for collective rhythm visualization, phase transition art, or network synchrony studies.",
+      "good_for": [
+        "emergent",
+        "animation",
+        "physics",
+        "network",
+        "chaotic"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "oscillators/harmonic_pantograph/harmonic_pantograph.py",
+      "title": "Harmonic Pantograph (Spirograph)",
+      "category": "oscillators",
+      "concepts": [
+        "spirograph",
+        "epicycloid",
+        "pantograph",
+        "Fourier",
+        "harmonic",
+        "rotating arm",
+        "trail"
+      ],
+      "visual_use": "Chain of rotating arms draws Fourier epicycle curves. LFO slowly modulates arm speeds for evolving spirograph patterns. Use for intricate line art and mandalas.",
+      "good_for": [
+        "geometric",
+        "mandala",
+        "intricate",
+        "trail",
+        "animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "oscillators/lissajous_curves/lissajous_curves.py",
+      "title": "Lissajous Curves",
+      "category": "oscillators",
+      "concepts": [
+        "Lissajous",
+        "oscillator",
+        "XY",
+        "frequency ratio",
+        "phase",
+        "sine wave",
+        "trail"
+      ],
+      "visual_use": "Two oscillators drive X and Y to trace closed curves. LFO drifts the phase offset for continuously morphing figures. Use for hypnotic geometric loop art.",
+      "good_for": [
+        "geometric",
+        "loop",
+        "animation",
+        "hypnotic",
+        "trail"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "oscillators/van_der_pol/van_der_pol.py",
+      "title": "Van Der Pol",
+      "category": "oscillators",
+      "concepts": [
+        "oscillation",
+        "wave",
+        "frequency"
+      ],
+      "visual_use": "Use for wave patterns, resonance figures, coupled oscillations, or harmonic motion.",
+      "good_for": [
+        "waves",
+        "resonance",
+        "harmonic"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/additive_wave/additive_wave.py",
+      "title": "Additive wave",
+      "category": "physics",
+      "concepts": [
+        "wave",
+        "sine",
+        "oscillation",
+        "additive synthesis"
+      ],
+      "visual_use": "Use for layered waveforms, water-like motion, or rhythmic signal patterns.",
+      "good_for": [
+        "waves",
+        "rhythm",
+        "signals",
+        "water"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/attraction_with_many_movers/attraction_with_many_movers.py",
+      "title": "Attraction with many movers",
+      "category": "physics",
+      "concepts": [
+        "attraction",
+        "force field",
+        "many agents",
+        "gravity"
+      ],
+      "visual_use": "Use for swarms pulled by a central force, invisible fields, or dense motion studies.",
+      "good_for": [
+        "swarms",
+        "gravity",
+        "invisible forces",
+        "interaction"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/box_collision/box_collision.py",
+      "title": "Box Collision",
+      "category": "physics",
+      "concepts": [
+        "AABB",
+        "OBB",
+        "box collision",
+        "broad phase",
+        "SAT"
+      ],
+      "visual_use": "Use for visualizing axis-aligned and rotated rectangle overlap tests before full collision response.",
+      "good_for": [
+        "collision detection",
+        "debug overlays",
+        "interactive geometry",
+        "engine basics"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/caustic_light_field/caustic_light_field.py",
+      "title": "Caustics approximation",
+      "category": "physics",
+      "concepts": [
+        "caustics",
+        "light concentration",
+        "wave surface",
+        "density field"
+      ],
+      "visual_use": "Use for underwater shimmer, glass focus patterns, magical light pools, or luminous density textures.",
+      "good_for": [
+        "water light",
+        "glass",
+        "caustics",
+        "shimmer"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/chladni_plate/chladni_plate.py",
+      "title": "Chladni plate nodal patterns",
+      "category": "physics",
+      "concepts": [
+        "Chladni plate",
+        "standing wave",
+        "nodal lines",
+        "resonance",
+        "particles"
+      ],
+      "visual_use": "Use for sand-like particles gathering along acoustic nodal lines and cymatic resonance patterns.",
+      "good_for": [
+        "cymatics",
+        "resonance",
+        "nodal geometry",
+        "sand patterns"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/collision_events/collision_events.py",
+      "title": "Collision Events",
+      "category": "physics",
+      "concepts": [
+        "collision response",
+        "contact normals",
+        "impulse",
+        "debug visualization",
+        "rigid body"
+      ],
+      "visual_use": "Use for visualizing impacts, contact points, normals, and velocity vectors in collision-driven motion.",
+      "good_for": [
+        "impact rings",
+        "physics debugging",
+        "kinetic abstraction",
+        "contact visuals"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/contact_solver/contact_solver.py",
+      "title": "Contact Solver",
+      "category": "physics",
+      "concepts": [
+        "contact solver",
+        "stacking",
+        "AABB",
+        "resting contact",
+        "friction"
+      ],
+      "visual_use": "Use for stacked boxes, resting contacts, simple platform physics, or contact correction studies.",
+      "good_for": [
+        "stacking",
+        "block piles",
+        "contact debugging",
+        "gravity"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/double_pendulum/double_pendulum.py",
+      "title": "Double pendulum",
+      "category": "physics",
+      "concepts": [
+        "pendulum",
+        "chaos",
+        "oscillation",
+        "trails"
+      ],
+      "visual_use": "Use for chaotic traces, swinging mechanisms, or elegant motion paths.",
+      "good_for": [
+        "chaos",
+        "trails",
+        "mechanical motion",
+        "oscillation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/dye_plume_field/dye_plume_field.py",
+      "title": "Dye plume field",
+      "category": "physics",
+      "concepts": [
+        "dye",
+        "plume",
+        "density field",
+        "advection",
+        "buoyancy"
+      ],
+      "visual_use": "Use for ink dropped in water, colored smoke plumes, underwater dye trails, or translucent fluid clouds.",
+      "good_for": [
+        "dye",
+        "plumes",
+        "water",
+        "smoke",
+        "fluid motion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/excitable_wavefronts/excitable_wavefronts.py",
+      "title": "Excitable Wavefronts",
+      "category": "physics",
+      "concepts": [
+        "wave",
+        "oscillation",
+        "motion",
+        "force"
+      ],
+      "visual_use": "Use for motion studies, forces, particles, fields, or physical animation.",
+      "good_for": [
+        "motion",
+        "fields",
+        "animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/flow_field_art/flow_field_art.py",
+      "title": "Flow Field Art",
+      "category": "physics",
+      "concepts": [
+        "flow field",
+        "vectors",
+        "motion",
+        "force"
+      ],
+      "visual_use": "Use for motion studies, forces, particles, fields, or physical animation.",
+      "good_for": [
+        "motion",
+        "fields",
+        "animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/fluid_particles/fluid_particles.py",
+      "title": "Fluid Particles",
+      "category": "physics",
+      "concepts": [
+        "particle system",
+        "fluid simulation",
+        "density pressure",
+        "viscosity",
+        "SPH-like"
+      ],
+      "visual_use": "Use for water drops, poured particles, bubbles, ink beads, or soft fluid-like clusters.",
+      "good_for": [
+        "water",
+        "bubbles",
+        "fluid motion",
+        "pouring"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/fracture_dynamics/fracture_dynamics.py",
+      "title": "Fracture Dynamics",
+      "category": "physics",
+      "concepts": [
+        "fracture",
+        "impact impulse",
+        "debris",
+        "polygon shards",
+        "breakage"
+      ],
+      "visual_use": "Use for breaking objects, impact debris, shattered abstract forms, or threshold-triggered fragmentation.",
+      "good_for": [
+        "shards",
+        "impact",
+        "destruction",
+        "debris"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/ink_smoke_advection/ink_smoke_advection.py",
+      "title": "Ink smoke advection",
+      "category": "physics",
+      "concepts": [
+        "ink",
+        "smoke",
+        "advection",
+        "diffusion",
+        "flow field"
+      ],
+      "visual_use": "Use for watercolor-like ink clouds, smoke plumes, dye spreading through space, or soft translucent color fields.",
+      "good_for": [
+        "ink",
+        "smoke",
+        "watercolor",
+        "plumes",
+        "atmosphere"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/joints_and_constraints/joints_and_constraints.py",
+      "title": "Joints And Constraints",
+      "category": "physics",
+      "concepts": [
+        "joints",
+        "distance constraints",
+        "truss",
+        "bridge",
+        "position based dynamics"
+      ],
+      "visual_use": "Use for bridges, linked mechanisms, ragdoll structures, or articulated constraint networks.",
+      "good_for": [
+        "bridges",
+        "mechanisms",
+        "constraint networks",
+        "interactive joints"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/lenia/lenia.py",
+      "title": "Lenia",
+      "category": "physics",
+      "concepts": [
+        "artificial life",
+        "continuous CA",
+        "self-replication",
+        "amoeba",
+        "creature",
+        "Lenia"
+      ],
+      "visual_use": "Use for artificial life forms, self-replicating creatures, or continuous cellular automata evolution.",
+      "good_for": [
+        "creature",
+        "self-replication",
+        "artificial life",
+        "animation",
+        "emergence"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/light_falloff_field/light_falloff_field.py",
+      "title": "Inverse square light particles",
+      "category": "physics",
+      "concepts": [
+        "inverse square law",
+        "illumination",
+        "falloff",
+        "gradient field"
+      ],
+      "visual_use": "Use for glowing bodies, stars, fireflies, city lights, or radiant particle textures.",
+      "good_for": [
+        "glow",
+        "stars",
+        "fireflies",
+        "illumination"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/light_ray_casting/light_ray_casting.py",
+      "title": "2D light ray casting",
+      "category": "physics",
+      "concepts": [
+        "ray casting",
+        "shadow",
+        "visibility polygon",
+        "occlusion"
+      ],
+      "visual_use": "Use for streetlights, caves, stage lighting, shadow puppets, or visible light cones.",
+      "good_for": [
+        "shadows",
+        "visibility",
+        "stage lighting",
+        "occlusion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/magnetic_pendulum/magnetic_pendulum.py",
+      "title": "Magnetic Pendulum",
+      "category": "physics",
+      "concepts": [
+        "pendulum",
+        "oscillation",
+        "motion",
+        "force"
+      ],
+      "visual_use": "Use for motion studies, forces, particles, fields, or physical animation.",
+      "good_for": [
+        "motion",
+        "fields",
+        "animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/mass_spring_cloth/mass_spring_cloth.py",
+      "title": "Mass Spring Cloth",
+      "category": "physics",
+      "concepts": [
+        "cloth",
+        "constraints",
+        "verlet integration",
+        "mass spring",
+        "soft body",
+        "wind"
+      ],
+      "visual_use": "Use for hanging fabric, elastic nets, banners, membranes, or wind-swept soft surfaces.",
+      "good_for": [
+        "fabric",
+        "soft body",
+        "deformation",
+        "interactive mesh"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/n_bodies/n_bodies.py",
+      "title": "N-body orbital simulation",
+      "category": "physics",
+      "concepts": [
+        "gravity",
+        "attraction",
+        "orbital motion",
+        "particle system"
+      ],
+      "visual_use": "Use for clustered particles, orbital traces, invisible force fields, or cosmic motion.",
+      "good_for": [
+        "cosmos",
+        "tension",
+        "invisible forces",
+        "slow animation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/n_body_orbital_simulation/n_body_orbital_simulation.py",
+      "title": "N-body orbital simulation with trails",
+      "category": "physics",
+      "concepts": [
+        "gravity",
+        "orbit",
+        "trails",
+        "multi-body system"
+      ],
+      "visual_use": "Use for luminous orbital paths, clustered attraction, or cosmic choreography.",
+      "good_for": [
+        "cosmos",
+        "trails",
+        "flow",
+        "systems"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/noise_terrain/noise_terrain.py",
+      "title": "Noise terrain",
+      "category": "physics",
+      "concepts": [
+        "perlin noise",
+        "terrain",
+        "grid",
+        "height field"
+      ],
+      "visual_use": "Use for landscape surfaces, topographic motion, or animated procedural fields.",
+      "good_for": [
+        "terrain",
+        "topography",
+        "landscape",
+        "procedural texture"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/paint_splatter/paint_splatter.py",
+      "title": "Paint splatter particles",
+      "category": "physics",
+      "concepts": [
+        "particles",
+        "randomness",
+        "splatter",
+        "color"
+      ],
+      "visual_use": "Use for paint bursts, organic scatter, expressive marks, or impact effects.",
+      "good_for": [
+        "paint",
+        "impact",
+        "scatter",
+        "organic marks"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/particle_flow/particle_flow.py",
+      "title": "Particle flow visualization",
+      "category": "physics",
+      "concepts": [
+        "particle system",
+        "vector field",
+        "Perlin noise",
+        "advection",
+        "interactive forces",
+        "flow visualization"
+      ],
+      "visual_use": "Use for flowing particle trails, organic motion patterns, interactive flow distortion, or Perlin noise field visualization.",
+      "good_for": [
+        "particles",
+        "flow fields",
+        "organic motion",
+        "interactive art",
+        "noise fields"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ],
+      "platforms": [
+        "py5",
+        "touchdesigner",
+        "ue5"
+      ]
+    },
+    {
+      "path": "physics/particle_force_fields/particle_force_fields.py",
+      "title": "Particle Force Fields",
+      "category": "physics",
+      "concepts": [
+        "particle system",
+        "force field",
+        "radial attraction",
+        "vortex",
+        "drag",
+        "orbital motion"
+      ],
+      "visual_use": "Use for magnetic fields, orbital swirls, sparks, invisible attractors, or force-line textures.",
+      "good_for": [
+        "fields",
+        "orbits",
+        "sparks",
+        "swirling motion"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/particle_system_with_repeller/particle_system_with_repeller.py",
+      "title": "Particle system with repeller",
+      "category": "physics",
+      "concepts": [
+        "particle system",
+        "repulsion",
+        "force field",
+        "emitter"
+      ],
+      "visual_use": "Use for smoke-like particles avoiding a charged object or negative space in a flow.",
+      "good_for": [
+        "smoke",
+        "repulsion",
+        "negative space",
+        "field motion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/particle_textures_array/particle_textures_array.py",
+      "title": "Textured particle array",
+      "category": "physics",
+      "concepts": [
+        "particle system",
+        "texture",
+        "alpha blending",
+        "emitter"
+      ],
+      "visual_use": "Use for textured smoke, soft particles, atmospheric trails, or layered effects.",
+      "good_for": [
+        "smoke",
+        "mist",
+        "texture",
+        "atmosphere"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/perlin_noise_walker_lines/perlin_noise_walker_lines.py",
+      "title": "Perlin noise walker lines",
+      "category": "physics",
+      "concepts": [
+        "perlin noise",
+        "random walk",
+        "line drawing",
+        "organic motion"
+      ],
+      "visual_use": "Use for natural wandering lines, terrain-like paths, or hand-drawn motion.",
+      "good_for": [
+        "organic lines",
+        "wandering",
+        "texture",
+        "terrain"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/pollen_dispersal/pollen_dispersal.py",
+      "title": "Pollen dispersal",
+      "category": "physics",
+      "concepts": [
+        "pollen",
+        "seeds",
+        "wind",
+        "dispersal",
+        "particles",
+        "botanical motion"
+      ],
+      "visual_use": "Use for pollen clouds, dandelion drift, seed bursts, windborne botanical particles, and soft natural atmosphere.",
+      "good_for": [
+        "pollen",
+        "seeds",
+        "wind",
+        "botanical atmosphere",
+        "particle motion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/raycast_queries/raycast_queries.py",
+      "title": "Raycast Queries",
+      "category": "physics",
+      "concepts": [
+        "ray casting",
+        "shape query",
+        "surface normal",
+        "line intersection",
+        "sensor"
+      ],
+      "visual_use": "Use for laser beams, sensors, sight lines, picking, visibility checks, or collision query debugging.",
+      "good_for": [
+        "sensors",
+        "visibility",
+        "lasers",
+        "debug rays"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/reaction_diffusion/reaction_diffusion.py",
+      "title": "Reaction-diffusion (Gray-Scott)",
+      "category": "physics",
+      "concepts": [
+        "reaction-diffusion",
+        "Gray-Scott",
+        "emergent patterns",
+        "chemical simulation"
+      ],
+      "visual_use": "Use for organic morphogenesis patterns, animal spots, labyrinths, coral, or fingerprint-like textures.",
+      "good_for": [
+        "organic patterns",
+        "morphogenesis",
+        "texture",
+        "emergence"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ],
+      "platforms": [
+        "py5",
+        "touchdesigner",
+        "ue5"
+      ]
+    },
+    {
+      "path": "physics/refraction_prism/refraction_prism.py",
+      "title": "Refraction through glass",
+      "category": "physics",
+      "concepts": [
+        "refraction",
+        "Snell's law",
+        "prism",
+        "optics"
+      ],
+      "visual_use": "Use for prisms, lenses, transparent objects, bent backgrounds, or spectral light.",
+      "good_for": [
+        "prism",
+        "lens",
+        "spectrum",
+        "transparent objects"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/rigid_body_collision/rigid_body_collision.py",
+      "title": "Rigid Body Collision",
+      "category": "physics",
+      "concepts": [
+        "rigid body",
+        "circle collision",
+        "impulse resolution",
+        "restitution",
+        "gravity",
+        "angular motion"
+      ],
+      "visual_use": "Use for bouncing bodies, pinball-like motion, kinetic compositions, or compact physics-engine studies.",
+      "good_for": [
+        "collisions",
+        "kinetic motion",
+        "bouncing bodies",
+        "pinball"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/ripple_field/ripple_field.py",
+      "title": "Circular ripple field",
+      "category": "physics",
+      "concepts": [
+        "ripple",
+        "circular wave",
+        "wavefront",
+        "interference",
+        "decay"
+      ],
+      "visual_use": "Use for rain-on-water surfaces, sonar pings, impact rings, or layered aquatic wave textures.",
+      "good_for": [
+        "water",
+        "ripples",
+        "impact waves",
+        "sonar"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/rotating_rigid_bodies/rotating_rigid_bodies.py",
+      "title": "Rotating Rigid Bodies",
+      "category": "physics",
+      "concepts": [
+        "rigid body",
+        "rotating polygons",
+        "SAT collision",
+        "angular velocity",
+        "impulse"
+      ],
+      "visual_use": "Use for tumbling boxes, rotating convex bodies, falling debris, or engine-like polygon motion.",
+      "good_for": [
+        "tumbling",
+        "kinetic geometry",
+        "rigid bodies",
+        "debris"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/sand_simulation/sand_simulation.py",
+      "title": "Sand Simulation",
+      "category": "physics",
+      "concepts": [
+        "falling sand",
+        "powder",
+        "gravity",
+        "pixel simulation",
+        "granular"
+      ],
+      "visual_use": "Use for powder effects, falling sand art, gravity simulations, or granular material behavior.",
+      "good_for": [
+        "particle",
+        "gravity",
+        "simulation",
+        "texture",
+        "emergence"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/sat_polygon_collision/sat_polygon_collision.py",
+      "title": "SAT Polygon Collision",
+      "category": "physics",
+      "concepts": [
+        "separating axis theorem",
+        "convex polygons",
+        "minimum translation vector",
+        "collision detection",
+        "SAT"
+      ],
+      "visual_use": "Use for convex polygon overlap tests, collision normals, and minimum-translation debug visuals.",
+      "good_for": [
+        "collision detection",
+        "geometry debugging",
+        "convex shapes",
+        "engine foundations"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/seismic_wave_field/seismic_wave_field.py",
+      "title": "Seismic wave field",
+      "category": "physics",
+      "concepts": [
+        "seismic waves",
+        "P-wave",
+        "S-wave",
+        "shockwave",
+        "terrain"
+      ],
+      "visual_use": "Use for earthquake maps, radar-like pulses, sonar rings, or expanding shockwave compositions.",
+      "good_for": [
+        "seismic maps",
+        "shockwaves",
+        "radar",
+        "propagation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/soft_body_lattice/soft_body_lattice.py",
+      "title": "Soft Body Lattice",
+      "category": "physics",
+      "concepts": [
+        "soft body",
+        "lattice",
+        "constraints",
+        "jelly",
+        "deformation"
+      ],
+      "visual_use": "Use for jelly-like bodies, elastic grids, squishy materials, or deformable mesh studies.",
+      "good_for": [
+        "soft bodies",
+        "elastic forms",
+        "deformation",
+        "interactive mesh"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/spatial_hash_broad_phase/spatial_hash_broad_phase.py",
+      "title": "Spatial Hash Broad Phase",
+      "category": "physics",
+      "concepts": [
+        "spatial hash",
+        "broad phase",
+        "collision optimization",
+        "uniform grid",
+        "particle collisions"
+      ],
+      "visual_use": "Use for dense particle or body simulations where grid partitioning reduces collision pair checks.",
+      "good_for": [
+        "many particles",
+        "optimization",
+        "collision grids",
+        "debug overlays"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/spring_mesh/spring_mesh.py",
+      "title": "Interactive spring mesh",
+      "category": "physics",
+      "concepts": [
+        "spring forces",
+        "mesh",
+        "soft body",
+        "Hooke's law",
+        "constraints"
+      ],
+      "visual_use": "Use for stretchy grids, fabric-like deformations, interactive elastic surfaces, or jelly-like meshes.",
+      "good_for": [
+        "fabric",
+        "elastic",
+        "interactive",
+        "deformation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ],
+      "platforms": [
+        "py5",
+        "touchdesigner",
+        "ue5"
+      ]
+    },
+    {
+      "path": "physics/stable_fluids/stable_fluids.py",
+      "title": "Stable Fluids (Jos Stam)",
+      "category": "physics",
+      "concepts": [
+        "fluid simulation",
+        "Navier-Stokes",
+        "advection",
+        "incompressible",
+        "dye",
+        "interactive"
+      ],
+      "visual_use": "Real-time incompressible fluid with mouse-painted dye. Use for flowing ink, smoke, aurora, or paint-mix art.",
+      "good_for": [
+        "fluid",
+        "interactive",
+        "flow",
+        "smoke",
+        "paint",
+        "organic"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/stable_fluids_2d/stable_fluids_2d.py",
+      "title": "Stable Fluids 2D",
+      "category": "physics",
+      "concepts": [
+        "stable fluids",
+        "grid advection",
+        "density field",
+        "diffusion",
+        "velocity field"
+      ],
+      "visual_use": "Use for smoke, ink, dye fields, field-based fluid flow, or soft atmospheric motion.",
+      "good_for": [
+        "smoke",
+        "ink",
+        "dye",
+        "fluid fields"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/standing_wave/standing_wave.py",
+      "title": "Standing wave modes",
+      "category": "physics",
+      "concepts": [
+        "standing wave",
+        "resonance",
+        "nodes",
+        "antinodes",
+        "harmonics"
+      ],
+      "visual_use": "Use for vibrating strings, resonance diagrams, musical harmonics, or clean nodal waveform studies.",
+      "good_for": [
+        "resonance",
+        "strings",
+        "harmonics",
+        "wave education"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/verlet_constraints/verlet_constraints.py",
+      "title": "Verlet Constraints",
+      "category": "physics",
+      "concepts": [
+        "verlet integration",
+        "distance constraints",
+        "rope",
+        "position based dynamics",
+        "constraints"
+      ],
+      "visual_use": "Use for ropes, chains, pendulum strings, articulated links, or compact position-based dynamics demos.",
+      "good_for": [
+        "rope",
+        "chains",
+        "constraints",
+        "interactive motion"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/volumetric_light_beams/volumetric_light_beams.py",
+      "title": "Volumetric light beams",
+      "category": "physics",
+      "concepts": [
+        "volumetric light",
+        "scattering",
+        "fog",
+        "god rays"
+      ],
+      "visual_use": "Use for forest light, stage lighting, visible beams in fog, or atmospheric depth.",
+      "good_for": [
+        "god rays",
+        "fog",
+        "stage lighting",
+        "atmosphere"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/watercolor_ink_diffusion/watercolor_ink_diffusion.py",
+      "title": "Watercolor ink diffusion",
+      "category": "physics",
+      "concepts": [
+        "watercolor",
+        "ink",
+        "diffusion",
+        "paper texture",
+        "wet edge"
+      ],
+      "visual_use": "Use for watercolor washes, paper ink bleed, soft stain maps, pigment pools, or organic background textures.",
+      "good_for": [
+        "watercolor",
+        "ink bleed",
+        "paper texture",
+        "pigment",
+        "backgrounds"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/wave_equation_grid/wave_equation_grid.py",
+      "title": "Wave equation grid",
+      "category": "physics",
+      "concepts": [
+        "wave equation",
+        "height field",
+        "grid simulation",
+        "propagation",
+        "damping"
+      ],
+      "visual_use": "Use for interactive water membranes, shock propagation, impact fields, or numerical wave surfaces.",
+      "good_for": [
+        "water surface",
+        "impacts",
+        "height fields",
+        "simulation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/wave_interference_field/wave_interference_field.py",
+      "title": "Wave interference field",
+      "category": "physics",
+      "concepts": [
+        "wave interference",
+        "phase",
+        "radial waves",
+        "nodes",
+        "constructive interference"
+      ],
+      "visual_use": "Use for moire-like wave fields, water interference, acoustic nodes, or scientific energy maps.",
+      "good_for": [
+        "interference",
+        "moire",
+        "phase fields",
+        "water waves"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "physics/wave_packet/wave_packet.py",
+      "title": "Gaussian wave packet",
+      "category": "physics",
+      "concepts": [
+        "wave packet",
+        "Gaussian envelope",
+        "group velocity",
+        "phase velocity",
+        "dispersion"
+      ],
+      "visual_use": "Use for quantum-like pulses, sound bursts, signal envelopes, or animated phase/group velocity diagrams.",
+      "good_for": [
+        "wave packets",
+        "signals",
+        "quantum visuals",
+        "line animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "procedural_terrain/fault_terrain/fault_terrain.py",
+      "title": "Fault Terrain",
+      "category": "procedural_terrain",
+      "concepts": [
+        "heightmap",
+        "elevation",
+        "landscape",
+        "procedural terrain",
+        "terrain",
+        "erosion"
+      ],
+      "visual_use": "Use for landscape generation, hydraulic erosion, heightmap sculpting, or geological simulations.",
+      "good_for": [
+        "terrain",
+        "landscape",
+        "erosion",
+        "geology"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "procedural_terrain/hydraulic_erosion/hydraulic_erosion.py",
+      "title": "Hydraulic Erosion",
+      "category": "procedural_terrain",
+      "concepts": [
+        "hydraulic erosion",
+        "terrain",
+        "geological",
+        "water flow",
+        "heightmap",
+        "elevation"
+      ],
+      "visual_use": "Use for landscape generation, hydraulic erosion, heightmap sculpting, or geological simulations.",
+      "good_for": [
+        "terrain",
+        "landscape",
+        "erosion",
+        "geology"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "procedural_terrain/voronoi_landscape/voronoi_landscape.py",
+      "title": "Voronoi Landscape",
+      "category": "procedural_terrain",
+      "concepts": [
+        "voronoi",
+        "diagram",
+        "stippling",
+        "heightmap",
+        "elevation",
+        "landscape"
+      ],
+      "visual_use": "Use for landscape generation, hydraulic erosion, heightmap sculpting, or geological simulations.",
+      "good_for": [
+        "terrain",
+        "landscape",
+        "erosion",
+        "geology"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "reaction_diffusion/belousov_zhabotinsky/belousov_zhabotinsky.py",
+      "title": "Belousov-Zhabotinsky Reaction",
+      "category": "reaction_diffusion",
+      "concepts": [
+        "BZ reaction",
+        "spiral wave",
+        "oscillation",
+        "chemical",
+        "self-organization"
+      ],
+      "visual_use": "Produces self-organizing spiral waves and concentric target patterns. Use for ethereal, hypnotic rotating wave art.",
+      "good_for": [
+        "spiral",
+        "wave",
+        "organic",
+        "animation",
+        "hypnotic"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "scipy",
+        "py5"
+      ]
+    },
+    {
+      "path": "reaction_diffusion/gray_scott/gray_scott.py",
+      "title": "Gray-Scott Reaction-Diffusion System",
+      "category": "reaction_diffusion",
+      "concepts": [
+        "reaction diffusion",
+        "turing pattern",
+        "activator inhibitor",
+        "pattern formation",
+        "turing"
+      ],
+      "visual_use": "Use for organic textures, spot/stripe patterns, chemical wave simulation, or Turing patterns.",
+      "good_for": [
+        "patterns",
+        "textures",
+        "chemistry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "reaction_diffusion/lenia/lenia.py",
+      "title": "Lenia Continuous Cellular Automaton",
+      "category": "reaction_diffusion",
+      "concepts": [
+        "Lenia",
+        "continuous cellular automaton",
+        "artificial life",
+        "emergent",
+        "creature"
+      ],
+      "visual_use": "Continuous Game of Life that produces gliding life-like creatures. Use for organic, living, emergent pattern art.",
+      "good_for": [
+        "artificial life",
+        "organic",
+        "emergent",
+        "creature",
+        "animation"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "reaction_diffusion/turing_patterns/turing_patterns.py",
+      "title": "Turing Patterns (Gierer-Meinhardt)",
+      "category": "reaction_diffusion",
+      "concepts": [
+        "Turing pattern",
+        "morphogenesis",
+        "activator inhibitor",
+        "spots",
+        "stripes",
+        "labyrinth"
+      ],
+      "visual_use": "Gierer-Meinhardt activator-inhibitor system producing animal coat patterns: spots, stripes, labyrinths.",
+      "good_for": [
+        "texture",
+        "organic",
+        "nature",
+        "pattern",
+        "morphogenesis"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "scipy",
+        "py5"
+      ]
+    },
+    {
+      "path": "research/acrylic_pour/acrylic_pour.py",
+      "title": "Acrylic Pour",
+      "category": "research",
+      "concepts": [
+        "simulation",
+        "system"
+      ],
+      "visual_use": "Use for experimental systems, hybrid simulations, or advanced visual behaviors.",
+      "good_for": [
+        "experiments",
+        "systems",
+        "hybrids"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "research/audio_fft/audio_fft.py",
+      "title": "Audio FFT and beat detection",
+      "category": "research",
+      "concepts": [
+        "FFT",
+        "audio visualization",
+        "frequency spectrum",
+        "beat detection",
+        "real-time"
+      ],
+      "visual_use": "Use for music-reactive visuals, spectrum bars, circular audio displays, or rhythm-driven animations.",
+      "good_for": [
+        "music visualization",
+        "reactive",
+        "frequency",
+        "beat"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "py5",
+        "sounddevice"
+      ],
+      "platforms": [
+        "py5",
+        "touchdesigner",
+        "ue5"
+      ]
+    },
+    {
+      "path": "research/audio_wave_scope/audio_wave_scope.py",
+      "title": "Audio waveform scope",
+      "category": "research",
+      "concepts": [
+        "oscilloscope",
+        "audio waveform",
+        "Lissajous",
+        "spectrum",
+        "signal visualization"
+      ],
+      "visual_use": "Use for oscilloscope traces, synthetic audio interfaces, phase plots, or waveform-driven compositions.",
+      "good_for": [
+        "audio visuals",
+        "oscilloscope",
+        "signals",
+        "music graphics"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "research/dry_brush_texture/dry_brush_texture.py",
+      "title": "Dry Brush Texture",
+      "category": "research",
+      "concepts": [
+        "simulation",
+        "system"
+      ],
+      "visual_use": "Use for experimental systems, hybrid simulations, or advanced visual behaviors.",
+      "good_for": [
+        "experiments",
+        "systems",
+        "hybrids"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "research/excitable_wavefronts/excitable_wavefronts.py",
+      "title": "Excitable wavefronts",
+      "category": "research",
+      "concepts": [
+        "excitable medium",
+        "cellular wave",
+        "reaction diffusion",
+        "refractory state",
+        "wavefront"
+      ],
+      "visual_use": "Use for chemical waves, cardiac-like propagation, spiral waves, organic rings, or emergent cellular textures.",
+      "good_for": [
+        "chemical waves",
+        "cellular patterns",
+        "organic rings",
+        "emergence"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "research/force_directed_graph/force_directed_graph.py",
+      "title": "Force-directed graph",
+      "category": "research",
+      "concepts": [
+        "graph layout",
+        "spring forces",
+        "network",
+        "simulation"
+      ],
+      "visual_use": "Use for dynamic networks, relational maps, springy diagrams, or clustered systems.",
+      "good_for": [
+        "networks",
+        "graphs",
+        "relationships",
+        "spring motion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "research/impasto_rendering/impasto_rendering.py",
+      "title": "Impasto Rendering",
+      "category": "research",
+      "concepts": [
+        "simulation",
+        "system"
+      ],
+      "visual_use": "Use for experimental systems, hybrid simulations, or advanced visual behaviors.",
+      "good_for": [
+        "experiments",
+        "systems",
+        "hybrids"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "research/layered_paint_mixing/layered_paint_mixing.py",
+      "title": "Layered Paint Mixing",
+      "category": "research",
+      "concepts": [
+        "simulation",
+        "system"
+      ],
+      "visual_use": "Use for experimental systems, hybrid simulations, or advanced visual behaviors.",
+      "good_for": [
+        "experiments",
+        "systems",
+        "hybrids"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "research/oil_paint_swirl/oil_paint_swirl.py",
+      "title": "Oil Paint Swirl",
+      "category": "research",
+      "concepts": [
+        "simulation",
+        "system"
+      ],
+      "visual_use": "Use for experimental systems, hybrid simulations, or advanced visual behaviors.",
+      "good_for": [
+        "experiments",
+        "systems",
+        "hybrids"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "research/pixel_sorting/pixel_sorting.py",
+      "title": "Pixel Sorting",
+      "category": "research",
+      "concepts": [
+        "simulation",
+        "system"
+      ],
+      "visual_use": "Use for experimental systems, hybrid simulations, or advanced visual behaviors.",
+      "good_for": [
+        "experiments",
+        "systems",
+        "hybrids"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "self_organizing/boids/boids.py",
+      "title": "Boids",
+      "category": "self_organizing",
+      "concepts": [
+        "boids",
+        "swarm",
+        "self-organization",
+        "emergence",
+        "learning",
+        "adaptation"
+      ],
+      "visual_use": "Use for self-organizing maps, emergent structure, competitive learning, or adaptive pattern formation.",
+      "good_for": [
+        "emergence",
+        "adaptation",
+        "learning",
+        "self-organization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "self_organizing/growing_neural_gas/growing_neural_gas.py",
+      "title": "Growing Neural Gas",
+      "category": "self_organizing",
+      "concepts": [
+        "self-organization",
+        "emergence",
+        "learning",
+        "adaptation"
+      ],
+      "visual_use": "Use for self-organizing maps, emergent structure, competitive learning, or adaptive pattern formation.",
+      "good_for": [
+        "emergence",
+        "adaptation",
+        "learning",
+        "self-organization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "self_organizing/kohonen_som/kohonen_som.py",
+      "title": "Kohonen Som",
+      "category": "self_organizing",
+      "concepts": [
+        "self-organizing map",
+        "SOM",
+        "competitive learning",
+        "neural",
+        "kohonen",
+        "topology"
+      ],
+      "visual_use": "Use for self-organizing maps, emergent structure, competitive learning, or adaptive pattern formation.",
+      "good_for": [
+        "emergence",
+        "adaptation",
+        "learning",
+        "self-organization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "self_organizing/reaction_diffusion/reaction_diffusion.py",
+      "title": "Reaction Diffusion",
+      "category": "self_organizing",
+      "concepts": [
+        "self-organization",
+        "emergence",
+        "learning",
+        "adaptation"
+      ],
+      "visual_use": "Use for self-organizing maps, emergent structure, competitive learning, or adaptive pattern formation.",
+      "good_for": [
+        "emergence",
+        "adaptation",
+        "learning",
+        "self-organization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/boolean_ops_2d.frag",
+      "title": "2D Boolean SDF Operations",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "boolean",
+        "2D",
+        "union",
+        "intersection",
+        "subtraction"
+      ],
+      "visual_use": "Boolean operations on 2D signed distance fields for compositing flat graphic shapes.",
+      "good_for": [
+        "2D",
+        "geometric",
+        "graphic",
+        "composition"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/boolean_ops_3d.frag",
+      "title": "3D Boolean SDF Operations",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "boolean",
+        "union",
+        "intersection",
+        "subtraction",
+        "3D",
+        "CSG"
+      ],
+      "visual_use": "Constructive solid geometry (CSG) with 3D SDFs: union, intersection, and subtraction of shapes.",
+      "good_for": [
+        "3D",
+        "geometric",
+        "sculptural",
+        "CSG"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/displacement.frag",
+      "title": "Surface Displacement",
+      "category": "shader",
+      "concepts": [
+        "displacement",
+        "SDF",
+        "surface detail",
+        "noise",
+        "deformation"
+      ],
+      "visual_use": "Add noise-based displacement to SDF surfaces for organic, rough, or alien textures on 3D forms.",
+      "good_for": [
+        "3D",
+        "texture",
+        "organic",
+        "deformation"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/infinite_repeat.frag",
+      "title": "Infinite Repetition (SDF)",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "infinite repeat",
+        "tiling",
+        "modulo",
+        "3D"
+      ],
+      "visual_use": "Repeat 3D SDF objects infinitely using modulo operations for tiled, crystalline, or lattice structures.",
+      "good_for": [
+        "3D",
+        "tiling",
+        "pattern",
+        "crystalline",
+        "infinite"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/octahedron.frag",
+      "title": "Octahedron SDF",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "octahedron",
+        "polyhedra",
+        "3D",
+        "geometric"
+      ],
+      "visual_use": "Raymarched octahedron using SDF. Use for crystalline, gem-like, or sharp geometric 3D art.",
+      "good_for": [
+        "3D",
+        "geometric",
+        "crystal",
+        "polyhedra"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/polyhedra_truncation.frag",
+      "title": "Polyhedra Truncation (SDF)",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "polyhedra",
+        "truncation",
+        "3D",
+        "geometric",
+        "Archimedean solid"
+      ],
+      "visual_use": "Generate truncated polyhedra (Archimedean solids) via SDF operations for precise architectural 3D forms.",
+      "good_for": [
+        "3D",
+        "geometric",
+        "architectural",
+        "polyhedra"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/sdf_morphing.frag",
+      "title": "SDF Morphing",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "morphing",
+        "interpolation",
+        "animation",
+        "3D",
+        "shape blending"
+      ],
+      "visual_use": "Smooth animated morphing between multiple 3D SDF shapes. Use for abstract transforming sculpture art.",
+      "good_for": [
+        "animation",
+        "morphing",
+        "3D",
+        "abstract",
+        "sculpture"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/smooth_min.frag",
+      "title": "Smooth Minimum (SDF Blending)",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "smooth minimum",
+        "smin",
+        "blending",
+        "3D",
+        "soft bodies"
+      ],
+      "visual_use": "Smoothly blend multiple SDF shapes using smooth-min for organic, blob-like 3D forms.",
+      "good_for": [
+        "organic",
+        "blob",
+        "3D",
+        "blending",
+        "soft"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/advanced_sdf/solid_texture.frag",
+      "title": "Solid Texturing (SDF)",
+      "category": "shader",
+      "concepts": [
+        "solid texture",
+        "procedural texture",
+        "SDF",
+        "3D",
+        "material"
+      ],
+      "visual_use": "Procedural solid texturing applied to raymarched 3D SDF objects for marble, wood, or layered material looks.",
+      "good_for": [
+        "3D",
+        "material",
+        "texture",
+        "marble",
+        "wood"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/fbm_warp/domain_warp.frag",
+      "title": "FBM Domain Warping",
+      "category": "shader",
+      "concepts": [
+        "domain warp",
+        "FBM",
+        "noise",
+        "organic",
+        "flow",
+        "distortion"
+      ],
+      "visual_use": "Warp space itself with FBM to create fluid, marble-like, or atmospheric art. One of the most powerful generative techniques.",
+      "good_for": [
+        "organic",
+        "fluid",
+        "marble",
+        "atmospheric",
+        "abstract"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/fbm_warp/fbm.frag",
+      "title": "Fractional Brownian Motion (FBM)",
+      "category": "shader",
+      "concepts": [
+        "FBM",
+        "noise",
+        "fractal",
+        "organic",
+        "texture"
+      ],
+      "visual_use": "Multi-octave noise layering to create natural-looking organic textures. Foundation for cloud, terrain, and fluid art.",
+      "good_for": [
+        "organic",
+        "texture",
+        "clouds",
+        "terrain"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/fbm_warp/noise_blending.frag",
+      "title": "Noise Blending",
+      "category": "shader",
+      "concepts": [
+        "noise",
+        "blending",
+        "layering",
+        "compositing"
+      ],
+      "visual_use": "Blend multiple noise functions with various modes for complex texture layering.",
+      "good_for": [
+        "texture",
+        "layering",
+        "abstract"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/fbm_warp/warp_rotation.frag",
+      "title": "Rotational Domain Warp",
+      "category": "shader",
+      "concepts": [
+        "domain warp",
+        "rotation",
+        "noise",
+        "swirl",
+        "spiral"
+      ],
+      "visual_use": "Rotation-based domain warping for swirling, spiral, and vortex-like distortions.",
+      "good_for": [
+        "swirl",
+        "vortex",
+        "spiral",
+        "abstract"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/gradient_noise/gradient_noise.frag",
+      "title": "Gradient Noise",
+      "category": "shader",
+      "concepts": [
+        "gradient noise",
+        "smooth",
+        "texture",
+        "interpolation"
+      ],
+      "visual_use": "Smooth gradient-based noise for soft, flowing textures and natural variation.",
+      "good_for": [
+        "texture",
+        "smooth",
+        "organic"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/gradient_noise/periodic_noise.frag",
+      "title": "Periodic Noise",
+      "category": "shader",
+      "concepts": [
+        "periodic noise",
+        "tiling",
+        "seamless",
+        "texture"
+      ],
+      "visual_use": "Seamlessly tileable noise texture. Essential for repeating patterns and textile-like art.",
+      "good_for": [
+        "tiling",
+        "seamless",
+        "texture",
+        "pattern"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/gradient_noise/perlin_noise.frag",
+      "title": "Perlin Noise",
+      "category": "shader",
+      "concepts": [
+        "Perlin noise",
+        "gradient noise",
+        "smooth",
+        "organic",
+        "texture"
+      ],
+      "visual_use": "Classic Perlin gradient noise. The most versatile base for natural-looking art: terrain, clouds, and motion.",
+      "good_for": [
+        "texture",
+        "organic",
+        "terrain",
+        "clouds",
+        "motion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/gradient_noise/rotation_noise.frag",
+      "title": "Rotation Noise",
+      "category": "shader",
+      "concepts": [
+        "noise",
+        "rotation",
+        "anisotropic",
+        "directional",
+        "texture"
+      ],
+      "visual_use": "Rotation-based noise for directional, streaky, or fiber-like textures.",
+      "good_for": [
+        "texture",
+        "directional",
+        "fiber"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/hash/hash_1d.frag",
+      "title": "1D Hash Functions",
+      "category": "shader",
+      "concepts": [
+        "hash",
+        "random",
+        "noise",
+        "1D"
+      ],
+      "visual_use": "GPU-friendly 1D hash for fast deterministic pseudo-random values. Used as a building block in noise shaders.",
+      "good_for": [
+        "random",
+        "noise",
+        "procedural"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/hash/hash_multidim.frag",
+      "title": "Multi-dimensional Hash",
+      "category": "shader",
+      "concepts": [
+        "hash",
+        "random",
+        "2D",
+        "3D",
+        "noise",
+        "building block"
+      ],
+      "visual_use": "2D/3D hash functions as building blocks for Voronoi, Worley, and other noise algorithms.",
+      "good_for": [
+        "random",
+        "noise",
+        "building block"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/interpolation/polar.frag",
+      "title": "Polar Coordinates",
+      "category": "shader",
+      "concepts": [
+        "polar coordinates",
+        "radial",
+        "angular",
+        "circular"
+      ],
+      "visual_use": "Transform UV to polar coordinates for radial, mandala-like, and circular generative patterns.",
+      "good_for": [
+        "radial",
+        "mandala",
+        "circular",
+        "symmetry"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/interpolation/polar_rotation.frag",
+      "title": "Polar Rotation",
+      "category": "shader",
+      "concepts": [
+        "polar",
+        "rotation",
+        "angular",
+        "symmetry",
+        "radial"
+      ],
+      "visual_use": "Polar coordinate rotation for spinning, rotating radial art and kaleidoscope effects.",
+      "good_for": [
+        "rotation",
+        "radial",
+        "kaleidoscope",
+        "symmetry"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/interpolation/posterization.frag",
+      "title": "Posterization",
+      "category": "shader",
+      "concepts": [
+        "posterization",
+        "color",
+        "quantization",
+        "graphic",
+        "retro"
+      ],
+      "visual_use": "Reduce color bands for a posterized, screen-print, or retro graphic poster look.",
+      "good_for": [
+        "color",
+        "graphic",
+        "retro",
+        "poster"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/box_march.frag",
+      "title": "Box Raymarching",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "SDF",
+        "3D",
+        "box",
+        "geometry"
+      ],
+      "visual_use": "Use for rendering 3D boxes and rectangular forms via SDF raymarching.",
+      "good_for": [
+        "3D",
+        "geometric",
+        "architectural"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/diffuse_lighting.frag",
+      "title": "Diffuse Lighting (Raymarching)",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "lighting",
+        "normals",
+        "diffuse",
+        "shading"
+      ],
+      "visual_use": "Demonstrates normal-based diffuse shading in a raymarched scene. Use as lighting template.",
+      "good_for": [
+        "3D",
+        "lighting",
+        "shading"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/noise_texture.frag",
+      "title": "Noise-Textured Raymarching",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "noise",
+        "texture",
+        "3D",
+        "procedural"
+      ],
+      "visual_use": "Raymarched 3D scene with procedural noise texture. Combines volumetric and noise techniques.",
+      "good_for": [
+        "3D",
+        "texture",
+        "organic"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/normal_mapping.frag",
+      "title": "Normal Mapping (Raymarching)",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "normals",
+        "SDF gradient",
+        "surface detail"
+      ],
+      "visual_use": "Surface normal calculation via SDF gradient for bump/normal mapping effects.",
+      "good_for": [
+        "3D",
+        "surface detail",
+        "texture"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/ray_silhouette.frag",
+      "title": "Silhouette Raymarching",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "silhouette",
+        "outline",
+        "contour",
+        "SDF"
+      ],
+      "visual_use": "Render 3D shape silhouettes and outlines. Use for graphic, contour-focused art styles.",
+      "good_for": [
+        "silhouette",
+        "outline",
+        "graphic"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/raymarching_2d.frag",
+      "title": "2D Raymarching",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "2D",
+        "SDF",
+        "distance field"
+      ],
+      "visual_use": "2D variant of raymarching using signed distance fields. Great for stylized flat shapes with glow.",
+      "good_for": [
+        "2D",
+        "SDF",
+        "glow",
+        "geometric"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/sphere_march.frag",
+      "title": "Sphere Raymarching",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "SDF",
+        "3D",
+        "sphere",
+        "lighting"
+      ],
+      "visual_use": "Use for 3D sphere rendering with diffuse lighting via raymarching. Foundation for all SDF-based 3D art.",
+      "good_for": [
+        "3D",
+        "raymarching",
+        "geometric"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/raymarching/sphere_rotating.frag",
+      "title": "Rotating Sphere Raymarching",
+      "category": "shader",
+      "concepts": [
+        "raymarching",
+        "SDF",
+        "3D",
+        "rotation",
+        "animation"
+      ],
+      "visual_use": "Animated rotating 3D sphere with Euler rotation. Good starting point for animated SDF scenes.",
+      "good_for": [
+        "3D",
+        "animation",
+        "rotation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/sdf_2d/circle_sdf.frag",
+      "title": "Circle SDF (2D)",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "circle",
+        "2D",
+        "distance field",
+        "glow"
+      ],
+      "visual_use": "2D signed distance field for circles. Use for glow, outline, and smooth shape effects.",
+      "good_for": [
+        "2D",
+        "SDF",
+        "glow",
+        "geometric"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/sdf_2d/lp_voronoi.frag",
+      "title": "Lp-norm Voronoi",
+      "category": "shader",
+      "concepts": [
+        "Voronoi",
+        "Lp-norm",
+        "2D",
+        "distance",
+        "cells"
+      ],
+      "visual_use": "Voronoi with Lp-norm distance for diamond, circular, and intermediate cell shapes.",
+      "good_for": [
+        "cellular",
+        "Voronoi",
+        "geometric"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/sdf_2d/rect_sdf.frag",
+      "title": "Rectangle SDF (2D)",
+      "category": "shader",
+      "concepts": [
+        "SDF",
+        "rectangle",
+        "2D",
+        "distance field"
+      ],
+      "visual_use": "2D signed distance field for rectangles. Foundation for grid-based and architectural art.",
+      "good_for": [
+        "2D",
+        "SDF",
+        "geometric",
+        "grid"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/sdf_2d/voronoi_metrics.frag",
+      "title": "Voronoi Metrics (2D)",
+      "category": "shader",
+      "concepts": [
+        "Voronoi",
+        "distance metrics",
+        "2D",
+        "cells",
+        "tiling"
+      ],
+      "visual_use": "Voronoi diagrams with varied distance metrics (Euclidean, Manhattan, etc.) for diverse cellular art.",
+      "good_for": [
+        "cellular",
+        "Voronoi",
+        "tiling",
+        "abstract"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/value_noise/value_noise.frag",
+      "title": "Value Noise",
+      "category": "shader",
+      "concepts": [
+        "value noise",
+        "interpolation",
+        "texture",
+        "smooth"
+      ],
+      "visual_use": "Interpolated random value noise. Simpler than Perlin, good for blocky or watercolor-like textures.",
+      "good_for": [
+        "texture",
+        "smooth",
+        "watercolor"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/value_noise/value_noise_grad.frag",
+      "title": "Value Noise Gradient",
+      "category": "shader",
+      "concepts": [
+        "value noise",
+        "gradient",
+        "derivative",
+        "flow",
+        "direction"
+      ],
+      "visual_use": "Value noise with gradient/derivative information for flow-field and directional art.",
+      "good_for": [
+        "flow",
+        "directional",
+        "texture"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/worley/cellular_noise.frag",
+      "title": "Cellular Noise",
+      "category": "shader",
+      "concepts": [
+        "cellular noise",
+        "Worley",
+        "organic",
+        "cells"
+      ],
+      "visual_use": "Cellular noise pattern with grid-based randomness. Use for tile-like or cell-like patterns.",
+      "good_for": [
+        "cellular",
+        "texture",
+        "organic"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/worley/voronoi.frag",
+      "title": "Voronoi Noise",
+      "category": "shader",
+      "concepts": [
+        "Voronoi",
+        "cellular noise",
+        "cells",
+        "tiling",
+        "organic"
+      ],
+      "visual_use": "Classic Voronoi cellular noise. Use for biological cell patterns, cracked surfaces, stone textures.",
+      "good_for": [
+        "cellular",
+        "organic",
+        "texture",
+        "nature"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/worley/worley_f1_f4.frag",
+      "title": "Worley F1-F4 Features",
+      "category": "shader",
+      "concepts": [
+        "Worley noise",
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "cellular",
+        "distance"
+      ],
+      "visual_use": "Compare F1 through F4 Worley distance features for different cellular art styles.",
+      "good_for": [
+        "cellular",
+        "comparison",
+        "texture"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/worley/worley_layers.frag",
+      "title": "Layered Worley Noise",
+      "category": "shader",
+      "concepts": [
+        "Worley noise",
+        "layering",
+        "octaves",
+        "texture",
+        "cellular"
+      ],
+      "visual_use": "Multi-octave layered Worley noise for rich, complex organic textures with fine detail.",
+      "good_for": [
+        "texture",
+        "organic",
+        "detail",
+        "layering"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shader/worley/worley_noise.frag",
+      "title": "Worley Noise",
+      "category": "shader",
+      "concepts": [
+        "Worley noise",
+        "cellular",
+        "F1",
+        "texture",
+        "organic"
+      ],
+      "visual_use": "F1 Worley/cellular noise for skin, scales, stone, and organic surface textures.",
+      "good_for": [
+        "texture",
+        "organic",
+        "biological",
+        "surface"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "GLSL"
+      ]
+    },
+    {
+      "path": "shared/lfo.py",
+      "title": "LFOBank (Modulation Utility)",
+      "category": "shared",
+      "concepts": [
+        "LFO",
+        "oscillator",
+        "modulation",
+        "sine",
+        "triangle",
+        "sawtooth",
+        "noise",
+        "animation"
+      ],
+      "visual_use": "Use as a modulation source to animate any numeric parameter — gravity, hue, feed rate, speed — with sine/triangle/sawtooth/pulse/noise waveforms.",
+      "good_for": [
+        "modulation",
+        "animation",
+        "parameter control",
+        "rhythm"
+      ],
+      "complexity": "low",
+      "dependencies": []
+    },
+    {
+      "path": "shared/noise_field.py",
+      "title": "NoiseField (2D Value Noise with fBm)",
+      "category": "shared",
+      "concepts": [
+        "value noise",
+        "Perlin noise",
+        "fBm",
+        "fractal Brownian motion",
+        "organic",
+        "perturbation"
+      ],
+      "visual_use": "Generate organic, spatially coherent noise for parameter perturbation, symmetry breaking, or texture. Returns a scalar or a full (height, width) numpy array. Animates by incrementing the t parameter.",
+      "good_for": [
+        "organic variation",
+        "symmetry breaking",
+        "texture",
+        "parameter modulation",
+        "animation"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "numpy"
+      ]
+    },
+    {
+      "path": "shared/rk4.py",
+      "title": "RK4 Integrator (4th-order Runge-Kutta)",
+      "category": "shared",
+      "concepts": [
+        "RK4",
+        "numerical integration",
+        "ODE",
+        "differential equations",
+        "accuracy"
+      ],
+      "visual_use": "Drop-in replacement for Euler integration in any ODE-based simulation. Reduces trajectory error from O(dt²) to O(dt⁵) — keeps chaotic attractors accurate and prevents numerical drift over long runs.",
+      "good_for": [
+        "precision",
+        "simulation accuracy",
+        "chaotic systems",
+        "particle trajectories"
+      ],
+      "complexity": "low",
+      "dependencies": []
+    },
+    {
+      "path": "signal_processing/chladni_patterns/chladni_patterns.py",
+      "title": "Chladni Patterns",
+      "category": "signal_processing",
+      "concepts": [
+        "signal",
+        "frequency",
+        "filter",
+        "wavelet"
+      ],
+      "visual_use": "Use for frequency analysis, wavelet visualization, signal filtering, or time-frequency art.",
+      "good_for": [
+        "frequency",
+        "wavelet",
+        "filter",
+        "spectrum"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "signal_processing/fourier_epicycles/fourier_epicycles.py",
+      "title": "Fourier Epicycles",
+      "category": "signal_processing",
+      "concepts": [
+        "signal",
+        "frequency",
+        "filter",
+        "wavelet"
+      ],
+      "visual_use": "Use for frequency analysis, wavelet visualization, signal filtering, or time-frequency art.",
+      "good_for": [
+        "frequency",
+        "wavelet",
+        "filter",
+        "spectrum"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "signal_processing/lissajous_figures/lissajous_figures.py",
+      "title": "Lissajous Figures",
+      "category": "signal_processing",
+      "concepts": [
+        "signal",
+        "frequency",
+        "filter",
+        "wavelet"
+      ],
+      "visual_use": "Use for frequency analysis, wavelet visualization, signal filtering, or time-frequency art.",
+      "good_for": [
+        "frequency",
+        "wavelet",
+        "filter",
+        "spectrum"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "signal_processing/wave_interference/wave_interference.py",
+      "title": "Wave Interference",
+      "category": "signal_processing",
+      "concepts": [
+        "wave",
+        "oscillation",
+        "signal",
+        "frequency",
+        "filter",
+        "wavelet"
+      ],
+      "visual_use": "Use for frequency analysis, wavelet visualization, signal filtering, or time-frequency art.",
+      "good_for": [
+        "frequency",
+        "wavelet",
+        "filter",
+        "spectrum"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "simulation/random_walk/random_walk.py",
+      "title": "Random Walk",
+      "category": "simulation",
+      "concepts": [
+        "simulation",
+        "system",
+        "dynamics"
+      ],
+      "visual_use": "Use for complex system dynamics, agent behavior, maze generation, or computational experiments.",
+      "good_for": [
+        "dynamics",
+        "systems",
+        "experiments"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "steering_behaviors/creature_sensors/creature_sensors.py",
+      "title": "Creature sensors",
+      "category": "steering_behaviors",
+      "concepts": [
+        "sensors",
+        "agent behavior",
+        "perception",
+        "steering"
+      ],
+      "visual_use": "Use for creatures reacting to local stimuli, perception cones, or simple artificial life.",
+      "good_for": [
+        "creatures",
+        "sensors",
+        "artificial life",
+        "interaction"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "steering_behaviors/curl_noise_vines/curl_noise_vines.py",
+      "title": "Curl noise vines",
+      "category": "steering_behaviors",
+      "concepts": [
+        "curl noise",
+        "vines",
+        "grass",
+        "roots",
+        "flow field",
+        "organic trails"
+      ],
+      "visual_use": "Use for climbing vines, wind-blown grass, root hairs, flowing plant fibers, and botanical line textures.",
+      "good_for": [
+        "vines",
+        "grass",
+        "roots",
+        "organic lines",
+        "botanical motion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "steering_behaviors/flocking/flocking.py",
+      "title": "Flocking",
+      "category": "steering_behaviors",
+      "concepts": [
+        "boids",
+        "alignment",
+        "cohesion",
+        "separation",
+        "swarm"
+      ],
+      "visual_use": "Use for bird-like swarms, schools, crowd flow, or emergent group motion.",
+      "good_for": [
+        "swarm",
+        "emergence",
+        "crowds",
+        "organic motion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "steering_behaviors/flocking_with_binning/flocking_with_binning.py",
+      "title": "Flocking with spatial binning",
+      "category": "steering_behaviors",
+      "concepts": [
+        "boids",
+        "spatial partitioning",
+        "optimization",
+        "swarm"
+      ],
+      "visual_use": "Use for larger flocking systems where many agents need local neighborhood search.",
+      "good_for": [
+        "large swarms",
+        "emergence",
+        "performance",
+        "crowds"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "steering_behaviors/flow_field/flow_field.py",
+      "title": "Flow field steering",
+      "category": "steering_behaviors",
+      "concepts": [
+        "flow field",
+        "vectors",
+        "steering",
+        "agents"
+      ],
+      "visual_use": "Use for particles or vehicles following invisible currents, wind, or field drawings.",
+      "good_for": [
+        "wind",
+        "currents",
+        "vector fields",
+        "generative flow"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "steering_behaviors/flowlines/flowlines.py",
+      "title": "Flowlines streamline visualization",
+      "category": "steering_behaviors",
+      "concepts": [
+        "flow field",
+        "streamlines",
+        "vector field",
+        "perlin noise",
+        "visualization"
+      ],
+      "visual_use": "Use for wind-current visualizations, invisible field drawings, or dense abstract line compositions.",
+      "good_for": [
+        "flow visualization",
+        "wind",
+        "abstract lines",
+        "vector fields"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ],
+      "platforms": [
+        "py5",
+        "touchdesigner",
+        "ue5"
+      ]
+    },
+    {
+      "path": "steering_behaviors/ivy_wall_growth/ivy_wall_growth.py",
+      "title": "Ivy wall growth",
+      "category": "steering_behaviors",
+      "concepts": [
+        "ivy",
+        "vines",
+        "climbing plants",
+        "obstacle avoidance",
+        "branching",
+        "botanical growth"
+      ],
+      "visual_use": "Use for wall-climbing ivy, vines around windows, overgrown architecture, and obstacle-aware botanical line growth.",
+      "good_for": [
+        "ivy",
+        "vines",
+        "overgrown architecture",
+        "climbing plants",
+        "organic branching"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "steering_behaviors/path_following/path_following.py",
+      "title": "Path following",
+      "category": "steering_behaviors",
+      "concepts": [
+        "path following",
+        "prediction",
+        "steering",
+        "vehicle"
+      ],
+      "visual_use": "Use for agents tracing routes, flowing through corridors, or following hand-drawn paths.",
+      "good_for": [
+        "routes",
+        "trails",
+        "navigation",
+        "agents"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "steering_behaviors/wander_behavior/wander_behavior.py",
+      "title": "Wander behavior",
+      "category": "steering_behaviors",
+      "concepts": [
+        "wander",
+        "steering",
+        "randomness",
+        "vehicle"
+      ],
+      "visual_use": "Use for autonomous drifting, lifelike uncertainty, or gentle exploratory motion.",
+      "good_for": [
+        "autonomy",
+        "drift",
+        "creatures",
+        "organic motion"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "swarm_intelligence/ant_colony_pheromone/ant_colony_pheromone.py",
+      "title": "Ant Colony Pheromone Trails",
+      "category": "swarm_intelligence",
+      "concepts": [
+        "ant colony",
+        "pheromone",
+        "stigmergy",
+        "trail",
+        "foraging",
+        "emergence"
+      ],
+      "visual_use": "Ants deposit glowing pheromone trails that form organic networks. Use for trail-network, flow-line, or connection-graph art.",
+      "good_for": [
+        "trail",
+        "network",
+        "organic",
+        "emergence",
+        "animation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "swarm_intelligence/bee_foraging/bee_foraging.py",
+      "title": "Bee Foraging Algorithm",
+      "category": "swarm_intelligence",
+      "concepts": [
+        "swarm",
+        "foraging",
+        "colony",
+        "waggle dance",
+        "agents",
+        "emergence"
+      ],
+      "visual_use": "Use for colony behavior, decentralized navigation, emergent foraging, or agent optimization.",
+      "good_for": [
+        "swarms",
+        "colonies",
+        "optimization"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "swarm_intelligence/particle_swarm_optimization/particle_swarm_optimization.py",
+      "title": "Particle Swarm Optimization",
+      "category": "swarm_intelligence",
+      "concepts": [
+        "particle system",
+        "emitter",
+        "swarm",
+        "agents",
+        "emergence"
+      ],
+      "visual_use": "Use for colony behavior, decentralized navigation, emergent foraging, or agent optimization.",
+      "good_for": [
+        "swarms",
+        "colonies",
+        "optimization"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "swarm_intelligence/predator_prey_flocking/predator_prey_flocking.py",
+      "title": "Predator-Prey Flocking",
+      "category": "swarm_intelligence",
+      "concepts": [
+        "flocking",
+        "Boids",
+        "predator",
+        "prey",
+        "escape",
+        "emergence",
+        "swarm"
+      ],
+      "visual_use": "Flock of prey with emergent escape maneuvers under predator threat. Use for dynamic, tension-filled swarm art.",
+      "good_for": [
+        "flocking",
+        "dynamic",
+        "emergent",
+        "animation",
+        "chaotic"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "three_dimensional/lorenz_strands/lorenz_strands.py",
+      "title": "Lorenz Strands",
+      "category": "three_dimensional",
+      "concepts": [
+        "lorenz",
+        "chaos",
+        "butterfly effect",
+        "attractor",
+        "3D",
+        "volumetric"
+      ],
+      "visual_use": "Use for 3D geometry, volumetric effects, spatial structures, or depth rendering.",
+      "good_for": [
+        "3D",
+        "spatial",
+        "volumetric"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "three_dimensional/lsystem_3d/lsystem_3d.py",
+      "title": "3D L-System (Fractal Tree)",
+      "category": "three_dimensional",
+      "concepts": [
+        "L-system",
+        "Lindenmayer",
+        "3D tree",
+        "fractal",
+        "branching",
+        "botanical"
+      ],
+      "visual_use": "3D branching tree and plant structures via L-system symbol rewriting. Use for botanical, forest, coral, or fractal-growth art.",
+      "good_for": [
+        "botanical",
+        "tree",
+        "fractal",
+        "branching",
+        "nature",
+        "3D"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "three_dimensional/metaballs/metaballs.py",
+      "title": "Metaballs",
+      "category": "three_dimensional",
+      "concepts": [
+        "isosurface",
+        "implicit surface",
+        "blob",
+        "potential field",
+        "3D",
+        "volumetric"
+      ],
+      "visual_use": "Use for 3D geometry, volumetric effects, spatial structures, or depth rendering.",
+      "good_for": [
+        "3D",
+        "spatial",
+        "volumetric"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "three_dimensional/metaballs_3d/metaballs_3d.py",
+      "title": "3D Metaballs with Perspective Projection",
+      "category": "three_dimensional",
+      "concepts": [
+        "isosurface",
+        "implicit surface",
+        "blob",
+        "potential field",
+        "3D",
+        "volumetric"
+      ],
+      "visual_use": "Use for 3D geometry, volumetric effects, spatial structures, or depth rendering.",
+      "good_for": [
+        "3D",
+        "spatial",
+        "volumetric"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "three_dimensional/point_cloud_morph/point_cloud_morph.py",
+      "title": "Point Cloud Morphing",
+      "category": "three_dimensional",
+      "concepts": [
+        "point cloud",
+        "morphing",
+        "3D",
+        "interpolation",
+        "animation",
+        "shape"
+      ],
+      "visual_use": "3D point cloud that smoothly morphs between sphere, torus, cube, and helix. Use for sculptural, transformative, or data-art aesthetics.",
+      "good_for": [
+        "3D",
+        "animation",
+        "morphing",
+        "sculpture",
+        "abstract"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "three_dimensional/volumetric_fog/volumetric_fog.py",
+      "title": "Volumetric Fog",
+      "category": "three_dimensional",
+      "concepts": [
+        "volumetric",
+        "fog",
+        "raymarching",
+        "FBM",
+        "3D",
+        "atmospheric",
+        "noise"
+      ],
+      "visual_use": "Ray-marched 3D FBM fog/cloud with directional lighting. Use for atmospheric depth, dreamy cloudscape, or ethereal cosmic art.",
+      "good_for": [
+        "atmospheric",
+        "3D",
+        "fog",
+        "clouds",
+        "ethereal",
+        "cosmic"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/dihedral_group/dihedral_group.py",
+      "title": "Dihedral Group",
+      "category": "tiling_patterns",
+      "concepts": [
+        "dihedral",
+        "symmetry",
+        "group",
+        "wallpaper",
+        "reflection"
+      ],
+      "visual_use": "Use for dihedral symmetry patterns, reflection symmetries, or wallpaper group visualizations.",
+      "good_for": [
+        "symmetry",
+        "patterns",
+        "geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/hex_rhomb/hex_rhomb.py",
+      "title": "Hex Rhomb Tiling",
+      "category": "tiling_patterns",
+      "concepts": [
+        "hexagon",
+        "rhombus",
+        "polygon",
+        "tiling",
+        "geometry"
+      ],
+      "visual_use": "Use for mixed hexagonal-rhombic tessellations or geometric transformations.",
+      "good_for": [
+        "tiling",
+        "geometry",
+        "patterns"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/hex_tiling/hex_tiling.py",
+      "title": "Hex Tiling",
+      "category": "tiling_patterns",
+      "concepts": [
+        "hexagon",
+        "honeycomb",
+        "tiling",
+        "polygon",
+        "symmetric"
+      ],
+      "visual_use": "Use for honeycomb patterns, hexagonal grids, or symmetric tessellations.",
+      "good_for": [
+        "tiling",
+        "symmetry",
+        "geometry",
+        "patterns"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/ih02_tv08/ih02_tv08.py",
+      "title": "IH02 TV08 tiling",
+      "category": "tiling_patterns",
+      "concepts": [
+        "tiling",
+        "deformation",
+        "symmetry",
+        "pattern"
+      ],
+      "visual_use": "Use for geometric textile patterns, deformed tiles, or symmetric surface designs.",
+      "good_for": [
+        "textiles",
+        "tiling",
+        "symmetry",
+        "surface pattern"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/islamic_geometric/islamic_geometric.py",
+      "title": "Islamic Geometric",
+      "category": "tiling_patterns",
+      "concepts": [
+        "tiling",
+        "geometry",
+        "pattern"
+      ],
+      "visual_use": "Use for textile patterns, symmetry studies, ornaments, or tiled surfaces.",
+      "good_for": [
+        "tiling",
+        "symmetry",
+        "textiles"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/p3_pattern/p3_pattern.py",
+      "title": "P3 Wallpaper Pattern",
+      "category": "tiling_patterns",
+      "concepts": [
+        "wallpaper group",
+        "p3",
+        "symmetry",
+        "rotation",
+        "tessellation"
+      ],
+      "visual_use": "Use for p3 wallpaper group tessellations or 3-fold rotational symmetry designs.",
+      "good_for": [
+        "symmetry",
+        "tiling",
+        "patterns"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/p6m_pattern/p6m_pattern.py",
+      "title": "P6M Wallpaper Pattern",
+      "category": "tiling_patterns",
+      "concepts": [
+        "wallpaper group",
+        "p6m",
+        "hexagonal symmetry",
+        "rotation",
+        "reflection"
+      ],
+      "visual_use": "Use for p6m highest-symmetry wallpaper patterns with hexagonal and reflective elements.",
+      "good_for": [
+        "symmetry",
+        "tiling",
+        "patterns"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/penrose_tiling/penrose_tiling.py",
+      "title": "Penrose tiling",
+      "category": "tiling_patterns",
+      "concepts": [
+        "aperiodic tiling",
+        "subdivision",
+        "geometry",
+        "penrose"
+      ],
+      "visual_use": "Use for non-repeating geometric fields, crystalline patterns, or recursive tilings.",
+      "good_for": [
+        "tiling",
+        "aperiodic patterns",
+        "crystals",
+        "geometry"
+      ],
+      "complexity": "high",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/pinwheel_tiling/pinwheel_tiling.py",
+      "title": "Pinwheel Tiling",
+      "category": "tiling_patterns",
+      "concepts": [
+        "tiling",
+        "geometry",
+        "pattern"
+      ],
+      "visual_use": "Use for textile patterns, symmetry studies, ornaments, or tiled surfaces.",
+      "good_for": [
+        "tiling",
+        "symmetry",
+        "textiles"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/pythagoras_periodic/pythagoras_periodic.py",
+      "title": "Pythagoras Periodic Tiling",
+      "category": "tiling_patterns",
+      "concepts": [
+        "pythagoras tree",
+        "polygon",
+        "periodic",
+        "recursion"
+      ],
+      "visual_use": "Use for Pythagoras tree tessellations, fractal squares, or periodic recursive patterns.",
+      "good_for": [
+        "tiling",
+        "recursion",
+        "geometry"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/recur_pentagon/recur_pentagon.py",
+      "title": "Recursive pentagon tiling",
+      "category": "tiling_patterns",
+      "concepts": [
+        "recursion",
+        "pentagon",
+        "tiling",
+        "subdivision"
+      ],
+      "visual_use": "Use for nested polygon compositions, ornamental geometry, or recursive tile studies.",
+      "good_for": [
+        "ornament",
+        "polygons",
+        "recursion",
+        "tiling"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/recur_triangle/recur_triangle.py",
+      "title": "Recursive Triangle",
+      "category": "tiling_patterns",
+      "concepts": [
+        "triangle",
+        "recursion",
+        "subdivision",
+        "angular",
+        "fractal"
+      ],
+      "visual_use": "Use for recursive triangle subdivision, Sierpinski-like patterns, or angular fractals.",
+      "good_for": [
+        "recursion",
+        "geometry",
+        "fractals"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/rep_tiles/rep_tiles.py",
+      "title": "Rep Tiles",
+      "category": "tiling_patterns",
+      "concepts": [
+        "tiling",
+        "geometry",
+        "pattern"
+      ],
+      "visual_use": "Use for textile patterns, symmetry studies, ornaments, or tiled surfaces.",
+      "good_for": [
+        "tiling",
+        "symmetry",
+        "textiles"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/square_tiling/square_tiling.py",
+      "title": "Square Tiling",
+      "category": "tiling_patterns",
+      "concepts": [
+        "square",
+        "grid",
+        "polygon",
+        "periodic",
+        "tiling"
+      ],
+      "visual_use": "Use for square grid patterns, tessellated designs, or regular geometric divisions.",
+      "good_for": [
+        "tiling",
+        "grid",
+        "geometry",
+        "patterns"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/square_triangle_periodic/square_triangle_periodic.py",
+      "title": "Square Triangle Periodic",
+      "category": "tiling_patterns",
+      "concepts": [
+        "polygon",
+        "mixed tiling",
+        "periodic",
+        "square",
+        "triangle"
+      ],
+      "visual_use": "Use for mixed square-triangle tessellations or periodic geometric combinations.",
+      "good_for": [
+        "tiling",
+        "geometry",
+        "patterns"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/symmetric_shape/symmetric_shape.py",
+      "title": "Symmetric Shape",
+      "category": "tiling_patterns",
+      "concepts": [
+        "symmetry",
+        "polygon",
+        "geometric shape",
+        "reflection"
+      ],
+      "visual_use": "Use for symmetric patterns, mirror designs, or geometric reflection art.",
+      "good_for": [
+        "symmetry",
+        "geometry",
+        "patterns"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/textile_generator/textile_generator.py",
+      "title": "Textile Generator",
+      "category": "tiling_patterns",
+      "concepts": [
+        "textile",
+        "pattern",
+        "line",
+        "geometry",
+        "weaving"
+      ],
+      "visual_use": "Use for fabric-like patterns, woven designs, or textile-inspired tessellations.",
+      "good_for": [
+        "tiling",
+        "patterns",
+        "textiles"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/triangle_tiling/triangle_tiling.py",
+      "title": "Triangle Tiling",
+      "category": "tiling_patterns",
+      "concepts": [
+        "triangle",
+        "polygon",
+        "angular",
+        "tiling",
+        "subdivision"
+      ],
+      "visual_use": "Use for triangular tessellations, angular patterns, or recursive geometric designs.",
+      "good_for": [
+        "tiling",
+        "geometry",
+        "patterns",
+        "subdivision"
+      ],
+      "complexity": "low",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/triangular_spiral/triangular_spiral.py",
+      "title": "Triangular Spiral",
+      "category": "tiling_patterns",
+      "concepts": [
+        "triangle",
+        "spiral",
+        "angular",
+        "recursion",
+        "rotation"
+      ],
+      "visual_use": "Use for angular spirals, recursive triangle arrangements, or rotational growth patterns.",
+      "good_for": [
+        "spiral",
+        "geometry",
+        "recursion"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "tiling_patterns/wave_function_collapse/wave_function_collapse.py",
+      "title": "Wave Function Collapse (WFC)",
+      "category": "tiling_patterns",
+      "concepts": [
+        "tiling",
+        "geometry",
+        "pattern",
+        "wave",
+        "oscillation"
+      ],
+      "visual_use": "Use for textile patterns, symmetry studies, ornaments, or tiled surfaces.",
+      "good_for": [
+        "tiling",
+        "symmetry",
+        "textiles"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "py5"
+      ]
+    },
+    {
+      "path": "topology/hopf_fibration/hopf_fibration.py",
+      "title": "Hopf Fibration",
+      "category": "topology",
+      "concepts": [
+        "topological",
+        "manifold",
+        "surface",
+        "continuous deformation",
+        "topology"
+      ],
+      "visual_use": "Use for topological surfaces, non-orientable manifolds, knot diagrams, or continuous deformation art.",
+      "good_for": [
+        "surfaces",
+        "manifolds",
+        "knots",
+        "deformation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "topology/klein_bottle/klein_bottle.py",
+      "title": "Klein Bottle",
+      "category": "topology",
+      "concepts": [
+        "topological",
+        "manifold",
+        "surface",
+        "continuous deformation",
+        "klein bottle",
+        "non-orientable"
+      ],
+      "visual_use": "Use for topological surfaces, non-orientable manifolds, knot diagrams, or continuous deformation art.",
+      "good_for": [
+        "surfaces",
+        "manifolds",
+        "knots",
+        "deformation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "topology/mobius_strip/mobius_strip.py",
+      "title": "Mobius Strip",
+      "category": "topology",
+      "concepts": [
+        "topological",
+        "manifold",
+        "surface",
+        "continuous deformation",
+        "mobius strip",
+        "non-orientable"
+      ],
+      "visual_use": "Use for topological surfaces, non-orientable manifolds, knot diagrams, or continuous deformation art.",
+      "good_for": [
+        "surfaces",
+        "manifolds",
+        "knots",
+        "deformation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    },
+    {
+      "path": "topology/torus_knot/torus_knot.py",
+      "title": "Torus Knot",
+      "category": "topology",
+      "concepts": [
+        "topological",
+        "manifold",
+        "surface",
+        "continuous deformation",
+        "torus knot",
+        "knot theory"
+      ],
+      "visual_use": "Use for topological surfaces, non-orientable manifolds, knot diagrams, or continuous deformation art.",
+      "good_for": [
+        "surfaces",
+        "manifolds",
+        "knots",
+        "deformation"
+      ],
+      "complexity": "medium",
+      "dependencies": [
+        "numpy",
+        "py5"
+      ]
+    }
+  ]
+}

@@ -20,10 +20,12 @@ With the MCP server, agents can search the Logic Lab manifest, find algorithms
 by visual intent or category, read short summaries, and fetch bounded source
 snippets for selected examples.
 
-### Installation
+### Manual installation
+
+Requires [uv](https://docs.astral.sh/uv/).
 
 ```bash
-git clone https://github.com/asamiii/logic-lab.git
+git clone https://github.com/asamiile/logic-lab.git
 cd logic-lab
 uv sync
 ```

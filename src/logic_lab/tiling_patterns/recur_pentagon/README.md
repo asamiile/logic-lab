@@ -1,6 +1,5 @@
 # Recursive Pentagon
 
-Recursively subdivides a regular pentagon into smaller pentagons, translated from `GenerativeArtWithMath/Ch14_Aperiodic/RecurPentagon`.
 
 ```bash
 uv run python src/logic_lab/tiling_patterns/recur_pentagon/recur_pentagon.py
