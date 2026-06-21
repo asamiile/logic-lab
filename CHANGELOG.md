@@ -5,6 +5,71 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0](https://github.com/asamiile/logic-lab/compare/v0.2.0...v0.3.0) (2026-06-21)
+
+
+### Features
+
+* add crystal_growth category with snowflake growth algorithm and automation pipeline ([6e3c236](https://github.com/asamiile/logic-lab/commit/6e3c23604c7e92faf875208bd40c64e1ae207e93))
+* add game_of_life, klein_bottle, spirograph (new domains) ([8ba425b](https://github.com/asamiile/logic-lab/commit/8ba425b4be7355a47207ef8833a6e554c482d6f7))
+* add hopf_fibration, chua_circuit, small_world_network ([7fb3315](https://github.com/asamiile/logic-lab/commit/7fb33150e61d0e57300bbc10222fb885326b4bb1))
+* add ifs_fractal, voronoi_landscape, caustics ([879e2f9](https://github.com/asamiile/logic-lab/commit/879e2f9d7c1d5a754d5cd650bc78d9c90e4d8bc3))
+* add julia_set (rewrite), dla_cluster, double_pendulum ([aed2972](https://github.com/asamiile/logic-lab/commit/aed29720f0491933317f24546832b7d81726205e))
+* add langtons_ant (rewrite), chladni_patterns, rose_curves ([aec7285](https://github.com/asamiile/logic-lab/commit/aec72859069a2afff979e4283c12b3d7ac3062aa))
+* add LFO utility, oscillators domain, and new algorithm implementations ([8e11a4f](https://github.com/asamiile/logic-lab/commit/8e11a4f490e0614ac06e656b2af0e1e5d4f04c7a))
+* add logistic_map, kuramoto_oscillators, crystal_solidification ([3c7985e](https://github.com/asamiile/logic-lab/commit/3c7985e5ad54f75c4c158ad53174d7075840f824))
+* add lorenz_attractor, fourier_epicycles, newton_basins ([106e92d](https://github.com/asamiile/logic-lab/commit/106e92df2ff5c794f21ec65249f2750e5afc9f17))
+* add mobius_strip, sir_epidemic, thin_film algorithms ([19b8437](https://github.com/asamiile/logic-lab/commit/19b8437f3e1939ecb0f8fcd9bd9296237434cda5))
+* add new screenshot assets for reaction diffusion and swarm intelligence examples ([93d01dd](https://github.com/asamiile/logic-lab/commit/93d01dd45a58d68f9e76b68c82f60231737e5a55))
+* add new screenshot assets for reaction diffusion and swarm intelligence examples ([b26f488](https://github.com/asamiile/logic-lab/commit/b26f48856d24ce2d4407a726bf4dfd4a476dc44e))
+* add new screenshot assets for various algorithms and patterns ([5a5f814](https://github.com/asamiile/logic-lab/commit/5a5f81464ba843dbc281b2fe626eb127cdaec031))
+* add new screenshot assets for various attractors and oscillators ([be28d60](https://github.com/asamiile/logic-lab/commit/be28d60049e37cabb83bf9a64feb72258d3e81c5))
+* add predator_prey_dynamics, mobius_strip, particle_swarm_optimization ([5a92672](https://github.com/asamiile/logic-lab/commit/5a92672b5d0dd6993af53c83269a8e96fbcf2b1c))
+* add reaction_diffusion, boids, wave_interference ([a624066](https://github.com/asamiile/logic-lab/commit/a624066cd0f92d000b2daf27700a1da6d56074ba))
+* add RK4 integrator, noise field, and rendering precision improvements ([f1b4c4c](https://github.com/asamiile/logic-lab/commit/f1b4c4c092dcdf87e8b7f0211177d454ec7876b1))
+* add rossler_attractor, growing_neural_gas, fault_terrain ([9af51e6](https://github.com/asamiile/logic-lab/commit/9af51e60c88d9a95a0da944d4bf98e193cb1b645))
+* add self_organizing, procedural_terrain, optical categories ([2a05900](https://github.com/asamiile/logic-lab/commit/2a059006a19459306cee7788b2dc27597f8aa3d8))
+* add signal_processing/lissajous_figures category ([1ec11ed](https://github.com/asamiile/logic-lab/commit/1ec11edc5c883d662472e578d7622822f4dc6e82))
+* add three quick-win utilities for better development workflow ([9899ab9](https://github.com/asamiile/logic-lab/commit/9899ab949d1a3a4848403b3359df78cb82be61b3))
+* add topology, network_dynamics, chaos_theory categories ([874c0cd](https://github.com/asamiile/logic-lab/commit/874c0cde17f4bbd9afd854c9fc2ffb40ca96052e))
+* add van_der_pol, evolving_circles, lorenz_strands ([73970d7](https://github.com/asamiile/logic-lab/commit/73970d7ca4b72597fd1126f8159ddc371bffffc4))
+* expand art capabilities with shader manifest, new MCP tools, and new algorithm domains ([20531cb](https://github.com/asamiile/logic-lab/commit/20531cb14c0efd62b9eef2e285e77daba060f6b8))
+* extend MCP server with 5 new algorithm domains ([b82792c](https://github.com/asamiile/logic-lab/commit/b82792c328c8a3fa4aa42f39d5c79d081da960b9))
+* implement 3D domain with metaballs algorithm ([3bec2d8](https://github.com/asamiile/logic-lab/commit/3bec2d89057a681eda0f7cf4c98d0616da33c37a))
+* implement audio-reactive particles with frequency-driven visualization ([05aa80a](https://github.com/asamiile/logic-lab/commit/05aa80ad6b1b3fad7590e033e6481e22b86ecf0c))
+* improve Glama MCP server score with richer tool documentation ([4283943](https://github.com/asamiile/logic-lab/commit/4283943dac4ab4d1157a892859f569956ed13782))
+* improve Glama MCP server score with richer tool documentation ([267b255](https://github.com/asamiile/logic-lab/commit/267b255cd5916a01dc2ecf20a40351c309bc5d4e))
+
+
+### Bug Fixes
+
+* add canvas dimensions to BeeColony to support testing ([789248e](https://github.com/asamiile/logic-lab/commit/789248e262f063a175d6f6678252c93ac1268b63))
+* add missing py5 import to audio_reactive_particles ([56f5da2](https://github.com/asamiile/logic-lab/commit/56f5da2bbdf7ff8ea36465b698542412e69900f0))
+* adjust remaining test expectations for stochastic algorithms ([cc108ea](https://github.com/asamiile/logic-lab/commit/cc108eaa95a3fafe89027e57a12aae570c033264))
+* call py5.frame_rate() as method in metaballs_3d display ([d87948b](https://github.com/asamiile/logic-lab/commit/d87948bca73c202230ce8c6d5c6fdcd5964ca8f2))
+* correct particle lifecycle and colony behavior tests ([3bd0181](https://github.com/asamiile/logic-lab/commit/3bd0181f8a41ee221a6b595047a62bbcf45683be))
+* correct py5.run_sketch() call in bee_foraging ([178a407](https://github.com/asamiile/logic-lab/commit/178a4072d6d1148781a260cb58f799c28f28634c))
+* correct test expectations and handle optional dependencies ([c1b0031](https://github.com/asamiile/logic-lab/commit/c1b0031b5df23532c886ea1e388c40599ea19277))
+* ensure post_write_hook does not fail on update_art_manifest.py execution ([aaa64ac](https://github.com/asamiile/logic-lab/commit/aaa64acf53915671d7e96922e54d536ad1a5ee95))
+* export HAS_SOUNDDEVICE from audio_reactive_particles module ([8766167](https://github.com/asamiile/logic-lab/commit/876616793c3c4f301f936beb5ef62095135cad54))
+* handle Retina/HiDPI displays in pixel-direct rendering sketches ([3758b74](https://github.com/asamiile/logic-lab/commit/3758b74a8203544fd83699b14b3aa342d52f605e))
+* use correct py5 arrow key constants ([0fd9652](https://github.com/asamiile/logic-lab/commit/0fd9652673bd68a038cd70766a7b8ff3e387d171))
+* use py5.get_frame_rate() instead of py5.frame_rate() for reading FPS ([c48f40f](https://github.com/asamiile/logic-lab/commit/c48f40f84fc5b73c2c2939610a043741ccd8d940))
+
+
+### Documentation
+
+* add comprehensive feature expansion roadmap ([8e8a8bc](https://github.com/asamiile/logic-lab/commit/8e8a8bcfdd64a4ee470947a9f248cd90788a5257))
+* add implementation summary for quick-win utilities ([bf26e4e](https://github.com/asamiile/logic-lab/commit/bf26e4ed4adbe85dfc2d2c72dbf5191c573cd32a))
+* add metaballs implementation summary and technical details ([8909959](https://github.com/asamiile/logic-lab/commit/890995908e7010a6ae31d3a1dfddc07c33d49b0d))
+* add README files for Phase 2 algorithm implementations ([a39444a](https://github.com/asamiile/logic-lab/commit/a39444a194d48ae1bf99e430ab6117d7545289b3))
+* add running commands to all algorithm README files ([b06262e](https://github.com/asamiile/logic-lab/commit/b06262e03fa0a74ae826046c11454cf26758a7eb))
+* standardize algorithm README format and add style guide ([efc9c3e](https://github.com/asamiile/logic-lab/commit/efc9c3eab303c1e4e14759ce20fb5a04dd2f4d4f))
+* standardize bee_foraging README format ([7dec9a9](https://github.com/asamiile/logic-lab/commit/7dec9a9a189e310a66ee7e536cb14c485f4d20e3))
+* standardize running commands to match existing project style ([e1eacd0](https://github.com/asamiile/logic-lab/commit/e1eacd0e208d267d9d9a5abd26578aab92d9f3fb))
+* update MCP server installation instructions and reorganize README ([57daeb2](https://github.com/asamiile/logic-lab/commit/57daeb21c68645dc6a7513135f3b8aa333e11c7d))
+* update MCP server installation instructions and reorganize README ([c148b83](https://github.com/asamiile/logic-lab/commit/c148b83a476683ddb8b878556983d844ad7fceca))
+
 ## [0.2.0](https://github.com/asamiile/logic-lab/compare/v0.1.0...v0.2.0) (2026-05-10)
 
 
