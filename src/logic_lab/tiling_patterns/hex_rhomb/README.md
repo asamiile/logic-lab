@@ -1,6 +1,5 @@
 # Hex Rhomb
 
-Builds each hexagonal tile from three rhombi, translated from `GenerativeArtWithMath/Ch13_Periodic/HexRhomb`.
 
 ```bash
 uv run python src/logic_lab/tiling_patterns/hex_rhomb/hex_rhomb.py

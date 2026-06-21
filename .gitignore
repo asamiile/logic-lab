@@ -28,3 +28,9 @@ htmlcov/
 
 # py5 generated output
 out/
+*.png
+*.jpg
+
+# Local Claude Code / agent settings (machine-specific paths)
+.claude/
+.agents/settings.local.json

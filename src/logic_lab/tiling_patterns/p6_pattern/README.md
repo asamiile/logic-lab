@@ -1,6 +1,5 @@
 # P6 Pattern
 
-Generates a hexagonal lattice pattern with 60-degree rotational symmetry, translated from `GenerativeArtWithMath/Ch12_Pattern/P6`.
 
 ```bash
 uv run python src/logic_lab/tiling_patterns/p6_pattern/p6_pattern.py
