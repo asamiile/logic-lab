@@ -8,6 +8,10 @@ Logic Lab is available as an MCP server for AI agents. Agents can search the Log
 
 [![Glama MCP Server](https://glama.ai/mcp/servers/asamiile/logic-lab/badge)](https://glama.ai/mcp/servers/asamiile/logic-lab)
 
+### Example: Autonomous Artwork Generation
+
+[py5-media-art](https://github.com/asamiile/py5-media-art) — a project that uses the Logic Lab MCP server with Claude Code to autonomously generate py5 sketches. Claude searches Logic Lab for relevant algorithms, adapts them into new compositions, and optionally writes accompanying articles.
+
 ## Gallery
 
 Examples of generative art created with Logic Lab algorithms:
