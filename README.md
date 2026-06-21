@@ -8,6 +8,31 @@ Logic Lab is available as an MCP server for AI agents. Agents can search the Log
 
 [![Glama MCP Server](https://glama.ai/mcp/servers/asamiile/logic-lab/badge)](https://glama.ai/mcp/servers/asamiile/logic-lab)
 
+## Gallery
+
+Examples of generative art created with Logic Lab algorithms:
+
+[![Watch on YouTube](https://img.shields.io/badge/YouTube-Watch%20Demos-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/playlist?list=PL5Uiqt5oXo0HR6D_6HbPiDWkYEQUHo1UD)
+
+
+[![](https://as2.ftcdn.net/v2/jpg/20/62/43/11/1000_F_2062431194_dvPNXz37lpu9s7KMLecEiW2kjC13bwSu.jpg)](https://stock.adobe.com/jp/stock-photo/id/2062431194)
+
+[![](https://as1.ftcdn.net/v2/jpg/20/62/14/36/1000_F_2062143692_yKRP6MaFdPe97hSihM7RQwUMDy4Vz6sX.jpg)](https://stock.adobe.com/jp/stock-photo/id/2062143692)
+
+[![](https://as1.ftcdn.net/v2/jpg/20/47/80/56/1000_F_2047805683_wyMES8dS3vOQhGcwyrDoy4XGrASya9QW.jpg)](https://stock.adobe.com/jp/stock-photo/id/2047805683)
+
+[![](https://as2.ftcdn.net/v2/jpg/20/32/57/35/1000_F_2032573507_st1OGDqWZe7S3creI7NUfFtKtWyri5HM.jpg)](https://stock.adobe.com/jp/stock-photo/id/2032573507)
+
+[![](https://as1.ftcdn.net/v2/jpg/20/32/57/18/1000_F_2032571820_4BuIFIcInA01dV1omOtcLtKieWRxcbdR.jpg)](https://stock.adobe.com/jp/stock-photo/id/2032571820)
+
+[![](https://as2.ftcdn.net/v2/jpg/20/07/58/01/1000_F_2007580121_ccthPfcDLpYcgFqNCjHZdXt73XkAM4Q1.jpg)](https://stock.adobe.com/jp/stock-photo/id/2007580121)
+
+[![](https://as1.ftcdn.net/v2/jpg/20/62/12/56/1000_F_2062125691_lR5yaxaW0n3z8qT5W5yJwCYhRQlNk3cG.jpg)](https://stock.adobe.com/jp/stock-photo/id/2062125691)
+
+[![](https://as2.ftcdn.net/v2/jpg/20/19/99/93/1000_F_2019999379_gv2YF2KTn0PnPsrDe1Pr9QNrbL5BynBJ.jpg)](https://stock.adobe.com/jp/stock-photo/id/2019999379)
+
+[![](https://as2.ftcdn.net/v2/jpg/20/32/57/27/1000_F_2032572727_D1KiwH9sq3Y7SN4w75WKbCQ9t5X371az.jpg)](https://stock.adobe.com/jp/stock-photo/id/2032572727)
+
 
 ## Repository Structure
 
