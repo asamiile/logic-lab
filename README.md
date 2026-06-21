@@ -2,73 +2,12 @@
 
 Python translations of creative coding examples using py5. Each simulation is organized by domain, demonstrating core computational creativity concepts: physics, steering behaviors, genetic algorithms, neural networks, fractals, cellular automata, tiling patterns, and mathematical systems.
 
-## Setup
-
-Install dependencies:
-
-```bash
-uv sync
-```
-
 ## MCP Server
 
-Logic Lab includes a local read-only MCP server for AI agents. Clone this
-repository locally, install dependencies with `uv sync`, then register the server
-for use across your workspace.
+Logic Lab is available as an MCP server for AI agents. Agents can search the Logic Lab manifest, find algorithms by visual intent or category, read short summaries, and fetch bounded source snippets for selected examples.
 
-With the MCP server, agents can search the Logic Lab manifest, find algorithms
-by visual intent or category, read short summaries, and fetch bounded source
-snippets for selected examples.
+[![Glama MCP Server](https://glama.ai/mcp/servers/asamiile/logic-lab/badge)](https://glama.ai/mcp/servers/asamiile/logic-lab)
 
-### Manual installation
-
-Requires [uv](https://docs.astral.sh/uv/).
-
-```bash
-git clone https://github.com/asamiile/logic-lab.git
-cd logic-lab
-uv sync
-```
-
-### Registration
-
-After installation, register the server with your AI tool using the `logic-lab-mcp` command:
-
-**Claude Code:**
-```bash
-claude mcp add logic-lab -- logic-lab-mcp
-```
-
-**Codex:**
-```bash
-codex mcp add logic-lab -- logic-lab-mcp
-```
-
-**GitHub Copilot in VS Code** (`.vscode/mcp.json` or user MCP settings):
-```json
-{
-  "servers": {
-    "logic-lab": {
-      "type": "stdio",
-      "command": "logic-lab-mcp"
-    }
-  }
-}
-```
-
-**Cursor** (`.cursor/mcp.json` or `~/.cursor/mcp.json`):
-```json
-{
-  "mcpServers": {
-    "logic-lab": {
-      "type": "stdio",
-      "command": "logic-lab-mcp"
-    }
-  }
-}
-```
-
-See [src/logic_lab/mcp/README.md](src/logic_lab/mcp/README.md) for tools, security notes, and usage details.
 
 ## Repository Structure
 
@@ -121,6 +60,14 @@ To contribute new algorithms or fixes, see [CONTRIBUTING.md](CONTRIBUTING.md) fo
 - Testing requirements
 - Conventional Commits specification
 - Automated release process
+
+### Setup
+
+Install dependencies:
+
+```bash
+uv sync
+```
 
 ### Running Tests
 
