@@ -73,7 +73,6 @@ GitHub Copilot in VS Code (.vscode/mcp.json or user MCP settings):
 Cursor (.cursor/mcp.json or ~/.cursor/mcp.json):
 
 ```json
-JSON
 {
   "mcpServers": {
     "logic-lab": {
@@ -114,9 +113,25 @@ See [src/logic_lab/mcp/README.md](src/logic_lab/mcp/README.md) for full paramete
 >
 > Fetching source with `get_algorithm("steering_behaviors/flow_field.py")` to use as reference for implementation.
 
+### Algorithm Domains
+
+- **mathematical/** - Generative geometry, color harmony, noise functions, fractals
+- **physics/** - Particle systems, forces, spring physics, fluid dynamics, collision
+- **steering_behaviors/** - Autonomous agents, flocking, pathfinding, flow fields
+- **genetic_algorithms/** - Evolution, selection, crossover, mutation
+- **neuro_evolution/** - Neural networks evolved via genetic algorithms
+- **fractals/** - Recursive structures, space-filling curves, Mandelbrot sets
+- **cellular_automata/** - Rule-based systems, Game of Life, emergence
+- **tiling_patterns/** - Symmetry, tessellations, ornamental patterns
+- **research/** - Experimental systems combining multiple domains
+- **simulation/** - Prototype implementations and archived experiments
+- **shader/** - GLSL fragment shaders for TouchDesigner and UE5
+
+
 ### Example: Autonomous Artwork Generation
 
 [py5-media-art](https://github.com/asamiile/py5-media-art) — a project that uses the Logic Lab MCP server with Claude Code to autonomously generate py5 sketches. Claude searches Logic Lab for relevant algorithms, adapts them into new compositions, and optionally writes accompanying articles.
+
 
 ## Gallery
 
@@ -145,20 +160,6 @@ Examples of generative art created with Logic Lab algorithms:
   <a href="https://stock.adobe.com/jp/stock-photo/id/2062106598" target_blank=""><img src="https://as2.ftcdn.net/v2/jpg/20/62/10/65/1000_F_2062106598_OsonjoxQg5h04RIVjNj8h53nM87GpXYk.jpg" width="49%" /></a>
 </div>
 
-
-### Algorithm Domains
-
-- **mathematical/** - Generative geometry, color harmony, noise functions, fractals
-- **physics/** - Particle systems, forces, spring physics, fluid dynamics, collision
-- **steering_behaviors/** - Autonomous agents, flocking, pathfinding, flow fields
-- **genetic_algorithms/** - Evolution, selection, crossover, mutation
-- **neuro_evolution/** - Neural networks evolved via genetic algorithms
-- **fractals/** - Recursive structures, space-filling curves, Mandelbrot sets
-- **cellular_automata/** - Rule-based systems, Game of Life, emergence
-- **tiling_patterns/** - Symmetry, tessellations, ornamental patterns
-- **research/** - Experimental systems combining multiple domains
-- **simulation/** - Prototype implementations and archived experiments
-- **shader/** - GLSL fragment shaders for TouchDesigner and UE5
 
 ## Development
 
