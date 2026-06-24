@@ -1,36 +1,4 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/server.json",
-  "name": "Logic Lab",
-  "description": "Read-only MCP server providing curated references to generative art algorithms written in py5. Agents can search by keyword, category, creative mood, or artistic intent, fetch short summaries, and retrieve bounded source snippets. Covers physics simulations, steering behaviors, fractals, cellular automata, genetic algorithms, neuro-evolution, tiling patterns, and mathematical systems.",
-  "categories": [
-    "art",
-    "creative-coding",
-    "education"
-  ],
-  "tags": [
-    "generative-art",
-    "creative-coding",
-    "algorithms",
-    "py5",
-    "physics",
-    "fractals",
-    "cellular-automata",
-    "steering-behaviors",
-    "genetic-algorithms",
-    "tiling-patterns",
-    "read-only",
-    "reference"
-  ],
-  "license": "MIT",
-  "author": {
-    "name": "Asami.K",
-    "url": "https://asami.tokyo/"
-  },
-  "repository": {
-    "url": "https://github.com/asamiile/logic-lab"
-  },
-  "server": {
-    "type": "stdio",
-    "command": "logic-lab-mcp"
-  }
+  "maintainers": ["asamiile"]
 }
