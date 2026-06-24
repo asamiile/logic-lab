@@ -5,6 +5,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0](https://github.com/asamiile/logic-lab/compare/v0.3.0...v0.4.0) (2026-06-24)
+
+
+### Features
+
+* glama.jsonから詳細情報を削除し、メンテナ情報のみを保持 ([ee29f9d](https://github.com/asamiile/logic-lab/commit/ee29f9d32a6f7fc0484dbcabea602d33c78857fd))
+* glama.jsonから詳細情報を削除し、メンテナ情報のみを保持 ([f2da250](https://github.com/asamiile/logic-lab/commit/f2da2506b5c27897ca48adda31d06c1e26bb036f))
+
+
+### Bug Fixes
+
+* update schema URL in glama.json ([91ee059](https://github.com/asamiile/logic-lab/commit/91ee05915986a34ae39e879fdcc2c0f545f80490))
+* update schema URL in glama.json ([403c274](https://github.com/asamiile/logic-lab/commit/403c274f203671d07c51136cc1a7a4e2770bd4ed))
+
+
+### Documentation
+
+* add dependabot configuration for GitHub Actions updates ([63538b2](https://github.com/asamiile/logic-lab/commit/63538b2a924a11d243080163d9d1fad5abdf6850))
+* add example of autonomous artwork generation using py5-media-art ([3c6d6bb](https://github.com/asamiile/logic-lab/commit/3c6d6bb237fc11f37c778e9c3c542bcf15f07887))
+* add example of autonomous artwork generation using py5-media-art ([c039aa0](https://github.com/asamiile/logic-lab/commit/c039aa05d559da0cdd79854556ca08b67d67e780))
+* add generative art examples and YouTube demo link to README ([604116a](https://github.com/asamiile/logic-lab/commit/604116a88099f284f357a95ad08fe2869ab452ad))
+* add generative art examples and YouTube demo link to README ([d7810cc](https://github.com/asamiile/logic-lab/commit/d7810cced78c59b32049410e34567669549f8d27))
+* update algorithm domains section in README.md ([f0a76b8](https://github.com/asamiile/logic-lab/commit/f0a76b88c57e1c6d3387553e9a4a480e0d9566cf))
+* update algorithm domains section in README.md ([06ab53e](https://github.com/asamiile/logic-lab/commit/06ab53ea1d3d9c9ba3240ce16d8e023ffc92e04d))
+
 ## [0.3.0](https://github.com/asamiile/logic-lab/compare/v0.2.0...v0.3.0) (2026-06-21)
 
 
