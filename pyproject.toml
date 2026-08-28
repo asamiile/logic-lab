@@ -33,7 +33,7 @@ classifiers = [
 ]
 
 dependencies = [
-    "mcp>=1.0.0",
+    "mcp>=1.0.0,<2",
     "numpy>=2.4.4",
     "py5>=0.10.9a1",
     "scipy>=1.10.0",
