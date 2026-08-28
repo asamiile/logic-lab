@@ -1521,7 +1521,7 @@ wheels = [
 
 [[package]]
 name = "logic-lab"
-version = "0.2.0"
+version = "0.3.0"
 source = { editable = "." }
 dependencies = [
     { name = "mcp" },
@@ -1566,7 +1566,7 @@ requires-dist = [
     { name = "gymnasium", extras = ["mujoco", "box2d"], marker = "extra == 'ml'", specifier = ">=1.0.0" },
     { name = "jupyterlab", marker = "extra == 'extended'", specifier = ">=4.5.6" },
     { name = "matplotlib", marker = "extra == 'extended'", specifier = ">=3.8.0" },
-    { name = "mcp", specifier = ">=1.0.0" },
+    { name = "mcp", specifier = ">=1.0.0,<2" },
     { name = "moviepy", marker = "extra == 'extended'", specifier = ">=2.2.1" },
     { name = "mujoco", marker = "extra == 'ml'", specifier = ">=3.1.0" },
     { name = "neat-python", marker = "extra == 'ml'", specifier = "==0.92" },
